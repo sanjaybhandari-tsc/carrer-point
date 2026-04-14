@@ -26,3 +26,29 @@
 .slideup {
   animation: slideup 2s ease-out forwards;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animationScroll {
+  animation: scroll 5s linear infinite;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.slideright {
+  animation: slideRight 2s ease-out forwards;
+}
