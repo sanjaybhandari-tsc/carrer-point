@@ -1,43 +1,28 @@
-.home {
-  padding: 2rem;
-}
-
-.hero {
-  text-align: center;
-  padding: 4rem 1rem;
-  background: #0f172a;
-  color: white;
-  border-radius: 12px;
-
-  h1 {
-    font-size: 2.5rem;
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%) scale(1.2);
+    opacity: 0;
   }
-
-  p {
-    margin: 1rem 0;
-    font-size: 1.2rem;
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
   }
 }
 
-.cta {
-  padding: 0.7rem 1.5rem;
-  background: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+.slideDown {
+  animation: slideDown 2s ease-out forwards;
 }
 
-.features {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+@keyframes slideup {
+  0% {
+    transform: translateY(150%) scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
 
-.card {
-  padding: 1.5rem;
-  background: #f1f5f9;
-  border-radius: 10px;
-  text-align: center;
+.slideup {
+  animation: slideup 2s ease-out forwards;
 }
