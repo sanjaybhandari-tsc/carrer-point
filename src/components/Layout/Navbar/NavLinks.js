@@ -9,7 +9,6 @@ const links = [
 
   {
     label: "Services",
-    href: "/services",
     dropdown: true,
     children: [
       { label: "Permanent Hiring", href: "/services/permanent-hiring" },
@@ -18,8 +17,6 @@ const links = [
       { label: "RPO", href: "/services/rpo" },
     ],
   },
-
-  
 ];
 
 export default function NavLinks({ mobile = false }) {
@@ -27,7 +24,7 @@ export default function NavLinks({ mobile = false }) {
   return (
     <div className={mobile ? "flex flex-col gap-4" : "hidden md:flex gap-6"}>
       {links.map((item) => (
-        <NavItem key={item.label} item={item} />
+        <NavItem key={item.label} item={item} mobile={mobile} />
       ))}
     </div>
   );
