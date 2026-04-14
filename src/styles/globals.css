@@ -1,19 +1,30 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #fafafa;
   --foreground: #171717;
   --headingBlack: #000000;
+
   --headingBlue: #0277bd;
   --buttonTextWhite: #fdfdfd;
   --buttonBlue: #039be6;
   --navHeadingBlack: #333333;
-
+  --color-headingBlue: #0277BD;
+  --color-buttonTextWhite: #fdfdfd;
+  --color-buttonBlue: #039BE6;
+  --color-navHeadingBlack: #333333;
   --font-main: "Montserrat", sans-serif;
+}
+
+@theme {
+  --color-headingBlue: #0277BD;
+  --font-saira: "Saira Stencil", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

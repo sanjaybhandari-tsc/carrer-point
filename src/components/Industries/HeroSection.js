@@ -1,14 +1,17 @@
+import styles from "@/styles/Indusries/Industries.module.css";
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[80vh] flex items-center">
+    <section className="relative w-full h-[100vh] flex items-center">
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: "url('images/industries/heroSectionOne.png')", 
+          backgroundImage: "url('images/industries/heroSectionOne.png')",
         }}
       />
-      <div className="absolute inset-0 bg-black/50" />
-      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-20 text-white">
+      <div className="absolute inset-0 flex z-10">
+        <div className={` border-2 border-red-500 w-full h-full bg-gradient-to-r from-black/80 via-black/60 ${styles.slideOverlay}`}/>
+      </div>
+      <div className="relative z-10 max-w-2xl mx-0 z-20 px-6 md:px-20 text-white">
         <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
           Industries We Serve
         </h1>
