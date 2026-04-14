@@ -33,10 +33,10 @@ export default function Footer() {
 
         <div className="text-white px-0 md:px-10 lg:px-20 py-5 w-full">
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-15 lg:gap-50 tracking-normal">
-            <div className="flex flex-col gap-5 items-center md:items-start text-center md:text-left">
-              <h3 className="font-inter font-semibold text-xl md:text-2xl">Quick Links</h3>
+            <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
+              <h3 className="font-inter font-semibold text-xl md:text-2xl whitespace-nowrap">Quick Links</h3>
 
-              <div className="text-[16px] tracking-normal  ">
+              <div className="text-[16px] tracking-normal whitespace-nowrap ">
                 <p>Home</p>
                 <p>Hiring Solution</p>
                 <p>About</p>
@@ -47,7 +47,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex flex-col gap-5 items-center md:items-start text-center md:text-left">
-              <h3 className="font-inter font-semibold text-xl md:text-2xl">Head Office</h3>
+              <h3 className="font-inter font-semibold text-xl md:text-2xl whitespace-nowrap">Head Office</h3>
 
               <p className="text-white w-full md:w-60 text-[16px] tracking-normal leading-[120%]">
                 85/A Railway Lines, Samrudhi one 4th floor,, Near
@@ -56,7 +56,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-5 items-center md:items-start text-center md:text-left">
               <div>
-                <h3 className="font-inter font-semibold text-xl md:text-2xl">
+                <h3 className="font-inter font-semibold text-xl md:text-2xl whitespace-nowrap">
                   Contact Info
                 </h3>
               </div>
@@ -116,7 +116,7 @@ export default function Footer() {
         <div className="flex items-center w-full">
           <hr className="border border-[#fafafaf7] w-full" />
         </div>
-        <div className="w-full flex flex-col md:flex-col lg:flex-row items-center justify-between gap-3 pb-5 text-[16px] md:text-[18px] text-center lg:text-left ">
+        <div className="w-full flex flex-col md:flex-col lg:flex-row items-center justify-between gap-3 pb-5 lg:pb-18 text-[16px] md:text-[18px] text-center lg:text-left ">
           <p> Copyright</p>
           <div className="flex items-center justify-between gap-2 flex-wrap">
             <p>Terms & conditions</p>
@@ -127,7 +127,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-        <div className="hidden lg:block absolute right-0 bottom-20 ">
+        <div className="hidden lg:block absolute right-0 bottom-33 ">
           <Image
             src="/images/footer/logoFrame.svg"
             alt="decor"
