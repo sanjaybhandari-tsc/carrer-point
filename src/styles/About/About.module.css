@@ -1,44 +1,17 @@
-.about {
-  padding: 2rem;
-}
-
-.hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: #1e293b;
-  color: white;
-  border-radius: 12px;
-
-  h1 {
-    font-size: 2.2rem;
+@keyframes HeroleftSlides {
+  0%{
+    transform: translateX(-90%) scale(1.2) ;
+    opacity: 0;
   }
-
-  p {
-    margin-top: 0.5rem;
-    font-size: 1.1rem;
+  100%{
+    transform: translateX(0) scale(1) ;
+    opacity: 1;
+    
   }
 }
-
-.content {
-  margin-top: 2rem;
-  line-height: 1.6;
-
-  h2 {
-    margin-top: 1.5rem;
-    color: #0f172a;
-  }
-
-  p {
-    margin-top: 0.5rem;
-    color: #334155;
-  }
-
-  ul {
-    margin-top: 0.5rem;
-    padding-left: 1.2rem;
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-  }
+.heroleftSlidediv{
+  animation: HeroleftSlides;
+  animation-duration: 2s;
+  transition: ease-in-out;
+  background: linear-gradient(246.33deg, rgba(102, 102, 102, 0) -9.45%, rgba(0, 0, 0, 0.72) 67.09%);
 }
