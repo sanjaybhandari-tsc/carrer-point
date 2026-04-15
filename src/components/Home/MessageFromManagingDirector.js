@@ -23,7 +23,7 @@ function MessageFromManagingDirector() {
     <div className="dark:text-white text-white bg-[#0B2239] w-full flex flex-col lg:flex-row pt-5 ">
       <div
         ref={ref}
-        className={`w-full lg:w-1/2 ${
+        className={`w-full flex lg:w-1/2 ${
           isVisible ? styles.slideup : "opacity-0"
         }`}
       >
