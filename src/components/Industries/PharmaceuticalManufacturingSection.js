@@ -1,9 +1,10 @@
 export default function PharmaceuticalSalesSection() {
   return (
-    <section className="w-full bg-white py-16 px-6 md:px-16 lg:px-24">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
-        <div className="w-full lg:w-1/2">
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">
+    <section className="w-full bg-white py-16 md:py-20 px-6 md:px-16 lg:px-24">
+      <div className="max-w-6xl mx-auto flex flex-col xl:flex-row items-center gap-10 md:gap-12">
+        
+        <div className="w-full xl:w-1/2 order-2 xl:order-1">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800 mb-5 md:mb-6">
             Pharma Manufacturing
           </h2>
 
@@ -24,15 +25,16 @@ export default function PharmaceuticalSalesSection() {
           </p>
         </div>
 
-        <div className="w-full lg:w-1/2">
+        <div className="w-full xl:w-1/2 order-1 xl:order-2">
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <img
-              src="images/industries/pharmaceuticalSales.png"
-              alt="Pharmaceutical discussion"
-              className="w-full h-full object-cover"
+              src="/images/industries/pharmaManufacturing.png"
+              alt="Pharma manufacturing"
+              className="w-full h-[240px] sm:h-[260px] md:h-[320px] xl:h-auto object-cover object-center"
             />
           </div>
         </div>
+
       </div>
     </section>
   );

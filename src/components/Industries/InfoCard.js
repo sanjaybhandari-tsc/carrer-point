@@ -2,17 +2,6 @@
 
 export default function InfoCard({ icon, title, description }) {
   return (
-    // <div className="bg-white rounded-2xl shadow-md p-6 text-center border border-gray-100 hover:shadow-lg transition">
-    //   <div className="flex justify-center mb-4 text-blue-500 text-3xl">
-    //     {icon}
-    //   </div>
-    //   <h3 className="text-lg font-semibold text-gray-800 mb-2">
-    //     {title}
-    //   </h3>
-    //   <p className="text-sm text-gray-500 leading-relaxed">
-    //     {description}
-    //   </p>
-    // </div>
     <div className="relative bg-white rounded-2xl shadow-md p-6 overflow-hidden">
   
   {/* BLUE BUMP */}
@@ -20,9 +9,13 @@ export default function InfoCard({ icon, title, description }) {
 
   {/* CONTENT */}
   <div className="relative z-10 text-center">
-    <div className="flex justify-center mb-4">
+    {/* <div className="flex justify-center mb-4">
       {icon}
+    </div> */}
+    <div className="flex justify-center mb-4">
+    <img src={icon} alt={title} className="flex justify-center items-center w-6 h-6" m-2/>
     </div>
+
 
     <h3 className="text-lg font-semibold text-gray-800">
       {title}

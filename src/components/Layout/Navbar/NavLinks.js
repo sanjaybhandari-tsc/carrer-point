@@ -19,12 +19,24 @@ const links = [
   },
 ];
 
-export default function NavLinks({ mobile = false }) {
-
+export default function NavLinks({
+  mobile = false,
+  openItem,
+  setOpenItem,
+}) {
   return (
-    <div className={mobile ? "flex flex-col gap-4" : "hidden md:flex gap-6"}>
-      {links.map((item) => (
-        <NavItem key={item.label} item={item} mobile={mobile} />
+    <div className={mobile ? "flex flex-col w-full" : "hidden md:flex gap-3 lg:gap-6"}>
+      {links.map((item, index) => (
+        <NavItem
+          key={item.label}
+          item={item}
+          mobile={mobile}
+          isOpen={openItem === `link-${index}`}
+          onToggle={() =>
+            setOpenItem(openItem === `link-${index}` ? null : `link-${index}`)
+          }
+          closeAll={() => setOpenItem(null)}
+        />
       ))}
     </div>
   );
