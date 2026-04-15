@@ -1,11 +1,12 @@
 import Navbar from "./Navbar"; 
 import Footer from "./Footer";
 
+
 export default function Layout({ children }) {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen">
+      <main className="min-h-screen p-0 -mt-20">
         {children}
       </main>
       <Footer />
