@@ -4,6 +4,8 @@ import FeaturesSection from "./FeatureSection";
 import MncsEnterPrises from "./MncsEnterPrises";
 import MessageFromManagingDirector from "./MessageFromManagingDirector";
 import IndustryWeServe from "./IndustryWeServe";
+import WorkProcess from "./WorkProcess";
+import OurTeam from "./OurTeam";
 
 export default function HomePage() {
   return (
@@ -12,6 +14,8 @@ export default function HomePage() {
       <MncsEnterPrises />
       <MessageFromManagingDirector />
       <IndustryWeServe />
+      <WorkProcess />
+      <OurTeam />
     </>
   );
 }
