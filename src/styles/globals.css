@@ -1,30 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+
+:root {
+  /* =========================
+     PRIMARY COLORS
+  ========================= */
+  --color-primary: #039BE6;
+  --color-primary-hover: #0277BD;
+  --color-primary-light: #4FC3F7;
+  --color-primary-tint: #E6F6FD;
+
+  /* =========================
+     ACCENT COLORS
+  ========================= */
+  --color-accent: #FF7A00;
+  --color-accent-hover: #E66900;
+  --color-accent-light: #FFF1E6;
+
+  /* =========================
+     TEXT COLORS
+  ========================= */
+  --color-heading: #1F2D3D;
+  --color-body: #5A6A7A;
+
+  /* =========================
+     BACKGROUNDS
+  ========================= */
+  --color-background-light: #F8FAFC;
+  --color-white: #FFFFFF;
+
+  /* =========================
+     BORDERS
+  ========================= */
+  --color-border: #E5EAF0;
+
+  /* =========================
+     DARK SECTION COLORS
+  ========================= */
+  --color-dark-blue: #0B2239;
+  --color-deep-blue: #001F33;
+}
+
 
 :root {
   --background: #fafafa;
   --foreground: #171717;
-  --headingBlack: #000000;
-  --headingBlue: #0277bd;
-  --buttonTextWhite: #fdfdfd;
-  --buttonBlue: #039be6;
-  --navHeadingBlack: #333333;
-
   --font-main: "Montserrat", sans-serif;
+}
+
+@theme {
+  --color-headingBlue: #0277BD;
+  --font-saira: "Saira Stencil", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0b0b0b;
     --foreground: #ededed;
-    --headingBlack: #ffffff;
-    --headingBlue: #4fc3f7;
-    --buttonTextWhite: #ffffff;
-    --buttonBlue: #1e88e5;
-    --navHeadingBlack: #e5e5e5;
   }
 }
 
@@ -32,4 +69,12 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-main);
+}
+/* hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

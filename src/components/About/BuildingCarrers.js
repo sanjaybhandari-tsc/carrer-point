@@ -1,4 +1,3 @@
-'use client'
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
@@ -30,7 +29,7 @@ export default function BuildingCarrers() {
     >
       <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-15">
         <div
-          className={`w-full lg:w-[40%] transition-all duration-700 ease-out
+          className={`w-full lg:w-[40%] transition-all duration-700 ease-out 
           ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
         >
           <Image
@@ -38,7 +37,7 @@ export default function BuildingCarrers() {
             alt="Building Careers"
             width={500}
             height={500}
-            className="w-full h-auto"
+            className="w-full h-auto md:h-[50%]"
           />
         </div>
         <div
