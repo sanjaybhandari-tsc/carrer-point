@@ -1,0 +1,92 @@
+"use client";
+
+import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+
+export default function Ourmission() {
+  const ref = useRef(null);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShow(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className="w-full bg-white px-4 py-12 sm:px-6 md:px-16 lg:px-24"
+    >
+      <div className="grid grid-cols-1  lg:grid-cols-2 gap-6">
+        <div
+          className={`bg-[#0B2239] text-white rounded-3xl shadow-3xl p-5 md:p-10
+          h-[240px] overflow-y-auto no-scrollbar
+          sm:h-auto sm:overflow-visible
+          transition-all duration-700 ease-out
+          ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
+        >
+          <Image
+            src="/images/about/visionIcon.svg"
+            alt="Vision Icon"
+            width={64}
+            height={64}
+            className="mb-4"
+          />
+
+          <h2 className="font-montserrat font-bold text-[26px] sm:text-[30px] md:text-[36px] leading-[1.5] mb-4">
+            Our Vision
+          </h2>
+
+          <p className="font-roboto text-[15px] sm:text-[16px] md:text-[18px] leading-[1.6]">
+            To build a strong nationwide recruitment presence by 2030, supporting
+            organizations with dependable talent solutions and industry expertise.
+            The focus is on developing a 200+ skilled workforce, expanding presence
+            across major metro cities, and serving 100+ clients across multiple
+            industries. A dedicated training center will also be established to help
+            individuals build practical skills and prepare for long-term career
+            opportunities.
+          </p>
+        </div>
+        <div
+          className={`bg-[#e5e5e55e] text-black rounded-3xl shadow-md p-5 md:p-10 border border-gray-200
+          h-[240px] overflow-y-auto no-scrollbar
+          sm:h-auto sm:overflow-visible
+          transition-all duration-700 delay-200 ease-out
+          ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
+        >
+          <Image
+            src="/images/about/targeticon.svg"
+            alt="Mission Icon"
+            width={64}
+            height={64}
+            className="mb-4"
+          />
+
+          <h2 className="font-montserrat font-bold text-[26px] sm:text-[30px] md:text-[36px] leading-[1.5] mb-4">
+            Our Mission
+          </h2>
+
+          <p className="font-roboto text-[15px] sm:text-[16px] md:text-[18px] leading-[1.6]">
+            Deliver reliable recruitment solutions that connect organizations with
+            the right talent while creating meaningful opportunities for
+            professionals. Guided by integrity, transparency, and ethical practices,
+            the approach remains strongly customer-focused, with a collaborative team
+            committed to understanding hiring needs, supporting candidate growth, and
+            building long-term partnerships with clients.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  );
+}
