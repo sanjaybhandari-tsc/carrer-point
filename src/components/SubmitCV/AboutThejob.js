@@ -99,14 +99,14 @@ export default function AboutTheJob() {
           <div className="bg-white border border-[#E9EAEB] rounded-xl p-6 shadow-[0_4px_8px_#00000014] relative">
             <button 
               onClick={() => setShowDetails(false)}
-              className="absolute top-4 right-4 text-[#B3B3B3]  hover:text-black text-[16]"
+              className="absolute top-4 right-4 text-[#B3B3B3]  hover:text-black "
             >
-              ✕
+              <img src="/images/SubmitCv/cross.svg " alt=" icon" className="h-[32px] w-[32px]"/>
             </button>
-            <div className="py-[52px] px-[20px] sm:px-[30px] md:px-[38px] lg:w-[1075px]">
+            <div className="py-[52px] px-[20px] sm:px-[30px] md:px-[38px] xl:w-[1075px]">
 
               <div className="mb-6">
-                <h3 className="font-semibold text-[20px] leading-[100%] text-black mb-3">
+                <h3 className="font-bold text-[20px] leading-[100%] text-black mb-3 ">
                   Overview
                 </h3>
 
