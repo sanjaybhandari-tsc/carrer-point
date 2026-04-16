@@ -1,36 +1,37 @@
 import React from "react";
 import styles from "../../styles/Home/Home.module.css";
-function MncsEnterPrises() {
+const logos = [
+  { src: "/images/homepage/PitchLogo.svg", alt: "Pitch" },
+  { src: "/images/homepage/FigmaLogo.svg", alt: "Figma" },
+  { src: "/images/homepage/MediumLogo.svg", alt: "Medium" },
+  { src: "/images/homepage/RedditLogo.svg", alt: "Reddit" },
+  { src: "/images/homepage/GenentechLogo.svg", alt: "Genentech" },
+];
+
+function MncsEnterprises() {
   return (
-    <div className="">
-      <div className="text-center">
-        <p className="text-xl lg:text-3xl">
-          Trusted by 50+ MNCs,Enterprises,Startups
-        </p>
-        <div className="overflow-hidden py-9 pb-12 lg:py-20">
-          <div className={`flex gap-10 ${styles.animationScroll}`}>
-            <img className="" src="/images/homepage/PitchLogo.svg" />
-            <img className="" src="/images/homepage/FigmaLogo.svg" />
-            <img className="" src="/images/homepage/MediumLogo.svg" />
-            <img className="" src="/images/homepage/RedditLogo.svg" />
-            <img className="" src="/images/homepage/GenentechLogo.svg" />
+    <div className="text-center">
+      <p className="text-xl lg:text-3xl">
+        Trusted by 50+ MNCs, Enterprises, Startups
+      </p>
 
-            <img className="" src="/images/homepage/PitchLogo.svg" />
-            <img className="" src="/images/homepage/FigmaLogo.svg" />
-            <img className="" src="/images/homepage/MediumLogo.svg" />
-            <img className="" src="/images/homepage/RedditLogo.svg" />
-            <img className="" src="/images/homepage/GenentechLogo.svg" />
-
-            <img className="" src="/images/homepage/PitchLogo.svg" />
-            <img className="" src="/images/homepage/FigmaLogo.svg" />
-            <img className="" src="/images/homepage/MediumLogo.svg" />
-            <img className="" src="/images/homepage/RedditLogo.svg" />
-            <img className="" src="/images/homepage/GenentechLogo.svg" />
-          </div>
+      <div className={`py-9 pb-12 lg:py-20 ${styles.marqueeWrapper}`}>
+        <div className={styles.marqueeTrack}>
+          {/* 3 sets — translateX(-33.333%) loops perfectly */}
+          {[...Array(3)].map((_, i) =>
+            logos.map((logo) => (
+              <img
+                key={`${i}-${logo.alt}`}
+                src={logo.src}
+                alt={logo.alt}
+                className="mx-5"
+              />
+            )),
+          )}
         </div>
       </div>
     </div>
   );
 }
 
-export default MncsEnterPrises;
+export default MncsEnterprises;
