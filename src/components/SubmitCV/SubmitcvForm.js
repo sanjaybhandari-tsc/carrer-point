@@ -61,7 +61,7 @@ export default function SubmitcvForm() {
   const labelStyle = "text-black font-medium text-sm sm:text-sm md:text-base lg:text-[16px] leading-tight tracking-normal";
 
   return (
-    <div className="px-4 sm:px-6 lg:px-[100px] py-10 ">
+    <div className="px-4 sm:px-6 lg:px-[100px] py-10  lg:mb-25">
       <form
         onSubmit={handleSubmit}
         className="max-w-[1312px] mx-auto space-y-10"
@@ -230,7 +230,7 @@ export default function SubmitcvForm() {
         </div>
 
         <div className="flex justify-center  gap-[10px]">
-          <label className="w-full max-w-[1130px] h-[200px] border-2 border-dashed border-blue-400 rounded-3xl flex flex-col items-center justify-center cursor-pointer text-center">
+          <label className="w-full max-w-[1130px] h-[200px] border-2 border-dashed border-blue-400 rounded-3xl flex flex-col items-center justify-center  text-center">
             <input
               type="file"
               name="resume"
@@ -249,7 +249,7 @@ export default function SubmitcvForm() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="w-[200px] h-12 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+            className="w-[200px] h-12 bg-[#039BE6] text-white rounded-lg text-[16px] font-semibold text-center shadow-[0px_4px_8px_0px_#00000029]"
           >
             Submit
           </button>
