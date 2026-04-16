@@ -1,58 +1,99 @@
-const TestimonialCard = ({ image, name, role, message }) => {
-  // return (
-  //   <div className="min-w-[300px] max-w-[320px] bg-white rounded-xl shadow-md p-6 relative flex-shrink-0">
-      
-      
-  //     <div className="absolute -top-10 left-1/2 -translate-x-1/2">
-  //       <img
-  //         src={image}
-  //         alt={name}
-  //         className="w-20 h-20 rounded-full border-4 border-blue-500 object-cover"
-  //       />
-  //     </div>
-
-  
-  //     <div className="mt-12 text-center">
-  //       <h3 className="font-semibold text-lg">{name}</h3>
-  //       <p className="text-gray-500 text-sm mb-4">{role}</p>
-
-  //       <p className="text-gray-600 text-sm leading-relaxed">
-  //         “{message}”
-  //       </p>
-  //     </div>
-  //   </div>
-  // );
+export default function TestimonialCard({ name, role, image, text }) {
   return (
-    <div className="relative min-w-[340px] max-w-[360px] h-[300px] bg-white border border-gray-200 rounded-2xl p-6 flex flex-col justify-center items-center text-center shadow-sm flex-shrink-0">
-
-      {/* Avatar */}
-      <div className="absolute -top-12">
+    <div
+      className="
+        relative
+        bg-white
+        rounded-2xl
+        shadow-sm
+        border border-gray-100
+        pt-20 pb-8 px-8 mt-20
+        text-center
+        hover:shadow-md transition
+        flex-shrink-0
+        w-[300px]
+        sm:w-[340px]
+        md:w-[380px]
+        lg:w-[400px]
+        xl:w-[420px]
+      "
+    >
+      {/* Image */}
+      <div className="absolute -top-14 left-1/2 -translate-x-1/2">
         <img
           src={image}
           alt={name}
-          className="w-24 h-24 rounded-full border-4 border-blue-500 object-cover bg-white"
+          className="w-28 h-28 rounded-full object-cover border-4 border-white shadow-md"
         />
       </div>
 
-      {/* Content */}
-      <div className="mt-14">
-        <h3 className="font-semibold text-lg text-gray-800">
-          {name}
-        </h3>
+      <h3 className="font-semibold text-lg text-gray-800">{name}</h3>
 
-        <p className="text-sm text-gray-500 mb-4">
-          {role}
-        </p>
-
-        {/* Quote Icon */}
-        <div className="text-4xl text-gray-200 leading-none mb-2">“</div>
-
-        <p className="text-gray-600 text-sm leading-relaxed px-2">
-          {message}
+      <p className="text-sm text-gray-500 mb-4">{role}</p>
+      <div className="flex flex-col items-center mb-4">
+        <img
+    src="/icons/comma.svg"
+    alt="quote"
+    className="
+      w-8 h-8
+      sm:w-9 sm:h-9
+      md:w-10 md:h-10
+      lg:w-12 lg:h-12
+      mb-2 sm:mb-3
+    "
+  />
+        <p className="text-base text-gray-600 leading-relaxed text-center">
+          {text}
         </p>
       </div>
     </div>
   );
-};
+}
 
-export default TestimonialCard;
+// export default function TestimonialCard({ name, role, image, text }) {
+//   return (
+//     <div
+//       className="
+//         relative
+//         bg-white
+//         rounded-2xl
+//         shadow-sm
+//         border border-gray-100
+//         pt-20 pb-8 px-8
+//         text-center
+//         hover:shadow-md transition
+
+//         flex-shrink-0
+
+//         w-[300px]
+//         sm:w-[340px]
+//         md:w-[380px]
+//         lg:w-[400px]
+//         xl:w-[420px]
+//       "
+//     >
+
+//       {/* Image */}
+//       <div className="absolute -top-14 left-1/2 -translate-x-1/2">
+//         <img
+//           src={image}
+//           alt={name}
+//           className="w-28 h-28 rounded-full object-cover border-4 border-white shadow-md"
+//         />
+//       </div>
+
+//       {/* Content */}
+//       <h3 className="font-semibold text-lg text-gray-800">
+//         {name}
+//       </h3>
+
+//       <p className="text-sm text-gray-500 mb-4">
+//         {role}
+//       </p>
+
+//       <p className="text-base text-gray-600 leading-relaxed">
+//         “{text}”
+//       </p>
+//     </div>
+//   );
+// }
