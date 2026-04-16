@@ -14,7 +14,7 @@ export default function AboutHerosection() {
                 <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] flex items-start justify-between flex-col gap-6 sm:gap-2 md:gap-8">
                     <div>
                         <h2 className="
-                            font-Montserrat font-bold 
+                            font-bold 
                             text-2xl sm:text-3xl md:text-4xl lg:text-[48px] 
                             leading-[100%] tracking-[0%]">
                             About Us
@@ -23,7 +23,6 @@ export default function AboutHerosection() {
 
                     <div>
                         <p className="
-                            font-Roboto font-normal 
                             text-sm sm:text-base md:text-lg lg:text-[22px] 
                             leading-[150%] tracking-[0%]">
                             Connecting organizations with the right talent through structured recruitment solutions and industry-focused expertise. We support businesses in building strong teams that drive long-term growth and success.
