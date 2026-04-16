@@ -23,8 +23,8 @@ export default function WhyChooseUsSection() {
   return (
     <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-center text-2xl md:text-4xl font-bold text-gray-800 mb-18">
-          Why <span className="text-[var(--color-primary-hover)]">Choose</span> Us ?
+        <h2 className="font-montserrat font-bold text-2xl sm:text-3xl lg:text-[36px] leading-[150%] text-center md:text-4xl text-gray-800 mb-18">
+          Why <span className="font-montserrat font-bold text-2xl sm:text-3xl lg:text-[36px] leading-[150%] text-center text-[var(--color-primary-hover)]">Choose</span> Us ?
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -41,11 +41,11 @@ export default function WhyChooseUsSection() {
                 />
               </div>
 
-              <h3 className="text-lg font-bold text-gray-800 mb-3">
+              <h3 className="font-montserrat font-bold text-lg sm:text-xl leading-relaxed text-center mb-3">
                 {item.title}
               </h3>
 
-              <p className="text-sm font-[500] leading-relaxed">
+              <p className="font-roboto font-normal text-base sm:text-lg leading-relaxed text-center">
                 {item.description}
               </p>
             </div>

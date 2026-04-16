@@ -74,7 +74,7 @@ export default function CandidateNetworkSection() {
                     />
                   </div>
                   <div className="w-full lg:w-1/2 p-5 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-center  gap-2 lg:gap-10">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+                    <h1 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
                       {work.srNo}
                     </h1>
                     <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mt-4">

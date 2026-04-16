@@ -8,11 +8,10 @@ export default function FeatureCard({ icon, title, description }) {
         </div>
       </div>
 
-      <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-3">
+      <h3 className="font-montserrat font-semibold text-base sm:text-lg leading-relaxed text-center mb-3">
         {title}
       </h3>
-
-      <p className="text-sm text-gray-600 leading-relaxed">
+      <p className="font-roboto font-normal text-xs sm:text-sm leading-relaxed text-center">
         {description}
       </p>
     </div>

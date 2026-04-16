@@ -3,6 +3,7 @@ import StategicLeaderShipHiring from "./StategicLeaderShipHiring";
 import CTASection from "./CTASection";
 import Lastmessage from "./Lastmessage";
 import WhyChooseUsSection from "./WhyChooseUsSection";
+import HowWeWork from "./HowWeWork";
 
 export default function RPO() {
   return (
@@ -10,6 +11,7 @@ export default function RPO() {
     <ExecutiveBanner />
     <StategicLeaderShipHiring />
     <WhyChooseUsSection />
+    <HowWeWork />
     <Lastmessage />
     <CTASection />
     </>

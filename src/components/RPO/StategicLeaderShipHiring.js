@@ -15,15 +15,15 @@ export default function StategicLeaderShipHiring() {
         </div>
 
         <div className="w-full xl:w-1/2">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800 mb-5 md:mb-6">
+          <h2 className="font-montserrat font-bold text-2xl sm:text-3xl lg:text-[36px] leading-[150%] md:text-4xl mb-5 md:mb-6">
             Managed Hiring Solutions
           </h2>
 
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="font-roboto font-normal text-base sm:text-lg lg:text-xl leading-relaxed mb-4">
             Recruitment Process Outsourcing (RPO) allows organizations to delegate part or the entire recruitment function to a dedicated recruitment partner. This approach helps companies streamline hiring activities while improving efficiency and consistency.
             </p>
 
-          <p className="text-gray-600 leading-relaxed">
+          <p className="font-roboto font-normal text-base sm:text-lg lg:text-xl leading-relaxed">
             Our RPO solutions provide organizations with a structured recruitment process supported by a dedicated hiring team. From sourcing and screening candidates to managing interviews, offer rollouts, and reporting, we ensure a smooth and organized recruitment workflow.
             </p>
         </div>

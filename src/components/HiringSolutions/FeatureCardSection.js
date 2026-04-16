@@ -66,11 +66,8 @@ const features = [
     <section className="px-6 md:px-12 lg:px-20 py-16">
       <div className="max-w-7xl mx-auto">
         
-        {/* <h2 className="text-center text-3xl md:text-4xl font-semibold mb-12">
-          Features
-        </h2> */}
-        <h2 className="text-center font-semibold leading-tight tracking-tight
-  text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-8 sm:mb-10 lg:mb-12">
+        <h2 className="font-montserrat font-bold text-2xl sm:text-3xl lg:text-[36px]  text-center  leading-tight tracking-tight
+   md:text-3xl lg:text-4xl xl:text-5xl mb-8 sm:mb-10 lg:mb-12">
   Features
 </h2>
 

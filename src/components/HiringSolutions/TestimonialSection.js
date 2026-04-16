@@ -40,21 +40,21 @@ const testimonials = [
     id: 6,
     name: "Ajay Kumar Pandey",
     role: "DSM @ Zuventus HC",
-    image: "/images/testimonials/Ajay Kumar Pandey.png",
+    image: "/images/testimonials/Pitchai Vivek Ramasamy.png",
     text: "It was an excellent opportunity through Career Point Placement Services. Their support throughout the process was exceptional. I truly appreciate their efforts and highly recommend their services. Thank you for this opportunity.",
   },
   {
     id: 7,
     name: "Hitesh Dhalawat",
     role: "Zonal Business Manager @ Cipla Oncology",
-    image: "/images/testimonials/Hitesh Dhalawat.png",
+    image: "/images/testimonials/Manmeet Singh Bhakshi.png",
     text: "Working with Career Point Placement Services was smooth and professional. The team understood our requirements clearly and delivered the right candidates on time. Highly recommended for their consistent support.",
   },
   {
     id: 8,
     name: "Uday Joshi",
     role: "Divisional Manager @ Kotak Mahindra Life Insurance Co Ltd",
-    image: "/images/testimonials/Uday Joshi.png",
+    image: "/images/testimonials/Sachin Pandey.png",
     text: "Thanks to CPPS Jobs, I joined Kotak Mahindra Life Insurance as a Divisional Manager. They guided me to the right opportunity after my 10+ years at Axis Max Life Insurance.",
   },
 ];
@@ -62,13 +62,13 @@ export default function TestimonialSection() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
-
+        {/* className="font-montserrat font-semibold text-2xl sm:text-3xl lg:text-[36px] leading-none text-center" */}
         <div className="text-center mb-12">
-          <h2 className="font-semibold text-3xl lg:text-4xl">
-            Voices of <span className="text-blue-600">Success</span>
+          <h2 className="font-montserrat font-semibold text-2xl sm:text-3xl lg:text-[36px] leading-none text-center">
+            Voices of <span className="text-[var(--color-primary)]">Success</span>
           </h2>
-          <p className="text-gray-500 mt-3">
-            Real experiences from candidates who found meaningful careers
+          <p className="font-roboto font-normal text-base sm:text-lg leading-relaxed text-center mt-3">
+            Real experiences from candidates who found meaningful career opportunities through our recruitment support.
           </p>
         </div>
 
