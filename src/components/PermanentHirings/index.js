@@ -3,6 +3,7 @@ import HowWeWork from "./HowWeWork";
 import LongtermTalentHiring from "./LongtermTalentHiring";
 import WhychooseUs from "./WhychooseUs";
 
+
 export default function PermanentHirings() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function PermanentHirings() {
       <LongtermTalentHiring />
       <WhychooseUs />
       <HowWeWork />
+      
     </>
   );
 }
