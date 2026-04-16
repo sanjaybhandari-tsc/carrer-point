@@ -41,7 +41,7 @@ export default function Awards() {
       <div className="mx-auto p-6 md:p-10 rounded-lg lg:px-30 lg:py-12">
         
         <h2
-          className={`text-center font-montserrat font-bold text-[28px] md:text-[36px] leading-[1.5] text-white mb-20 transition-all duration-700 ${
+          className={`text-center  font-bold text-[28px] md:text-[36px] leading-[1.5] text-white mb-20 transition-all duration-700 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
           }`}
         >
@@ -67,7 +67,7 @@ export default function Awards() {
                   />
                 </div>
                 <div className="flex items-center justify-center gap-2 ">
-                  <p className="font-roboto font-normal text-left text-[16px] md:text-[18px] leading-[1.5] text-white">
+                  <p className=" text-left text-[16px] md:text-[18px] leading-[1.5] text-white">
                     {item}
                   </p>
                 </div>
