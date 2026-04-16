@@ -16,15 +16,16 @@ export default function StategicLeaderShipHiring() {
 
         <div className="w-full xl:w-1/2">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800 mb-5 md:mb-6">
-            Strategic Leadership Hiring
+            Managed Hiring Solutions
           </h2>
 
           <p className="text-gray-600 leading-relaxed mb-4">
-            Executive search focuses on identifying senior professionals and leadership talent for critical organizational roles. These positions require strong industry experience, strategic thinking, and the ability to guide organizations through complex business challenges.
+            Recruitment Process Outsourcing (RPO) allows organizations to delegate part or the entire recruitment function to a dedicated recruitment partner. This approach helps companies streamline hiring activities while improving efficiency and consistency.
             </p>
 
           <p className="text-gray-600 leading-relaxed">
-            Our executive search approach is designed to carefully identify and engage experienced professionals who possess the leadership capabilities required for high-impact roles. Through targeted research, market mapping, and structured evaluation, we help organizations connect with leaders who can contribute to long-term strategic growth</p>
+            Our RPO solutions provide organizations with a structured recruitment process supported by a dedicated hiring team. From sourcing and screening candidates to managing interviews, offer rollouts, and reporting, we ensure a smooth and organized recruitment workflow.
+            </p>
         </div>
 
       </div>
