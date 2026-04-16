@@ -30,10 +30,10 @@ export default function NavActions({
             }`}
           >
             <div className="pl-4 flex flex-col gap-2">
-              <Link href="/jobs/full-time" onClick={closeMenu}>
+              <Link href="/jobs/browseJobs" onClick={closeMenu}>
                 Submit CV
               </Link>
-              <Link href="/jobs/remote" onClick={closeMenu}>
+              <Link href="/jobs/submitYourCV" onClick={closeMenu}>
                 Upload your CV
               </Link>
             </div>
@@ -61,13 +61,13 @@ export default function NavActions({
 
         <div className="absolute top-full right-0 w-48 bg-white shadow-lg rounded-md z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
           <Link
-            href="/jobs/full-time"
+            href="/jobs/browseJobs"
             className="block px-4 py-2 hover:bg-gray-100"
           >
             Submit CV
           </Link>
           <Link
-            href="/jobs/remote"
+            href="/jobs/submitYourCV"
             className="block px-4 py-2 hover:bg-gray-100"
           >
             Upload your CV
