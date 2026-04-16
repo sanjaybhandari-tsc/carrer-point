@@ -7,48 +7,44 @@
 
 
 :root {
-  /* =========================
-     PRIMARY COLORS
-  ========================= */
+  /* PRIMARY COLORS*/
   --color-primary: #039BE6;
   --color-primary-hover: #0277BD;
   --color-primary-light: #4FC3F7;
   --color-primary-tint: #E6F6FD;
 
-  /* =========================
+  /*
      ACCENT COLORS
-  ========================= */
+ */
   --color-accent: #FF7A00;
   --color-accent-hover: #E66900;
   --color-accent-light: #FFF1E6;
 
-  /* =========================
+  /*
      TEXT COLORS
-  ========================= */
+ */
   --color-heading: #1F2D3D;
   --color-body: #5A6A7A;
 
-  /* =========================
+  /* 
      BACKGROUNDS
-  ========================= */
+   */
   --color-background-light: #F8FAFC;
   --color-white: #FFFFFF;
 
-  /* =========================
+  /* 
      BORDERS
-  ========================= */
+   */
   --color-border: #E5EAF0;
 
-  /* =========================
-     DARK SECTION COLORS
-  ========================= */
+  /*DARK SECTION COLORS */
   --color-dark-blue: #0B2239;
   --color-deep-blue: #001F33;
 }
 
 
 :root {
-  --background: #fafafa;
+  --background: #FFFFFF;
   --foreground: #171717;
   --font-main: "Montserrat", sans-serif;
 }
@@ -61,7 +57,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0b0b0b;
-    --foreground: #ededed;
+    --foreground: #FFFFFF;
   }
 }
 
