@@ -1,4 +1,5 @@
 import styles from "../../styles/About/About.module.css";
+import Common from "../Home/Common";
 import AboutHerosection from "./AboutHerosection";
 import Awards from "./Awards";
 import BuildingCarrers from "./BuildingCarrers";
@@ -18,6 +19,7 @@ export default function AboutView() {
     <PeopleCulture/>
     <Awards/>
     <LifeatCPPS/>
+    <Common/>
     <Lastmessage/>
     </>
   );
