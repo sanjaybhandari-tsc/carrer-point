@@ -3,38 +3,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
 
 
 :root {
-  /* PRIMARY COLORS*/
+  
+  /* PRIMARY COLORS */
   --color-primary: #039BE6;
   --color-primary-hover: #0277BD;
   --color-primary-light: #4FC3F7;
   --color-primary-tint: #E6F6FD;
 
-  /*
-     ACCENT COLORS
- */
+  /* ACCENT COLORS */
   --color-accent: #FF7A00;
   --color-accent-hover: #E66900;
   --color-accent-light: #FFF1E6;
 
-  /*
-     TEXT COLORS
- */
+  /* TEXT COLORS */
   --color-heading: #1F2D3D;
   --color-body: #5A6A7A;
 
-  /* 
-     BACKGROUNDS
-   */
+  /*  BACKGROUNDS */
   --color-background-light: #F8FAFC;
   --color-white: #FFFFFF;
 
-  /* 
-     BORDERS
-   */
+  /*  BORDERS  */
   --color-border: #E5EAF0;
 
   /*DARK SECTION COLORS */
@@ -53,12 +48,8 @@
   --color-headingBlue: #0277BD;
   --font-saira: "Saira Stencil", sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0b0b0b;
-    --foreground: #FFFFFF;
-  }
+html {
+  color-scheme: light !important;
 }
 
 body {
@@ -74,7 +65,6 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

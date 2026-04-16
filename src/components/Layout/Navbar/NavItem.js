@@ -4,27 +4,25 @@ import { useState } from "react";
 import Link from "next/link";
 import ChevronDown from "./ChevronDown";
 
-
 export default function NavItem({ item, mobile, isOpen, onToggle, closeAll }) {
   const hasDropdown = item.dropdown && item.children?.length > 0;
 
   if (mobile) {
     return (
       <div className="w-full border-b border-gray-200">
-      
         <div
           className="flex items-center justify-between py-3 px-2 cursor-pointer"
           onClick={() => hasDropdown && onToggle()}
         >
           {hasDropdown ? (
-            <span className="text-base font-medium text-gray-800">
+            <span className="font-montserrat font-medium sm:text-base leading-none tracking-[0.02em] text-base text-gray-800">
               {item.label}
             </span>
           ) : (
             <Link
               href={item.href}
               onClick={closeAll}
-              className="w-full text-base font-medium text-gray-800"
+              className="font-montserrat font-medium sm:text-base leading-none tracking-[0.02em] w-full text-base  text-gray-800"
             >
               {item.label}
             </Link>
@@ -45,13 +43,21 @@ export default function NavItem({ item, mobile, isOpen, onToggle, closeAll }) {
           }`}
         >
           {hasDropdown && (
-            <div className="flex flex-col bg-gray-50 pl-4 pb-2">
+            <div
+              className={`absolute left-0 top-full mt-2 w-56
+      bg-white
+      border border-white/20
+      shadow-[0_4px_8px_0_rgba(0,0,0,0.08)]
+      rounded-md overflow-hidden z-50
+      opacity-0 invisible group-hover:opacity-100 group-hover:visible
+      transition-all duration-200`}
+            >
               {item.children.map((child) => (
                 <Link
                   key={child.label}
                   href={child.href}
-                  onClick={closeAll} // ✅ closes menu after click
-                  className="py-2 text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                  onClick={closeAll}
+                  className="font-montserrat font-medium text-sm sm:text-base leading-none tracking-[0.02em] py-2  hover:text-[var(--color-primary)] transition-colors"
                 >
                   {child.label}
                 </Link>

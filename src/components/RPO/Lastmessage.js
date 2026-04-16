@@ -14,10 +14,9 @@ export default function Lastmessage() {
             className="object-cover"
           />
         </div>
-        <h2 className="font-bold text-[#333333] 
-          text-[20px] sm:text-[22px] md:text-[30px] lg:text-[50px]">
-          We<span className="text-[#0277BD]"> support</span>, organizations streamline hiring while building 
-          <span className="text-[#0277BD]"> strong</span> and capable team.
+        <h2 className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[150%] text-[#333333] text-[20px] sm:text-[22px] md:text-[30px]">
+          We<span className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[150%] text-[#0277BD]"> support</span>, organizations streamline hiring while building 
+          <span className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[150%] text-[#0277BD]"> strong</span> and capable team.
         </h2>
 
       </div>

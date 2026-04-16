@@ -15,11 +15,11 @@ export default function HeroSection() {
           className={`absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30 z-10 ${styles.slideOverlay}`}
         />
 
-        <div className="relative z-10 max-w-2xl mx-0 z-20 px-6 md:px-20 text-white">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
+        <div className="w-full h-auto gap-6 relative max-w-6xl mx-0 z-20 px-6 md:px-20 text-white">
+          <h1 className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] md:text-5xl lg:text-6xl leading-tight">
             Smart hiring Solutions
           </h1>
-          <p className=" mt-4 text-sm sm:text-base md:text-lg text-gray-200 max-w-lg">
+          <p className="font-roboto font-normal text-lg sm:text-xl lg:text-2xl leading-relaxed mt-4 md:text-lg text-gray-200 max-w-4xl">
             Connecting organizations with skilled professionals through reliable and efficient 
               recruitment support, helping businesses build stronger teams and achieve long-term growth.
           </p>
@@ -37,7 +37,7 @@ export default function HeroSection() {
               <p>Get in touch</p>
               <img src="/images/homepage/HeroSendIcon.png" />
             </span>
-            <span className=" left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-5 h-5 bg-blue-500 rounded-full scale-0 group-hover:scale-[15] transition-transform duration-1000 origin-center"></span>
+            <span className=" left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-5 h-5 bg-[var(--color-primary)] rounded-full scale-0 group-hover:scale-[15] transition-transform duration-1000 origin-center"></span>
           </button>
         </div>
       </section>

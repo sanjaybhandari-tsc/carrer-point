@@ -18,7 +18,7 @@ export default function ExecutiveBanner() {
         className="absolute lg:top-0 lg:right-0 md:top-0 md:right-0  -top-10 -right-5"
         src="/images/permanentHiring/permanentTop4.svg"
       />
-      <h2 className="font-black lg:text-5xl text-3xl text-white">
+      <h2 className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-none lg:text-5xl text-white">
         Recruitment Process Outsourcing
       </h2>
     </div>
