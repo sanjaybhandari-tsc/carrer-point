@@ -1,6 +1,7 @@
+import React from "react";
 import Image from "next/image";
 
-export default function HeroText() {
+export default function Lastmessage() {
   return (
     <div className="w-full px-2 md:px-16 bg-white py-16 md:py-24">
       <div className=" flex items-start justify-around">
@@ -15,12 +16,9 @@ export default function HeroText() {
         </div>
         <h2 className="font-bold text-[#333333] 
           text-[20px] sm:text-[22px] md:text-[30px] lg:text-[50px]">
-          We help <span className="text-[var(--color-primary)]">organizations</span> across
-          industries <span className="text-[var(--color-primary)]">connect</span> with
-          professionals who understand their{" "}
-          <span className="text-[var(--color-primary)]">unique</span> challenges.
+          We help<span className="text-[#0277BD]"> organizations </span>, identify experience
+          <span className="text-[#0277BD]"> leaders</span> who bring strong vision and industry <span className="text-[#0277BD]"> expertise </span>.
         </h2>
-
       </div>
     </div>
   );

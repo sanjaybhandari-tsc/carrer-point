@@ -19,7 +19,7 @@ export default function ExecutiveBanner() {
         src="/images/permanentHiring/permanentTop4.svg"
       />
       <h2 className="font-black lg:text-5xl text-3xl text-white">
-        Executive Search
+        Recruitment Process Outsourcing
       </h2>
     </div>
   );

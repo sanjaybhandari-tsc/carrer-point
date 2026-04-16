@@ -28,51 +28,6 @@ export default function CandidateNetworkSection() {
     },
   ];
   return (
-    // <div className=" min-h-[200vh] py-10 lg:px-10">
-    //   {works.map((work, idx) => {
-    //     return (
-    //       <>
-    //         {idx % 2 == 0 ? (
-    //           <div
-    //             key={idx}
-    //             className="lg:sticky lg:top-0 z-10 min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh] px-4 sm:px-6 md:px-10 lg:px-16 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
-    //           >
-    //             <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-full lg:w-1/2 ">
-    //               <img src={work.img} className="w-full h-full object-cover" />
-    //             </div>
-    //             <div className="w-full lg:w-1/2 p-5 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-center  gap-2 lg:gap-10">
-    //               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">{work.srNo}</h1>
-    //               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mt-4">
-    //                 {work.heading}
-    //               </h2>
-    //               <p className="text-sm sm:text-base md:text-lg leading-relaxed ">{work.desc}</p>
-    //             </div>
-    //           </div>
-    //         ) : (
-    //           <div
-    //             key={idx}
-    //             className="lg:sticky lg:top-0 z-10 min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh] px-4 sm:px-6 md:px-10 lg:px-16 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
-    //           >
-    //             <div className="block lg:hidden w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-full lg:w-1/2">
-    //               <img src={work.img} className="w-full h-full object-cover" />
-    //             </div>
-    //             <div className="w-full lg:w-1/2 p-5 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-center  gap-2 lg:gap-10">
-    //               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">{work.srNo}</h1>
-    //               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mt-4">
-    //                 {work.heading}
-    //               </h2>
-    //               <p className="text-sm sm:text-base md:text-lg leading-relaxed">{work.desc}</p>
-    //             </div>
-    //             <div className="hidden  lg:block w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-full lg:w-1/2 ">
-    //               <img src={work.img} className="w-full h-full object-cover" />
-    //             </div>
-    //           </div>
-    //         )}
-    //       </>
-    //     );
-    //   })}
-    // </div>
-
     <div className="py-10 lg:px-10">
 <div className="max-w-6xl mx-auto text-center px-2 sm:px-4 lg:px-6 py-10 sm:py-12 lg:py-14">
   <h1 className="font-bold text-black leading-tight
@@ -84,7 +39,6 @@ export default function CandidateNetworkSection() {
   </h1>
 </div>
 
-      {/* Mobile Horizontal Scroll */}
       <div className="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory lg:hidden px-4">
         {works.map((work, idx) => (
           <div
@@ -104,7 +58,6 @@ export default function CandidateNetworkSection() {
         ))}
       </div>
 
-      {/* Desktop Sticky Layout */}
       <div className="hidden lg:block">
         {works.map((work, idx) => {
           return (
@@ -169,46 +122,3 @@ export default function CandidateNetworkSection() {
     </div>
   );
 }
-
-// <section className="bg-[#F5F7FA] px-6 md:px-12 lg:px-20 py-16">
-//   <div className="max-w-7xl mx-auto">
-
-//     <div className="text-center mb-12">
-//       <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
-//         Our Talent{" "}
-//         <span className="text-blue-600">Sourcing</span> Strategy
-//       </h2>
-//     </div>
-
-//     <div className="flex flex-col lg:flex-row rounded-[28px] overflow-hidden shadow-md">
-
-//       {/* LEFT IMAGE */}
-//       <div className="relative w-full lg:w-1/2 h-[280px] md:h-[380px] lg:h-auto">
-//         <Image
-//           src="/images/candidates.jpg"
-//           alt="Candidates"
-//           fill
-//           className="object-cover"
-//         />
-//       </div>
-
-//       {/* RIGHT CONTENT */}
-//       <div className="w-full lg:w-1/2 bg-[#0E2A47] text-white p-8 md:p-12 flex flex-col justify-center">
-//         <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6">
-//           Extensive Candidate Network
-//         </h3>
-
-//         <p className="text-sm md:text-base leading-relaxed text-gray-200">
-//           Over the years, Career Point Placement Services has developed a large
-//           and active network of professionals across multiple industries. Our
-//           continuously growing candidate database allows us to connect with
-//           individuals from different experience levels and functional areas.
-//           This strong network enables us to quickly identify relevant candidates
-//           and provide organizations with access to a broader talent pool when
-//           hiring for critical roles.
-//         </p>
-//       </div>
-
-//     </div>
-//   </div>
-// </section>

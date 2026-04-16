@@ -5,33 +5,33 @@ import WorkCard from "./WorkCard";
 const howWeWorkData = [
   {
     id: "01",
-    title: "Leadership Requirement Discussion",
+    title: "Hiring Plan Understanding",
     description:
-      "We begin with detailed discussions to understand the leadership expectations, responsibilities, and strategic importance of the role.",
+      "We begin by understanding the client’s hiring goals, company culture, and role requirements.",
   },
   {
     id: "02",
-    title: "Market Mapping",
+    title: "Dedicated Team Assignment",
     description:
-      "Potential senior professionals are identified through market research and industry talent mapping.",
+      "A specialized recruitment team is assigned to manage the hiring process for the client.",
   },
   {
     id: "03",
-    title: "Candidate Engagement",
+    title: "Sourcing & Screening",
     description:
-      "Targeted candidates are approached confidentially and engaged for potential leadership opportunities.",
+      "Candidates are sourced, evaluated, and shortlisted based on role requirements and organizational fit.",
   },
   {
     id: "04",
-    title: "Screening & Assessment",
+    title: "Interview Coordination",
     description:
-      "Candidates undergo detailed screening and background evaluation to assess leadership suitability.",
+      "We manage interview scheduling, feedback tracking, and communication throughout the evaluation process.",
   },
   {
     id: "05",
-    title: "Client Discussions & Selection",
+    title: "Offer & Reporting Management",
     description:
-      "Shortlisted leaders are presented to the client, followed by discussions, negotiations, and final appointment.",
+      "Our team handles offer rollouts, joining follow-ups, and provides regular hiring reports and recruitment insights.",
   },
 ];
 

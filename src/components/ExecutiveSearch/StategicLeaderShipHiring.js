@@ -7,7 +7,7 @@ export default function StategicLeaderShipHiring() {
         <div className="w-full xl:w-1/2">
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <img
-              src="/images//Strategic Leadership Hiring.png.png"
+              src="/images/executivesearch/Strategic Leadership Hiring.png"
               alt="Strategic Leadership Hiring"
               className="w-full h-[240px] sm:h-[260px] md:h-[320px] xl:h-auto object-cover object-center"
             />
