@@ -59,26 +59,48 @@ function OurTeam() {
         </p>
       </div>
 
-      <div className="w-full px-20 my-15">
+      <div className="w-full px-7 my-15">
         <div className="h-[70vh] flex flex-nowrap overflow-x-auto overflow-y-hidden gap-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {teams.map((team, idx) => {
             return (
               <div
                 key={idx}
-                className="flex flex-col items-center h-full gap-3 min-w-[350px] font-medium"
+                className="flex flex-col group items-center h-full gap-3 min-w-[350px] font-medium"
               >
-                <div className="relative group rounded-full w-[350px] h-[350px] overflow-hidden">
+                <div className="relative  rounded-full w-[350px] h-[350px] overflow-hidden">
                   <img className="object-cover w-full h-full" src={team.img} />
 
-                  <div className="absolute left-0 right-0 w-full h-full top-[200%] rounded-full bg-[#039BE6] flex py-8 justify-center gap-4 transition-all duration-300 group-hover:top-60">
-                    <img
-                      className="w-9 h-9"
-                      src="/images/homepage/brand-linkedin.svg"
-                    />
-                    <img
-                      className="w-9 h-9"
-                      src="/images/homepage/brand-facebook.svg"
-                    />
+                  <div className="absolute left-0 right-0 w-full h-full top-[200%] rounded-full bg-[#039BE6] flex py-13 justify-center gap-13 transition-all duration-900 group-hover:py-8 group-hover:gap-4 group-hover:top-60">
+                    <a
+                      href="https://linkedin.com/in/username"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="w-9 h-9"
+                        src="/images/homepage/brand-linkedin.svg"
+                      />
+                    </a>
+                    <a
+                      href="https://twitter.com/username"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="w-9 h-9"
+                        src="/images/homepage/brand-x.svg"
+                      />
+                    </a>
+                    <a
+                      href="https://facebook.com/username"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="w-9 h-9"
+                        src="/images/homepage/brand-facebook.svg"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div className="text-center ">

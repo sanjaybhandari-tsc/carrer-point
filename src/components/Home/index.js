@@ -6,6 +6,9 @@ import MessageFromManagingDirector from "./MessageFromManagingDirector";
 import IndustryWeServe from "./IndustryWeServe";
 import WorkProcess from "./WorkProcess";
 import OurTeam from "./OurTeam";
+import ReviewsAndRatings from "./ReviewsAndRatings";
+import GetinTouch from "./GetinTouch";
+import Common from "./Common";
 
 export default function HomePage() {
   return (
@@ -16,6 +19,9 @@ export default function HomePage() {
       <IndustryWeServe />
       <WorkProcess />
       <OurTeam />
+      <ReviewsAndRatings />
+      <GetinTouch />
+      <Common />
     </>
   );
 }

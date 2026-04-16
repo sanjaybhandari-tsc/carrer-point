@@ -11,21 +11,21 @@ const links = [
     label: "Services",
     dropdown: true,
     children: [
-      { label: "Permanent Hiring", href: "/services/permanent-hiring" },
-      { label: "Contract Hiring", href: "/services/contract-hiring" },
+      { label: "Permanent Hiring", href: "/services/permanenthirings" },
+      { label: "Contract Hiring", href: "/services/contracthiring" },
       { label: "Executive Search", href: "/services/executivesearch" },
       { label: "RPO", href: "/services/rpo" },
     ],
   },
 ];
 
-export default function NavLinks({
-  mobile = false,
-  openItem,
-  setOpenItem,
-}) {
+export default function NavLinks({ mobile = false, openItem, setOpenItem }) {
   return (
-    <div className={mobile ? "flex flex-col w-full" : "hidden md:flex gap-3 lg:gap-6"}>
+    <div
+      className={
+        mobile ? "flex flex-col w-full" : "hidden md:flex gap-3 lg:gap-6"
+      }
+    >
       {links.map((item, index) => (
         <NavItem
           key={item.label}

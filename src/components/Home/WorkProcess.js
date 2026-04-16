@@ -60,19 +60,19 @@ function WorkProcess() {
               {idx % 2 == 0 ? (
                 <div
                   key={idx}
-                  className="sticky top-0 z-10 h-[95vh] mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
+                  className="sticky top-0 z-10 h-[65vh] lg:h-[95vh] mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
                 >
-                  <div className="w-full h-1/2 lg:h-full lg:w-1/2 ">
+                  <div className="w-full h-1/2 lg:h-full lg:w-1/2  ">
                     <img
                       src={work.img}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="w-full lg:w-1/2 p-10 flex flex-col justify-center  lg:gap-10">
+                  <div className="w-full lg:w-1/2 py-2 px-5 lg:p-10 flex flex-col justify-center  lg:gap-10">
                     <h1 className="text-2xl lg:text-6xl font-bold">
                       {work.srNo}
                     </h1>
-                    <h2 className=" text-2xl lg:text-4xl font-semibold mt-4">
+                    <h2 className=" text-2xl lg:text-4xl font-semibold lg:mt-4">
                       {work.heading}
                     </h2>
                     <p className="lg:text-lg">{work.desc}</p>
@@ -81,7 +81,7 @@ function WorkProcess() {
               ) : (
                 <div
                   key={idx}
-                  className="sticky top-0 z-10 h-[95vh] mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
+                  className="sticky top-0 z-10 h-[65vh] lg:h-[95vh] mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
                 >
                   <div className="block lg:hidden w-full h-1/2 lg:h-full lg:w-1/2 ">
                     <img
@@ -89,11 +89,11 @@ function WorkProcess() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="w-full lg:w-1/2 p-10 flex flex-col justify-center  lg:gap-10">
+                  <div className="w-full lg:w-1/2 py-2 px-5 lg:p-10 flex flex-col justify-center  lg:gap-10">
                     <h1 className="text-2xl lg:text-6xl font-bold">
                       {work.srNo}
                     </h1>
-                    <h2 className=" text-2xl lg:text-4xl font-semibold mt-4">
+                    <h2 className=" text-2xl lg:text-4xl font-semibold lg:mt-4">
                       {work.heading}
                     </h2>
                     <p className="lg:text-lg">{work.desc}</p>
