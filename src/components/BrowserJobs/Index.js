@@ -2,6 +2,7 @@ import React from 'react'
 import HeroSectionBrowserJobs from './HeroSectionsubmitCV';
 import JobsCategory from './JobsCatagery';
 import Jobscart from './Jobscart';
+import BroserMessage from './BroserMessage';
 
 export default function BrowserComponent() {
   return (
@@ -9,6 +10,7 @@ export default function BrowserComponent() {
         <HeroSectionBrowserJobs/>
         <JobsCategory/>
         <Jobscart/>
+        <BroserMessage/>
     </>  
   )
 }

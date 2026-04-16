@@ -31,10 +31,10 @@ export default function NavActions({
           >
             <div className="pl-4 flex flex-col gap-2">
               <Link href="/jobs/browseJobs" onClick={closeMenu}>
-                Submit CV
+                Browse Jobs
               </Link>
               <Link href="/jobs/submitYourCV" onClick={closeMenu}>
-                Upload your CV
+                Submit your CV
               </Link>
             </div>
           </div>
@@ -64,13 +64,13 @@ export default function NavActions({
             href="/jobs/browseJobs"
             className="block px-4 py-2 hover:bg-gray-100"
           >
-            Submit CV
+            Browse Jobs
           </Link>
           <Link
             href="/jobs/submitYourCV"
             className="block px-4 py-2 hover:bg-gray-100"
           >
-            Upload your CV
+            Submit your CV
           </Link>
         </div>
       </div>
