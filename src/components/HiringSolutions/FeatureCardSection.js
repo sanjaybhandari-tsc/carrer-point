@@ -1,34 +1,3 @@
-//   const features = [
-//     {
-//       title: "Experienced Workforce",
-//       description:
-//         "Our recruitment team brings strong industry knowledge and practical expertise to deliver effective hiring solutions.",
-//     },
-//     {
-//       title: "Extensive Candidate Database",
-//       description:
-//         "Access to a database of 2,000,000+ candidates, helping organizations connect with skilled professionals faster.",
-//     },
-//     {
-//       title: "Efficient Requirement Fulfillment",
-//       description:
-//         "Focused on understanding client needs and delivering the right candidates within the required timelines.",
-//     },
-//     {
-//       title: "Robust Infrastructure",
-//       description:
-//         "Strong operational systems that support smooth recruitment processes and reliable service delivery.",
-//     },
-//     {
-//       title: "Commitment to Quality",
-//       description: "Ethical Hiring Practices",
-//     },
-//     {
-//       title: "Accurate Career Information",
-//       description: "Consistent Candidate Follow-ups",
-//     },
-//   ];
-
 import FeatureCard from "./FeatureCard";
 import {
   ShieldCheck,
@@ -105,7 +74,6 @@ const features = [
   Features
 </h2>
 
-        {/* GRID */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
           {features.map((item, index) => (
             <FeatureCard

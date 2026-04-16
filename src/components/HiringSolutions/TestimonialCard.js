@@ -18,7 +18,7 @@ export default function TestimonialCard({ name, role, image, text }) {
         xl:w-[420px]
       "
     >
-      {/* Image */}
+
       <div className="absolute -top-14 left-1/2 -translate-x-1/2">
         <img
           src={image}
@@ -49,51 +49,3 @@ export default function TestimonialCard({ name, role, image, text }) {
     </div>
   );
 }
-
-// export default function TestimonialCard({ name, role, image, text }) {
-//   return (
-//     <div
-//       className="
-//         relative
-//         bg-white
-//         rounded-2xl
-//         shadow-sm
-//         border border-gray-100
-//         pt-20 pb-8 px-8
-//         text-center
-//         hover:shadow-md transition
-
-//         flex-shrink-0
-
-//         w-[300px]
-//         sm:w-[340px]
-//         md:w-[380px]
-//         lg:w-[400px]
-//         xl:w-[420px]
-//       "
-//     >
-
-//       {/* Image */}
-//       <div className="absolute -top-14 left-1/2 -translate-x-1/2">
-//         <img
-//           src={image}
-//           alt={name}
-//           className="w-28 h-28 rounded-full object-cover border-4 border-white shadow-md"
-//         />
-//       </div>
-
-//       {/* Content */}
-//       <h3 className="font-semibold text-lg text-gray-800">
-//         {name}
-//       </h3>
-
-//       <p className="text-sm text-gray-500 mb-4">
-//         {role}
-//       </p>
-
-//       <p className="text-base text-gray-600 leading-relaxed">
-//         “{text}”
-//       </p>
-//     </div>
-//   );
-// }
