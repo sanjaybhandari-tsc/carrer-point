@@ -34,8 +34,9 @@ export default function Ourjourney() {
         return () => observer.disconnect();
     }, []);
     return (
-        <div className="w-full px-6 md:px-16 lg:px-30  lg:py-25 py-16 bg-white ">
-
+        <div className='bg-[linear-gradient(180deg,rgba(250,250,250,0.22)_0%,rgba(3,155,230,0.01)_100%)]'>
+        <div className="w-full px-6 md:px-16 lg:px-30  lg:py-25 py-16">
+             
             <div ref={topRef} className={`text-center mb-12 transition-all duration-700 ease-out
                 ${showTop ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-16"}`}>
                 <h2 className=" md:text-4xl  font-bold  text-[36px] leading-none tracking-normal text-center">
@@ -46,8 +47,8 @@ export default function Ourjourney() {
                 </p>
             </div>
 
-            <div ref={bottomRef} className={`space-y-10 transition-all duration-700 ease-out
-                ${showBottom ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
+            <div ref={bottomRef} className={`space-y-10 transition-all duration-700 ease-out fo
+                ${showBottom ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"} `}>
                 <div className="border-b border-gray-300 pb-8 flex items-start justify-between   flex-col md:flex-row gap-6">
                     <div className="md:w-[20%] ">
                         <p className='text-4xl md:text-5xl  text-black   font-black lg:text-[60px] leading-none tracking-normal'>2009</p>
@@ -60,7 +61,7 @@ export default function Ourjourney() {
 
                         <p className="text-[#000000]  md:text-base  text-[20px]  lg:text-[20px] leading-[150%] tracking-normal">
                             Career Point Placement Services was established with a 150 sq. ft office and a team of 3 recruiters,
-                            serving its first insurance client. In the very first year, the company generated <span className='font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'>₹2.5 lakh</span> in revenue,
+                            serving its first insurance client. In the very first year, the company generated <span className='font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'> ₹2.5 lakh </span> in revenue,
                             laying the foundation for a growing recruitment organization.
                         </p>
                     </div>
@@ -78,7 +79,7 @@ export default function Ourjourney() {
                         </h3>
 
                         <p className="text-[#000000]  md:text-base  text-[20px]  lg:text-[20px] leading-[150%] tracking-normal">
-                            The company expanded to a 350 sq. ft office with a growing team of 10 recruiters. Client partnerships increased to 7 insurance clients, and annual revenue <span className='font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'>reached ₹11 lakh</span>, reflecting strong early growth.
+                            The company expanded to a 350 sq. ft office with a growing team of 10 recruiters. Client partnerships increased to 7 insurance clients, and annual revenue <span className='font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'> reached ₹11 lakh </span>, reflecting strong early growth.
                         </p>
                     </div>
 
@@ -98,7 +99,7 @@ export default function Ourjourney() {
                         <div>
                             <p className="text-[#000000]  md:text-base  font-normal text-[20px]  lg:text-[20px] leading-[150%] tracking-normal">
                                 Operations expanded to a 750 sq. ft office with 20 recruiters supporting hiring needs. Career Point began serving 15 clients across insurance, banking, and pharmaceutical sectors, reaching
-                                <span className=' font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'>₹25 lakh</span>in revenue.
+                                <span className=' font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'> ₹25 lakh </span>in revenue.
                             </p>
                         </div>
 
@@ -120,7 +121,7 @@ export default function Ourjourney() {
                         </div>
                         <div>
                             <p className="text-[#000000]  md:text-base  text-[20px]  lg:text-[20px] leading-[150%] tracking-normal">
-                                The company  <span className=' font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'>launched Excel Financial Solution</span>
+                                The company  <span className=' font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'>launched Excel Financial Solution </span>
                                 for loan collection services and expanded to a 1200 sq. ft office. With 25 recruiters and 5 loan collection executives, the client base grew to 25 organizations, generating ₹35 lakh revenue.
                             </p>
                         </div>
@@ -207,7 +208,7 @@ export default function Ourjourney() {
                         </div>
                         <div>
                             <p className="text-[#000000]  md:text-base  text-[20px]  lg:text-[20px] leading-[150%] tracking-normal">
-                                With a strong workforce of 30 recruiters, 10 freelancers, and 15 loan collection executives, the company continued serving 40+ industry clients and achieved a major milestone by <span className=' font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'>reaching ₹1 crore</span>in revenue.
+                                With a strong workforce of 30 recruiters, 10 freelancers, and 15 loan collection executives, the company continued serving 40+ industry clients and achieved a major milestone by<span className=' font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'> reaching ₹1 crore </span>in revenue.
                             </p>
                         </div>
 
@@ -250,7 +251,7 @@ export default function Ourjourney() {
                         <div>
                             <p className="text-[#000000]  md:text-base text-[20px]  lg:text-[20px] leading-[150%] tracking-normal">
                                 The company further strengthened its credibility by achieving
-                                <span className=' font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'>ISO 1002:2018 certification</span>, reflecting its continued commitment to maintaining high standards in recruitment services and client satisfaction.
+                                <span className=' font-semibold text-[20px] leading-[150%] tracking-normal text-[#0277BD]'> ISO 1002:2018 certification</span>, reflecting its continued commitment to maintaining high standards in recruitment services and client satisfaction.
                             </p>
                         </div>
 
@@ -261,6 +262,6 @@ export default function Ourjourney() {
 
             </div>
 
-        </div>
+        </div></div>
     )
 }
