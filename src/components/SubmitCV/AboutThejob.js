@@ -9,7 +9,15 @@ export default function AboutTheJob() {
     experience: "2-3 yrs",
     location: "Mumbai",
     Buildingimage: "/images/broserJobs/industryIcon.svg",
+    responsibilities: [
+      "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
+      "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
+      "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
+    ],
     Building: "Building Material",
+    role: "Project Manager",
+    industry: "Building Material",
+    employmentType: "Full Time, Permanent",
     time: "2 hours ago",
     description: `Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida vestibulum habitant magnis mi aliquam senectus massa tellus interdum velit volutpat porttitor quis eu massa suspendisse et amet laoreet lobortis auctor pharetra in sodales at netus nunc montes faucibus vitae fringilla nibh.`,
     skills: ["Communication", "Error Handling", "Problem Solving", "Client Handling"],
@@ -17,7 +25,7 @@ export default function AboutTheJob() {
 
   return (
     <>
-      <div className="p-5 md:p-10 bg-[#f9f9f9]">
+      <div className="p-5 md:p-10 bg-white">
         <div className="max-w-[1312px] mx-auto pt-16 px-[15px] md:px-6">
 
           <p className="text-[#0277BD] text-[18px] font-semibold leading-[165%] mb-4">
@@ -86,23 +94,75 @@ export default function AboutTheJob() {
       </div>
 
       {showDetails && (
-        <div className="max-w-[1312px] mx-auto px-[15px] md:px-6 pb-10">
+        <div className="max-w-[1312px] mx-auto px-[15px] md:px-6 pb-10  ">
 
           <div className="bg-white border border-[#E9EAEB] rounded-xl p-6 shadow-[0_4px_8px_#00000014] relative">
-            <button
+            <button 
               onClick={() => setShowDetails(false)}
-              className="absolute top-4 right-4 text-gray-500 hover:text-black text-lg"
+              className="absolute top-4 right-4 text-[#B3B3B3]  hover:text-black "
             >
-              ✕
+              <img src="/images/SubmitCv/cross.svg " alt=" icon" className="h-[32px] w-[32px]"/>
             </button>
+            <div className="py-[52px] px-[20px] sm:px-[30px] md:px-[38px] xl:w-[1075px]">
 
-            <h3 className="text-xl font-semibold mb-3">
-              Job Details
-            </h3>
+              <div className="mb-6">
+                <h3 className="font-bold text-[20px] leading-[100%] text-black mb-3 ">
+                  Overview
+                </h3>
 
-            <p className="text-sm leading-[165%] text-gray-700">
-              {job.description}
-            </p>
+                <p className=" font-normal text-[16px] leading-[165%] text-black lg:ps-2">
+                  {job.description}
+                </p>
+              </div>
+              <div className="mb-6">
+                <h3 className=" font-semibold text-[20px] leading-[100%] text-black mb-3">
+                  Responsibilities
+                </h3>
+
+                <div className="space-y-3 lg:ps-2">
+                  {job.responsibilities.map((item, index) => (
+                    <div key={index} className="flex items-start gap-2">
+                      <span className="mt-[8px] w-[5px] h-[5px] bg-black rounded-full"></span>
+                      <p className="text-[16px] leading-[165%] text-black ">
+                        {item}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mb-6 space-y-2">
+                <p className=" text-[16px] leading-[165%] text-black">
+                  <span className="font-semibold">Role :</span> {job.role}
+                </p>
+
+                <p className="text-[16px] leading-[165%] text-black">
+                  <span className="font-semibold">Industry :</span> {job.industry}
+                </p>
+
+                <p className="text-[16px] leading-[165%] text-black">
+                  <span className="font-semibold">Employement Type :</span> {job.employmentType}
+                </p>
+              </div>
+
+              <div>
+                <h3 className=" font-semibold text-[20px] leading-[100%] text-black mb-3">
+                  Skills
+                </h3>
+
+                <div className="flex flex-wrap gap-3  lg:ps-2 lg:pb-30">
+                  {job.skills.map((skill, index) => (
+                    <span
+                      key={index}
+                      className=" text-[16px] leading-[165%] text-black"
+                    >
+                      • {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       )}
