@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 function HowWeWork() {
-  const WorkCard = [
+  const workData = [
     {
       srNo: "01",
       heading: "Requirement Understanding",
@@ -28,10 +28,11 @@ function HowWeWork() {
       desc: "Our team assists with offer",
     },
   ];
+
   const [index, setIndex] = useState(0);
 
   const nextSlide = () => {
-    if (index < howWeWorkData.length - 3) {
+    if (index < workData.length - 1) {
       setIndex(index + 1);
     }
   };
@@ -47,6 +48,7 @@ function HowWeWork() {
       <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
         How We Work
       </h2>
+
       <div className="relative max-w-6xl mx-auto">
         <div className="overflow-hidden">
           <div
@@ -55,7 +57,7 @@ function HowWeWork() {
               transform: `translateX(-${index * 320}px)`,
             }}
           >
-            {howWeWorkData.map((item) => (
+            {workData.map((item) => (
               <WorkCard key={item.srNo} item={item} />
             ))}
           </div>
@@ -64,19 +66,41 @@ function HowWeWork() {
         <div className="flex gap-4 mt-10 ml-6">
           <button
             onClick={prevSlide}
-            className="w-12 h-12 rounded-full border border-white/40 text-white flex items-center justify-center hover:bg-white/10"
+            className={
+              index > 0
+                ? "btn border-2 rounded-[50%] w-10 h-10 text-white font-bold"
+                : "btn border-2 rounded-[50%] w-10 h-10 text-[#B2B2B252] font-bold"
+            }
           >
             ←
           </button>
 
           <button
             onClick={nextSlide}
-            className="w-12 h-12 rounded-full border border-white text-white flex items-center justify-center hover:bg-white/20"
+            className={
+              index < workData.length - 1
+                ? "btn border-2 rounded-[50%] w-10 h-10 text-white font-bold"
+                : "btn border-2 rounded-[50%] w-10 h-10 text-[#B2B2B252] font-bold"
+            }
           >
             →
           </button>
         </div>
       </div>
+    </div>
+  );
+}
+
+function WorkCard({ item }) {
+  return (
+    <div className="min-w-[300px] md:min-w-[400px] px-6">
+      <h2 className="text-5xl font-bold text-white/70 mb-4">{item.srNo}</h2>
+
+      <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
+        {item.heading}
+      </h3>
+
+      <p className="text-white/80 leading-relaxed">{item.desc}</p>
     </div>
   );
 }
