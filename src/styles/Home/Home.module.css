@@ -30,9 +30,11 @@
 @keyframes scroll {
   0% {
     transform: translateX(0);
+    opacity: 0;
   }
   100% {
     transform: translateX(-50%);
+    opacity: 1;
   }
 }
 
@@ -51,4 +53,19 @@
 
 .slideright {
   animation: slideRight 2s ease-out forwards;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slideteam {
+  transition: all 0.3s ease;
+}
+.slideteam:hover {
+  top: 70%;
 }
