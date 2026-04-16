@@ -1,10 +1,13 @@
 import React from 'react'
+import HeadingSubmitCV from './HeadingSubmitCV'
+import AboutThejob from './AboutThejob'
 
 
 export default function SubmitCV() {
   return (
     <>
-      
+      <HeadingSubmitCV/>
+      <AboutThejob/>
     </>
   )
 }
