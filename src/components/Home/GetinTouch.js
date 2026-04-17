@@ -24,7 +24,7 @@ function GetinTouch() {
     <div className="flex h-[110vh] mb-25 lg:mb-20 text-white">
       <div
         ref={ref}
-        className={`hidden lg:block md:block relative bg-[url('/images/homepage/getTouch.svg')] w-[35%] h-full bg-cover bg-center rounded-tr-4xl rounded-br-4xl object-cover overflow-hidden ${isVisible ? style.slideleft : ""}`}
+        className={`hidden md:hidden lg:block md:block relative bg-[url('/images/homepage/getTouch.svg')] w-[35%] h-full bg-cover bg-center rounded-tr-4xl rounded-br-4xl object-cover overflow-hidden ${isVisible ? style.slideleft : ""}`}
       >
         <div
           className="absolute inset-0 bg-[linear-gradient(270deg,rgba(8,15,36,0.61)_1.7%,rgba(3,155,230,0.61)_108.17%)] "
