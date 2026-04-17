@@ -6,20 +6,20 @@ export default function BankingIndustrySection() {
     {
       title: "Financial Operations",
       description:
-        "Professionals experienced in managing financial operations, transactions, and structured banking processes.",
-      icon: "/icons/industries/Financial Operations.svg",
+        "Professionals experienced in banking financial operations, transactions, and structured financial systems management.",
+      icon: "/icons/industries/financial-operations.svg",
     },
     {
       title: "Risk & Compliance",
       description:
-        "Experts focused on regulatory compliance, financial risk monitoring, and operational governance.",
-      icon: "/icons/industries/Risk & Compliance.svg",
+        "Experts in banking risk management, regulatory compliance, and financial governance frameworks.",
+      icon: "/icons/industries/risk-compliance.svg",
     },
     {
       title: "Customer & Digital Services",
       description:
-        "Talent supporting customer services, financial platforms, and evolving digital banking systems and experiences.",
-      icon: "/icons/industries/Customer & Digital Services.svg",
+        "Talent supporting digital banking platforms, customer service operations, and fintech-driven financial services.",
+      icon: "/icons/industries/customer-digital-services.svg",
     },
   ];
 
@@ -29,9 +29,7 @@ export default function BankingIndustrySection() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.15 }
     );
@@ -49,13 +47,17 @@ export default function BankingIndustrySection() {
       className="w-full bg-white pb-24 px-4 sm:px-6 md:px-10 lg:px-16"
     >
       <div className="max-w-7xl mx-auto">
+        <h2 className="sr-only">
+          BFSI Recruitment and Banking Staffing Roles
+        </h2>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
 
           {cards.map((card, index) => {
             const delay = index * 150;
 
             return (
-              <div
+              <article
                 key={index}
                 className={`transform transition-all duration-700 ease-out
                 ${
@@ -68,7 +70,7 @@ export default function BankingIndustrySection() {
                 <div className="h-full transition-transform duration-300 hover:-translate-y-2">
                   <InfoCard {...card} />
                 </div>
-              </div>
+              </article>
             );
           })}
 

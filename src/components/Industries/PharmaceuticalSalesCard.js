@@ -6,20 +6,20 @@ export default function PharmaceuticalSection() {
     {
       title: "Regulatory Compliance",
       description:
-        "Professionals familiar with pharmaceutical regulations, compliance standards, and quality control processes across production and operations.",
-      icon: "/icons/industries/Regulatory Compliance.svg",
+        "Professionals experienced in pharmaceutical regulatory compliance, quality standards, and production processes.",
+      icon: "/icons/industries/regulatory-compliance.svg",
     },
     {
       title: "Research & Innovation",
       description:
-        "Talent supporting research, product development, and innovation within evolving pharmaceutical and healthcare environments.",
-      icon: "/icons/industries/Research & Innovation.svg",
+        "Talent supporting pharmaceutical research, product development, and healthcare innovation.",
+      icon: "/icons/industries/research-innovation.svg",
     },
     {
       title: "Quality & Safety Standards",
       description:
-        "Experts focused on maintaining strict quality standards, safety protocols, and regulatory guidelines in pharmaceutical operations.",
-      icon: "/icons/industries/Quality & Safety Standards.svg",
+        "Experts focused on pharmaceutical quality control, safety protocols, and regulatory guidelines.",
+      icon: "/icons/industries/quality-safety-standards.svg",
     },
   ];
 
@@ -29,16 +29,12 @@ export default function PharmaceuticalSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.15 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+    if (sectionRef.current) observer.observe(sectionRef.current);
 
     return () => {
       if (sectionRef.current) observer.unobserve(sectionRef.current);
@@ -51,13 +47,16 @@ export default function PharmaceuticalSection() {
       className="w-full bg-white pb-24 px-4 sm:px-6 md:px-10 lg:px-16"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+        <h2 className="sr-only">
+          Pharmaceutical Recruitment Areas and Job Roles
+        </h2>
 
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {cards.map((card, index) => {
             const delay = index * 150;
 
             return (
-              <div
+              <article
                 key={index}
                 className={`transition-all duration-700 ease-out transform
                 ${
@@ -74,10 +73,9 @@ export default function PharmaceuticalSection() {
                     description={card.description}
                   />
                 </div>
-              </div>
+              </article>
             );
           })}
-
         </div>
       </div>
     </section>

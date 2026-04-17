@@ -1,25 +1,25 @@
 import { useEffect, useRef, useState } from "react";
 import InfoCard from "@/components/Industries/InfoCard";
 
-export default function PharmaceuticalSection() {
+export default function ManufacturingSection() {
   const cards = [
     {
       title: "Production & Operations",
       description:
-        "Professionals experienced in managing production workflows, operational processes, and manufacturing efficiency.",
-      icon: "/icons/industries/Production & Operations.svg",
+        "Professionals experienced in managing production workflows, manufacturing operations, and industrial efficiency.",
+      icon: "/icons/industries/production-operations.svg",
     },
     {
       title: "Quality Management",
       description:
-        "Ensuring consistent product quality through strong standards, inspections, and effective process monitoring.",
-      icon: "/icons/industries/Quality Management.svg",
+        "Ensuring consistent product quality through strict standards, inspections, and process control systems.",
+      icon: "/icons/industries/quality-management.svg",
     },
     {
       title: "Industrial Technology",
       description:
-        "Talent familiar with modern manufacturing tools, automation systems, and evolving industrial technologies.",
-      icon: "/icons/industries/Industrial Technology.svg",
+        "Talent skilled in modern manufacturing technologies, automation systems, and industrial engineering tools.",
+      icon: "/icons/industries/industrial-technology.svg",
     },
   ];
 
@@ -29,9 +29,7 @@ export default function PharmaceuticalSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.15 }
     );
@@ -49,13 +47,17 @@ export default function PharmaceuticalSection() {
       className="w-full bg-white pb-24 px-4 sm:px-6 md:px-10 lg:px-16"
     >
       <div className="max-w-7xl mx-auto">
+        <h2 className="sr-only">
+          Manufacturing Recruitment and Staffing Solutions Roles
+        </h2>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
 
           {cards.map((card, index) => {
             const delay = index * 150;
 
             return (
-              <div
+              <article
                 key={index}
                 className={`transform transition-all duration-700 ease-out
                 ${
@@ -68,7 +70,7 @@ export default function PharmaceuticalSection() {
                 <div className="h-full transition-transform duration-300 hover:-translate-y-2">
                   <InfoCard {...card} />
                 </div>
-              </div>
+              </article>
             );
           })}
 
