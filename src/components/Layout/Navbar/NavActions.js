@@ -15,7 +15,7 @@ export default function NavActions({
           className="flex items-center justify-between py-3 px-2 cursor-pointer text-blue-600"
           onClick={() => setOpenAction(isOpen ? null : "jobs")}
         >
-          <span>See Jobs</span>
+          <span className="cursor-pointer">See Jobs</span>
           <ChevronDown className={isOpen ? "rotate-180" : ""} />
         </div>
 
