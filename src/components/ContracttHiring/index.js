@@ -13,8 +13,8 @@ export default function ContractHiring() {
       <HeaderPart />
       <ProjectBasedTalentHiring />
       <WhyChooseUs />
-      <WeHelp />
       <HowWeWork />
+      <WeHelp />
       <Common />
     </>
   );

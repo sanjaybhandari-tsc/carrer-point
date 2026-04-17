@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "../../styles/Home/Home.module.css";
 
 function OurTeam() {
@@ -59,18 +59,20 @@ function OurTeam() {
         </p>
       </div>
 
-      <div className="w-full px-7 my-15">
+      <div className="w-full px-7 mt-5 lg:my-15">
         <div className="h-[70vh] flex flex-nowrap overflow-x-auto overflow-y-hidden gap-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {teams.map((team, idx) => {
             return (
               <div
                 key={idx}
-                className="flex flex-col group items-center h-full gap-3 min-w-[350px] font-medium"
+                className="flex flex-col group items-center h-full gap-3 lg:min-w-[350px] font-medium"
               >
-                <div className="relative  rounded-full w-[350px] h-[350px] overflow-hidden">
+                <div className="relative  rounded-full w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden ">
                   <img className="object-cover w-full h-full" src={team.img} />
 
-                  <div className="absolute left-0 right-0 w-full h-full top-[200%] rounded-full bg-[#039BE6] flex py-13 justify-center gap-13 transition-all duration-900 group-hover:py-8 group-hover:gap-4 group-hover:top-60">
+                  <div
+                    className={`absolute left-0 right-0 w-full h-full rounded-full bg-[#039BE6] flex justify-center top-50 py-8 gap-4 lg:top-[200%] lg:py-13 lg:gap-13 transition-all duration-700 lg:group-hover:top-60 lg:group-hover:py-8 lg:group-hover:gap-4 ${styles.slideup}`}
+                  >
                     <a
                       href="https://linkedin.com/in/username"
                       target="_blank"

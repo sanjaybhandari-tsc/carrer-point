@@ -2,7 +2,7 @@ import React from "react";
 
 function HeaderPart() {
   return (
-    <div className="relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-22 rounded-b-2xl overflow-hidden">
+    <div className="relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-12 lg:py-22 rounded-b-2xl overflow-hidden">
       <img
         className="absolute  lg:top-0 lg:left-0  md:top-0 md:left-0 -top-10 -left-5 "
         src="/images/permanentHiring/permanentTop1.svg"

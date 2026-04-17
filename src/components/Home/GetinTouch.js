@@ -21,10 +21,10 @@ function GetinTouch() {
     };
   }, []);
   return (
-    <div className="flex h-screen mb-20 text-white">
+    <div className="flex h-[110vh] mb-25 lg:mb-20 text-white">
       <div
         ref={ref}
-        className={`relative bg-[url('/images/homepage/getTouch.svg')] w-[35%] h-full bg-cover bg-center rounded-tr-4xl rounded-br-4xl object-cover overflow-hidden ${isVisible ? style.slideleft : ""}`}
+        className={`hidden lg:block md:block relative bg-[url('/images/homepage/getTouch.svg')] w-[35%] h-full bg-cover bg-center rounded-tr-4xl rounded-br-4xl object-cover overflow-hidden ${isVisible ? style.slideleft : ""}`}
       >
         <div
           className="absolute inset-0 bg-[linear-gradient(270deg,rgba(8,15,36,0.61)_1.7%,rgba(3,155,230,0.61)_108.17%)] "
@@ -61,17 +61,17 @@ function GetinTouch() {
       </div>
       <div
         ref={ref}
-        className={`w-[65%] h-full text-black flex flex-col justify-between px-10 py-15  ${isVisible ? style.slideright : ""}`}
+        className={`w-[100%] lg:w-[65%] lg:w-[65%] h-full text-black flex flex-col gap-3 justify-between px-7 md:px:10 lg:px-10 py-15  ${isVisible ? style.slideright : ""}`}
       >
-        <div className="text-center">
+        <div className="text-center pb-4">
           <h3 className="font-bold text-2xl">Looking to Hire?</h3>
           <p className="text-lg">
             Tell us your requirements and we’ll connect you with the right
             talent.
           </p>
         </div>
-        <div className="flex gap-9">
-          <div className="flex flex-col w-1/2">
+        <div className="flex lg:flex-row md:flex-row flex-col gap-3 md:gap-7 lg:gap-9">
+          <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
             <label>Full Name</label>
             <input
               className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
@@ -79,7 +79,7 @@ function GetinTouch() {
               placeholder="Enter your name"
             />
           </div>
-          <div className="flex flex-col w-1/2">
+          <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
             <label>Company Name</label>
             <input
               className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
@@ -88,8 +88,8 @@ function GetinTouch() {
             />
           </div>
         </div>
-        <div className="flex gap-9">
-          <div className="flex flex-col w-1/2">
+        <div className="flex lg:flex-row md:flex-row flex-col gap-3 md:gap-7 lg:gap-9">
+          <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
             <label>Work Email</label>
             <input
               className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
@@ -97,7 +97,7 @@ function GetinTouch() {
               placeholder="Enter your work email"
             />
           </div>
-          <div className="flex flex-col w-1/2">
+          <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
             <label>Phone no.</label>
             <input
               className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
@@ -106,8 +106,8 @@ function GetinTouch() {
             />
           </div>
         </div>
-        <div className="flex gap-9">
-          <div className="flex flex-col w-1/2">
+        <div className="flex lg:flex-row md:flex-row flex-col gap-3 md:gap-7 lg:gap-9">
+          <div className="flex flex-col w-full md:w-/2 lg:w-1/2 ">
             <label>Role Hiring For</label>
             <input
               className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
@@ -115,7 +115,7 @@ function GetinTouch() {
               placeholder="Which role are you hiring for?"
             />
           </div>
-          <div className="flex flex-col w-1/2">
+          <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
             <label>No. of positions</label>
             <input
               className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
@@ -124,16 +124,15 @@ function GetinTouch() {
             />
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex  flex-col gap-1   ">
           <label className="text-lg font-[500]">Any Message for us?</label>
           <textarea
-            rows="5"
-            className="bg-white  outline-0 border rounded-lg px-4 py-2 border-[#E9EAEB]"
+            className="bg-white   h-20 sm:h-24 md:h-28 outline-0 border rounded-lg px-4 py-2 border-[#E9EAEB]"
             type="text"
           />
         </div>
 
-        <div className="flex  justify-center items-center">
+        <div className="flex  justify-center items-center mt-3">
           <button className="hover:cursor-pointer bg-[var(--color-primary)] text-white py-3 px-5 rounded-lg">
             Request hiring support{" "}
           </button>

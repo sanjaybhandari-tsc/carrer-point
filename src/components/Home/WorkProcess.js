@@ -40,7 +40,7 @@ function WorkProcess() {
     },
   ];
   return (
-    <div className="w-full flex flex-col items-center gap-10">
+    <div className="w-full flex flex-col items-center md:gap-10 lg:gap-10">
       <div className="text-center flex flex-col gap-3 lg:gap-5 max-w-[70%]">
         <h3 className="text-3xl font-bold">
           <span>Our Work </span>{" "}
@@ -60,7 +60,7 @@ function WorkProcess() {
               {idx % 2 == 0 ? (
                 <div
                   key={idx}
-                  className="sticky top-0 z-10 h-[65vh] lg:h-[95vh] mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
+                  className="sticky top-0 z-10 h-[90vh] lg:h-[95vh] mx-5 md:mx-13 lg:mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
                 >
                   <div className="w-full h-1/2 lg:h-full lg:w-1/2  ">
                     <img
@@ -81,7 +81,7 @@ function WorkProcess() {
               ) : (
                 <div
                   key={idx}
-                  className="sticky top-0 z-10 h-[65vh] lg:h-[95vh] mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
+                  className="sticky top-0 z-10 h-[90vh] lg:h-[95vh] mx-5 md:mx-13 lg:mx-15  rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
                 >
                   <div className="block lg:hidden w-full h-1/2 lg:h-full lg:w-1/2 ">
                     <img
