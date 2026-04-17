@@ -11,10 +11,10 @@ export default function HeroSection() {
         />
         <div className="absolute inset-0  bg-gradient-to-b from-[#66666600] to-[#00000075]"></div>
         <div
-          className={`absolute inset-0  w-[110%] h-[110%] -left-[5%]  -top-[40%]     lg:w-[120%] lg:h-[130%]  lg:-top-[55%] lg:-left-[10%] rounded-[50%]  bg-gradient-to-t from-[#080F249C] to-[#039BE69C]  ${styles.slideDown} flex flex-col justify-center items-center`}
+          className={`absolute inset-0  w-[110%] h-[110%] -left-[5%]  -top-[35%]     lg:w-[120%] lg:h-[130%]  lg:-top-[60%] lg:-left-[10%] rounded-[50%]  bg-gradient-to-t from-[#080F249C] to-[#039BE69C]  ${styles.slideDown} flex flex-col justify-center items-center`}
         >
           <div
-            className={`absolute  inset-0 h-full flex flex-col md:gap-4 items-center justify-end text-center  px-4 py-2.5 lg:py-20 ${styles.slideup}`}
+            className={`absolute  inset-0 h-full flex flex-col md:gap-4 items-center justify-end text-center  px-4 py-3 lg:py-20 ${styles.slideup}`}
           >
             <div className="lg:mb-6 px-4 py-1 border border-white rounded-full backdrop-blur-md text-sm flex justify-center items-center lg:gap-4 bg-transparent">
               <img
@@ -42,7 +42,7 @@ export default function HeroSection() {
               high-performing teams faster and .
             </p>
 
-            <button className="lg:mt-6 md:mb-3 relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px] border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors">
+            <button className="lg:mt-6 md:mb-3 relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px] border-white px-4 py-1 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors">
               <span className="relative z-10 flex items-center gap-2.5">
                 <p>Get in touch</p>
                 <img
