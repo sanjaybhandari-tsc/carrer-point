@@ -454,7 +454,7 @@ export default function Jobscart() {
             </div>
           </div>
           <div className="p-4 sm:p-6">
-            <button className="w-full sm:w-auto bg-[#039BE6] text-white px-5.5 py-3   rounded-lg shadow flex items-center justify-center gap-4 text-[20px]">
+            <button onClick={()=>submitHandelar(selectedJob)} className="w-full sm:w-auto bg-[#039BE6] text-white px-5.5 py-3   rounded-lg shadow flex items-center justify-center gap-4 text-[20px]">
               Apply now
               <img src="/images/broserJobs/applyArrow.svg" className="w-[28px] h-[28px]" />
             </button>
