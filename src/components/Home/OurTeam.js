@@ -65,13 +65,13 @@ function OurTeam() {
             return (
               <div
                 key={idx}
-                className="flex flex-col group items-center h-full gap-3 lg:min-w-[350px] font-medium"
+                className=" flex flex-col group items-center h-fit py-1 gap-3 lg:min-w-[350px] font-medium"
               >
                 <div className="relative  rounded-full w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] overflow-hidden ">
                   <img className="object-cover w-full h-full" src={team.img} />
 
                   <div
-                    className={`absolute left-0 right-0 w-full h-full rounded-full bg-[#039BE6] flex justify-center top-40 py-8 gap-4 lg:top-[200%] lg:py-13 lg:gap-13 transition-all duration-700 lg:group-hover:top-60 lg:group-hover:py-8 lg:group-hover:gap-4 ${styles.slideup}`}
+                    className={`absolute left-0 right-0 w-full h-full rounded-full bg-[#039BE6] flex justify-center top-40 py-8 gap-4 lg:top-[100%] lg:py-13 lg:gap-13 transition-all duration-700 lg:group-hover:top-60 lg:group-hover:py-8 lg:group-hover:gap-4 ${styles.slideup}`}
                   >
                     <a
                       href="https://linkedin.com/in/username"
