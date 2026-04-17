@@ -53,7 +53,7 @@ export default function JobsCategory() {
 
       <div className="mt-10 sm:mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
         {categories.slice(0, 3).map((cat, index) => (
-          <div key={index} className="flex justify-center">
+          <div key={index} className="flex justify-center cursor-pointer">
             <AnimatedCard
               cat={cat}
               visible={visible}
@@ -66,7 +66,7 @@ export default function JobsCategory() {
         {categories.slice(3).map((cat, index) => (
           <div
             key={index}
-            className="w-full lg:w-[30%] flex justify-center"
+            className="w-full lg:w-[30%] flex justify-center cursor-pointer"
           >
             <AnimatedCard
               cat={cat}

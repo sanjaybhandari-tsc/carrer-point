@@ -1,4 +1,4 @@
-"use client";
+
 
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
@@ -14,7 +14,7 @@ export default function Ourmission() {
           setShow(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.1}
     );
 
     if (ref.current) observer.observe(ref.current);

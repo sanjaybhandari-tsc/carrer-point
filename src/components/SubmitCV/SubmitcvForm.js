@@ -229,18 +229,18 @@ export default function SubmitcvForm() {
           </div>
         </div>
 
-        <div className="flex justify-center  gap-[10px]">
-          <label className="w-full max-w-[1130px] h-[200px] border-2 border-dashed border-blue-400 rounded-3xl flex flex-col items-center justify-center  text-center">
+        <div className="flex justify-center  gap-[10px] ">
+          <label className="w-full max-w-[1130px] h-[200px] border-2 border-dashed border-blue-400 rounded-3xl flex flex-col items-center justify-center  text-center cursor-pointer">
             <input
               type="file"
               name="resume"
-              className="hidden"
+              className="hidden cursor-pointer"
               accept=".pdf,.doc,.docx"
               onChange={handleChange}
             />
             <img src="/images/SubmitCv/uplodIcon.svg" alt=" " />
-            <p className="text-lg font-medium">Upload Resume</p>
-            <p className="text-sm text-gray-500">
+            <p className="text-lg font-medium cursor-pointer">Upload Resume</p>
+            <p className="text-sm text-gray-500 cursor-pointer">
               Drag & drop or click to upload (PDF, DOC, DOCX)
             </p>
             <p className="text-red-500 text-lg">{errors.resume}</p>
@@ -249,7 +249,7 @@ export default function SubmitcvForm() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="w-[200px] h-12 bg-[#039BE6] text-white rounded-lg text-[16px] font-semibold text-center shadow-[0px_4px_8px_0px_#00000029]"
+            className="w-[200px] h-12 bg-[#039BE6] text-white rounded-lg text-[16px] font-semibold text-center shadow-[0px_4px_8px_0px_#00000029] cursor-pointer"
           >
             Submit
           </button>
