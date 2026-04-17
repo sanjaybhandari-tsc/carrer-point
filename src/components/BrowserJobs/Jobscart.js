@@ -1,4 +1,5 @@
 import React, { useState, useEffect,useRef } from "react";
+import { useRouter } from "next/router"; // Pages Router
 const jobsData = [
   {
     id: 1,
@@ -224,6 +225,7 @@ const jobsData = [
 
 
 export default function Jobscart() {
+  const router = useRouter();
   const [selectedJob, setSelectedJob] = useState(jobsData[0]);
   const [currentPage, setCurrentPage] = useState(1);
   const headingRef = useRef(null);
@@ -235,6 +237,12 @@ export default function Jobscart() {
   const indexOfFirstJob = indexOfLastJob - jobsPerPage;
   const currentJobs = jobsData.slice(indexOfFirstJob, indexOfLastJob);
   const totalPages = Math.ceil(jobsData.length / jobsPerPage);
+
+  const submitHandelar=(data)=>{
+    
+    localStorage.setItem("job",JSON.stringify(data));
+    router.push("/jobs/submitYourCV");
+  }
 
   useEffect(() => {
     setSelectedJob(currentJobs[0]);
@@ -403,7 +411,7 @@ export default function Jobscart() {
               </div>
             </div>
 
-            <button className="bg-[#039BE6] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg shadow w-full sm:w-auto text-sm sm:text-base flex items-center justify-center gap-3">
+            <button onClick={()=>submitHandelar(selectedJob)} className="bg-[#039BE6] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg shadow w-full sm:w-auto text-sm sm:text-base flex items-center justify-center gap-3">
               Apply now
               <img src="/images/broserJobs/applyArrow.svg" className="w-[14px] h-[18px]" />
             </button>

@@ -1,27 +1,41 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 export default function AboutTheJob() {
   const [showDetails, setShowDetails] = useState(false);
+  const [job, setJob] = useState(null);
 
-  const job = {
-    id: 1,
-    title: "Project manager",
-    experience: "2-3 yrs",
-    location: "Mumbai",
-    Buildingimage: "/images/broserJobs/industryIcon.svg",
-    responsibilities: [
-      "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
-      "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
-      "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
-    ],
-    Building: "Building Material",
-    role: "Project Manager",
-    industry: "Building Material",
-    employmentType: "Full Time, Permanent",
-    time: "2 hours ago",
-    description: `Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida vestibulum habitant magnis mi aliquam senectus massa tellus interdum velit volutpat porttitor quis eu massa suspendisse et amet laoreet lobortis auctor pharetra in sodales at netus nunc montes faucibus vitae fringilla nibh.`,
-    skills: ["Communication", "Error Handling", "Problem Solving", "Client Handling"],
-  };
+  useEffect(() => {
+    try {
+      const storedJob = localStorage.getItem("job");
+      if (storedJob) {
+        setJob(JSON.parse(storedJob));
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  }, []);
+
+  if (!job) return null;
+
+  // const job = {
+  //   id: 1,
+  //   title: "Project manager",
+  //   experience: "2-3 yrs",
+  //   location: "Mumbai",
+  //   Buildingimage: "/images/broserJobs/industryIcon.svg",
+  //   responsibilities: [
+  //     "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
+  //     "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
+  //     "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
+  //   ],
+  //   Building: "Building Material",
+  //   role: "Project Manager",
+  //   industry: "Building Material",
+  //   employmentType: "Full Time, Permanent",
+  //   time: "2 hours ago",
+  //   description: `Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida vestibulum habitant magnis mi aliquam senectus massa tellus interdum velit volutpat porttitor quis eu massa suspendisse et amet laoreet lobortis auctor pharetra in sodales at netus nunc montes faucibus vitae fringilla nibh.`,
+  //   skills: ["Communication", "Error Handling", "Problem Solving", "Client Handling"],
+  // };
 
   return (
     <>
@@ -97,11 +111,11 @@ export default function AboutTheJob() {
         <div className="max-w-[1312px] mx-auto px-[15px] md:px-6 pb-10  ">
 
           <div className="bg-white border border-[#E9EAEB] rounded-xl p-6 shadow-[0_4px_8px_#00000014] relative">
-            <button 
+            <button
               onClick={() => setShowDetails(false)}
               className="absolute top-4 right-4 text-[#B3B3B3]  hover:text-black "
             >
-              <img src="/images/SubmitCv/cross.svg " alt=" icon" className="h-[32px] w-[32px]"/>
+              <img src="/images/SubmitCv/cross.svg " alt=" icon" className="h-[32px] w-[32px]" />
             </button>
             <div className="py-[52px] px-[20px] sm:px-[30px] md:px-[38px] xl:w-[1075px]">
 
