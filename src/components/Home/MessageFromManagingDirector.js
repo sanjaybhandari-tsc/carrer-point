@@ -28,7 +28,7 @@ function MessageFromManagingDirector() {
         }`}
       >
         <img
-          className=" w-full"
+          className=" w-full px-2"
           src="../../images/homepage/ManagingDirector.png"
         />
       </div>
