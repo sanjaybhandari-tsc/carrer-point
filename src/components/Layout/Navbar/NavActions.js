@@ -47,22 +47,29 @@ export default function NavActions({
   return (
     <div className="flex items-center gap-3">
       <div className="relative group">
-        <button className="font-medium text-sm text-[var(--color-primary)] flex items-center gap-1">
+        <div className="flex items-center gap-1 cursor-pointer font-medium text-sm text-[var(--color-primary)]">
           See Jobs
-          <ChevronDown className="group-hover:rotate-180 transition-transform" />
-        </button>
+          <span className="transition-transform duration-200 group-hover:rotate-180">
+            <ChevronDown />
+          </span>
+        </div>
 
-        <div className="absolute top-full right-0 pt-2 z-50">
-          <div className="w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+        <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 z-50">
+          <div
+            className="w-48 bg-white border border-gray-100 shadow-lg rounded-md overflow-hidden
+    opacity-0 invisible group-hover:opacity-100 group-hover:visible
+    transition-all duration-200"
+          >
             <Link
               href="/jobs/browseJobs"
-              className="block px-4 py-2 hover:bg-gray-100"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
             >
               Browse Jobs
             </Link>
+
             <Link
               href="/jobs/submitYourCV"
-              className="block px-4 py-2 hover:bg-gray-100"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
             >
               Submit your CV
             </Link>
