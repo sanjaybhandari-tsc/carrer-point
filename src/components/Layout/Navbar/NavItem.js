@@ -16,7 +16,7 @@ export default function NavItem({
   return (
     <div className="w-full border-b border-gray-200">
 
-      {/* ONLY toggle for dropdown items */}
+      
       {hasDropdown ? (
         <div
           className="flex items-center justify-between py-3 px-2 cursor-pointer"
@@ -33,7 +33,7 @@ export default function NavItem({
           />
         </div>
       ) : (
-        // ✅ DIRECT LINK (no wrapper click handler)
+        
         <Link
           href={item.href}
           onClick={closeAll}
@@ -43,7 +43,7 @@ export default function NavItem({
         </Link>
       )}
 
-      {/* dropdown */}
+      
       {hasDropdown && (
         <div
           className={`pl-4 overflow-hidden transition-all duration-300 ${
