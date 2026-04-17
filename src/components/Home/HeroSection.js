@@ -37,7 +37,7 @@ export default function HeroSection() {
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1>
 
-            <p className="lg:mt-4 mb-1 max-w-[90%]  md:max-w-[50%] text-sm lg:text-2xl text-white lg:max-w-[60%] max-w-[65%]">
+            <p className="lg:mt-4 mb-1 max-w-[80%]  md:max-w-[50%] text-sm lg:text-2xl text-white lg:max-w-[60%] max-w-[65%]">
               Connect with skilled professionals across industries and build
               high-performing teams faster and .
             </p>

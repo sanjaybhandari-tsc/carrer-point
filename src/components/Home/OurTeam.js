@@ -60,7 +60,7 @@ function OurTeam() {
       </div>
 
       <div className="w-full px-7 mt-5 lg:my-15">
-        <div className="h-[70vh] flex flex-nowrap overflow-x-auto overflow-y-hidden pl-3 gap-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className=" flex flex-nowrap overflow-x-auto overflow-y-hidden pl-3 gap-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {teams.map((team, idx) => {
             return (
               <div
