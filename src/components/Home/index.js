@@ -21,7 +21,7 @@ export default function HomePage() {
       <OurTeam />
       <ReviewsAndRatings />
       <GetinTouch />
-      <Common />
+      {/* <Common /> */}
     </>
   );
 }
