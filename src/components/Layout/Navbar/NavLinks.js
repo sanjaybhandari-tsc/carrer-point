@@ -3,7 +3,7 @@ import NavItem from "./NavItem";
 import { useState } from "react";
 
 const links = [
-  { label: "Hiring Solution", href: "/hiring" },
+  { label: "Hiring Solution", href: "/hiring-solutions" },
   { label: "About", href: "/about" },
   { label: "Industries", href: "/industries" },
 
