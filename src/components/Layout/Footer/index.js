@@ -37,13 +37,13 @@ export default function Footer() {
               <h3 className="font-inter font-semibold text-xl md:text-2xl whitespace-nowrap">Quick Links</h3>
 
               <div className="text-[16px] tracking-normal whitespace-nowrap ">
-                <p>Home</p>
-                <p>Hiring Solution</p>
-                <p>About</p>
-                <p>Industries</p>
-                <p>Services</p>
-                <p>See Jobs</p>
-                <p>Contact Us</p>
+                <p className="cursor-pointer">Home</p>
+                <p className="cursor-pointer">Hiring Solution</p>
+                <p className="cursor-pointer">About</p>
+                <p className="cursor-pointer">Industries</p>
+                <p className="cursor-pointer">Services</p>
+                <p className="cursor-pointer">See Jobs</p>
+                <p className="cursor-pointer">Contact Us</p>
               </div>
             </div>
             <div className="flex flex-col gap-5 items-center md:items-start text-center md:text-left">
@@ -91,7 +91,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex justify-center md:justify-start w-full">
-          <div className="flex items-center justify-start gap-5 flex-wrap">
+          <div className="flex items-center justify-start gap-5 flex-wrap cursor-pointer">
             <div>
             <a href="https://in.linkedin.com/" target="_blank">
               <Image src="/images/footer/linkedin.svg" alt="LinkedIn icon" width={36} height={36}  className="object-cover object-center "/>
