@@ -1,10 +1,10 @@
-# 🚀 Career Point Placement Services
+#  Career Point Placement Services
 
 > A modern job portal web application designed to streamline hiring by connecting candidates with recruiters efficiently.
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Career Point Placement Services is a recruitment-focused web platform inspired by a company with 17+ years of industry experience. It helps organizations connect with skilled professionals across multiple domains while enabling candidates to discover and apply for relevant opportunities.
 
@@ -12,20 +12,20 @@ The platform is built with a strong focus on usability, scalability, and clean U
 
 ---
 
-## ✨ Features
+##  Features
 
-* ✅ Job browsing with category-based filtering (Pharmaceutical, FMCG, BFSI, etc.)
-* ✅ CV/Resume submission with form validation
-* ✅ Detailed job pages (skills, responsibilities, location, experience)
-* ✅ Hiring solutions pages (Contract Hiring, Executive Search, Permanent Hiring, RPO)
-* ✅ Industry-specific sections with icons and structured content
-* ✅ Fully responsive design (mobile, tablet, desktop)
-* ✅ Contact forms and social media integration
-* ✅ Modular component-based architecture using React & Tailwind
+* Job browsing with category-based filtering (Pharmaceutical, FMCG, BFSI, etc.)
+* CV/Resume submission with form validation
+* Detailed job pages (skills, responsibilities, location, experience)
+* Hiring solutions pages (Contract Hiring, Executive Search, Permanent Hiring, RPO)
+* Industry-specific sections with icons and structured content
+* Fully responsive design (mobile, tablet, desktop)
+* Contact forms and social media integration
+* Modular component-based architecture using React & Tailwind
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Frontend:**
 
@@ -42,19 +42,19 @@ The platform is built with a strong focus on usability, scalability, and clean U
 
 ---
 
-## 🌐 Live Demo
+##  Live Demo
 
-🔗 [https://carrer-point.vercel.app](https://carrer-point.vercel.app)
-
----
-
-## 📦 Repository
-
-🔗 [https://github.com/sanjaybhandari-tsc/carrer-point](https://github.com/sanjaybhandari-tsc/carrer-point)
+ [Vercel Link](https://carrer-point.vercel.app)
 
 ---
 
-## 📂 Folder Structure
+##  Repository
+
+ [GitHub Repository Link](https://github.com/sanjaybhandari-tsc/carrer-point)
+
+---
+
+##  Folder Structure
 
 ```
 project-root/
@@ -66,48 +66,34 @@ project-root/
 
 ---
 
-## ⚙️ Installation & Setup
-
-### 1. Clone the repository
+##  Installation & Setup
 
 ```
 git clone https://github.com/sanjaybhandari-tsc/carrer-point.git
-```
-
-### 2. Install dependencies
-
-```
 cd carrer-point
 npm install
-```
-
-### 3. Run the project
-
-```
 npm start
 ```
----
-
-## 🚀 Future Improvements
-
-* 🔧 Advanced job filtering and search
-* 📄 Resume parsing functionality
-* 🔔 Notification system
-* ⚡ Performance optimizations
 
 ---
 
-## 👥 Authors
+##  Future Improvements
 
-* **Sanjay Bhandari**
-  GitHub: [https://github.com/sanjaybhandari-tsc](https://github.com/sanjaybhandari-tsc)
-
-* **Nirmal Singh**
-  GitHub: [https://github.com/nirmalsingh16](https://github.com/nirmalsingh16)
-
-* **Harshit**
-  GitHub: [https://github.com/HarshithSai-tsc](https://github.com/HarshithSai-tsc)
+*  Advanced job filtering and search
+*  Resume parsing functionality
+*  Notification system
+*  Performance optimizations
 
 ---
 
-⭐ If you find this project useful, consider giving it a star!
+## Authors
+
+* [Sanjay Bhandari](https://github.com/sanjaybhandari-tsc)
+
+* [Nirmal Singh](https://github.com/nirmalsingh16)
+
+* [Harshit Bontai](https://github.com/HarshithSai-tsc)
+
+---
+
+ If you find this project useful, consider giving it a star!
