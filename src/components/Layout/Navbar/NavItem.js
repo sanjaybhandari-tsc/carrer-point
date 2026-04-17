@@ -72,11 +72,11 @@ export default function NavItem({
       <div className="flex items-center gap-1 cursor-pointer">
 
         {hasDropdown ? (
-          <span className="hover:text-blue-600 transition-colors">
+          <span className="hover:text-[var(--color-primary)] transition-colors">
             {item.label}
           </span>
         ) : (
-          <Link href={item.href} className="hover:text-blue-600 transition-colors">
+          <Link href={item.href} className="hover:text-[var(--color-primary)] transition-colors">
             {item.label}
           </Link>
         )}
@@ -96,7 +96,7 @@ export default function NavItem({
               <Link
                 key={child.label}
                 href={child.href}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)] transition-colors"
               >
                 {child.label}
               </Link>
