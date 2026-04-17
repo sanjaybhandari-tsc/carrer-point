@@ -56,8 +56,8 @@ export default function Awards() {
             }`}
           >
             {awardsData.map((item, index) => (
-              <div key={index} className="flex items-center gap-2">
-                <div className="flex items-start justify-center flex-col w-15">
+              <div key={index} className="flex items-center gap-3">
+                <div className="flex items-start justify-center flex-col xl:w-auto lg:w-15 ">
                   <Image
                     src="/images/about/awardsIcon.svg"
                     alt="icon"
@@ -66,7 +66,7 @@ export default function Awards() {
                     className="mt-1 object-cover h-6 w-6"
                   />
                 </div>
-                <div className="flex items-center justify-center gap-2 ">
+                <div className="flex items-start justify-center gap-2">
                   <p className=" text-left text-[16px] md:text-[18px] leading-[1.5] text-white">
                     {item}
                   </p>
