@@ -2,12 +2,13 @@ import Image from "next/image";
 
 export default function Lastmessage() {
   return (
-    <div className="w-full px-2 md:px-16 bg-white py-16 md:py-24">
+    <section>
+      <div className="w-full px-2 md:px-16 bg-white py-16 md:py-24">
       <div className=" flex items-start justify-around">
         <div className="mb-6 w-20 sm:w-22 md:w-30 lg:w-40 ">
           <Image
             src="/images/about/quote.svg" 
-            alt="quote"
+            alt="Recruitment services"
             width={84}
             height={84}
             className="object-cover"
@@ -23,5 +24,6 @@ export default function Lastmessage() {
 
       </div>
     </div>
+    </section>
   );
 }

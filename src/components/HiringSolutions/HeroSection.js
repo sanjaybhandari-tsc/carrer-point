@@ -6,7 +6,7 @@ export default function HeroSection() {
       <section className="relative w-full min-h-dvh md:min-h-screen flex items-center">
         <Image
           src="/images/hiringsolutions/heroSectionHiringSolutions.png"
-          alt="Hero Background"
+          alt="Hiring solutions and staffing services"
           fill
           priority
           className="object-cover object-center"
@@ -20,9 +20,8 @@ export default function HeroSection() {
             Smart hiring Solutions
           </h1>
           <p className="font-roboto font-normal text-lg sm:text-xl lg:text-2xl leading-relaxed mt-4 md:text-lg text-gray-200 max-w-4xl">
-            Connecting organizations with skilled professionals through reliable and efficient 
-              recruitment support, helping businesses build stronger teams and achieve long-term growth.
-          </p>
+          We provide reliable <strong>hiring solutions, recruitment services, and talent sourcing</strong> to help organizations connect with skilled professionals and build strong teams for long-term growth.
+        </p>
           <button
             className={`mt-6 relative overflow-hidden
                         w-40 sm:w-44 md:w-48 lg:w-50

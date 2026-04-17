@@ -1,6 +1,7 @@
 "use client";
+
 import { useState } from "react";
-import WorkCard from "./WorkCard.js";
+import WorkCard from "./WorkCard";
 
 const howWeWorkData = [
   {
@@ -35,39 +36,38 @@ const howWeWorkData = [
   },
 ];
 
-
-
-
 export default function HowWeWork() {
   const [index, setIndex] = useState(0);
 
+  const visibleCards = 3;
+  const maxIndex = howWeWorkData.length - visibleCards;
+
   const nextSlide = () => {
-    if (index < howWeWorkData.length - 3) {
-      setIndex(index + 1);
-    }
+    setIndex((prev) => (prev < maxIndex ? prev + 1 : prev));
   };
 
   const prevSlide = () => {
-    if (index > 0) {
-      setIndex(index - 1);
-    }
+    setIndex((prev) => (prev > 0 ? prev - 1 : prev));
   };
-return (
-    <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] py-20 overflow-hidden">
+
+  return (
+    <section className="h-[80vh] bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-20 overflow-hidden">
       <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
         How We Work
       </h2>
-      <div className="relative max-w-6xl mx-auto">
-        
+
+      <div className="relative max-w-7xl mx-auto">
         <div className="overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{
-              transform: `translateX(-${index * 320}px)`,
+              transform: `translateX(-${index * (100 / visibleCards)}%)`,
             }}
           >
             {howWeWorkData.map((item) => (
-              <WorkCard key={item.id} item={item} />
+              <div key={item.id} className="w-full md:w-1/3 flex-shrink-0">
+                <WorkCard item={item} />
+              </div>
             ))}
           </div>
         </div>
@@ -75,19 +75,21 @@ return (
         <div className="flex gap-4 mt-10 ml-6">
           <button
             onClick={prevSlide}
-            className="w-12 h-12 rounded-full border border-white/40 text-white flex items-center justify-center hover:bg-white/10"
+            aria-label="Previous step"
+            className="w-12 h-12 rounded-full border border-white/40 text-white flex items-center justify-center hover:bg-white/10 transition"
           >
             ←
           </button>
 
           <button
             onClick={nextSlide}
-            className="w-12 h-12 rounded-full border border-white text-white flex items-center justify-center hover:bg-white/20"
+            aria-label="Next step"
+            className="w-12 h-12 rounded-full border border-white text-white flex items-center justify-center hover:bg-white/20 transition"
           >
             →
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
