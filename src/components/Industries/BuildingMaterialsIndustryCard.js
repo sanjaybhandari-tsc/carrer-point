@@ -6,20 +6,20 @@ export default function BuildingMaterialsIndustrySec() {
     {
       title: "Production Management",
       description:
-        "Professionals experienced in managing production activities and ensuring efficient manufacturing operations.",
-      icon: "/icons/industries/Production Management.svg",
+        "Professionals experienced in managing production activities, manufacturing workflows, and operational efficiency in the building materials industry.",
+      icon: "/icons/industries/production-management.svg",
     },
     {
       title: "Supply Chain & Distribution",
       description:
-        "Talent skilled in managing supply networks, logistics operations, and ensuring smooth distribution efficiency across markets.",
-      icon: "/icons/industries/Supply Chain & Distribution.svg",
+        "Talent skilled in supply chain management, logistics operations, and distribution systems across building materials and construction markets.",
+      icon: "/icons/industries/supply-chain-distribution.svg",
     },
     {
       title: "Quality & Process Standards",
       description:
-        "Ensuring consistent product quality through structured processes, inspections, and operational standards.",
-      icon: "/icons/industries/Quality & Process Standards.svg",
+        "Experts ensuring consistent product quality through structured processes, inspections, and operational standards in the construction materials sector.",
+      icon: "/icons/industries/quality-process-standards.svg",
     },
   ];
 
@@ -29,9 +29,7 @@ export default function BuildingMaterialsIndustrySec() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.15 }
     );
@@ -49,13 +47,17 @@ export default function BuildingMaterialsIndustrySec() {
       className="w-full bg-white pb-24 px-4 sm:px-6 md:px-10 lg:px-16"
     >
       <div className="max-w-7xl mx-auto">
+        <h2 className="sr-only">
+          Building Materials Industry Recruitment and Staffing Roles
+        </h2>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
 
           {cards.map((card, index) => {
             const delay = index * 150;
 
             return (
-              <div
+              <article
                 key={index}
                 className={`transform transition-all duration-700 ease-out
                 ${
@@ -68,7 +70,7 @@ export default function BuildingMaterialsIndustrySec() {
                 <div className="h-full transition-transform duration-300 hover:-translate-y-2">
                   <InfoCard {...card} />
                 </div>
-              </div>
+              </article>
             );
           })}
 
