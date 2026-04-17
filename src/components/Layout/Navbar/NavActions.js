@@ -42,7 +42,7 @@ export default function NavActions({
 
         <button
           onClick={closeMenu}
-          className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md"
+          className="mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md"
         >
           Get in touch
         </button>
@@ -54,7 +54,7 @@ export default function NavActions({
   return (
     <div className="flex items-center gap-3 flex-row">
       <div className="relative group">
-        <button className="text-blue-600 flex items-center gap-1">
+        <button className="font-montserrat font-medium text-sm sm:text-base leading-none text-[var(--color-primary)] flex items-center gap-1">
           See Jobs
           <ChevronDown className="transition-transform group-hover:rotate-180" />
         </button>
@@ -75,7 +75,7 @@ export default function NavActions({
         </div>
       </div>
 
-      <button className="px-4 py-2 bg-blue-600 text-white rounded-md whitespace-nowrap">
+      <button className="font-montserrat font-medium text-sm sm:text-base leading-none px-4 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap">
         Get in touch
       </button>
     </div>

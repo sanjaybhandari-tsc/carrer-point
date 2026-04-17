@@ -8,7 +8,7 @@ export default function SubmitCV() {
   return (
     <>
       <HeadingSubmitCV/>
-      <AboutThejob/>
+      {/* <AboutThejob/> */}
       <SubmitcvForm/>
     </>
   )

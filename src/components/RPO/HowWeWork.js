@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import WorkCard from "./WorkCard";
+import WorkCard from "./WorkCard.js";
 
 const howWeWorkData = [
   {
@@ -52,8 +52,7 @@ export default function HowWeWork() {
       setIndex(index - 1);
     }
   };
-
-  return (
+return (
     <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] py-20 overflow-hidden">
       <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
         How We Work

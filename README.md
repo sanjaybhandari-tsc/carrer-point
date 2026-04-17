@@ -1,40 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🚀 Career Point Placement Services
 
-## Getting Started
+> A modern job portal web application designed to streamline hiring by connecting candidates with recruiters efficiently.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📌 Overview
+
+Career Point Placement Services is a recruitment-focused web platform inspired by a company with 17+ years of industry experience. It helps organizations connect with skilled professionals across multiple domains while enabling candidates to discover and apply for relevant opportunities.
+
+The platform is built with a strong focus on usability, scalability, and clean UI/UX, ensuring a smooth experience for both job seekers and administrators.
+
+---
+
+## ✨ Features
+
+* ✅ Job browsing with category-based filtering (Pharmaceutical, FMCG, BFSI, etc.)
+* ✅ CV/Resume submission with form validation
+* ✅ Detailed job pages (skills, responsibilities, location, experience)
+* ✅ Hiring solutions pages (Contract Hiring, Executive Search, Permanent Hiring, RPO)
+* ✅ Industry-specific sections with icons and structured content
+* ✅ Fully responsive design (mobile, tablet, desktop)
+* ✅ Contact forms and social media integration
+* ✅ Modular component-based architecture using React & Tailwind
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+
+* React.js (Next.js structure)
+* Tailwind CSS
+
+**Backend:**
+
+* Node.js
+
+**Deployment:**
+
+* Vercel
+
+---
+
+## 🌐 Live Demo
+
+🔗 [https://carrer-point.vercel.app](https://carrer-point.vercel.app)
+
+---
+
+## 📦 Repository
+
+🔗 [https://github.com/sanjaybhandari-tsc/carrer-point](https://github.com/sanjaybhandari-tsc/carrer-point)
+
+---
+
+## 📂 Folder Structure
+
+```
+project-root/
+│── pages/         # Application pages
+│── src/           # Reusable components
+│── public/        # Static assets
+│── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## ⚙️ Installation & Setup
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### 1. Clone the repository
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```
+git clone https://github.com/sanjaybhandari-tsc/carrer-point.git
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. Install dependencies
 
-## Learn More
+```
+cd carrer-point
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Run the project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+```
+npm start
+```
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Future Improvements
 
-## Deploy on Vercel
+* 🔧 Advanced job filtering and search
+* 📄 Resume parsing functionality
+* 🔔 Notification system
+* ⚡ Performance optimizations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## 👥 Authors
+
+* **Sanjay Bhandari**
+  GitHub: [https://github.com/sanjaybhandari-tsc](https://github.com/sanjaybhandari-tsc)
+
+* **Nirmal Singh**
+  GitHub: [https://github.com/nirmalsingh16](https://github.com/nirmalsingh16)
+
+* **Harshit**
+  GitHub: [https://github.com/HarshithSai-tsc](https://github.com/HarshithSai-tsc)
+
+---
+
+⭐ If you find this project useful, consider giving it a star!

@@ -27,9 +27,9 @@ export default function TestimonialCard({ name, role, image, text }) {
         />
       </div>
 
-      <h3 className="font-semibold text-lg text-gray-800">{name}</h3>
+      <h3 className="font-roboto font-medium text-base sm:text-lg leading-none text-center">{name}</h3>
 
-      <p className="text-sm text-gray-500 mb-4">{role}</p>
+      <p className="font-inter font-normal text-sm sm:text-base leading-none text-center">{role}</p>
       <div className="flex flex-col items-center mb-4">
         <img
     src="/icons/comma.svg"
@@ -42,7 +42,8 @@ export default function TestimonialCard({ name, role, image, text }) {
       mb-2 sm:mb-3
     "
   />
-        <p className="text-base text-gray-600 leading-relaxed text-center">
+        
+        <p className="font-inter font-normal text-sm sm:text-base leading-relaxed text-center">
           {text}
         </p>
       </div>
