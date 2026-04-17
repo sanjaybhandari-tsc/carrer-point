@@ -13,47 +13,58 @@ export default function NavItem({
   const hasDropdown = item.dropdown && item.children?.length > 0;
 
   if (mobile) {
-    return (
-      <div className="w-full border-b border-gray-200">
+  return (
+    <div className="w-full border-b border-gray-200">
 
+      {/* ONLY toggle for dropdown items */}
+      {hasDropdown ? (
         <div
           className="flex items-center justify-between py-3 px-2 cursor-pointer"
-          onClick={() => (hasDropdown ? onToggle() : closeAll())}
+          onClick={onToggle}
         >
           <span className="font-montserrat font-medium text-base text-gray-800">
             {item.label}
           </span>
 
-          {hasDropdown && (
-            <ChevronDown
-              className={`w-4 h-4 transition-transform duration-300 ${
-                isOpen ? "rotate-180" : ""
-              }`}
-            />
-          )}
-        </div>
-
-        {hasDropdown && (
-          <div
-            className={`pl-4 overflow-hidden transition-all duration-300 ${
-              isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          <ChevronDown
+            className={`w-4 h-4 transition-transform duration-300 ${
+              isOpen ? "rotate-180" : ""
             }`}
-          >
-            {item.children.map((child) => (
-              <Link
-                key={child.label}
-                href={child.href}
-                onClick={closeAll}
-                className="block py-2 text-sm text-gray-700 hover:text-[var(--color-primary)]"
-              >
-                {child.label}
-              </Link>
-            ))}
-          </div>
-        )}
-      </div>
-    );
-  }
+          />
+        </div>
+      ) : (
+        // ✅ DIRECT LINK (no wrapper click handler)
+        <Link
+          href={item.href}
+          onClick={closeAll}
+          className="block py-3 px-2 font-montserrat font-medium text-base text-gray-800"
+        >
+          {item.label}
+        </Link>
+      )}
+
+      {/* dropdown */}
+      {hasDropdown && (
+        <div
+          className={`pl-4 overflow-hidden transition-all duration-300 ${
+            isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          {item.children.map((child) => (
+            <Link
+              key={child.label}
+              href={child.href}
+              onClick={closeAll}
+              className="block py-2 text-sm text-gray-700 hover:text-[var(--color-primary)]"
+            >
+              {child.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
   // DESKTOP
   return (
