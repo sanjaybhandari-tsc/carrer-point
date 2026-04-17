@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Lastmessage() {
   return (
-    <div className="w-full px-2 md:px-16 bg-white  md:py-24">
-      <div className=" flex items-start justify-around">
+    <div className="w-full px-2 md:px-16 bg-white  md:py-24 ">
+      <div className=" flex items-start justify-around ">
         <div className="mb-6 w-20 sm:w-22 md:w-30 lg:w-40 ">
           <Image
             src="/images/about/quote.svg" 
@@ -15,7 +15,7 @@ export default function Lastmessage() {
           />
         </div>
         <h2 className="font-bold text-[#333333] 
-          text-[20px] sm:text-[22px] md:text-[30px] lg:text-[50px]">
+          text-[20px] sm:text-[22px] md:text-[30px] lg:text-[50px] ">
           Our journey is driven by<span className="text-[#0277BD]"> trust</span>, experience, and a
           <span className="text-[#0277BD]"> commitment</span> to connecting
           organizations with the<span className="text-[#0277BD]"> right talent</span>.
