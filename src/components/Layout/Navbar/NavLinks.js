@@ -1,12 +1,9 @@
-import Link from "next/link";
 import NavItem from "./NavItem";
-import { useState } from "react";
 
 const links = [
   { label: "Hiring Solution", href: "/hiring-solutions" },
   { label: "About", href: "/about" },
   { label: "Industries", href: "/industries" },
-
   {
     label: "Services",
     dropdown: true,
@@ -19,23 +16,24 @@ const links = [
   },
 ];
 
-export default function NavLinks({ mobile = false, openItem, setOpenItem }) {
+export default function NavLinks({
+  mobile = false,
+  openNavLink,
+  setOpenNavLink,
+  closeMenu,
+}) {
   return (
-    <div
-      className={
-        mobile ? "flex flex-col w-full" : "hidden md:flex gap-3 lg:gap-6"
-      }
-    >
+    <div className={mobile ? "flex flex-col w-full" : "hidden md:flex gap-3 lg:gap-6"}>
       {links.map((item, index) => (
         <NavItem
           key={item.label}
           item={item}
           mobile={mobile}
-          isOpen={openItem === `link-${index}`}
+          isOpen={openNavLink === index}
           onToggle={() =>
-            setOpenItem(openItem === `link-${index}` ? null : `link-${index}`)
+            setOpenNavLink(openNavLink === index ? null : index)
           }
-          closeAll={() => setOpenItem(null)}
+          closeAll={closeMenu}
         />
       ))}
     </div>
