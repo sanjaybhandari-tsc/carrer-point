@@ -19,7 +19,7 @@ export default function BuildingMaterialsIndustrySec() {
       title: "Quality & Process Standards",
       description:
         "Experts ensuring consistent product quality through structured processes, inspections, and operational standards in the construction materials sector.",
-      icon: "/icons/industries/quality-process-standards.svg",
+      icon: "/icons/industries/quality-Process-standards.svg",
     },
   ];
 
@@ -31,7 +31,7 @@ export default function BuildingMaterialsIndustrySec() {
       ([entry]) => {
         if (entry.isIntersecting) setIsVisible(true);
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
@@ -52,7 +52,6 @@ export default function BuildingMaterialsIndustrySec() {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-
           {cards.map((card, index) => {
             const delay = index * 150;
 
@@ -73,7 +72,6 @@ export default function BuildingMaterialsIndustrySec() {
               </article>
             );
           })}
-
         </div>
       </div>
     </section>
