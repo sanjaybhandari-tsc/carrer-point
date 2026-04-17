@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function HowWeWork() {
   const workData = [
@@ -30,9 +30,23 @@ function HowWeWork() {
   ];
 
   const [index, setIndex] = useState(0);
+  const [cardsPerView, setCardsPerView] = useState(1);
+
+  useEffect(() => {
+    const updateCards = () => {
+      if (window.innerWidth >= 1024) setCardsPerView(3);
+      else if (window.innerWidth >= 768) setCardsPerView(2);
+      else setCardsPerView(1);
+    };
+
+    updateCards();
+    window.addEventListener("resize", updateCards);
+
+    return () => window.removeEventListener("resize", updateCards);
+  }, []);
 
   const nextSlide = () => {
-    if (index < workData.length - 1) {
+    if (index < workData.length - cardsPerView) {
       setIndex(index + 1);
     }
   };
@@ -54,7 +68,7 @@ function HowWeWork() {
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{
-              transform: `translateX(-${index * 320}px)`,
+              transform: `translateX(-${index * (100 / cardsPerView)}%)`,
             }}
           >
             {workData.map((item) => (
@@ -66,22 +80,20 @@ function HowWeWork() {
         <div className="flex gap-4 mt-10 ml-6">
           <button
             onClick={prevSlide}
-            className={
-              index > 0
-                ? "btn border-2 rounded-[50%] w-10 h-10 text-white font-bold"
-                : "btn border-2 rounded-[50%] w-10 h-10 text-[#B2B2B252] font-bold"
-            }
+            className={`border-2 rounded-full w-10 h-10 font-bold ${
+              index > 0 ? "text-white" : "text-[#B2B2B252]"
+            }`}
           >
             ←
           </button>
 
           <button
             onClick={nextSlide}
-            className={
-              index < workData.length - 1
-                ? "btn border-2 rounded-[50%] w-10 h-10 text-white font-bold"
-                : "btn border-2 rounded-[50%] w-10 h-10 text-[#B2B2B252] font-bold"
-            }
+            className={`border-2 rounded-full w-10 h-10 font-bold ${
+              index < workData.length - cardsPerView
+                ? "text-white"
+                : "text-[#B2B2B252]"
+            }`}
           >
             →
           </button>
@@ -93,7 +105,7 @@ function HowWeWork() {
 
 function WorkCard({ item }) {
   return (
-    <div className="min-w-[300px] md:min-w-[400px] px-6">
+    <div className="min-w-full md:min-w-1/2 lg:min-w-1/3 px-6">
       <h2 className="text-5xl font-bold text-white/70 mb-4">{item.srNo}</h2>
 
       <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
