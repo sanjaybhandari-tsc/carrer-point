@@ -3,7 +3,7 @@ import NavItem from "./NavItem";
 import { useState } from "react";
 
 const links = [
-  { label: "Hiring Solution", href: "/hiring" },
+  { label: "Hiring Solution", href: "/hiring-solutions" },
   { label: "About", href: "/about" },
   { label: "Industries", href: "/industries" },
 
@@ -13,7 +13,7 @@ const links = [
     children: [
       { label: "Permanent Hiring", href: "/services/permanenthirings" },
       { label: "Contract Hiring", href: "/services/contracthiring" },
-      { label: "Executive Search", href: "/services/executivesearch" },
+      { label: "Executive Search", href: "/services/executive-search" },
       { label: "RPO", href: "/services/rpo" },
     ],
   },

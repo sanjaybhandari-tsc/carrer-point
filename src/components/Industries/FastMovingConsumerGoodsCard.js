@@ -6,20 +6,20 @@ export default function FastMovingConsumerGoodsSection() {
     {
       title: "Sales & Market Operations",
       description:
-        "Professionals experienced in managing sales activities, market presence, and business expansion.",
-      icon: "/icons/industries/Sales & Market Operations.svg",
+        "Professionals experienced in FMCG sales operations, market expansion, and consumer-driven business growth.",
+      icon: "/icons/industries/sales-market-operations.svg",
     },
     {
       title: "Supply Chain Management",
       description:
-        "Talent skilled in handling product movement, distribution systems, and supply chain coordination.",
-      icon: "/icons/industries/Supply Chain Management.svg",
+        "Talent skilled in FMCG supply chain management, product distribution, and logistics coordination across retail networks.",
+      icon: "/icons/industries/supply-chain-management.svg",
     },
     {
       title: "Consumer Market Insights",
       description:
-        "Experts focused on understanding consumer behavior, market trends, and product demand analysis.",
-      icon: "/icons/industries/Consumer Market Insights.svg",
+        "Experts analyzing FMCG consumer behavior, market trends, and product demand forecasting.",
+      icon: "/icons/industries/consumer-market-insights.svg",
     },
   ];
 
@@ -48,13 +48,17 @@ export default function FastMovingConsumerGoodsSection() {
       className="w-full bg-white pb-24 px-4 sm:px-6 md:px-10 lg:px-16"
     >
       <div className="max-w-7xl mx-auto">
+        <h2 className="sr-only">
+          FMCG Recruitment and Fast Moving Consumer Goods Staffing Roles
+        </h2>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
 
           {cards.map((card, index) => {
             const delay = index * 150;
 
             return (
-              <div
+              <article
                 key={index}
                 className={`transform transition-all duration-700 ease-out
                 ${
@@ -67,7 +71,7 @@ export default function FastMovingConsumerGoodsSection() {
                 <div className="h-full transition-transform duration-300 hover:-translate-y-2">
                   <InfoCard {...card} />
                 </div>
-              </div>
+              </article>
             );
           })}
 
