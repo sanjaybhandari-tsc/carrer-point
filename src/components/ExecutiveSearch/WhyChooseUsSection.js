@@ -5,7 +5,7 @@ export default function WhyChooseUsSection() {
     {
       title: "Leadership Talent Identification",
       description:
-        "We specialize in identifying senior leaders, CXOs, and experienced professionals with strong leadership capabilities and deep industry expertise.",
+        "We specialize in identifying senior leaders, CXOs, and experienced professionals with strong leadership capabilities & industry expertise.",
       icon: "/icons/executivesearch/Leadership Talent Identification.svg",
     },
     {
