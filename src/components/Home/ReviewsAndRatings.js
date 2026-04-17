@@ -96,7 +96,7 @@ function ReviewsAndRatings() {
     },
   ];
   return (
-    <div className="flex flex-col items-center w-full justify-center text-center">
+    <div className="flex h-screen flex-col items-center w-full justify-center text-center">
       <div className="flex flex-col items-center max-w-[80%] justify-center text-center gap-5">
         <h3 className="font-bold text-3xl">
           Employee <span className=" text-[#0277BD]">Reviews</span> & Ratings
