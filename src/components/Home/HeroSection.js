@@ -56,40 +56,40 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center relative -top-15  lg:-top-25">
-        <div className="w-[90%] lg:py-12 lg:px-20 py-5 px-6 rounded-4xl dark:text-[#333333] flex justify-between bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE] bottom-[-80px] overflow-visible">
+      <div className="w-full flex justify-center relative -top-12  lg:-top-25">
+        <div className="w-[90%] lg:py-12 lg:px-20 py-3 px-2 rounded-4xl dark:text-[#333333] flex justify-between bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE] bottom-[-80px] overflow-visible">
           <div className="text-center">
-            <h1 className="text-2xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
+            <h1 className="text-xl md:text-3xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
               95%
             </h1>
-            <p className="text-sm font-semibold lg:text-2xl lg:font-bold ">
+            <p className="text-sm font-[500] lg:text-2xl lg:font-bold ">
               Success Rate
             </p>
           </div>
 
           <div className="text-center">
-            <h1 className="text-2xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
+            <h1 className="text-xl md:text-3xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
               50+
             </h1>
-            <p className="text-sm font-semibold lg:text-2xl lg:font-bold ">
+            <p className="text-sm font-[500] lg:text-2xl lg:font-bold ">
               Global Clients
             </p>
           </div>
 
           <div className="text-center">
-            <h1 className="text-2xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
+            <h1 className="text-xl md:text-3xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
               15K+
             </h1>
-            <p className="text-sm font-semibold lg:text-2xl lg:font-bold ">
+            <p className="text-sm font-[500] lg:text-2xl lg:font-bold ">
               Placements
             </p>
           </div>
 
           <div className="text-center">
-            <h1 className="text-2xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
+            <h1 className="text-xl md:text-3xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
               48hrs
             </h1>
-            <p className="text-sm font-semibold lg:text-2xl lg:font-bold ">
+            <p className="text-sm font-[500] lg:text-2xl lg:font-bold ">
               Total Match
             </p>
           </div>
