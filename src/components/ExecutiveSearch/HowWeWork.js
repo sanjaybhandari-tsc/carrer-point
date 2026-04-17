@@ -52,7 +52,7 @@ export default function HowWeWork() {
 
   return (
     <section
-      className="h-[80vh] bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-20 overflow-hidden"
+      className="h-[100vh] bg-gradient-to-b from-[#0277BD] to-[#0E6497] flex flex-col justify-center overflow-hidden"
       aria-label="Executive Search Process - How We Work"
     >
       <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
