@@ -18,7 +18,7 @@ export default function ExecutiveSearchPage() {
         <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
-          href="https://your-domain.com/services/executive-search"
+          href="https://carrer-point.vercel.app/services/executive-search"
         />
       </Head>
 
