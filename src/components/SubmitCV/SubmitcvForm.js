@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function SubmitcvForm() {
   const [formData, setFormData] = useState({
@@ -19,12 +19,61 @@ export default function SubmitcvForm() {
   });
 
   const [errors, setErrors] = useState({});
+  useEffect(() => {
+    const savedData = sessionStorage.getItem("formData");
+    if (savedData) {
+      const parsedData = JSON.parse(savedData);
+      setFormData({
+        ...formData,
+        ...parsedData,
+        resume: null, 
+      });
+    }
+  }, []);
+
+  const handleFocus = (e) => {
+    const { name } = e.target;
+    setErrors((prev) => ({
+      ...prev,
+      [name]: "",
+    }));
+  };
+
   const handleChange = (e) => {
     const { name, value, files } = e.target;
+
     if (name === "resume") {
-      setFormData({ ...formData, resume: files[0] });
+      const file = files[0];
+
+      setFormData({ ...formData, resume: file });
+
+      setErrors((prev) => ({
+        ...prev,
+        resume: "",
+      }));
+
+      sessionStorage.setItem(
+        "formData",
+        JSON.stringify({
+          ...formData,
+          resume: file?.name || null,
+        })
+      );
     } else {
-      setFormData({ ...formData, [name]: value });
+      const updatedData = { ...formData, [name]: value };
+      setFormData(updatedData);
+
+      setErrors((prev) => ({
+        ...prev,
+        [name]: "",
+      }));
+      sessionStorage.setItem(
+        "formData",
+        JSON.stringify({
+          ...updatedData,
+          resume: updatedData.resume?.name || null,
+        })
+      );
     }
   };
 
@@ -38,7 +87,7 @@ export default function SubmitcvForm() {
     if (!formData.contact.match(/^[0-9]{10}$/))
       newErrors.contact = "Valid 10-digit number required";
     if (!formData.resume) newErrors.resume = "Resume is required";
-    if(!formData.skills) newErrors.skills="Plese Fill the Data"
+    if (!formData.skills) newErrors.skills = "Plese Fill the Data";
 
     return newErrors;
   };
@@ -50,6 +99,14 @@ export default function SubmitcvForm() {
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
+      sessionStorage.setItem(
+        "formData",
+        JSON.stringify({
+          ...formData,
+          resume: formData.resume?.name || null,
+        })
+      );
+
       console.log(formData);
       alert("Form submitted successfully!");
     }
@@ -58,7 +115,8 @@ export default function SubmitcvForm() {
   const inputStyle =
     "w-full h-12 border rounded-lg px-3 text-[16px] border border-[#E9EAEB]";
 
-  const labelStyle = "text-black font-medium text-sm sm:text-sm md:text-base lg:text-[16px] leading-tight tracking-normal";
+  const labelStyle =
+    "text-black font-medium text-sm sm:text-sm md:text-base lg:text-[16px] leading-tight tracking-normal";
 
   return (
     <div className="px-4 sm:px-6 lg:px-[100px] py-10  lg:mb-25">
@@ -70,7 +128,7 @@ export default function SubmitcvForm() {
           <h2 className="text-[24px] font-bold">Personal Details</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
+
             <div className="flex items-start flex-col gap-[10px]">
               <label className={labelStyle}>First Name</label>
               <input
@@ -79,6 +137,7 @@ export default function SubmitcvForm() {
                 placeholder="First Name"
                 className={inputStyle}
                 onChange={handleChange}
+                onFocus={handleFocus} 
               />
               <p className="text-red-500 text-lg">{errors.firstName}</p>
             </div>
@@ -91,6 +150,7 @@ export default function SubmitcvForm() {
                 placeholder="Last Name"
                 className={inputStyle}
                 onChange={handleChange}
+                onFocus={handleFocus}  
               />
               <p className="text-red-500 text-lg">{errors.lastName}</p>
             </div>
@@ -101,6 +161,7 @@ export default function SubmitcvForm() {
                 name="gender"
                 className={inputStyle}
                 onChange={handleChange}
+                onFocus={handleFocus} 
               >
                 <option value="">Gender</option>
                 <option>Male</option>
@@ -116,6 +177,7 @@ export default function SubmitcvForm() {
                 name="dob"
                 className={inputStyle}
                 onChange={handleChange}
+                onFocus={handleFocus}  
               />
             </div>
 
@@ -127,6 +189,7 @@ export default function SubmitcvForm() {
                 placeholder="Email Address"
                 className={inputStyle}
                 onChange={handleChange}
+                onFocus={handleFocus}  
               />
               <p className="text-red-500 text-lg">{errors.email}</p>
             </div>
@@ -139,6 +202,7 @@ export default function SubmitcvForm() {
                 placeholder="Contact No."
                 className={inputStyle}
                 onChange={handleChange}
+                onFocus={handleFocus}  
               />
               <p className="text-red-500 text-lg">{errors.contact}</p>
             </div>
@@ -151,6 +215,7 @@ export default function SubmitcvForm() {
                 placeholder="State"
                 className={inputStyle}
                 onChange={handleChange}
+                onFocus={handleFocus}  
               />
             </div>
 
@@ -162,90 +227,35 @@ export default function SubmitcvForm() {
                 placeholder="City"
                 className={inputStyle}
                 onChange={handleChange}
+                onFocus={handleFocus} 
               />
-            </div>
-          </div>
-        </div>
-        <div className="space-y-6">
-          <h2 className="text-[24px] font-bold ">Professional Details</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            <div className="flex items-start flex-col gap-[10px]">
-              <label className={labelStyle}>Current Job Title</label>
-              <input
-                type="text"
-                name="jobTitle"
-                placeholder="Current Job Title"
-                className={inputStyle}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="flex items-start flex-col gap-[10px]">
-              <label className={labelStyle}>Current Company</label>
-              <input
-                type="text"
-                name="company"
-                placeholder="Current Company"
-                className={inputStyle}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="flex items-start flex-col gap-[10px]">
-              <label className={labelStyle}>Current CTC</label>
-              <input
-                type="text"
-                name="ctc"
-                placeholder="Current CTC"
-                className={inputStyle}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="flex items-start flex-col gap-[10px]">
-              <label className={labelStyle}>Years of Experience</label>
-              <input
-                type="text"
-                name="experience"
-                placeholder="Years of Experience"
-                className={inputStyle}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="col-span-1  lg:col-span-2 flex items-start flex-col gap-[10px]">
-              <label className={labelStyle}>Key Skills</label>
-              <input
-                type="text"
-                name="skills"
-                placeholder="Key Skills"
-                className="h-12 border border-[#E9EAEB] rounded-lg px-3 w-full"
-                onChange={handleChange}
-              />
-              <p className="text-red-500 text-lg">{errors.skills}</p>
             </div>
           </div>
         </div>
 
         <div className="flex justify-center  gap-[10px] ">
-          <label className="w-full max-w-[1130px] h-[200px] border-2 border-dashed border-blue-400 rounded-3xl flex flex-col items-center justify-center  text-center cursor-pointer">
+          <label className="w-full max-w-[1130px] h-[200px] border-2 border-dashed border-blue-400 rounded-3xl flex flex-col items-center justify-center text-center cursor-pointer">
             <input
               type="file"
               name="resume"
               className="hidden cursor-pointer"
               accept=".pdf,.doc,.docx"
               onChange={handleChange}
+              onFocus={handleFocus}  
             />
             <img src="/images/SubmitCv/uplodIcon.svg" alt=" " />
             <p className="text-lg font-medium cursor-pointer">Upload Resume</p>
-            <p className="text-sm text-gray-500 cursor-pointer">
-              Drag & drop or click to upload (PDF, DOC, DOCX)
-            </p>
+
+            {formData.resume && (
+              <p className="text-green-600 text-sm">
+                Uploaded: {formData.resume.name}
+              </p>
+            )}
+
             <p className="text-red-500 text-lg">{errors.resume}</p>
           </label>
         </div>
+
         <div className="flex justify-center">
           <button
             type="submit"
