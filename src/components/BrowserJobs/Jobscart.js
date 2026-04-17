@@ -350,7 +350,7 @@ export default function Jobscart() {
           <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 mt-6">
             
             <button
-              onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+              onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))} className="cursor-pointer"
             >
               <img src="/images/broserJobs/Arrowleft.svg" alt="arrow" />
             </button>
@@ -360,7 +360,7 @@ export default function Jobscart() {
                 <button
                   key={page}
                   onClick={() => setCurrentPage(page)}
-                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full text-sm sm:text-[16px] ${
+                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full text-sm sm:text-[16px] cursor-pointer ${
                     currentPage === page
                       ? "bg-gray-200 font-semibold"
                       : "text-black"
@@ -374,7 +374,7 @@ export default function Jobscart() {
             <button
               onClick={() =>
                 setCurrentPage((p) => Math.min(p + 1, totalPages))
-              }
+              } className="cursor-pointer"
             >
               <img src="/images/broserJobs/Arrowright.svg" alt="arrow" />
             </button>
@@ -411,7 +411,7 @@ export default function Jobscart() {
               </div>
             </div>
 
-            <button onClick={()=>submitHandelar(selectedJob)} className="bg-[#039BE6] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg shadow w-full sm:w-auto text-sm sm:text-base flex items-center justify-center gap-3">
+            <button onClick={()=>submitHandelar(selectedJob)} className="bg-[#039BE6] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg shadow w-full sm:w-auto text-sm sm:text-base flex items-center justify-center gap-3 cursor-pointer">
               Apply now
               <img src="/images/broserJobs/applyArrow.svg" className="w-[14px] h-[18px]" />
             </button>
@@ -454,7 +454,7 @@ export default function Jobscart() {
             </div>
           </div>
           <div className="p-4 sm:p-6">
-            <button onClick={()=>submitHandelar(selectedJob)} className="w-full sm:w-auto bg-[#039BE6] text-white px-5.5 py-3   rounded-lg shadow flex items-center justify-center gap-4 text-[20px]">
+            <button onClick={()=>submitHandelar(selectedJob)} className="w-full sm:w-auto bg-[#039BE6] text-white px-5.5 py-3   rounded-lg shadow flex items-center justify-center gap-4 text-[20px] cursor-pointer">
               Apply now
               <img src="/images/broserJobs/applyArrow.svg" className="w-[28px] h-[28px]" />
             </button>

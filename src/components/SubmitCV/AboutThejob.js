@@ -67,7 +67,7 @@ export default function AboutTheJob() {
                   {!showDetails && (
                     <button
                       onClick={() => setShowDetails(true)}
-                      className="bg-[#039BE6] text-white px-5 py-3 rounded-lg text-sm hover:bg-[#0288D1] shadow-[0_4px_8px_#00000029]"
+                      className="bg-[#039BE6] text-white px-5 py-3 rounded-lg text-sm  shadow-[0_4px_8px_#00000029] cursor-pointer"
                     >
                       View Details
                     </button>
@@ -113,7 +113,7 @@ export default function AboutTheJob() {
           <div className="bg-white border border-[#E9EAEB] rounded-xl p-6 shadow-[0_4px_8px_#00000014] relative">
             <button
               onClick={() => setShowDetails(false)}
-              className="absolute top-4 right-4 text-[#B3B3B3]  hover:text-black "
+              className="absolute top-4 right-4 text-[#B3B3B3]  hover:text-black cursor-pointer "
             >
               <img src="/images/SubmitCv/cross.svg " alt=" icon" className="h-[32px] w-[32px]" />
             </button>
