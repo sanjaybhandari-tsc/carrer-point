@@ -14,16 +14,16 @@ export default function HeroSection() {
           className={`absolute inset-0  w-[110%] h-[110%] -left-[5%]  -top-[35%]     lg:w-[120%] lg:h-[130%]  lg:-top-[60%] lg:-left-[10%] rounded-[50%]  bg-gradient-to-t from-[#080F249C] to-[#039BE69C]  ${styles.slideDown} flex flex-col justify-center items-center`}
         >
           <div
-            className={`absolute  inset-0 h-full flex flex-col md:gap-4 items-center justify-end text-center  px-4 py-3 lg:py-20 ${styles.slideup}`}
+            className={`absolute  inset-0 h-full flex flex-col  md:gap-4 items-center justify-end text-center  px-4 py-3 lg:py-20 ${styles.slideup}`}
           >
-            <div className="lg:mb-6 px-4 py-1 border border-white rounded-full backdrop-blur-md text-sm flex justify-center items-center lg:gap-4 bg-transparent">
+            <div className="lg:mb-6 px-4 lg:py-2 border border-white rounded-full backdrop-blur-md text-sm flex justify-center items-center lg:gap-4 bg-transparent">
               <img
                 className="w-6 h-6"
                 src="/images/homepage/HeroInnerImg.png"
               />
               <div>
                 {" "}
-                <p className=" text-left text-xl tracking-wider">
+                <p className=" text-left  lg:text-xl tracking-wider">
                   <span className="text-white">4.8 </span>{" "}
                   <span className="text-amber-300">★★★★★</span>
                 </p>
@@ -33,11 +33,11 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <h1 className="lg:text-8xl text-2xl font-bold font-[Montserrat, sans-serif] lg:leading-tight text-white">
+            <h1 className="lg:text-8xl md:4xl text-xl font-bold font-[Montserrat, sans-serif] lg:leading-tight text-white">
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1>
 
-            <p className="lg:mt-4 mb-1 md:max-w-[50%] text-sm lg:text-2xl text-white lg:max-w-[60%] max-w-[65%]">
+            <p className="lg:mt-4 mb-1 max-w-[90%]  md:max-w-[50%] text-sm lg:text-2xl text-white lg:max-w-[60%] max-w-[65%]">
               Connect with skilled professionals across industries and build
               high-performing teams faster and .
             </p>
