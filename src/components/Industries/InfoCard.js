@@ -1,13 +1,14 @@
 export default function InfoCard({ icon, title, description }) {
   return (
     <div className="
-  relative bg-white rounded-2xl overflow-hidden p-6 text-center
-  shadow-md
-  border-t-8 border-blue-200
-  transition-all duration-300 ease-out
-  hover:-translate-y-2
-  hover:scale-[1.02]
-  hover:shadow-1xl
+   relative bg-white rounded-2xl overflow-hidden p-6 text-center
+    shadow-md
+    border-t-8 border-blue-200
+    transition-all duration-300 ease-out
+    hover:-translate-y-2
+    hover:scale-[1.02]
+    hover:shadow-1xl
+    min-h-[200px] sm:min-h-[250px]
 ">
       <div className="relative z-10">
         <div className="flex justify-center mb-4">
