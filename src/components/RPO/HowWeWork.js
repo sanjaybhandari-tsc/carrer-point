@@ -1,95 +1,133 @@
-"use client";
+import React, { useState, useEffect } from "react";
 
-import { useState } from "react";
-import WorkCard from "./WorkCard";
+function HowWeWork() {
+  const workData = [
+    {
+      id: "01",
+      title: "Hiring Plan Understanding",
+      description:
+        "We begin by understanding the client’s hiring goals, company culture, and role requirements.",
+    },
+    {
+      id: "02",
+      title: "Dedicated Team Assignment",
+      description:
+        "A specialized recruitment team is assigned to manage the hiring process for the client.",
+    },
+    {
+      id: "03",
+      title: "Sourcing & Screening",
+      description:
+        "Candidates are sourced, evaluated, and shortlisted based on role requirements and organizational fit.",
+    },
+    {
+      id: "04",
+      title: "Interview Coordination",
+      description:
+        "We manage interview scheduling, feedback tracking, and communication throughout the evaluation process.",
+    },
+    {
+      id: "05",
+      title: "Offer & Reporting Management",
+      description:
+        "Our team handles offer rollouts, joining follow-ups, and provides regular hiring reports and recruitment insights.",
+    },
+  ];
 
-const howWeWorkData = [
-  {
-    id: "01",
-    title: "Hiring Plan Understanding",
-    description:
-      "We begin by understanding the client’s hiring goals, company culture, and role requirements.",
-  },
-  {
-    id: "02",
-    title: "Dedicated Team Assignment",
-    description:
-      "A specialized recruitment team is assigned to manage the hiring process for the client.",
-  },
-  {
-    id: "03",
-    title: "Sourcing & Screening",
-    description:
-      "Candidates are sourced, evaluated, and shortlisted based on role requirements and organizational fit.",
-  },
-  {
-    id: "04",
-    title: "Interview Coordination",
-    description:
-      "We manage interview scheduling, feedback tracking, and communication throughout the evaluation process.",
-  },
-  {
-    id: "05",
-    title: "Offer & Reporting Management",
-    description:
-      "Our team handles offer rollouts, joining follow-ups, and provides regular hiring reports and recruitment insights.",
-  },
-];
-
-export default function HowWeWork() {
   const [index, setIndex] = useState(0);
+  const [cardsPerView, setCardsPerView] = useState(1);
 
-  const visibleCards = 3;
-  const maxIndex = howWeWorkData.length - visibleCards;
+  useEffect(() => {
+    const updateCards = () => {
+      if (window.innerWidth >= 1024) setCardsPerView(3);
+      else if (window.innerWidth >= 768) setCardsPerView(2);
+      else setCardsPerView(1);
+    };
+
+    updateCards();
+    window.addEventListener("resize", updateCards);
+
+    return () => window.removeEventListener("resize", updateCards);
+  }, []);
 
   const nextSlide = () => {
-    setIndex((prev) => (prev < maxIndex ? prev + 1 : prev));
+    if (index < workData.length - cardsPerView) {
+      setIndex(index + 1);
+    }
   };
 
   const prevSlide = () => {
-    setIndex((prev) => (prev > 0 ? prev - 1 : prev));
+    if (index > 0) {
+      setIndex(index - 1);
+    }
   };
 
   return (
-    <section className="h-[100vh] bg-gradient-to-b from-[#0277BD] to-[#0E6497] flex flex-col justify-center overflow-hidden">
-      <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
-        How We Work
-      </h2>
+    <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] flex items-center py-20 overflow-hidden">
+      <div className="w-full">
+        <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
+          How We Work
+        </h2>
 
-      <div className="relative max-w-7xl mx-auto">
-        <div className="overflow-hidden">
-          <div
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{
-              transform: `translateX(-${index * (100 / visibleCards)}%)`,
-            }}
-          >
-            {howWeWorkData.map((item) => (
-              <div key={item.id} className="w-full md:w-1/3 flex-shrink-0">
-                <WorkCard item={item} />
-              </div>
-            ))}
+        <div className="relative max-w-6xl mx-auto">
+          <div className="overflow-hidden">
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{
+                transform: `translateX(-${index * (100 / cardsPerView)}%)`,
+              }}
+            >
+              {workData.map((item) => (
+                <WorkCard key={item.id} item={item} />
+              ))}
+            </div>
+          </div>
+
+          <div className="flex gap-4 mt-10 ml-6">
+            <button
+              onClick={prevSlide}
+              className={`border-2 rounded-full w-10 h-10 font-bold ${
+                index > 0 ? "text-white" : "text-[#B2B2B252]"
+              }`}
+            >
+              ←
+            </button>
+
+            <button
+              onClick={nextSlide}
+              className={`border-2 rounded-full w-10 h-10 font-bold ${
+                index < workData.length - cardsPerView
+                  ? "text-white"
+                  : "text-[#B2B2B252]"
+              }`}
+            >
+              →
+            </button>
           </div>
         </div>
-
-        <div className="flex gap-4 mt-10 ml-6">
-          <button
-            onClick={prevSlide}
-            aria-label="Previous step"
-            className="w-12 h-12 rounded-full border border-white/40 text-white flex items-center justify-center hover:bg-white/10 transition"
-          >
-            ←
-          </button>
-
-          <button
-            onClick={nextSlide}
-            aria-label="Next step"
-            className="w-12 h-12 rounded-full border border-white text-white flex items-center justify-center hover:bg-white/20 transition"
-          >
-            →
-          </button>
-        </div>
       </div>
-    </section>
+    </div>
   );
 }
+
+function WorkCard({ item }) {
+  return (
+    <div className="min-w-full md:min-w-1/2 lg:min-w-1/3 px-6 flex items-center">
+      <div>
+        <h2 className="text-5xl font-bold text-white/70 mb-4">
+          {item.id}
+        </h2>
+
+        <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
+          {item.title}
+        </h3>
+
+        <p className="text-white/80 leading-relaxed">
+          {item.description}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default HowWeWork;
