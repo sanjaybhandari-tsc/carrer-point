@@ -13,7 +13,7 @@ const links = [
     children: [
       { label: "Permanent Hiring", href: "/services/permanenthirings" },
       { label: "Contract Hiring", href: "/services/contracthiring" },
-      { label: "Executive Search", href: "/services/executivesearch" },
+      { label: "Executive Search", href: "/services/executive-search" },
       { label: "RPO", href: "/services/rpo" },
     ],
   },
