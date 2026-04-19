@@ -34,7 +34,7 @@ export default function Ourjourney() {
         return () => observer.disconnect();
     }, []);
     return (
-        <div className='bg-[linear-gradient(180deg,rgba(250,250,250,0.22)_0%,rgba(3,155,230,0.01)_100%)]'>
+        <div className='bg-[linear-gradient(180deg,rgba(250,250,250,0.25)_0%,rgba(3,155,230,0.15)_50%,rgba(250,250,250,0.25)_100%)]'>
         <div className="w-full px-6 md:px-16 lg:px-30  lg:py-25 py-16">
              
             <div ref={topRef} className={`text-center mb-12 transition-all duration-700 ease-out
@@ -237,7 +237,7 @@ export default function Ourjourney() {
 
                 </div>
 
-                <div className="border-b border-gray-300 pb-8 flex items-start justify-between   flex-col md:flex-row gap-6">
+                <div className=" flex items-start justify-between   flex-col md:flex-row gap-6">
                     <div className="md:w-[20%] ">
                         <p className='text-4xl md:text-5xl  text-black   font-black lg:text-[60px] leading-none tracking-normal'>2025</p>
                     </div>

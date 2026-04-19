@@ -25,7 +25,7 @@ export default function Ourmission() {
   return (
     <div
       ref={ref}
-      className="w-full bg-white px-4 py-12 sm:px-6 md:px-16 lg:px-24"
+      className="w-full bg-white px-4 py-12 sm:px-6 md:px-16 lg:px-24 overflow-x-hidden"
     >
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-6">
         <div
