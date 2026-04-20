@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -37,22 +38,22 @@ export default function Footer() {
               <h3 className="font-inter font-semibold text-xl md:text-2xl whitespace-nowrap">Quick Links</h3>
 
               <div className="text-[16px] tracking-normal whitespace-nowrap ">
-                <p className="cursor-pointer">Home</p>
-                <p className="cursor-pointer">Hiring Solution</p>
-                <p className="cursor-pointer">About</p>
-                <p className="cursor-pointer">Industries</p>
-                <p className="cursor-pointer">Services</p>
-                <p className="cursor-pointer">See Jobs</p>
-                <p className="cursor-pointer">Contact Us</p>
+                <Link href={"/"}> <p className="cursor-pointer">Home</p></Link>
+                <Link href={"/hiring-solutions"}><p className="cursor-pointer">Hiring Solution</p></Link>
+                <Link href={"/about"}><p className="cursor-pointer">About</p></Link>
+                <Link href={"/industries"}><p className="cursor-pointer">Industries</p></Link>
+                <Link href={"/services/permanenthirings"}><p className="cursor-pointer">Services</p></Link>
+                <Link href={"/jobs/browseJobs"}><p className="cursor-pointer">See Jobs</p></Link>
+                <Link href={"#"}><p className="cursor-pointer">Contact Us</p></Link>
               </div>
             </div>
             <div className="flex flex-col gap-5 items-center md:items-start text-center md:text-left">
               <h3 className="font-inter font-semibold text-xl md:text-2xl whitespace-nowrap">Head Office</h3>
 
-              <p className="text-white w-full md:w-60 text-[16px] tracking-normal leading-[120%]">
+              <a href="https://maps.app.goo.gl/sTr4yV4g5m4rm5Hp8"><p className="text-white w-full md:w-60 text-[16px] tracking-normal leading-[120%] cursor-pointer">
                 85/A Railway Lines, Samrudhi one 4th floor,, Near
                 commissioner Bangalow. Solapur 413001
-              </p>
+              </p></a>
             </div>
             <div className="flex flex-col gap-5 items-center md:items-start text-center md:text-left">
               <div>
@@ -83,7 +84,7 @@ export default function Footer() {
                     height={20}
                     className="object-cover object-center "
                   /></div>
-                  <p className="font-inter text-base">ramesh.w@cppsjobs.com</p>
+                  <a href="mailto:mailto:ramesh.w@cppsjobs.com hover:underline"><p className="font-inter text-base">ramesh.w@cppsjobs.com</p></a>
                 </div>
               </div>
             </div>
