@@ -21,7 +21,7 @@ function GetinTouch() {
     };
   }, []);
   return (
-    <div className="flex h-[110vh] mb-25 lg:mb-20 text-white">
+    <div className="flex h-[110vh] mb-25 lg:mb-20 text-white overflow-hidden">
       <div
         ref={ref}
         className={`hidden md:hidden lg:block md:block relative bg-[url('/images/homepage/getTouch.svg')] w-[35%] h-full bg-cover bg-center rounded-tr-4xl rounded-br-4xl object-cover overflow-hidden ${isVisible ? style.slideleft : ""}`}
