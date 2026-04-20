@@ -20,7 +20,7 @@ function MessageFromManagingDirector() {
     return () => observer.disconnect();
   }, []);
   return (
-    <div className="dark:text-white text-white bg-[#0B2239] w-full flex flex-col lg:flex-row pt-5 ">
+    <div className="dark:text-white text-white bg-[#0B2239] w-full flex flex-col lg:flex-row pt-5 overflow-hidden">
       <div
         ref={ref}
         className={`w-full flex lg:w-1/2 ${

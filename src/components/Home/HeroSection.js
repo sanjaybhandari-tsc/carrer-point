@@ -1,52 +1,67 @@
 import styles from "../../styles/Home/Home.module.css";
 import Image from "next/image";
+
 export default function HeroSection() {
+  const bannerItems = [
+    { value: "95%", label: "Success Rate" },
+    { value: "50+", label: "Global Clients" },
+    { value: "15K+", label: "Placements" },
+    { value: "48hrs", label: "Total Match" },
+  ];
   return (
     <>
-      <div className="relative flex justify-center items-center h-full  lg:h-[130vh] w-full overflow-hidden  rounded-b-4xl">
-        <img
+      <div className="relative flex justify-center items-center min-h-[60vh] sm:min-h-[75vh] lg:h-[130vh] w-full overflow-hidden rounded-b-4xl">
+        <Image
           src="/images/homepage/HeroImage.png"
-          alt="hero"
-          className="w-full h-full object-cover lg:scale-125"
+          alt="Hero image"
+          fill
+          className="object-cover lg:scale-125"
+          priority
         />
-        <div className="absolute inset-0  bg-gradient-to-b from-[#66666600] to-[#00000075]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#66666600] to-[#00000075]"></div>
+
         <div
-          className={`absolute inset-0  w-[110%] h-[110%] -left-[5%]  -top-[35%]     lg:w-[120%] lg:h-[130%]  lg:-top-[60%] lg:-left-[10%] rounded-[50%]  bg-gradient-to-t from-[#080F249C] to-[#039BE69C]  ${styles.slideDown} flex flex-col justify-center items-center`}
+          className={`absolute inset-0 w-[120%] h-[120%] -left-[10%] -top-[40%] sm:-top-[38%] md:-top-[45%] lg:w-[120%] lg:h-[130%] lg:-top-[60%] lg:-left-[10%] rounded-[50%] bg-gradient-to-t from-[#080F249C] to-[#039BE69C] ${styles.slideDown} flex flex-col justify-end items-end`}
         >
           <div
-            className={`absolute  inset-0 h-full flex flex-col  md:gap-4 items-center justify-end text-center  px-4 py-3 lg:py-20 ${styles.slideup}`}
+            className={`absolute inset-0 flex flex-col gap-1.5 sm:gap-2.5 md:gap-3 lg:gap-3 items-center justify-end text-center px-4 pb-10 sm:pb-16 md:pb-20 lg:pb-25 pt-4 ${styles.slideup}`}
           >
-            <div className="lg:mb-6 px-4 lg:py-2 border border-white rounded-full backdrop-blur-md text-sm flex justify-center items-center lg:gap-4 bg-transparent">
-              <img
-                className="w-6 h-6"
+            <div className="px-3 py-1 lg:px-4 border border-white rounded-full backdrop-blur-md text-sm flex justify-center items-center gap-2 lg:gap-4 bg-transparent">
+              <Image
                 src="/images/homepage/HeroInnerImg.png"
+                alt="Glassdoor rating badge"
+                width={24}
+                height={24}
+                className="w-5 h-5 lg:w-6 lg:h-6"
               />
               <div>
-                {" "}
-                <p className=" text-left  lg:text-xl tracking-wider">
-                  <span className="text-white">4.8 </span>{" "}
+                <p className="text-left text-sm lg:text-xl tracking-wider">
+                  <span className="text-white">4.8 </span>
                   <span className="text-amber-300">★★★★★</span>
                 </p>
                 <p className="text-[#FFFFFF] text-xs">
                   based on Glassdoor reviews
-                </p>{" "}
+                </p>
               </div>
             </div>
 
-            <h1 className="lg:text-8xl md:4xl text-xl font-bold font-[Montserrat, sans-serif] lg:leading-tight text-white">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-8xl font-bold font-[Montserrat,sans-serif] text-white leading-none">
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1>
 
-            <p className="lg:mt-4 mb-1 max-w-[80%]  md:max-w-[50%] text-sm lg:text-2xl text-white lg:max-w-[60%] max-w-[65%]">
+            <p className="max-w-[90%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%] text-sm sm:text-base md:text-lg lg:text-2xl text-white">
               Connect with skilled professionals across industries and build
-              high-performing teams faster and .
+              high-performing teams faster.
             </p>
 
-            <button className="lg:mt-6 md:mb-3 relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px] border-white px-4 py-1 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors">
+            <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px] border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors">
               <span className="relative z-10 flex items-center gap-2.5">
                 <p>Get in touch</p>
-                <img
+                <Image
                   src="/images/homepage/HeroSendIcon.png"
+                  alt="Send"
+                  width={20}
+                  height={20}
                   className="w-4 h-4 sm:w-5 sm:h-5"
                 />
               </span>
@@ -56,43 +71,18 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center relative -top-12  lg:-top-25">
-        <div className="w-[90%] lg:py-12 lg:px-20 py-3 px-2 rounded-4xl dark:text-[#333333] flex justify-between bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE] bottom-[-80px] overflow-visible">
-          <div className="text-center">
-            <h1 className="text-xl md:text-3xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
-              95%
-            </h1>
-            <p className="text-sm font-[500] lg:text-2xl lg:font-bold ">
-              Success Rate
-            </p>
-          </div>
-
-          <div className="text-center">
-            <h1 className="text-xl md:text-3xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
-              50+
-            </h1>
-            <p className="text-sm font-[500] lg:text-2xl lg:font-bold ">
-              Global Clients
-            </p>
-          </div>
-
-          <div className="text-center">
-            <h1 className="text-xl md:text-3xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
-              15K+
-            </h1>
-            <p className="text-sm font-[500] lg:text-2xl lg:font-bold ">
-              Placements
-            </p>
-          </div>
-
-          <div className="text-center">
-            <h1 className="text-xl md:text-3xl font-bold lg:text-6xl lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
-              48hrs
-            </h1>
-            <p className="text-sm font-[500] lg:text-2xl lg:font-bold ">
-              Total Match
-            </p>
-          </div>
+      <div className="w-full flex justify-center relative -top-8 sm:-top-12 md:-top-16 lg:-top-25">
+        <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex flex-wrap justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
+          {bannerItems.map(({ value, label }) => (
+            <div key={label} className="text-center min-w-[22%]">
+              <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-6xl font-bold lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
+                {value}
+              </h2>
+              <p className="text-xs sm:text-sm lg:text-2xl font-medium lg:font-bold">
+                {label}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </>
