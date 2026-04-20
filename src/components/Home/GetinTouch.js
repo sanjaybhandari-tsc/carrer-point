@@ -30,10 +30,10 @@ function GetinTouch() {
           className="absolute inset-0 bg-[linear-gradient(270deg,rgba(8,15,36,0.61)_1.7%,rgba(3,155,230,0.61)_108.17%)] "
           src="/images/homepage/getTouch.svg"
         ></div>
-        <div className="absolute h-full flex flex-col items-center">
+        <div className="absolute h-full flex flex-col px-15 ">
           <div className="flex flex-col gap-4 justify-center h-1/2 max-w-[85%]">
             <h3 className="font-bold text-5xl">Get In Touch</h3>
-            <p>
+            <p className="text-sm">
               Lorem ipsum porta dictum maece sit amet.porta dictum sit
               amet.porta dictum masas ametamet.porta dictum masas sit amet.porta
               dictum ametamet.porta dictum masas sit amet.porta dictum{" "}

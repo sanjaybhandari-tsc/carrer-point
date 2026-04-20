@@ -5,17 +5,21 @@ export default function Common() {
       <div className="relative overflow-hidden bg-[var(--color-deep-blue)] text-white rounded-[2rem] flex flex-col items-center justify-center gap-8 md:gap-10 lg:gap-14 py-12 md:py-16 px-6 w-full">
         <img
           className="hidden lg:block absolute top-0 left-0"
+          alt="top-right-arc"
           src="/images/homepage/rightFirst1.svg"
         />
         <img
+          alt="top-right-arc"
           className="hidden lg:block absolute top-0 left-0"
           src="/images/homepage/rightfirst.svg"
         />
         <img
+          alt="top-left-arc"
           className="hidden lg:block absolute top-0 right-0"
           src="/images/homepage/lefftsecond.svg"
         />
         <img
+          alt="top-left-arc"
           className="hidden lg:block absolute top-0 right-0"
           src="/images/homepage/leftfirst.svg"
         />

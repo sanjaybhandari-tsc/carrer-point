@@ -36,7 +36,7 @@ function OurTeam() {
     },
     {
       img: "/images/homepage/KausarMulla.svg",
-      name: "Kaursar Mulla",
+      name: "Kausar Mulla",
       department: "Business Partner -Pharma ",
       desc: "9+ Years in Pharma Recruitment",
     },
