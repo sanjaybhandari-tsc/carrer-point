@@ -72,13 +72,13 @@ export default function HeroSection() {
       </div>
 
       <div className="w-full flex justify-center relative -top-8 sm:-top-12 md:-top-16 lg:-top-25">
-        <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex flex-wrap justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
+        <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
           {bannerItems.map(({ value, label }) => (
             <div key={label} className="text-center ">
-              <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-6xl font-bold lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
+              <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-6xl font-bold lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5 ">
                 {value}
               </h2>
-              <p className="text-xs sm:text-sm lg:text-2xl font-medium lg:font-bold ">
+              <p className="text-xs whitespace sm:text-sm lg:text-2xl font-medium lg:font-bold ">
                 {label}
               </p>
             </div>
