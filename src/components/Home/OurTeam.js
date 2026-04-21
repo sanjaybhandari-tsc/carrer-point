@@ -1,8 +1,25 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../../styles/Home/Home.module.css";
 import Image from "next/image";
 
 function OurTeam() {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      },
+
+      { threshold: 0.3 },
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
   const teams = [
     {
       img: "/images/homepage/ReameshD.svg",
@@ -36,7 +53,7 @@ function OurTeam() {
     },
     {
       img: "/images/homepage/KausarMulla.svg",
-      name: "Kaursar Mulla",
+      name: "Kausar Mulla",
       department: "Business Partner -Pharma ",
       desc: "9+ Years in Pharma Recruitment",
     },
@@ -60,7 +77,10 @@ function OurTeam() {
         </p>
       </div>
 
-      <div className="w-full px-7 mt-5 lg:my-15">
+      <div
+        ref={ref}
+        className={`w-full px-7 mt-5 lg:my-15 ${visible ? styles.slideright : "opacity-0"} `}
+      >
         <div className=" flex flex-nowrap overflow-x-auto overflow-y-hidden pl-3 gap-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {teams.map((team, idx) => {
             return (

@@ -44,7 +44,7 @@ function MessageFromManagingDirector() {
           src="../../images/homepage/DoubleEnvertedComma.svg"
         />
         <div>
-          <h3 className="font-bold mb-3 text-3xl">
+          <h3 className="font-bold  mb-3 text-xl md:text-2xl lg:text-3xl">
             {" "}
             A Message from Our Managing Director
           </h3>
@@ -55,7 +55,7 @@ function MessageFromManagingDirector() {
         </div>
 
         <div>
-          <p className="text-2xl text-justify font-[500] leading-relaxed">
+          <p className="md:text-xl  lg:text-2xl text-justify font-[500] leading-relaxed">
             {" "}
             At Career Point Placement Services, we believe the right talent
             drives the success of every organization. For over 17 years, we have
@@ -67,7 +67,7 @@ function MessageFromManagingDirector() {
           </p>
         </div>
 
-        <div className="text-2xl py-5">
+        <div className="text-xl lg:text-2xl py-5">
           <p>— Ramesh Waychal </p>
           <p>Managing Director</p>
         </div>
