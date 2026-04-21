@@ -320,7 +320,7 @@ export default function Jobscart() {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-3 mt-2 text-sm sm:text-[16px]">
+                <div className="flex flex-wrap gap-3 mt-4 text-sm sm:text-[16px]">
                   <div className="flex items-center gap-1">
                     <img src="/images/broserJobs/experienceIcon.svg" alt="" className="h-4 w-4 sm:h-5 sm:w-5" />
                     <span>{job.experience}</span>
@@ -339,7 +339,7 @@ export default function Jobscart() {
                   )}
                 </div>
 
-                <div className="mt-2 text-sm sm:text-[16px]">
+                <div className="mt-4 text-sm sm:text-[16px]">
                   {job.skills.map((s, i) => (
                     <span key={i}>• {s} </span>
                   ))}
