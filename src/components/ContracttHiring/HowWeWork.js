@@ -1,6 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import styles from "../../styles/Home/Home.module.css";
 
 function HowWeWork() {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      },
+      { threshold: 0.3 }, //mtlb 30% visible hone pr visible true hoga
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
   const workData = [
     {
       srNo: "01",
@@ -58,12 +75,17 @@ function HowWeWork() {
   };
 
   return (
-    <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] py-20 overflow-hidden">
+    <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] py-20 overflow-hidden flex flex-col items-center justify-center">
       <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
         How We Work
       </h2>
 
-      <div className="relative max-w-6xl mx-auto">
+      <div
+        ref={ref}
+        className={`relative max-w-6xl mx-auto ${
+          visible ? styles.slideright : "opacity-0 translate-y-10"
+        }`}
+      >
         <div className="overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
