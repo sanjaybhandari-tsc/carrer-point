@@ -21,7 +21,7 @@ export default function AboutHeroSection() {
             About Us
           </h2>
 
-          <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-[22px] leading-relaxed text-gray-200 max-w-3xl">
+          <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-[22px] leading-relaxed text-gray-200 max-w-5xl">
             Connecting organizations with the right talent through structured recruitment solutions and industry-focused expertise. We support businesses in building strong teams that drive long-term growth and success.
           </p>
           <button
