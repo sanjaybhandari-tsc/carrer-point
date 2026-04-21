@@ -22,7 +22,7 @@ function IndustryWeServe() {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
               <p className="text-white text-lg lg:font-bold lg:text-3xl font-semibold">
-                Pharma Manufacturing
+                Manufacturing
               </p>
             </div>
           </div>
@@ -36,7 +36,7 @@ function IndustryWeServe() {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
               <p className="text-white text-lg lg:font-bold lg:text-3xl font-semibold">
-                Pharma Sales
+                Pharmaceutical
               </p>
             </div>
           </div>

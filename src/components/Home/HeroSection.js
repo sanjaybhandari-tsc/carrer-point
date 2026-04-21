@@ -21,7 +21,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#66666600] to-[#00000075]"></div>
 
         <div
-          className={`absolute inset-0 w-[120%] h-[120%] -left-[10%] -top-[40%] sm:-top-[38%] md:-top-[45%] lg:w-[120%] lg:h-[130%] lg:-top-[60%] lg:-left-[10%] rounded-[50%] bg-gradient-to-t from-[#080F249C] to-[#039BE69C] ${styles.slideDown} flex flex-col justify-end items-end`}
+          className={`absolute inset-0 w-[120%] h-[120%] -left-[10%] -top-[50%] sm:-top-[38%] md:-top-[45%] lg:w-[120%] lg:h-[130%] lg:-top-[60%] lg:-left-[10%] rounded-[50%] bg-gradient-to-t from-[#080F249C] to-[#039BE69C] ${styles.slideDown} flex flex-col justify-end items-end`}
         >
           <div
             className={`absolute inset-0 flex flex-col gap-1.5 sm:gap-2.5 md:gap-3 lg:gap-3 items-center justify-end text-center px-4 pb-10 sm:pb-16 md:pb-20 lg:pb-25 pt-4 ${styles.slideup}`}
@@ -74,11 +74,11 @@ export default function HeroSection() {
       <div className="w-full flex justify-center relative -top-8 sm:-top-12 md:-top-16 lg:-top-25">
         <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex flex-wrap justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
           {bannerItems.map(({ value, label }) => (
-            <div key={label} className="text-center min-w-[22%]">
+            <div key={label} className="text-center ">
               <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-6xl font-bold lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5">
                 {value}
               </h2>
-              <p className="text-xs sm:text-sm lg:text-2xl font-medium lg:font-bold">
+              <p className="text-xs sm:text-sm lg:text-2xl font-medium lg:font-bold ">
                 {label}
               </p>
             </div>

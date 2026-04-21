@@ -282,7 +282,7 @@ export default function Jobscart() {
         <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold mb-5">
           Featured <span className="text-[#0277BD]">Jobs</span>
         </h2>
-        <p className="text-black mt-2 text-sm sm:text-base lg:text-[18px] max-w-2xl mx-auto">
+        <p className="text-black mt-2 text-sm sm:text-base lg:text-[18px] max-w-2xl lg:max-w-7xl  font-[500] mx-auto">
           Explore opportunities across different roles and industries, and find positions that align with your skills, interests, and career goals.
         </p>
       </div>
@@ -320,7 +320,7 @@ export default function Jobscart() {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-3 mt-2 text-sm sm:text-[16px]">
+                <div className="flex flex-wrap gap-3 mt-4 text-sm sm:text-[16px]">
                   <div className="flex items-center gap-1">
                     <img src="/images/broserJobs/experienceIcon.svg" alt="" className="h-4 w-4 sm:h-5 sm:w-5" />
                     <span>{job.experience}</span>
@@ -339,7 +339,7 @@ export default function Jobscart() {
                   )}
                 </div>
 
-                <div className="mt-2 text-sm sm:text-[16px]">
+                <div className="mt-4 text-sm sm:text-[16px]">
                   {job.skills.map((s, i) => (
                     <span key={i}>• {s} </span>
                   ))}

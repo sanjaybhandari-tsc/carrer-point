@@ -121,7 +121,7 @@ function ReviewsAndRatings() {
                   className="relative border-1 rounded-4xl  border-[#E1EBFF] shadow px-4 py-10 text-left flex flex-col gap-3 lg:gap-7  lg:min-w-[500px]  min-w-[300px] object-cover overflow-hidden"
                 >
                   <img
-                    className="absolute self-center top-[40%] "
+                    className="absolute self-center top-[40%] -z-10"
                     src="/images/homepage/Commas.svg"
                   />
                   <div className="flex gap-1">
