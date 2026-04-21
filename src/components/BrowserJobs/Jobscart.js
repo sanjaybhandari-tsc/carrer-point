@@ -341,7 +341,7 @@ export default function Jobscart() {
 
                 <div className="mt-4 text-sm sm:text-[16px]">
                   {job.skills.map((s, i) => (
-                    <span key={i}>• {s} </span>
+                    <span key={i} className=" text-lg me-2 "><span className="me-1">•</span>{s} </span>
                   ))}
                 </div>
               </div>
@@ -432,7 +432,7 @@ export default function Jobscart() {
             <div className="space-y-2 text-sm sm:text-[16px]">
               {selectedJob.responsibilities.map((item, i) => (
                 <div key={i} className="flex items-start gap-2 ps-2 sm:ps-4">
-                  <span className="mt-2 w-1.5 h-1.5 bg-black rounded-full"></span>
+                  <p className=" inline-block w-1.5 h-1.5 sm:w-1 sm:h-1 bg-black rounded-full mt-2 flex-shrink-0"></p>
                   <p>{item}</p>
                 </div>
               ))}
@@ -447,7 +447,7 @@ export default function Jobscart() {
 
           <div className="mt-6 px-4 sm:px-6">
             <h4 className="text-lg font-semibold mb-2">Skills</h4>
-            <div className="flex flex-wrap gap-3 text-sm sm:text-[16px] ps-2 sm:ps-4">
+            <div className="flex flex-wrap gap-3 text-sm  sm:text-[16px] ps-2 sm:ps-4">
               {selectedJob.skills.map((s, i) => (
                 <span key={i}>• {s}</span>
               ))}
