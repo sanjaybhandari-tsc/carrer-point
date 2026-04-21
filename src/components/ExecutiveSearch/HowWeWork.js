@@ -1,133 +1,283 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 
+// function HowWeWork() {
+  
+//   const workData = [
+//     {
+//       id: "01",
+//       title: "Leadership Discussion",
+//       description:
+//         "We begin with detailed discussions to understand the leadership expectations, responsibilities, and strategic importance of the role.",
+//     },
+//     {
+//       id: "02",
+//       title: "Market Mapping",
+//       description:
+//         "Potential senior professionals are identified through market research and industry talent mapping.",
+//     },
+//     {
+//       id: "03",
+//       title: "Candidate Engagement",
+//       description:
+//         "Targeted candidates are approached confidentially and engaged for potential leadership opportunities.",
+//     },
+//     {
+//       id: "04",
+//       title: "Screening & Assessment",
+//       description:
+//         "Candidates undergo detailed screening and background evaluation to assess leadership suitability.",
+//     },
+//     {
+//       id: "05",
+//       title: "Client Discussions & Selection",
+//       description:
+//         "Shortlisted leaders are presented to the client, followed by discussions, negotiations, and final appointment.",
+//     },
+//   ];
+
+//   const [index, setIndex] = useState(0);
+//   const [cardsPerView, setCardsPerView] = useState(1);
+
+//   useEffect(() => {
+//     const updateCards = () => {
+//       if (window.innerWidth >= 1024) setCardsPerView(3);
+//       else if (window.innerWidth >= 768) setCardsPerView(2);
+//       else setCardsPerView(1);
+//     };
+
+//     updateCards();
+//     window.addEventListener("resize", updateCards);
+
+//     return () => window.removeEventListener("resize", updateCards);
+//   }, []);
+
+//   const nextSlide = () => {
+//     if (index < workData.length - cardsPerView) {
+//       setIndex(index + 1);
+//     }
+//   };
+
+//   const prevSlide = () => {
+//     if (index > 0) {
+//       setIndex(index - 1);
+//     }
+//   };
+
+//   return (
+//     <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] flex items-center py-20 overflow-hidden">
+//       <div className="w-full">
+//         <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
+//           How We Work
+//         </h2>
+
+//         <div className="relative max-w-6xl mx-auto">
+//           <div className="overflow-hidden">
+//             <div
+//               className="flex transition-transform duration-500 ease-in-out"
+//               style={{
+//                 transform: `translateX(-${index * (100 / cardsPerView)}%)`,
+//               }}
+//             >
+//               {workData.map((item) => (
+//                 <WorkCard key={item.id} item={item} />
+//               ))}
+//             </div>
+//           </div>
+
+//           <div className="flex gap-4 mt-10 ml-6">
+//             <button
+//               onClick={prevSlide}
+//               className={`border-2 rounded-full w-10 h-10 font-bold ${
+//                 index > 0 ? "text-white" : "text-[#B2B2B252]"
+//               }`}
+//             >
+//               ←
+//             </button>
+
+//             <button
+//               onClick={nextSlide}
+//               className={`border-2 rounded-full w-10 h-10 font-bold ${
+//                 index < workData.length - cardsPerView
+//                   ? "text-white"
+//                   : "text-[#B2B2B252]"
+//               }`}
+//             >
+//               →
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// function WorkCard({ item }) {
+//   return (
+//     <div className="min-w-full md:min-w-1/2 lg:min-w-1/3 px-6 flex items-center">
+//       <div>
+//         <h2 className="text-5xl font-bold text-white/70 mb-4">
+//           {item.id}
+//         </h2>
+
+//         <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
+//           {item.title}
+//         </h3>
+
+//         <p className="text-white/80 leading-relaxed">
+//           {item.description}
+//         </p>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default HowWeWork;
+
+
+import React, { useState, useEffect, useRef } from "react";
+import styles from "../../styles/Home/Home.module.css";
+ 
 function HowWeWork() {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
+ 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      },
+      { threshold: 0.4 },
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+ 
   const workData = [
     {
-      id: "01",
-      title: "Leadership Discussion",
-      description:
+      srNo: "01",
+      heading: "Leadership Discussion",
+      desc:
         "We begin with detailed discussions to understand the leadership expectations, responsibilities, and strategic importance of the role.",
     },
     {
-      id: "02",
-      title: "Market Mapping",
-      description:
+      srNo: "02",
+      heading: "Market Mapping",
+      desc:
         "Potential senior professionals are identified through market research and industry talent mapping.",
     },
     {
-      id: "03",
-      title: "Candidate Engagement",
-      description:
+      srNo: "03",
+      heading: "Candidate Engagement",
+      desc:
         "Targeted candidates are approached confidentially and engaged for potential leadership opportunities.",
     },
     {
-      id: "04",
-      title: "Screening & Assessment",
-      description:
+      srNo: "04",
+      heading: "Screening & Assessment",
+      desc:
         "Candidates undergo detailed screening and background evaluation to assess leadership suitability.",
     },
     {
-      id: "05",
-      title: "Client Discussions & Selection",
-      description:
+      srNo: "05",
+      heading: "Client Discussions & Selection",
+      desc:
         "Shortlisted leaders are presented to the client, followed by discussions, negotiations, and final appointment.",
     },
   ];
-
+ 
   const [index, setIndex] = useState(0);
   const [cardsPerView, setCardsPerView] = useState(1);
-
+ 
   useEffect(() => {
     const updateCards = () => {
       if (window.innerWidth >= 1024) setCardsPerView(3);
       else if (window.innerWidth >= 768) setCardsPerView(2);
       else setCardsPerView(1);
     };
-
+ 
     updateCards();
     window.addEventListener("resize", updateCards);
-
+ 
     return () => window.removeEventListener("resize", updateCards);
   }, []);
-
+ 
   const nextSlide = () => {
     if (index < workData.length - cardsPerView) {
       setIndex(index + 1);
     }
   };
-
+ 
   const prevSlide = () => {
     if (index > 0) {
       setIndex(index - 1);
     }
   };
-
+ 
   return (
-    <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] flex items-center py-20 overflow-hidden">
-      <div className="w-full">
-        <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
-          How We Work
-        </h2>
-
-        <div className="relative max-w-6xl mx-auto">
-          <div className="overflow-hidden">
-            <div
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{
-                transform: `translateX(-${index * (100 / cardsPerView)}%)`,
-              }}
-            >
-              {workData.map((item) => (
-                <WorkCard key={item.id} item={item} />
-              ))}
-            </div>
+    <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] py-20 overflow-hidden flex flex-col items-center justify-center">
+      <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
+        How We Work
+      </h2>
+ 
+      <div
+        ref={ref}
+        className={`relative max-w-6xl mx-auto ${
+          visible ? styles.slideright : "opacity-0 translate-y-10"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{
+              transform: `translateX(-${index * (100 / cardsPerView)}%)`,
+            }}
+          >
+            {workData.map((item) => (
+              <WorkCard key={item.srNo} item={item} />
+            ))}
           </div>
-
-          <div className="flex gap-4 mt-10 ml-6">
-            <button
-              onClick={prevSlide}
-              className={`border-2 rounded-full w-10 h-10 font-bold ${
-                index > 0 ? "text-white" : "text-[#B2B2B252]"
-              }`}
-            >
-              ←
-            </button>
-
-            <button
-              onClick={nextSlide}
-              className={`border-2 rounded-full w-10 h-10 font-bold ${
-                index < workData.length - cardsPerView
-                  ? "text-white"
-                  : "text-[#B2B2B252]"
-              }`}
-            >
-              →
-            </button>
-          </div>
+        </div>
+ 
+        <div className="flex gap-4 mt-10 ml-6">
+          <button
+            onClick={prevSlide}
+            className={`border-2 rounded-full w-10 h-10 font-bold ${
+              index > 0 ? "text-white" : "text-[#B2B2B252]"
+            }`}
+          >
+            ←
+          </button>
+ 
+          <button
+            onClick={nextSlide}
+            className={`border-2 rounded-full w-10 h-10 font-bold ${
+              index < workData.length - cardsPerView
+                ? "text-white"
+                : "text-[#B2B2B252]"
+            }`}
+          >
+            →
+          </button>
         </div>
       </div>
     </div>
   );
 }
-
+ 
 function WorkCard({ item }) {
   return (
-    <div className="min-w-full md:min-w-1/2 lg:min-w-1/3 px-6 flex items-center">
-      <div>
-        <h2 className="text-5xl font-bold text-white/70 mb-4">
-          {item.id}
-        </h2>
-
-        <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
-          {item.title}
-        </h3>
-
-        <p className="text-white/80 leading-relaxed">
-          {item.description}
-        </p>
-      </div>
+    <div className="min-w-full md:min-w-1/2 lg:min-w-1/3 px-6">
+      <h2 className="text-5xl font-bold text-white/70 mb-4">{item.srNo}</h2>
+ 
+      <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
+        {item.heading}
+      </h3>
+ 
+      <p className="text-white/80 leading-relaxed">{item.desc}</p>
     </div>
   );
 }
-
+ 
 export default HowWeWork;
