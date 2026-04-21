@@ -65,7 +65,7 @@ function OurTeam() {
     },
   ];
   return (
-    <div className="pt-8 mb-8 flex flex-col items-center ">
+    <div className="pt-8 mb-8 flex flex-col items-center overflow-hidden">
       <div className="flex flex-col justify-center items-center text-center max-w-[80%] gap-4">
         <h2 className="font-semibold text-4xl">
           Meet Our <span className="text-[#000080]">Team</span>

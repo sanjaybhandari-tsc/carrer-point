@@ -91,12 +91,12 @@ export default function TestimonialSection() {
     return () => observer.disconnect();
   }, []);
   return (
-    <section ref={sectionRef} className="py-16 bg-gray-50">
+    <section ref={sectionRef} className="py-16 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className={`
     text-center mb-10 sm:mb-12
-    transform transition-all duration-700 ease-out
-    ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"}
+    transform transition-all duration-700 ease-out 
+    ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6 "}
   `}>
           <h2 className="font-montserrat font-semibold text-2xl sm:text-3xl lg:text-[36px] leading-none text-center">
             Voices of Success

@@ -26,8 +26,20 @@ const images = [
 
 export default function LifeatCPPS() {
   const [showAll, setShowAll] = useState(false);
-  const visibleImages = showAll ? images : images.slice(0, 9);
+  const [isMobile, setIsMobile] = useState(false);
+  const visibleImages = showAll
+    ? images
+    : images.slice(0, isMobile ? 4 : 9);
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
 
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
   const topRef = useRef(null);
   const bottomRef = useRef(null);
 
