@@ -14,28 +14,26 @@ export default function BankingFinancialServicesInsurance() {
         }
       },
       {
-        threshold: 0.2,
+        threshold: 0.8,
         rootMargin: "0px 0px -10% 0px",
-      }
+      },
     );
 
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
-
+ 
   return (
     <section
       ref={ref}
       className="w-full bg-white py-16 md:py-20 px-6 md:px-16 lg:px-24 overflow-hidden"
     >
       <div className="max-w-6xl mx-auto flex flex-col xl:flex-row items-center gap-10 md:gap-12">
-
         <div
-          className={`w-full xl:w-1/2 transition-all duration-700 ease-out
-          ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+          className={`w-full xl:w-1/2 transform transition-all duration-700 ease-out ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           <h2 className="font-montserrat font-bold text-2xl sm:text-3xl lg:text-[36px] leading-[150%] md:text-4xl text-gray-800 mb-5 md:mb-6">
-            The Banking, Financial Services & Insurance (BFSI) 
+            The Banking, Financial Services & Insurance (BFSI)
           </h2>
           <p className="leading-relaxed mb-4 text-gray-700">
             The Banking, Financial Services, and Insurance (BFSI) sector plays a
@@ -55,8 +53,7 @@ export default function BankingFinancialServicesInsurance() {
         </div>
 
         <div
-          className={`w-full xl:w-1/2 transition-all duration-700 ease-out delay-150
-          ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
+          className={`w-full xl:w-1/2 transform transition-all duration-700 ease-out delay-150 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           <div className="rounded-2xl overflow-hidden shadow-lg transition-transform duration-500 hover:scale-[1.02]">
             <Image
@@ -68,7 +65,6 @@ export default function BankingFinancialServicesInsurance() {
             />
           </div>
         </div>
-
       </div>
     </section>
   );

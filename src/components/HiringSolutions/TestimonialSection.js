@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+
 import TestimonialCard from "./TestimonialCard";
 
 const testimonials = [
@@ -33,7 +35,7 @@ const testimonials = [
     id: 5,
     name: "Somen Roy",
     role: "Chief Manager @ Kotak Mahindra Life Insurance Co Ltd",
-    image: "/images/testimonials/Somen Roy.png",
+    image: "/images/testimonials/Sachin Pandey.png",
     text: "Excellent recruitment support from interview scheduling to feedback. Everything was handled professionally.",
   },
   {
@@ -60,37 +62,78 @@ const testimonials = [
 ];
 
 export default function TestimonialSection() {
-  return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+  const [show, setShow] = useState(false);
+  const sectionRef = useRef(null);
+  const scrollRef = useRef(null);
 
-        <div className="text-center mb-12">
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShow(true);
+
+          setTimeout(() => {
+            if (scrollRef.current) {
+              scrollRef.current.scrollTo({
+                left: scrollRef.current.clientWidth * 0.6,
+                behavior: "smooth",
+              });
+            }
+          }, 600);
+
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 },
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+  return (
+    <section ref={sectionRef} className="py-16 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className={`
+    text-center mb-10 sm:mb-12
+    transform transition-all duration-700 ease-out
+    ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"}
+  `}>
           <h2 className="font-montserrat font-semibold text-2xl sm:text-3xl lg:text-[36px] leading-none text-center">
             Voices of Success
           </h2>
 
           <p className="font-roboto font-normal text-base sm:text-lg leading-relaxed text-center mt-3">
-            Real experiences from candidates and companies who benefited from our recruitment, staffing, and hiring solutions.
+            Real experiences from candidates and companies who benefited from
+            our recruitment, staffing, and hiring solutions.
           </p>
         </div>
+      </div>
 
+      <div className={`
+      max-w-7xl overflow-hidden mx-auto px-6 transform transition-all duration-700 ease-out
+      ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}
+    `}>
         <div
-          className="
-            flex gap-8
-            overflow-x-auto
-            no-scrollbar
-            snap-x snap-mandatory
-            scroll-smooth
-            pb-6
-          "
+          ref={scrollRef}
+  className="
+    flex gap-4 sm:gap-6 lg:gap-8
+    overflow-x-auto
+    no-scrollbar
+    snap-x snap-mandatory
+    scroll-smooth
+    px-4 sm:px-6
+    scroll-px-4 sm:scroll-px-6
+  "
         >
           {testimonials.map((item) => (
-            <div key={item.id} className="snap-start flex-shrink-0">
+            <div
+              key={item.id}
+              className="snap-center flex-shrink-0 first:ml-2 last:mr-2"
+            >
               <TestimonialCard {...item} />
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
