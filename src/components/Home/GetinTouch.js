@@ -21,40 +21,40 @@ function GetinTouch() {
     };
   }, []);
   return (
-    <div className="flex h-[110vh] mb-25 lg:mb-20 text-white overflow-hidden">
+    <div className="flex  mb-25 lg:mb-20 text-white overflow-hidden">
       <div
         ref={ref}
-        className={`hidden md:hidden lg:block md:block relative bg-[url('/images/homepage/getTouch.svg')] w-[35%] h-full bg-cover bg-center rounded-tr-4xl rounded-br-4xl object-cover overflow-hidden ${isVisible ? style.slideleft : "opacity-0"}`}
+        className={`hidden lg:block w-[35%]  relative bg-cover flex flex-col items-center bg-center rounded-tr-4xl rounded-br-4xl overflow-hidden bg-[url('/images/homepage/getTouch.svg')] ${isVisible ? style.slideleft : "opacity-0"}`}
       >
-        <div
-          className="absolute inset-0 bg-[linear-gradient(270deg,rgba(8,15,36,0.61)_1.7%,rgba(3,155,230,0.61)_108.17%)] "
-          src="/images/homepage/getTouch.svg"
-        ></div>
-        <div className="absolute h-full flex flex-col px-15 ">
+        <div className="absolute inset-0 bg-gradient-to-l from-[#080F24]/60 to-[#039BE6]/60"></div>
+
+        <div className="relative z-10  h-full  flex flex-col px-15">
           <div className="flex flex-col gap-4 justify-center h-1/2 max-w-[85%]">
             <h3 className="font-bold text-5xl">Get In Touch</h3>
             <p className="text-sm">
+              {" "}
               Lorem ipsum porta dictum maece sit amet.porta dictum sit
               amet.porta dictum masas ametamet.porta dictum masas sit amet.porta
               dictum ametamet.porta dictum masas sit amet.porta dictum{" "}
             </p>
           </div>
-          <div className="h-1/2  flex flex-col gap-2.5">
+
+          <div className="h-1/2 flex flex-col gap-2.5">
             <div className="flex gap-3 items-start">
               <img src="/images/homepage/telephone.svg" />
               <p>+91 9225073111</p>
             </div>
+
             <div className="flex gap-3 items-start">
               <img src="/images/homepage/location.svg" />
               <div>
-                <p>111,abcd enclave , Xyz colony </p>
-                <p>, Sector-14 , New Delhi - </p>
-                <p>123456</p>
+                <p>Address line</p>
               </div>
             </div>
+
             <div className="flex gap-3 items-start">
               <img src="/images/homepage/envelope.svg" />
-              <p>ramesh.w@cppsjobs.com</p>
+              <p>email@example.com</p>
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@ function GetinTouch() {
           />
         </div>
 
-        <div className="flex  justify-center items-center mt-3">
+        <div className="flex  justify-center items-center mt-3 ">
           <button className="hover:cursor-pointer bg-[var(--color-primary)] text-white py-3 px-5 rounded-lg">
             Request hiring support{" "}
           </button>
