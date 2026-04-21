@@ -22,7 +22,7 @@ export default function PeopleCulture() {
         }, []);
   
   return (
-    <div ref={ref} className="w-full px-6 md:px-10 lg:px-12 py-12 md:py-18 bg-white">
+    <div ref={ref} className="w-full px-6 md:px-10 lg:px-12 py-12 md:py-18 bg-white overflow-x-hidden">
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div className={`flex  justify-between flex-col gap-5 transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}>
