@@ -55,11 +55,11 @@ export default function JobsCategory() {
         </p>
       </div>
 
-      <div className="mt-10 sm:mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 ">
+      <div className="mt-10 sm:mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10  ">
         {categories.slice(0, 3).map((cat, index) => (
           <div
             key={index}
-            className="flex justify-center cursor-pointer shadow-[0px_4px_4px_0px_#00000014] rounded-2xl"
+            className="flex justify-center cursor-pointer shadow-[0px_4px_4px_0px_#00000014] rounded-2xl  border-blue-400  bg-white border-2"
           >
             <AnimatedCard cat={cat} visible={visible} delay={index * 120} />
           </div>
@@ -69,7 +69,7 @@ export default function JobsCategory() {
         {categories.slice(3).map((cat, index) => (
           <div
             key={index}
-            className="w-full lg:w-[30%] flex justify-center cursor-pointer shadow-[0px_5px_5px_0px_#00000014] rounded-2xl"
+            className="w-full lg:w-[30%] flex justify-center cursor-pointer shadow-[0px_5px_5px_0px_#00000014] rounded-2xl  border-blue-400  bg-white border-2"
           >
             <AnimatedCard
               cat={cat}
@@ -87,7 +87,7 @@ function AnimatedCard({ cat, visible, delay }) {
   return (
     <div
       style={{ transitionDelay: `${delay}ms` }}
-      className={`w-full max-w-lg bg-white border-2 border-blue-400 rounded-2xl p-6 sm:p-8 text-center shadow-[0px_4px_4px_0px_#00000014] transition-all duration-700 ${
+      className={`w-full max-w-lg  p-6 sm:p-8 text-center  transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
       }`}
     >
