@@ -40,8 +40,8 @@ export default function HeroSection() {
                     />
 
                   </div>
-                  <button className="w-full lg:w-16 lg:h-12 flex items-center justify-center gap-4
-                                     lg:m-2  md:border-t md:p-2 md:border-white lg:border-none  shrink-0">
+                  <button className="w-full lg:w-16 lg:h-12 flex items-center justify-center gap-4 py-1
+                                     lg:m-2  md:border-t  md:border-white lg:border-none  shrink-0">
                     <Image
                       src="/images/broserJobs/searchIcon.svg"
                       alt="search"
