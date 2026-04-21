@@ -7,30 +7,35 @@ const logos = [
     alt: "Pitch",
     weidth: 103.80330657958984,
     height: 36,
+    smW: 70,
   },
   {
     src: "/images/homepage/FigmaLogo.svg",
     alt: "Figma",
     weidth: 101,
     height: 36,
+    smW: 67,
   },
   {
     src: "/images/homepage/MediumLogo.svg",
     alt: "Medium",
     weidth: 235,
     height: 36,
+    smW: 150,
   },
   {
     src: "/images/homepage/RedditLogo.svg",
     alt: "Reddit",
     weidth: 114,
     height: 36,
+    smW: 67,
   },
   {
     src: "/images/homepage/GenentechLogo.svg",
     alt: "Genentech",
     weidth: "254",
     height: "36",
+    smW: 157,
   },
 ];
 
@@ -58,7 +63,8 @@ function MncsEnterprises() {
                 height={logo.height}
                 src={logo.src}
                 alt={logo.alt}
-                className="mx-5"
+                style={{ width: logo.smW }}
+                className={`mx-5 lg:w-full lg:h-full `}
               />
             )),
           )}
