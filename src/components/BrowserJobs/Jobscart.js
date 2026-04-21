@@ -282,7 +282,7 @@ export default function Jobscart() {
         <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold mb-5">
           Featured <span className="text-[#0277BD]">Jobs</span>
         </h2>
-        <p className="text-black mt-2 text-sm sm:text-base lg:text-[18px] max-w-2xl lg:max-w-7xl   mx-auto">
+        <p className="text-black mt-2 text-sm sm:text-base lg:text-[18px] max-w-2xl lg:max-w-7xl  font-[500]  mx-auto">
           Explore opportunities across different roles and industries, and find positions that align with your skills, interests, and career goals.
         </p>
       </div>
