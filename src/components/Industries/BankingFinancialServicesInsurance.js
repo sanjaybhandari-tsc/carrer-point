@@ -14,7 +14,7 @@ export default function BankingFinancialServicesInsurance() {
         }
       },
       {
-        threshold: 0.8,
+        threshold: 0.3,
         rootMargin: "0px 0px -10% 0px",
       },
     );

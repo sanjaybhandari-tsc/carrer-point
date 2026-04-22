@@ -12,7 +12,7 @@ export default function PharmaceuticalSalesSection() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.8 }
+      { threshold: 0.3 }
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);

@@ -10,7 +10,7 @@ export default function BuildingMaterialsIndustrySection() {
       ([entry]) => {
         if (entry.isIntersecting) setIsVisible(true);
       },
-      { threshold: 0.8 },
+      { threshold: 0.3 },
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);

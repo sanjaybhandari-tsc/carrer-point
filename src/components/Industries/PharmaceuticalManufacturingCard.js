@@ -67,7 +67,7 @@ export default function ManufacturingSection() {
                 }`}
                 style={{ transitionDelay: `${delay}ms` }}
               >
-                <div className="h-full transition-transform duration-300 hover:-translate-y-2">
+                <div className="h-full transition-transform duration-300">
                   <InfoCard {...card} />
                 </div>
               </article>

@@ -72,15 +72,6 @@ export default function TestimonialSection() {
         if (entry.isIntersecting) {
           setShow(true);
 
-          setTimeout(() => {
-            if (scrollRef.current) {
-              scrollRef.current.scrollTo({
-                left: scrollRef.current.clientWidth * 0.6,
-                behavior: "smooth",
-              });
-            }
-          }, 600);
-
           observer.disconnect();
         }
       },
@@ -121,8 +112,6 @@ export default function TestimonialSection() {
     no-scrollbar
     snap-x snap-mandatory
     scroll-smooth
-    px-4 sm:px-6
-    scroll-px-4 sm:scroll-px-6
   "
         >
           {testimonials.map((item) => (

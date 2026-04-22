@@ -24,7 +24,7 @@ export default function FeaturesSection() {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 },
+      { threshold: 0.1 },
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -88,15 +88,7 @@ export default function FeaturesSection() {
           Features
         </h2>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
-          {/* {features.map((item, index) => (
-            <FeatureCard
-              key={index}
-              icon={item.icon}
-              title={item.title}
-              description={item.description}
-            />
-          ))} */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-start">
           {features.map((item, index) => (
             <div
               key={index}
