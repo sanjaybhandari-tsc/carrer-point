@@ -9,10 +9,12 @@ import OurTeam from "./OurTeam";
 import ReviewsAndRatings from "./ReviewsAndRatings";
 import GetinTouch from "./GetinTouch";
 import Common from "./Common";
+// import TestingHeroText from "./TestingHeroText";
 
 export default function HomePage() {
   return (
     <>
+      {/* <TestingHeroText /> */}
       <HeroSection />
       <MncsEnterPrises />
       <MessageFromManagingDirector />
