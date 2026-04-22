@@ -31,7 +31,7 @@ function WhychooseUs() {
               className="lg:w-[25%] w-full flex flex-col justify-center items-center  text-center gap-5"
               key={idx}
             >
-              <img src={reasons.img} />
+              <img src={reasons.img} alt={reasons.heading} />
               <h4 className="font-bold text-lg">{reasons.heading}</h4>
 
               <p className="font-[500]">{reasons.desc}</p>
