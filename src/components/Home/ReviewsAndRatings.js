@@ -110,7 +110,7 @@ function ReviewsAndRatings() {
 
       <div
         ref={ref}
-        className={`w-full px-7 my-15 ${isVisible ? styles.slideright : ""}`}
+        className={`w-full px-7 my-15 ${isVisible ? styles.slideleft : " opacity-0"}`}
       >
         <div className=" flex flex-nowrap w-full overflow-x-auto overflow-y-hidden gap-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:pl-5">
           {Reviews.map((review, idx) => {
