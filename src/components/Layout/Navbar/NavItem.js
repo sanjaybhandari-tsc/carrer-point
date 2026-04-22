@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import ChevronDown from "./ChevronDown";
+import { useState,useEffect  } from "react";
 
 export default function NavItem({
   item,
@@ -11,6 +12,10 @@ export default function NavItem({
   closeAll,
 }) {
   const hasDropdown = item.dropdown && item.children?.length > 0;
+  useEffect(() => {
+  // close dropdown when route changes OR menu closes
+  if (!isOpen) return;
+}, [isOpen]);
 
   if (mobile) {
   return (
@@ -68,43 +73,44 @@ export default function NavItem({
 
   // DESKTOP
   return (
-    <div className="relative group py-2">
-      <div className="flex items-center gap-1 cursor-pointer">
-
-        {hasDropdown ? (
-          <span className="hover:text-[var(--color-primary)] transition-colors">
-            {item.label}
-          </span>
-        ) : (
-          <Link href={item.href} className="hover:text-[var(--color-primary)] transition-colors">
-            {item.label}
-          </Link>
-        )}
-
-        {hasDropdown && (
-          <span className="transition-transform duration-200 group-hover:rotate-180">
-            <ChevronDown />
-          </span>
-        )}
-      </div>
+  <div className="relative py-2">
+    <div
+      className="flex items-center gap-1 cursor-pointer"
+      onClick={() => hasDropdown && onToggle()}
+    >
+      {hasDropdown ? (
+        <span className="hover:text-[var(--color-primary)] transition-colors">
+          {item.label}
+        </span>
+      ) : (
+        <Link href={item.href} className="hover:text-[var(--color-primary)] transition-colors">
+          {item.label}
+        </Link>
+      )}
 
       {hasDropdown && (
-        <div className="absolute left-0 top-full pt-2 z-50">
-          <div className="w-56 bg-white border border-gray-100 shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-
-            {item.children.map((child) => (
-              <Link
-                key={child.label}
-                href={child.href}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)] transition-colors"
-              >
-                {child.label}
-              </Link>
-            ))}
-
-          </div>
-        </div>
+        <span className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}>
+          <ChevronDown />
+        </span>
       )}
     </div>
-  );
+
+    {hasDropdown && isOpen && (
+      <div className="absolute left-0 top-full mt-1 z-50 w-56 bg-white border border-gray-100 shadow-lg rounded-md overflow-hidden"
+      onClick={(e) => e.stopPropagation()}
+      >
+        {item.children.map((child) => (
+          <Link
+            key={child.label}
+            href={child.href}
+            onClick={closeAll}
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
+          >
+            {child.label}
+          </Link>
+        ))}
+      </div>
+    )}
+  </div>
+);
 }
