@@ -1,26 +1,29 @@
-import styles from "../../styles/About/About.module.css";
-import Common from "../Home/Common";
+import dynamic from "next/dynamic";
 import AboutHerosection from "./AboutHerosection";
-import Awards from "./Awards";
 import BuildingCarrers from "./BuildingCarrers";
-import Lastmessage from "./Lastmessage";
-import LifeatCPPS from "./LifeatCPPS";
-import Ourjourney from "./Ourjourney";
-import Ourmission from "./Ourmission";
-import PeopleCulture from "./PeopleCulture";
+
+// Above-the-fold: keep static (important for LCP)
+const Ourjourney = dynamic(() => import("./Ourjourney"));
+const Ourmission = dynamic(() => import("./Ourmission"));
+const PeopleCulture = dynamic(() => import("./PeopleCulture"));
+const Awards = dynamic(() => import("./Awards"));
+const LifeatCPPS = dynamic(() => import("./LifeatCPPS"));
+const Common = dynamic(() => import("../Home/Common"));
+const Lastmessage = dynamic(() => import("./Lastmessage"));
 
 export default function AboutView() {
   return (
     <>
-    <AboutHerosection/>
-    <BuildingCarrers/>
-    <Ourjourney/>
-    <Ourmission/>
-    <PeopleCulture/>
-    <Awards/>
-    <LifeatCPPS/>
-    <Common/>
-    <Lastmessage/>
+      <AboutHerosection />
+      <BuildingCarrers />
+
+      <Ourjourney />
+      <Ourmission />
+      <PeopleCulture />
+      <Awards />
+      <LifeatCPPS />
+      <Common />
+      <Lastmessage />
     </>
   );
 }

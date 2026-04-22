@@ -80,7 +80,7 @@ export default function Awards() {
               }`}
           >
             <Image
-              src="/images/about/awardsImage.svg"
+              src="/images/about/awardsImage.webp"
               alt="Awards"
               width={500}
               height={400}
