@@ -65,6 +65,7 @@ function WorkProcess() {
                   <div className="w-full h-1/2 lg:h-full lg:w-1/2  ">
                     <img
                       src={work.img}
+                      alt={work.heading}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -86,6 +87,7 @@ function WorkProcess() {
                   <div className="block lg:hidden w-full h-1/2 lg:h-full lg:w-1/2 ">
                     <img
                       src={work.img}
+                      alt={work.heading}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -101,6 +103,7 @@ function WorkProcess() {
                   <div className="hidden  lg:block w-full h-1/2 lg:h-full lg:w-1/2 ">
                     <img
                       src={work.img}
+                      alt={work.heading}
                       className="w-full h-full object-cover"
                     />
                   </div>

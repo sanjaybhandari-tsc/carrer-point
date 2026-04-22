@@ -4,7 +4,11 @@ function LongtermTalentHiring() {
   return (
     <div className="flex w-full lg:flex-row flex-col py-15 px-8 lg:py-30 lg:px-20 gap-8 lg:gap-20">
       <div className=" w-full lg:w-[40%] rounded-3xl overflow-hidden  flex items-center justify-center">
-        <img className="" src="/images/permanentHiring/LongTermHiring.svg" />
+        <img
+          className=""
+          alt="long term talent hiring image"
+          src="/images/permanentHiring/LongTermHiring.svg"
+        />
       </div>
       <div className="w-full lg:w-[60%] text-[18px] font-[500] text-[#333333] flex flex-col gap-7">
         <h3 className="font-bold text-4xl ">Long-Term Talent Hiring</h3>

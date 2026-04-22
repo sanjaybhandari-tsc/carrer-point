@@ -79,7 +79,7 @@ function OurTeam() {
 
       <div
         ref={ref}
-        className={`w-full px-7 mt-5 lg:my-15 ${visible ? styles.slideright : "opacity-0"} `}
+        className={` w-full px-7 mt-5 lg:my-15 ${visible ? styles.slideright : "opacity-0"} `}
       >
         <div className=" flex flex-nowrap overflow-x-auto overflow-y-hidden pl-3 gap-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {teams.map((team, idx) => {
