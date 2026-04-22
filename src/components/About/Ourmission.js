@@ -35,6 +35,7 @@ export default function Ourmission() {
           transition-all duration-700 ease-out
           ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
         >
+          <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
           <Image
             src="/images/about/visionIcon.svg"
             alt="Vision Icon"
@@ -45,7 +46,7 @@ export default function Ourmission() {
 
           <h2 className="font-bold text-[26px] sm:text-[30px] md:text-[36px] leading-[1.5] mb-4">
             Our Vision
-          </h2>
+          </h2></div>
 
           <p className="text-[15px] sm:text-[16px] md:text-[18px] leading-[1.6]">
             To build a strong nationwide recruitment presence by 2030, supporting
@@ -64,6 +65,7 @@ export default function Ourmission() {
           transition-all duration-700 delay-200 ease-out
           ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
         >
+          <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
           <Image
             src="/images/about/targeticon.svg"
             alt="Mission Icon"
@@ -74,7 +76,7 @@ export default function Ourmission() {
 
           <h2 className="font-bold text-[26px] sm:text-[30px] md:text-[36px] leading-[1.5] mb-4">
             Our Mission
-          </h2>
+          </h2></div>
 
           <p className="text-[15px] sm:text-[16px] md:text-[18px] leading-[1.6]">
             Deliver reliable recruitment solutions that connect organizations with
