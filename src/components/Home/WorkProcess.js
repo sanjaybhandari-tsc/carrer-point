@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function WorkProcess() {
@@ -62,11 +63,12 @@ function WorkProcess() {
                   key={idx}
                   className="sticky top-0 z-10 h-[90vh] lg:h-[95vh] mx-5 md:mx-13 lg:mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
                 >
-                  <div className="w-full h-1/2 lg:h-full lg:w-1/2  ">
-                    <img
+                  <div className="relative w-full h-1/2 lg:h-full lg:w-1/2  ">
+                    <Image
                       src={work.img}
                       alt={work.heading}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
                   <div className="w-full lg:w-1/2 py-2 px-5 lg:p-10 flex flex-col justify-center  lg:gap-10">
@@ -84,11 +86,12 @@ function WorkProcess() {
                   key={idx}
                   className="sticky top-0 z-10 h-[90vh] lg:h-[95vh] mx-5 md:mx-13 lg:mx-15  rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
                 >
-                  <div className="block lg:hidden w-full h-1/2 lg:h-full lg:w-1/2 ">
-                    <img
+                  <div className="relative block lg:hidden w-full h-1/2 lg:h-full lg:w-1/2 ">
+                    <Image
                       src={work.img}
                       alt={work.heading}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
                   <div className="w-full lg:w-1/2 py-2 px-5 lg:p-10 flex flex-col justify-center  lg:gap-10">
@@ -100,11 +103,12 @@ function WorkProcess() {
                     </h2>
                     <p className="lg:text-lg">{work.desc}</p>
                   </div>
-                  <div className="hidden  lg:block w-full h-1/2 lg:h-full lg:w-1/2 ">
-                    <img
+                  <div className="relative hidden  lg:block w-full h-1/2 lg:h-full lg:w-1/2 ">
+                    <Image
                       src={work.img}
                       alt={work.heading}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
                 </div>

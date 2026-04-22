@@ -1,0 +1,94 @@
+import React from "react";
+import styles from "../../styles/Home/Home.module.css";
+import Image from "next/image";
+
+function TestingHeroText() {
+  const bannerItems = [
+    { value: "95%", label: "Success Rate" },
+    { value: "50+", label: "Global Clients" },
+    { value: "15K+", label: "Placements" },
+    { value: "48hrs", label: "Total Match" },
+  ];
+  return (
+    <>
+      <div className="relative flex justify-center items-center min-h-[60vh] sm:min-h-[75vh] lg:h-[130vh] w-full overflow-hidden rounded-b-4xl">
+        <Image
+          src="/images/homepage/HeroImage.png"
+          alt="Hero image"
+          fill
+          className="object-cover lg:scale-125"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#66666600] to-[#00000075]"></div>
+
+        <div
+          className={`absolute inset-0 w-[120%] h-[120%] -left-[10%] -top-[50%] sm:-top-[38%] md:-top-[45%] lg:w-[120%] lg:h-[130%] lg:-top-[60%] lg:-left-[10%] rounded-[50%] bg-gradient-to-t from-[#080F249C] to-[#039BE69C] ${styles.slideDown} flex flex-col justify-end items-end`}
+        >
+          <div
+            className={`absolute inset-0 flex flex-col gap-1.5 sm:gap-2.5 md:gap-3 lg:gap-3 items-center justify-end text-center px-4 pb-10 sm:pb-16 md:pb-20 lg:pb-25 pt-4 ${styles.slideup}`}
+          >
+            <div className="px-3 py-1 lg:px-4 border border-white rounded-full backdrop-blur-md text-sm flex justify-center items-center gap-2 lg:gap-4 bg-transparent">
+              <Image
+                src="/images/homepage/HeroInnerImg.png"
+                alt="Glassdoor rating badge"
+                width={24}
+                height={24}
+                className="w-5 h-5 lg:w-6 lg:h-6"
+              />
+              <div>
+                <p className="text-left text-sm lg:text-xl tracking-wider">
+                  <span className="text-white">4.8 </span>
+                  <span className="text-amber-300">★★★★★</span>
+                </p>
+                <p className="text-[#FFFFFF] font-light text-xs sm:text-sm md:text-base lg:text-base xl:text-lg">
+                  based on Glassdoor reviews
+                </p>
+              </div>
+            </div>
+
+            <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-[Montserrat,sans-serif] text-white leading-tight tracking-tight">
+              {" "}
+              Hire Exceptional <span className="lg:block">Talent</span>
+            </h1>
+
+            <p className="max-w-[90%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%] font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white">
+              Connect with skilled professionals across industries and build
+              high-performing teams faster.
+            </p>
+
+            <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px] border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors">
+              <span className="relative z-10 flex items-center gap-2.5  font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl ">
+                <p>Get in touch</p>
+                <Image
+                  src="/images/homepage/HeroSendIcon.png"
+                  alt="Send"
+                  width={20}
+                  height={20}
+                  className="w-4 h-4 sm:w-5 sm:h-5"
+                />
+              </span>
+              <span className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full scale-0 group-hover:scale-[15] transition-transform duration-1000" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full flex justify-center relative -top-8 sm:-top-12 md:-top-16 lg:-top-25">
+        <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
+          {bannerItems.map(({ value, label }) => (
+            <div key={label} className="text-center ">
+              <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-6xl font-bold lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5 ">
+                {value}
+              </h2>
+              <p className="text-xs whitespace sm:text-sm lg:text-2xl font-medium lg:font-bold ">
+                {label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default TestingHeroText;

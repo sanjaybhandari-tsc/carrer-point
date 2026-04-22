@@ -32,6 +32,7 @@ import HeroSection from "./HeroSection";
 import MncsEnterPrises from "./MncsEnterPrises";
 import MessageFromManagingDirector from "./MessageFromManagingDirector";
 
+
 // lazy load only below-the-fold
 const IndustryWeServe = dynamic(() => import("./IndustryWeServe"));
 const WorkProcess = dynamic(() => import("./WorkProcess"));
@@ -42,6 +43,7 @@ const GetinTouch = dynamic(() => import("./GetinTouch"));
 export default function HomePage() {
   return (
     <>
+      {/* <TestingHeroText /> */}
       <HeroSection />
       <MncsEnterPrises />
       <MessageFromManagingDirector />

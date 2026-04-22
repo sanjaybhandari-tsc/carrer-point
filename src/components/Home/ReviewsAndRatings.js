@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../styles/Home/Home.module.css";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 function ReviewsAndRatings() {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -118,34 +119,43 @@ function ReviewsAndRatings() {
               <>
                 <div
                   key={idx}
-                  className="relative border-1 rounded-4xl  border-[#E1EBFF] shadow px-4 py-10 text-left flex flex-col gap-3 lg:gap-7  lg:min-w-[500px]  min-w-[300px] object-cover overflow-hidden"
+                  className="relative border rounded-4xl border-[#E1EBFF] shadow px-4 py-10 text-left flex flex-col gap-3 lg:gap-7 lg:min-w-[500px] min-w-[300px] overflow-hidden"
                 >
-                  <img
-                    className="absolute self-center top-[40%] -z-10"
+                  <Image
                     src="/images/homepage/Commas.svg"
+                    alt="Quotation mark decoration"
+                    width={80}
+                    height={80}
+                    className="absolute top-[45%] left-[45%] pointer-events-none"
                   />
                   <div className="flex gap-1">
                     {[...Array(review.full)].map((_, i) => (
-                      <img
+                      <Image
                         key={`full-${i}`}
                         src="/images/homepage/fullStar.svg"
-                        className="w-5 h-5"
+                        alt="Full star rating"
+                        width={20}
+                        height={20}
                       />
                     ))}
 
                     {[...Array(review.half)].map((_, i) => (
-                      <img
+                      <Image
                         key={`half-${i}`}
                         src="/images/homepage/halfStar.svg"
-                        className="w-5 h-5"
+                        alt="Half star"
+                        width={20}
+                        height={20}
                       />
                     ))}
 
                     {[...Array(review.empty)].map((_, i) => (
-                      <img
+                      <Image
                         key={`empty-${i}`}
                         src="/images/homepage/emptyStar.svg"
-                        className="w-5 h-5"
+                        alt="Empty star"
+                        width={20}
+                        height={20}
                       />
                     ))}
                   </div>
