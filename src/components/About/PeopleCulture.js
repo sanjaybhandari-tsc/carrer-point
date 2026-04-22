@@ -59,7 +59,7 @@ export default function PeopleCulture() {
 
         <div className={`w-full transition-all duration-700 delay-200 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}>
           <Image
-            src="/images/about/peopleculture.svg" 
+            src="/images/about/peopleculture.webp" 
             alt="People and Culture"
             width={700}
             height={450}
