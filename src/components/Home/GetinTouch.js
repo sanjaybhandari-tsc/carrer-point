@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import style from "../../styles/Home/Home.module.css";
+import Image from "next/image";
 
 function GetinTouch() {
   const leftRef = useRef(null);
@@ -27,7 +28,6 @@ function GetinTouch() {
 
   return (
     <div className="flex mb-25 lg:mb-20 text-white overflow-hidden">
-      {/* LEFT */}
       <div
         ref={leftRef}
         className={`hidden lg:block w-[35%] relative bg-cover flex flex-col items-center bg-center rounded-tr-4xl rounded-br-4xl overflow-hidden bg-[url('/images/homepage/getTouch.svg')] ${
@@ -48,19 +48,36 @@ function GetinTouch() {
 
           <div className="h-1/2 flex flex-col gap-2.5">
             <div className="flex gap-3 items-start">
-              <img src="/images/homepage/telephone.svg" alt="Phone icon" />
+              <Image
+                src="/images/homepage/telephone.svg"
+                alt="Phone icon"
+                width={40}
+                height={40}
+              />
               <p>+91 9225073111</p>
             </div>
 
             <div className="flex gap-3 items-start">
-              <img src="/images/homepage/location.svg" alt="Location icon" />
+              <Image
+                src="/images/homepage/location.svg"
+                alt="Location icon"
+                width={40}
+                height={40}
+              />
               <div>
-                <p>Address line</p>
+                <p>
+                  111,abcd enclave , Xyz colony , Sector-14 , New Delhi - 123456
+                </p>
               </div>
             </div>
 
             <div className="flex gap-3 items-start">
-              <img src="/images/homepage/envelope.svg" alt="Email icon" />
+              <Image
+                src="/images/homepage/envelope.svg"
+                alt="Email icon"
+                width={40}
+                height={40}
+              />
               <p>email@example.com</p>
             </div>
           </div>
