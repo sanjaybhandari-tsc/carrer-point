@@ -12,7 +12,7 @@ export default function HeroSection() {
     <>
       <div className="relative flex justify-center items-center min-h-[60vh] sm:min-h-[75vh] lg:h-[130vh] w-full overflow-hidden rounded-b-4xl">
         <Image
-          src="/images/homepage/HeroImage.png"
+          src="/images/homepage/HeroImage.webp"
           alt="Hero image"
           fill
           className="object-cover lg:scale-125"
