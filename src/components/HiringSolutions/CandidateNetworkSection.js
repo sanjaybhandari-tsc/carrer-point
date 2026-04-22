@@ -32,8 +32,7 @@ export default function CandidateNetworkSection() {
     <section className="py-10 lg:px-10">
       <div className="max-w-6xl mx-auto text-center px-2 sm:px-4 lg:px-6 py-10 sm:py-12 lg:py-14">
         <h2
-          className="font-bold text-black leading-tight
-          text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+          className="font-bold text-black leading-tight text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
         >
           Our Talent{" "}
           <span className="text-[var(--color-primary)]">Sourcing Strategy</span>
@@ -67,9 +66,7 @@ export default function CandidateNetworkSection() {
         {works.map((work, idx) => (
           <div
             key={idx}
-            className="lg:sticky lg:top-0 z-10 min-h-[90vh]
-      mx-5 md:mx-13 lg:mx-15 rounded-[40px] overflow-hidden 
-      bg-[#0B2239] text-white flex flex-col lg:flex-row items-stretch"
+            className="lg:sticky lg:top-0 z-10 min-h-[90vh] mx-5 md:mx-13 lg:mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex flex-col lg:flex-row items-stretch"
           >
             {idx % 2 === 0 && (
               <div className="w-full lg:w-1/2 self-stretch">

@@ -6,7 +6,7 @@ export default function AboutHeroSection() {
   return (
     <section className="relative w-full min-h-dvh md:min-h-screen flex items-center rounded-b-3xl overflow-hidden">
       <Image
-        src="/images/about/aboutHero.svg"
+        src="/images/about/aboutHero.webp"
         alt="About Us"
         fill
         priority
