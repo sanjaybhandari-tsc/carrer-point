@@ -23,16 +23,18 @@ export default function NavLinks({
   closeMenu,
 }) {
   return (
-    <div className={mobile ? "flex flex-col w-full" : "hidden md:flex gap-3 lg:gap-6"}>
+    <div
+      className={
+        mobile ? "flex flex-col w-full" : "hidden md:flex gap-3 lg:gap-6"
+      }
+    >
       {links.map((item, index) => (
         <NavItem
           key={item.label}
           item={item}
           mobile={mobile}
           isOpen={openNavLink === index}
-          onToggle={() =>
-            setOpenNavLink(openNavLink === index ? null : index)
-          }
+          onToggle={() => setOpenNavLink(index === openNavLink ? null : index)}
           closeAll={closeMenu}
         />
       ))}

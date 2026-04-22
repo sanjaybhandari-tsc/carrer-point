@@ -46,22 +46,37 @@ export default function NavActions({
 
   return (
     <div className="flex items-center gap-3">
-      <div className="relative group">
-        <div className="flex items-center gap-1 cursor-pointer font-medium text-sm text-[var(--color-primary)]">
+      <div className="relative">
+        <div
+          className="flex items-center gap-1 cursor-pointer font-medium text-sm text-[var(--color-primary)]"
+          onClick={(e) => {
+            e.stopPropagation();
+
+            if (isOpen) {
+              setOpenAction(null); // force close
+            } else {
+              setOpenAction("jobs"); // open
+            }
+          }}
+        >
           See Jobs
-          <span className="transition-transform duration-200 group-hover:rotate-180">
+          <span
+            className={`transition-transform duration-200 ${
+              isOpen ? "rotate-180" : ""
+            }`}
+          >
             <ChevronDown />
           </span>
         </div>
 
-        <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 z-50">
+        {isOpen && (
           <div
-            className="w-48 bg-white border border-gray-100 shadow-lg rounded-md overflow-hidden
-    opacity-0 invisible group-hover:opacity-100 group-hover:visible
-    transition-all duration-200"
+            className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50 w-48 bg-white border border-gray-100 shadow-lg rounded-md overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
           >
             <Link
               href="/jobs/browseJobs"
+              onClick={closeMenu}
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
             >
               Browse Jobs
@@ -69,15 +84,19 @@ export default function NavActions({
 
             <Link
               href="/jobs/submitYourCV"
+              onClick={closeMenu}
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
             >
               Submit your CV
             </Link>
           </div>
-        </div>
+        )}
       </div>
 
-      <button className="px-4 py-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap cursor-pointer">
+      <button
+        onClick={closeMenu}
+        className="px-4 py-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap cursor-pointer"
+      >
         Get in touch
       </button>
     </div>
