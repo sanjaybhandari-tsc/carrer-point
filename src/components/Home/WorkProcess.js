@@ -4,37 +4,37 @@ import React from "react";
 function WorkProcess() {
   const works = [
     {
-      img: "/images/homepage/workprocess1.svg",
+      img: "/images/homepage/workprocess1.webp",
       srNo: "01",
       heading: " Requirement Understanding",
       desc: " We begin by deeply understanding your hiring needs, businessgoals, role expectations, and company culture to ensure alignmentand define the ideal candidate profile from the very start.",
     },
     {
-      img: "/images/homepage/workprocess2.svg",
+      img: "/images/homepage/workprocess2.webp",
       srNo: "02",
       heading: "Talent Sourcing",
       desc: " Using multiple channels like databases, job portals, and networks, we identify and attract the most suitable candidates across levels, ensuring quality talent aligned with your requirements.",
     },
     {
-      img: "/images/homepage/workprocess3.svg",
+      img: "/images/homepage/workprocess3.webp",
       srNo: "03",
       heading: "Screening & Evaluation",
       desc: "Candidates go through detailed screening including profile checks, skill evaluation, and initial discussions to ensure they meet technical, professional, and cultural fit criteria before moving forward.",
     },
     {
-      img: "/images/homepage/workprocess4.svg",
+      img: "/images/homepage/workprocess4.webp",
       srNo: "04",
       heading: "Shortlisting & Presentation",
       desc: "We share carefully shortlisted candidates with you, providing relevant insights and profiles to help you quickly identify the best-fit talent for your organization.",
     },
     {
-      img: "/images/homepage/workprocess5.svg",
+      img: "/images/homepage/workprocess5.webp",
       srNo: "05",
       heading: "Interview Coordination",
       desc: " We manage end-to-end interview scheduling, communication, and feedback between you and candidates, ensuring a smooth, efficient, and timely hiring process",
     },
     {
-      img: "/images/homepage/workprocess6.svg",
+      img: "/images/homepage/workprocess6.webp",
       srNo: "06",
       heading: "Offer & Onboarding Support",
       desc: "From salary negotiation to final onboarding, we assist throughout the process, ensuring seamless joining, documentation, and continuous support for both client and candidate.",
