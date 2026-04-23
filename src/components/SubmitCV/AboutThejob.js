@@ -1,8 +1,10 @@
+"use client";
 import React, { useState,useEffect } from "react";
 
 export default function AboutTheJob() {
   const [showDetails, setShowDetails] = useState(false);
   const [job, setJob] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     try {
@@ -11,34 +13,15 @@ export default function AboutTheJob() {
         setJob(JSON.parse(storedJob));
       }
     } catch (err) {
-      console.error(err);
+      console.error("Invalid job data:", err);
+    } finally {
+      setLoading(false);
     }
   }, []);
 
   if (!job) return null;
-
-  // const job = {
-  //   id: 1,
-  //   title: "Project manager",
-  //   experience: "2-3 yrs",
-  //   location: "Mumbai",
-  //   Buildingimage: "/images/broserJobs/industryIcon.svg",
-  //   responsibilities: [
-  //     "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
-  //     "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
-  //     "Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida",
-  //   ],
-  //   Building: "Building Material",
-  //   role: "Project Manager",
-  //   industry: "Building Material",
-  //   employmentType: "Full Time, Permanent",
-  //   time: "2 hours ago",
-  //   description: `Lorem ipsum in consectetur vitae pretium lorem porttitor gravida sapien amet at viverra consequat blandit nisl phasellus gravida vestibulum habitant magnis mi aliquam senectus massa tellus interdum velit volutpat porttitor quis eu massa suspendisse et amet laoreet lobortis auctor pharetra in sodales at netus nunc montes faucibus vitae fringilla nibh.`,
-  //   skills: ["Communication", "Error Handling", "Problem Solving", "Client Handling"],
-  // };
-
   return (
-    <>
+    <section  aria-label="Job details section">
       <div className="p-5 md:p-10 bg-white">
         <div className="max-w-[1312px] mx-auto pt-16 px-[15px] md:px-6">
 
@@ -67,6 +50,7 @@ export default function AboutTheJob() {
                   {!showDetails && (
                     <button
                       onClick={() => setShowDetails(true)}
+                      aria-expanded={showDetails}
                       className="bg-[#039BE6] text-white px-5 py-3 rounded-lg text-sm  shadow-[0_4px_8px_#00000029] cursor-pointer"
                     >
                       View Details
@@ -180,6 +164,6 @@ export default function AboutTheJob() {
           </div>
         </div>
       )}
-    </>
+    </section>
   );
 }
