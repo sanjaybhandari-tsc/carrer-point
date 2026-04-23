@@ -76,7 +76,7 @@ export default function HeroSection() {
         <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
           {bannerItems.map(({ value, label }) => (
             <div key={label} className="text-center ">
-              <h2 className="heading font-bold lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5 ">
+              <h2 className="heading font-bold md:!font-[700] lg:!font-[900] font-montserrat text-[#0277BD] lg:mb-2.5 ">
                 {value}
               </h2>
               <p className="content font-mediumc md:font-bold lg:font-extrabold">

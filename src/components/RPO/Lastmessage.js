@@ -7,7 +7,7 @@ export default function Lastmessage() {
       <div className=" flex items-start justify-around">
         <div className="mb-6 w-20 sm:w-22 md:w-30 lg:w-40 ">
           <Image
-            src="/images/about/quote.svg" 
+            src="/images/about/quote.svg"
             alt="quote"
             width={84}
             height={84}
@@ -15,10 +15,18 @@ export default function Lastmessage() {
           />
         </div>
         <h2 className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[150%] text-[#333333] text-[20px] sm:text-[22px] md:text-[30px]">
-          We<span className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[150%] text-[#0277BD]"> support</span>, organizations streamline hiring while building 
-          <span className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[150%] text-[#0277BD]"> strong</span> and capable team.
+          We
+          <span className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[150%] text-[#0277BD]">
+            {" "}
+            support
+          </span>
+          , organizations streamline hiring while building
+          <span className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[150%] text-[#0277BD]">
+            {" "}
+            strong
+          </span>{" "}
+          and capable team.
         </h2>
-
       </div>
     </div>
   );

@@ -104,9 +104,9 @@ export default function SubmitcvForm() {
     <div className="px-4 sm:px-6 lg:px-[100px] py-10 lg:mb-25">
       <form onSubmit={handleSubmit} className="max-w-[1312px] mx-auto space-y-10">
         <div className="space-y-6">
-          <h2 className="text-[24px] font-bold">Personal Details</h2>
+          <h2 className="subheading-bold font-bold">Personal Details</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-montserra">
 
             <div className="flex items-start flex-col gap-[2px]">
               <label className={labelStyle}>First Name</label>
@@ -212,8 +212,78 @@ export default function SubmitcvForm() {
           </div>
         </div>
 
+        <div className="space-y-6">
+          <h2 className="subheading-bold font-bold">Professional Details</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-montserra">
+
+            <div className="flex items-start flex-col gap-[2px]">
+              <label className={labelStyle}>Current Job Title</label>
+              <input
+                type="text"
+                name="jobTitle"
+                placeholder="Enter your Current Job Title"
+                className={inputStyle("jobTitle")}
+                onChange={handleChange}
+                onFocus={handleFocus}
+              />
+            </div>
+
+            <div className="flex items-start flex-col gap-[2px]">
+              <label className={labelStyle}>Current Company</label>
+              <input
+                type="text"
+                name="company"
+                placeholder="Enter you Current Company"
+                className={inputStyle("company")}
+                onChange={handleChange}
+                onFocus={handleFocus}
+              />
+            </div>
+
+            <div className="flex items-start flex-col gap-[2px]">
+              <label className={labelStyle}>Current CTC</label>
+              <input
+                type="text"
+                name="ctc"
+                placeholder="Enter your Current CTC"
+                className={inputStyle("ctc")}
+                onChange={handleChange}
+                onFocus={handleFocus}
+              />
+            </div>
+
+            <div className="flex items-start flex-col gap-[2px]">
+              <label className={labelStyle}>Years Of Experience</label>
+              <input
+                type="text"
+                name="experience"
+                placeholder=" Enter your Years Of Experience"
+                className={inputStyle("experience")}
+                onChange={handleChange}
+                onFocus={handleFocus}
+              />
+            </div>
+
+            <div className="flex items-start flex-col gap-[2px]">
+              <label className={labelStyle}>Key Skills</label>
+              <input
+                type="text"
+                name="skills"
+                placeholder="Enter your Skills"
+                className={inputStyle("skills")}
+                onChange={handleChange}
+                onFocus={handleFocus}
+              />
+              <p className="text-red-500 text-lg">{errors.skills}</p>
+            </div>
+
+            
+          </div>
+        </div>
+
         {/* Resume Upload */}
-        <div className="flex justify-center gap-[2px]">
+        <div className="flex justify-center gap-[2px] font-montserrat">
           <label
             className={`w-full max-w-[1130px] h-[200px] border-2 border-dashed rounded-3xl flex flex-col items-center justify-center text-center cursor-pointer ${
               errors.resume ? "border-red-500" : "border-blue-400"
