@@ -25,7 +25,7 @@ export default function AboutTheJob() {
       <div className="p-5 md:p-10 bg-white">
         <div className="max-w-[1312px] mx-auto pt-16 px-[15px] md:px-6">
 
-          <p className="text-[#0277BD] text-[18px] font-semibold leading-[165%] mb-4">
+          <p className="text-[#0277BD] text-[18px] font-semibold leading-[165%] font-roboto mb-4">
             You are applying for
           </p>
 
@@ -35,14 +35,14 @@ export default function AboutTheJob() {
 
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
 
-                <h2 className="text-xl md:text-2xl lg:text-[36px] font-semibold text-gray-800">
+                <h2 className="content-semibold text-[#333333]">
                   {job.title}
                 </h2>
 
                 <div className="flex items-center gap-3 flex-wrap">
                   <div className="flex items-center gap-1 whitespace-nowrap">
                     <img src="/images/broserJobs/clockone.svg" className="h-6 w-6" />
-                    <span className="text-[14px] text-black">
+                    <span className="text-[14px] text-black font-roboto">
                       {job.time}
                     </span>
                   </div>
@@ -51,7 +51,7 @@ export default function AboutTheJob() {
                     <button
                       onClick={() => setShowDetails(true)}
                       aria-expanded={showDetails}
-                      className="bg-[#039BE6] text-white px-5 py-3 rounded-lg text-sm  shadow-[0_4px_8px_#00000029] cursor-pointer"
+                      className="bg-[#039BE6] text-white px-5 py-3 rounded-lg text-sm  shadow-[0_4px_8px_#00000029] font-montserrat cursor-pointer"
                     >
                       View Details
                     </button>
@@ -59,7 +59,7 @@ export default function AboutTheJob() {
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-6 mt-2 text-[16px]">
+              <div className="flex flex-wrap gap-6 mt-2 text-[16px] font-roboto">
                 <div className="flex items-center gap-1">
                   <img src="/images/broserJobs/experienceIcon.svg" className="h-5 w-5" />
                   <span>{job.experience}</span>
@@ -79,7 +79,7 @@ export default function AboutTheJob() {
               </div>
             </div>
 
-            <div className="mt-4 text-sm text-black flex flex-wrap gap-2 pb-6">
+            <div className="mt-4 text-sm text-black flex flex-wrap gap-2 pb-6 font-roboto ">
               {job.skills.map((skill, index) => (
                 <span key={index} className="flex items-center gap-2 pt-2">
                   <span>•</span>
@@ -104,20 +104,20 @@ export default function AboutTheJob() {
             <div className="py-[52px] px-[20px] sm:px-[30px] md:px-[38px] xl:w-[1075px]">
 
               <div className="mb-6">
-                <h3 className="font-bold text-[20px] leading-[100%] text-black mb-3 ">
+                <h3 className="font-bold text-[20px] leading-[100%] text-black mb-3 font-montserrat ">
                   Overview
                 </h3>
 
-                <p className=" font-normal text-[16px] leading-[165%] text-black lg:ps-2">
+                <p className=" font-normal text-[16px] leading-[165%] text-black lg:ps-2 font-inter">
                   {job.description}
                 </p>
               </div>
               <div className="mb-6">
-                <h3 className=" font-semibold text-[20px] leading-[100%] text-black mb-3">
+                <h3 className=" font-semibold text-[20px] leading-[100%] text-black mb-3 font-montserrat">
                   Responsibilities
                 </h3>
 
-                <div className="space-y-3 lg:ps-2">
+                <div className="space-y-3 lg:ps-2 font-inter">
                   {job.responsibilities.map((item, index) => (
                     <div key={index} className="flex items-start gap-2">
                       <span className="mt-[8px] w-[5px] h-[5px] bg-black rounded-full"></span>
@@ -129,7 +129,7 @@ export default function AboutTheJob() {
                 </div>
               </div>
 
-              <div className="mb-6 space-y-2">
+              <div className="mb-6 space-y-2 content  !font-montserrat">
                 <p className=" text-[16px] leading-[165%] text-black">
                   <span className="font-semibold">Role :</span> {job.role}
                 </p>
@@ -144,7 +144,7 @@ export default function AboutTheJob() {
               </div>
 
               <div>
-                <h3 className=" font-semibold text-[20px] leading-[100%] text-black mb-3">
+                <h3 className=" content-semibold leading-[100%] text-black mb-3">
                   Skills
                 </h3>
 
@@ -152,7 +152,7 @@ export default function AboutTheJob() {
                   {job.skills.map((skill, index) => (
                     <span
                       key={index}
-                      className=" text-[16px] leading-[165%] text-black"
+                      className="  content !font-montserrat leading-[165%] text-black"
                     >
                       • {skill}
                     </span>
