@@ -93,16 +93,23 @@ body {
     font-family: var(--font-montserrat);
     @apply font-semibold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
   }
+   .subheading-bold{
+    font-family: var(--font-montserrat);
+    @apply font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
+  }
 
   .content {
     font-family: var(--font-roboto);
     @apply font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
   }
-  .content-semibold {
+  .content-semibold-roboto {
     font-family: var(--font-roboto);
     @apply font-semibold text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
   }
-
+  .content-semibold {
+    font-family: var(--font-montserrat);
+    @apply font-semibold text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
+  }
 
   .small-text {
     font-family: var(--font-inter);

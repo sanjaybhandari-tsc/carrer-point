@@ -274,15 +274,16 @@ export default function Jobscart() {
   return (
     <div className="p-4 sm:p-6 md:p-8 bg-white lg:px-25 min-h-screen">
       
-      <div  ref={headingRef} className={`p-4 sm:p-6 text-center  transition-all duration-700 transform ${showHeading ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
-        }` }>
-        <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold mb-5">
+      <div  ref={headingRef} className={`p-4 sm:p-6 text-center  transition-all duration-700 transform ${showHeading ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"}` }>
+        <h2 className="heading-bold mb-5">
           Featured <span className="text-[#0277BD]">Jobs</span>
         </h2>
-        <p className="text-black mt-2 text-sm sm:text-base lg:text-[18px] max-w-2xl lg:max-w-7xl  font-[500] mx-auto">
+        <p className="text-black mt-2 content max-w-2xl lg:max-w-7xl  mx-auto">
           Explore opportunities across different roles and industries, and find positions that align with your skills, interests, and career goals.
         </p>
       </div>
+
+
 
       <div ref={containerRef} className={`mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6 py-6 transition-all duration-700 transform ${showContent ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}>
@@ -295,23 +296,24 @@ export default function Jobscart() {
               <div
                 key={job.id}
                 onClick={() => setSelectedJob(job)}
-                className={`p-4 sm:p-5 rounded-2xl border cursor-pointer transition ${ selectedJob.id === job.id ? "border-[#039BE6] border-2" : "border-2 border-[#ECECEC] hover:shadow-sm"
-                }`}
+                className={`p-4 sm:p-5 rounded-2xl border cursor-pointer transition ${ selectedJob.id === job.id ? "border-[#039BE6] border-2" : "border-2 border-[#ECECEC] hover:shadow-sm"}`}
               >
                 <div className="flex justify-between items-start gap-2">
-                  <h3 className="font-semibold text-base sm:text-lg md:text-xl">
+                  <h3 className="content-semibold">
                     {job.title}
                   </h3>
 
                   <div className="flex items-center gap-1 whitespace-nowrap">
-                    <img src="/images/broserJobs/clockone.svg" alt="icon" className="h-4 w-4" />
-                    <span className="text-[10px] sm:text-[12px] text-black">
+                    <img src="/images/broserJobs/clockone.svg" alt="icon" className="h-3.5 w-3.5" />
+                    <span className="text-[10px] sm:text-[12px] font-roboto text-black">
                       {job.time}
                     </span>
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-3 mt-4 text-sm sm:text-[16px]">
+
+
+                <div className="flex flex-wrap gap-3 mt-4 text-sm sm:text-[16px] font-roboto">
                   <div className="flex items-center gap-1">
                     <img src="/images/broserJobs/experienceIcon.svg" alt="" className="h-4 w-4 sm:h-5 sm:w-5" />
                     <span>{job.experience}</span>
@@ -330,7 +332,7 @@ export default function Jobscart() {
                   )}
                 </div>
 
-                <div className="mt-4 text-sm sm:text-[16px]">
+                <div className="mt-4 text-sm sm:text-[14px] font-roboto">
                   {job.skills.map((s, i) => (
                     <span key={i} className=" text-lg me-2 "><span className="me-1">•</span>{s} </span>
                   ))}
@@ -338,6 +340,7 @@ export default function Jobscart() {
               </div>
             ))}
           </div>
+
           <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 mt-6">
             
             <button
@@ -351,7 +354,7 @@ export default function Jobscart() {
                 <button
                   key={page}
                   onClick={() => setCurrentPage(page)}
-                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full text-sm sm:text-[16px] cursor-pointer ${ currentPage === page ? "bg-gray-200 font-semibold" : "text-black"
+                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full content-semibold cursor-pointer ${ currentPage === page ? "bg-gray-200 font-semibold" : "text-black"
                   }`}
                 >
                   {page}
@@ -375,11 +378,11 @@ export default function Jobscart() {
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 border border-[#ECECEC] rounded-t-xl p-4 sm:p-6">
             
             <div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold">
+              <h3 className="subheading-bold">
                 {selectedJob.title}
               </h3>
 
-              <div className="flex flex-wrap gap-3 mt-2 text-sm sm:text-[16px]">
+              <div className="flex flex-wrap gap-3 mt-2 content">
                 <div className="flex items-center gap-1">
                   <img src="/images/broserJobs/experienceIcon.svg" className="h-4 w-4 sm:h-5 sm:w-5" />
                   <span>{selectedJob.experience}</span>
@@ -391,33 +394,35 @@ export default function Jobscart() {
                 </div>
 
                 <div className="flex items-center gap-1">
-                  <img src="/images/broserJobs/clockone.svg" className="h-4 w-4" />
-                  <span className="text-[10px] sm:text-[12px]">
+                  <img src="/images/broserJobs/clockone.svg" className="h-3.5 w-3.5" />
+                  <span className="text-[10px] sm:text-[12px] font-roboto">
                     {selectedJob.time}
                   </span>
                 </div>
               </div>
             </div>
 
-            <button onClick={()=>submitHandelar(selectedJob)} className="bg-[#039BE6] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg shadow w-full sm:w-auto text-sm sm:text-base flex items-center justify-center gap-3 cursor-pointer">
+            <button onClick={()=>submitHandelar(selectedJob)} className="bg-[#039BE6] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg shadow w-full sm:w-auto text-sm sm:text-base flex items-center justify-center gap-3 cursor-pointer font-montserrat">
               Apply now
               <img src="/images/broserJobs/applyArrow.svg" className="w-[14px] h-[18px]" />
             </button>
           </div>
 
+
+
           <div className="px-4 sm:px-6 pt-6">
-            <h4 className="text-lg sm:text-[20px] font-semibold mb-2">Overview</h4>
-            <p className="text-sm sm:text-[16px] leading-[165%] ps-2 sm:ps-4">
+            <h4 className="text-lg sm:text-[20px] font-semibold mb-2 font-montserrat">Overview</h4>
+            <p className="text-sm sm:text-[16px] leading-[165%] ps-2 sm:ps-4 font-inter">
               {selectedJob.description}
             </p>
           </div>
 
           <div className="mt-6 px-4 sm:px-6">
-            <h4 className="text-lg sm:text-[20px] font-semibold mb-2">
+            <h4 className="text-lg sm:text-[20px] font-semibold mb-2 font-montserrat ">
               Responsibilities
             </h4>
 
-            <div className="space-y-2 text-sm sm:text-[16px]">
+            <div className="space-y-2 text-sm sm:text-[16px] font-inter">
               {selectedJob.responsibilities.map((item, i) => (
                 <div key={i} className="flex items-start gap-2 ps-2 sm:ps-4">
                   <p className=" inline-block w-1.5 h-1.5 sm:w-1 sm:h-1 bg-black rounded-full mt-2 flex-shrink-0"></p>
@@ -427,15 +432,15 @@ export default function Jobscart() {
             </div>
           </div>
 
-          <div className="mt-6 px-4 sm:px-6 text-sm sm:text-[16px] space-y-2">
+          <div className="mt-6 px-4 sm:px-6 text-sm sm:text-[16px] space-y-2 content  !font-montserrat">
             <p><strong>Role :</strong> {selectedJob.role}</p>
             <p><strong>Industry :</strong> {selectedJob.industry}</p>
             <p><strong>Employement Type :</strong> {selectedJob.employmentType}</p>
           </div>
 
           <div className="mt-6 px-4 sm:px-6">
-            <h4 className="text-lg font-semibold mb-2">Skills</h4>
-            <div className="flex flex-wrap gap-3 text-sm  sm:text-[16px] ps-2 sm:ps-4">
+            <h4 className="content-semibold mb-2">Skills</h4>
+            <div className="flex flex-wrap gap-3 content !font-montserrat ps-2 sm:ps-4">
               {selectedJob.skills.map((s, i) => (
                 <span key={i}>• {s}</span>
               ))}
