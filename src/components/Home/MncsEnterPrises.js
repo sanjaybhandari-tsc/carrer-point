@@ -42,13 +42,10 @@ const logos = [
 function MncsEnterprises() {
   return (
     <div className="text-center">
-      <p className="text-xl lg:text-3xl">
-        Trusted by 50+ MNCs, Enterprises, Startups
-      </p>
+      <p className="heading">Trusted by 50+ MNCs, Enterprises, Startups</p>
 
       <div className={`py-9 pb-12 lg:py-20 ${styles.marqueeWrapper}`}>
         <div className={styles.marqueeTrack}>
-          {/* 3 sets — translateX(-33.333%) loops perfectly */}
           {[...Array(3)].map((_, i) =>
             logos.map((logo) => (
               // <img

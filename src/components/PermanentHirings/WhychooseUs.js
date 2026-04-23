@@ -20,7 +20,7 @@ function WhychooseUs() {
   ];
   return (
     <div className="w-full flex flex-col justify-center items-center">
-      <h3 className="text-3xl font-bold text-center">
+      <h3 className="heading md:!font-bold text-center">
         Why <span className="text-[var(--color-primary-hover)]">Choose</span> Us
         ?
       </h3>
@@ -32,9 +32,9 @@ function WhychooseUs() {
               key={idx}
             >
               <img src={reasons.img} alt={reasons.heading} />
-              <h4 className="font-bold text-lg">{reasons.heading}</h4>
+              <h4 className="subheading  md:!font-bold ">{reasons.heading}</h4>
 
-              <p className="font-[500]">{reasons.desc}</p>
+              <p className="content font-[500]">{reasons.desc}</p>
             </div>
           );
         })}

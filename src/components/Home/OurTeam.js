@@ -67,10 +67,10 @@ function OurTeam() {
   return (
     <div className="pt-8 mb-8 flex flex-col items-center overflow-hidden">
       <div className="flex flex-col justify-center items-center text-center max-w-[80%] gap-4">
-        <h2 className="font-semibold text-4xl">
+        <h2 className="heading !font-bold">
           Meet Our <span className="text-[#000080]">Team</span>
         </h2>
-        <p className="text-lg">
+        <p className="content">
           A team of experienced professionals delivering strong hiring solutions
           with deep expertise, strategic thinking, and a people-first approach
           to building high-performing teams.
@@ -133,10 +133,10 @@ function OurTeam() {
                 </div>
 
                 <div className="text-center">
-                  <p className="text-[18px]">{team.name}</p>
-                  <h3 className="font-[700] text-lg">{team.department}</h3>
+                  <p className="content">{team.name}</p>
+                  <h3 className="content !font-semibold">{team.department}</h3>
                 </div>
-                <p>{team.desc}</p>
+                <p className="small-text">{team.desc}</p>
               </div>
             );
           })}

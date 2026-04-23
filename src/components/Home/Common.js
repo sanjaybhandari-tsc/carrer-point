@@ -25,15 +25,15 @@ export default function Common() {
         />
 
         <div className="text-center max-w-3xl">
-          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold mb-3 leading-tight">
+          <h3 className=" heading font-extrabold mb-3 leading-tight">
             Ready to take your next step?
           </h3>
-          <p className="text-sm sm:text-base md:text-lg opacity-90">
+          <p className="content text-sm sm:text-base md:text-lg opacity-90">
             Connect with highly skilled professionals or discover your next
             career opportunity
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row gap-5 md:gap-8 w-full justify-center items-center">
+        <div className="content flex flex-col sm:flex-row gap-5 md:gap-8 w-full justify-center items-center">
           <Link
             href="/jobs/browseJobs"
             className="w-full sm:w-auto sm:min-w-[220px] lg:min-w-[250px] flex flex-col justify-center items-center rounded-2xl border-2 border-white py-6 md:py-8 gap-2 text-base md:text-lg lg:text-xl hover:bg-[var(--color-primary)] hover:border-transparent transition cursor-pointer"
