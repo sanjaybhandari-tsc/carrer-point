@@ -19,9 +19,9 @@ const montserrat = Montserrat({
 });
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // choose what you a
+  weight: ["400", "500", "700"],
   variable: "--font-roboto",
-  display: "swap", // optional but recommended
+  display: "swap",
 });
 
 export default function App({ Component, pageProps }) {
@@ -39,6 +39,8 @@ export default function App({ Component, pageProps }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
 
       <Layout>

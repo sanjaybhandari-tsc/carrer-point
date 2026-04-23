@@ -2,14 +2,14 @@ import NavItem from "./NavItem";
 
 const links = [
   { label: "Hiring Solution", href: "/hiring-solutions" },
-  { label: "About", href: "/about" },
+  { label: "About", href: "/about-us" },
   { label: "Industries", href: "/industries" },
   {
     label: "Services",
     dropdown: true,
     children: [
-      { label: "Permanent Hiring", href: "/services/permanenthirings" },
-      { label: "Contract Hiring", href: "/services/contracthiring" },
+      { label: "Permanent Hiring", href: "/services/permanent-hirings" },
+      { label: "Contract Hiring", href: "/services/contract-hiring" },
       { label: "Executive Search", href: "/services/executive-search" },
       { label: "RPO", href: "/services/rpo" },
     ],

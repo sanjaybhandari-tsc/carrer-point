@@ -40,11 +40,11 @@ export default function Footer() {
               <div className="text-[16px] tracking-normal whitespace-nowrap ">
                 <Link href={"/"}> <p className="cursor-pointer">Home</p></Link>
                 <Link href={"/hiring-solutions"}><p className="cursor-pointer">Hiring Solution</p></Link>
-                <Link href={"/about"}><p className="cursor-pointer">About</p></Link>
+                <Link href={"/about-us"}><p className="cursor-pointer">About</p></Link>
                 <Link href={"/industries"}><p className="cursor-pointer">Industries</p></Link>
-                <Link href={"/services/permanenthirings"}><p className="cursor-pointer">Services</p></Link>
-                <Link href={"/jobs/browseJobs"}><p className="cursor-pointer">See Jobs</p></Link>
-                <Link href={"#"}><p className="cursor-pointer">Contact Us</p></Link>
+                <Link href={"/services/permanent-hirings"}><p className="cursor-pointer">Services</p></Link>
+                <Link href={"/jobs/browse-jobs"}><p className="cursor-pointer">See Jobs</p></Link>
+                <Link href={"/about-us"}><p className="cursor-pointer">Contact Us</p></Link>
               </div>
             </div>
             <div className="flex flex-col gap-5 items-center md:items-start text-center md:text-left">

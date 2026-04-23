@@ -241,7 +241,7 @@ export default function Jobscart() {
   const submitHandelar=(data)=>{
     
     localStorage.setItem("job",JSON.stringify(data));
-    router.push("/jobs/submitYourCV");
+    router.push("/jobs/submit-your-cv");
   }
 
   useEffect(() => {

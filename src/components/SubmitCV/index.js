@@ -13,7 +13,7 @@ export default function SubmitCV() {
     const storedJob = localStorage.getItem("job");
     setJobExists(!!storedJob);
     const handleRouteChange = (url) => {
-      if (!url.includes("/jobs/submitYourCV")) {
+      if (!url.includes("/jobs/submit-your-cv")) {
         localStorage.removeItem("job");
       }
     };
