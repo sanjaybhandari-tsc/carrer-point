@@ -1,6 +1,6 @@
 import ExecutiveBanner from "./ExecutiveBanner";
 import StategicLeaderShipHiring from "./StategicLeaderShipHiring";
-import CTASection from "./CTASection";
+// import CTASection from "./CTASection";
 import Lastmessage from "./Lastmessage";
 import WhyChooseUsSection from "./WhyChooseUsSection";
 // import HowWeWork from "./HowWeWork";
@@ -8,6 +8,7 @@ import HeroText from "../commons/HeroText";
 import HowWeWork from "../commons/HowWeWork";
 import WhyChoose from "../commons/WhyChoose";
 import ServicesSecondCompo from "../commons/ServicesSecondCompo";
+import Common from "../commons/CTASection";
 
 export default function RPO() {
   const workData = [
@@ -75,7 +76,7 @@ export default function RPO() {
       {/* <HowWeWork /> */}
       <HowWeWork workData={workData} />
       <Lastmessage />
-      <CTASection />
+      <Common />
     </>
   );
 }
