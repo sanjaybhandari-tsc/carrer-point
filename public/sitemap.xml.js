@@ -1,9 +1,9 @@
 const links = [
   { href: "/hiring-solutions" },
-  { href: "/about" },
+  { href: "/about-us" },
   { href: "/industries" },
-  { href: "/services/permanenthirings" },
-  { href: "/services/contracthiring" },
+  { href: "/services/permanent-hirings" },
+  { href: "/services/contract-hiring" },
   { href: "/services/executive-search" },
   { href: "/services/rpo" },
 ];

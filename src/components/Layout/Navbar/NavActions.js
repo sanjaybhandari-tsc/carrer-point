@@ -25,10 +25,10 @@ export default function NavActions({
           }`}
         >
           <div className="pl-4 flex flex-col gap-2">
-            <Link href="/jobs/browseJobs" onClick={closeMenu}>
+            <Link href="/jobs/browse-jobs" onClick={closeMenu}>
               Browse Jobs
             </Link>
-            <Link href="/jobs/submitYourCV" onClick={closeMenu}>
+            <Link href="/jobs/submit-your-cv" onClick={closeMenu}>
               Submit your CV
             </Link>
           </div>
@@ -53,9 +53,9 @@ export default function NavActions({
             e.stopPropagation();
 
             if (isOpen) {
-              setOpenAction(null); // force close
+              setOpenAction(null);
             } else {
-              setOpenAction("jobs"); // open
+              setOpenAction("jobs");
             }
           }}
         >
@@ -75,7 +75,7 @@ export default function NavActions({
             onClick={(e) => e.stopPropagation()}
           >
             <Link
-              href="/jobs/browseJobs"
+              href="/jobs/browse-jobs"
               onClick={closeMenu}
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
             >
@@ -83,7 +83,7 @@ export default function NavActions({
             </Link>
 
             <Link
-              href="/jobs/submitYourCV"
+              href="/jobs/submit-your-cv"
               onClick={closeMenu}
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
             >

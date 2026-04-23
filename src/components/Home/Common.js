@@ -35,7 +35,7 @@ export default function Common() {
         </div>
         <div className="flex flex-col sm:flex-row gap-5 md:gap-8 w-full justify-center items-center">
           <Link
-            href="/jobs/browseJobs"
+            href="/jobs/browse-jobs"
             className="w-full sm:w-auto sm:min-w-[220px] lg:min-w-[250px] flex flex-col justify-center items-center rounded-2xl border-2 border-white py-6 md:py-8 gap-2 text-base md:text-lg lg:text-xl hover:bg-[var(--color-primary)] hover:border-transparent transition cursor-pointer"
           >
             <img
