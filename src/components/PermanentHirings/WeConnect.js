@@ -13,10 +13,7 @@ function WeConnect() {
             className="object-cover"
           />
         </div>
-        <h2
-          className="font-montserrat font-bold text-[#333333]
-          text-[20px] sm:text-[22px] md:text-[30px] lg:text-[50px]"
-        >
+        <h2 className="heading font-bold text-[#333333] ">
           We <span className="text-[#0277BD]"> connect</span> organizations with
           professionals who align with their
           <span className="text-[#0277BD]"> goals</span> and culture.

@@ -76,13 +76,11 @@ function HowWeWork() {
 
   return (
     <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] py-20 overflow-hidden flex flex-col items-center justify-center">
-      <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
-        How We Work
-      </h2>
+      <h2 className="heaading font-bold text-white mb-16">How We Work</h2>
 
       <div
         ref={ref}
-        className={`relative max-w-6xl mx-auto ${
+        className={`relative max-w-6xl mx-auto  ${
           visible ? styles.slideright : "opacity-0 translate-y-10"
         }`}
       >
@@ -128,11 +126,9 @@ function HowWeWork() {
 function WorkCard({ item }) {
   return (
     <div className="min-w-full md:min-w-1/2 lg:min-w-1/3 px-6">
-      <h2 className="text-5xl font-bold text-white/70 mb-4">{item.srNo}</h2>
+      <h2 className=" heading font-bold text-white/70 mb-4">{item.srNo}</h2>
 
-      <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
-        {item.heading}
-      </h3>
+      <h3 className="content font-semibold text-white mb-3">{item.heading}</h3>
 
       <p className="text-white/80 leading-relaxed">{item.desc}</p>
     </div>

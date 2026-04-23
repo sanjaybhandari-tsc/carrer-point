@@ -34,14 +34,12 @@ export default function HeroSection() {
                 height={24}
                 className="w-5 h-5 lg:w-6 lg:h-6"
               />
-              <div>
-                <p className="text-left text-sm lg:text-xl tracking-wider">
-                  <span className="text-white">4.8 </span>
+              <div className="small-text">
+                <p className=" text-start tracking-wider">
+                  <span className=" text-white">4.8 </span>
                   <span className="text-amber-300">★★★★★</span>
                 </p>
-                <p className="text-[#FFFFFF] text-xs">
-                  based on Glassdoor reviews
-                </p>
+                <p className="text-[#FFFFFF] ">based on Glassdoor reviews</p>
               </div>
             </div>
 
@@ -52,14 +50,14 @@ export default function HeroSection() {
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1>
 
-            <p className="max-w-[90%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%] text-sm sm:text-base md:text-lg lg:text-2xl text-white">
+            <p className="content max-w-[90%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%]  text-white">
               Connect with skilled professionals across industries and build
               high-performing teams faster.
             </p>
 
             <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px] border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors">
               <span className="relative z-10 flex items-center gap-2.5">
-                <p>Get in touch</p>
+                <p className="getintoch-button">Get in touch</p>
                 <Image
                   src="/images/homepage/HeroSendIcon.png"
                   alt="Send"
@@ -78,10 +76,10 @@ export default function HeroSection() {
         <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
           {bannerItems.map(({ value, label }) => (
             <div key={label} className="text-center ">
-              <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-6xl font-bold lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5 ">
+              <h2 className="heading font-bold lg:font-black font-montserrat text-[#0277BD] lg:mb-2.5 ">
                 {value}
               </h2>
-              <p className="text-xs whitespace sm:text-sm lg:text-2xl font-medium lg:font-bold ">
+              <p className="content font-mediumc md:font-bold lg:font-extrabold">
                 {label}
               </p>
             </div>
