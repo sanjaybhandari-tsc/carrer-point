@@ -21,18 +21,10 @@ export default function AboutHeroSection() {
             About Us
           </h2>
 
-          <p className="mt-4 subheading leading-relaxed text-gray-200 max-w-5xl">
+          <p className="mt-4 subheading leading-relaxed text-gray-200 max-w-5xl font-roboto">
             Connecting organizations with the right talent through structured recruitment solutions and industry-focused expertise. We support businesses in building strong teams that drive long-term growth and success.
           </p>
-          <button
-            className="mt-6 relative overflow-hidden 
-            w-40 sm:w-44 md:w-48 lg:w-50 
-            h-10 sm:h-11 md:h-12 
-            flex items-end justify-center gap-2.5 
-            rounded-lg border-[1.5px] border-white 
-            px-4 sm:px-5 md:px-6 
-            py-2 sm:py-2.5 md:py-3 
-            text-white group hover:border-0"
+          <button className="mt-6 relative overflow-hidden w-40 sm:w-44 md:w-48 lg:w-50 h-10 sm:h-11 md:h-12 flex items-end justify-center gap-2.5 rounded-lg border-[1.5px] border-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3  text-white group hover:border-0"
           >
             <span className="relative z-10 flex items-center gap-2.5">
               <p className="getintoch_button">

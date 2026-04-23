@@ -41,14 +41,14 @@ export default function Ourmission() {
             alt="Vision Icon"
             width={64}
             height={64}
-            className="mb-4"
+            className="mb-4 h-10 w-10 md:h-15 md:w-15"
           />
 
-          <h2 className="font-bold text-[26px] sm:text-[30px] md:text-[36px] leading-[1.5] mb-4">
+          <h2 className="heading-bold leading-[1.5] mb-4">
             Our Vision
           </h2></div>
 
-          <p className="text-[15px] sm:text-[16px] md:text-[18px] leading-[1.6]">
+          <p className="content leading-[1.6]">
             To build a strong nationwide recruitment presence by 2030, supporting
             organizations with dependable talent solutions and industry expertise.
             The focus is on developing a 200+ skilled workforce, expanding presence
@@ -71,14 +71,14 @@ export default function Ourmission() {
             alt="Mission Icon"
             width={64}
             height={64}
-            className="mb-4"
+            className="mb-4 h-10 w-10 md:h-15 md:w-15"
           />
 
-          <h2 className="font-bold text-[26px] sm:text-[30px] md:text-[36px] leading-[1.5] mb-4">
+          <h2 className="heading-bold leading-[1.5] mb-4">
             Our Mission
           </h2></div>
 
-          <p className="text-[15px] sm:text-[16px] md:text-[18px] leading-[1.6]">
+          <p className="content leading-[1.6]">
             Deliver reliable recruitment solutions that connect organizations with
             the right talent while creating meaningful opportunities for
             professionals. Guided by integrity, transparency, and ethical practices,
