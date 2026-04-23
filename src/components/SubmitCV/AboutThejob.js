@@ -21,8 +21,8 @@ export default function AboutTheJob() {
 
   if (!job) return null;
   return (
-    <section  aria-label="Job details section">
-      <div className="p-5 md:p-10 bg-white">
+    <section  aria-label="Job details section ">
+      <div className="p-5 md:p-10 bg-white !font-roboto">
         <div className="max-w-[1312px] mx-auto pt-16 px-[15px] md:px-6">
 
           <p className="text-[#0277BD] text-[18px] font-semibold leading-[165%] font-roboto mb-4">
@@ -59,7 +59,7 @@ export default function AboutTheJob() {
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-6 mt-2 text-[16px] font-roboto">
+              <div className="flex flex-wrap gap-6 mt-2 small-text !font-roboto">
                 <div className="flex items-center gap-1">
                   <img src="/images/broserJobs/experienceIcon.svg" className="h-5 w-5" />
                   <span>{job.experience}</span>
@@ -79,7 +79,7 @@ export default function AboutTheJob() {
               </div>
             </div>
 
-            <div className="mt-4 text-sm text-black flex flex-wrap gap-2 pb-6 font-roboto ">
+            <div className="mt-4  flex flex-wrap gap-2 pb-6 content !font-roboto">
               {job.skills.map((skill, index) => (
                 <span key={index} className="flex items-center gap-2 pt-2">
                   <span>•</span>
@@ -104,24 +104,24 @@ export default function AboutTheJob() {
             <div className="py-[52px] px-[20px] sm:px-[30px] md:px-[38px] xl:w-[1075px]">
 
               <div className="mb-6">
-                <h3 className="font-bold text-[20px] leading-[100%] text-black mb-3 font-montserrat ">
+                <h3 className="content-semibold leading-[100%] text-black mb-3 !font-montserrat ">
                   Overview
                 </h3>
 
-                <p className=" font-normal text-[16px] leading-[165%] text-black lg:ps-2 font-inter">
+                <p className=" small-text leading-[165%] text-black lg:ps-2 !font-inter">
                   {job.description}
                 </p>
               </div>
               <div className="mb-6">
-                <h3 className=" font-semibold text-[20px] leading-[100%] text-black mb-3 font-montserrat">
+                <h3 className=" content-semibold leading-[100%] text-black mb-3 !Sfont-montserrat">
                   Responsibilities
                 </h3>
 
-                <div className="space-y-3 lg:ps-2 font-inter">
+                <div className="space-y-3 lg:ps-2 !font-inter">
                   {job.responsibilities.map((item, index) => (
                     <div key={index} className="flex items-start gap-2">
-                      <span className="mt-[8px] w-[5px] h-[5px] bg-black rounded-full"></span>
-                      <p className="text-[16px] leading-[165%] text-black ">
+                      <p className=" inline-block md:w-1.5 md:h-1.5 w-0.5 h-0.5 bg-black rounded-full mt-2 flex-shrink-0"></p>
+                      <p className=" small-text leading-[165%] text-black ">
                         {item}
                       </p>
                     </div>
@@ -130,16 +130,16 @@ export default function AboutTheJob() {
               </div>
 
               <div className="mb-6 space-y-2 content  !font-montserrat">
-                <p className=" text-[16px] leading-[165%] text-black">
-                  <span className="font-semibold">Role :</span> {job.role}
+                <p className=" small-text leading-[165%] text-black">
+                  <span className="!font-semibold">Role :</span> {job.role}
                 </p>
 
-                <p className="text-[16px] leading-[165%] text-black">
-                  <span className="font-semibold">Industry :</span> {job.industry}
+                <p className=" small-text leading-[165%] text-black">
+                  <span className="!font-semibold">Industry :</span> {job.industry}
                 </p>
 
-                <p className="text-[16px] leading-[165%] text-black">
-                  <span className="font-semibold">Employement Type :</span> {job.employmentType}
+                <p className="small-text leading-[165%] text-black">
+                  <span className="!font-semibold">Employement Type :</span> {job.employmentType}
                 </p>
               </div>
 
@@ -152,7 +152,7 @@ export default function AboutTheJob() {
                   {job.skills.map((skill, index) => (
                     <span
                       key={index}
-                      className="  content !font-montserrat leading-[165%] text-black"
+                      className="  small-text !font-montserrat leading-[165%] text-black"
                     >
                       • {skill}
                     </span>

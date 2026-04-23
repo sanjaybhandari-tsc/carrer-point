@@ -313,7 +313,7 @@ export default function Jobscart() {
 
 
 
-                <div className="flex flex-wrap gap-3 mt-4 text-sm sm:text-[16px] font-roboto">
+                <div className="flex flex-wrap gap-3 mt-4 small-text !font-roboto">
                   <div className="flex items-center gap-1">
                     <img src="/images/broserJobs/experienceIcon.svg" alt="" className="h-4 w-4 sm:h-5 sm:w-5" />
                     <span>{job.experience}</span>
@@ -332,7 +332,7 @@ export default function Jobscart() {
                   )}
                 </div>
 
-                <div className="mt-4 text-sm sm:text-[14px] font-roboto">
+                <div className="mt-4 content !font-roboto">
                   {job.skills.map((s, i) => (
                     <span key={i} className=" text-lg me-2 "><span className="me-1">•</span>{s} </span>
                   ))}
@@ -411,43 +411,43 @@ export default function Jobscart() {
 
 
           <div className="px-4 sm:px-6 pt-6">
-            <h4 className="text-lg sm:text-[20px] font-semibold mb-2 font-montserrat">Overview</h4>
-            <p className="text-sm sm:text-[16px] leading-[165%] ps-2 sm:ps-4 font-inter">
+            <h4 className="content-semibold mb-2 !font-montserrat">Overview</h4>
+            <p className="small-text leading-[165%] ps-2 sm:ps-4 !font-inter">
               {selectedJob.description}
             </p>
           </div>
 
           <div className="mt-6 px-4 sm:px-6">
-            <h4 className="text-lg sm:text-[20px] font-semibold mb-2 font-montserrat ">
+            <h4 className="content-semibold mb-2 !font-montserrat ">
               Responsibilities
             </h4>
 
-            <div className="space-y-2 text-sm sm:text-[16px] font-inter">
+            <div className="space-y-2  !font-inter">
               {selectedJob.responsibilities.map((item, i) => (
                 <div key={i} className="flex items-start gap-2 ps-2 sm:ps-4">
-                  <p className=" inline-block w-1.5 h-1.5 sm:w-1 sm:h-1 bg-black rounded-full mt-2 flex-shrink-0"></p>
-                  <p>{item}</p>
+                  <p className=" inline-block md:w-1.5 md:h-1.5 w-0.5 h-0.5 bg-black rounded-full mt-2 flex-shrink-0"></p>
+                  <p className="small-text">{item}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="mt-6 px-4 sm:px-6 text-sm sm:text-[16px] space-y-2 content  !font-montserrat">
-            <p><strong>Role :</strong> {selectedJob.role}</p>
-            <p><strong>Industry :</strong> {selectedJob.industry}</p>
-            <p><strong>Employement Type :</strong> {selectedJob.employmentType}</p>
+          <div className="mt-6 px-4 sm:px-6  space-y-2 small-text  !font-montserrat">
+            <p><strong className="!font-semibold">Role :</strong> {selectedJob.role}</p>
+            <p><strong className="!font-semibold">Industry :</strong> {selectedJob.industry}</p>
+            <p><strong className="!font-semibold">Employement Type :</strong> {selectedJob.employmentType}</p>
           </div>
 
           <div className="mt-6 px-4 sm:px-6">
             <h4 className="content-semibold mb-2">Skills</h4>
-            <div className="flex flex-wrap gap-3 content !font-montserrat ps-2 sm:ps-4">
+            <div className="flex flex-wrap gap-3 small-text !font-montserrat ps-2 sm:ps-4">
               {selectedJob.skills.map((s, i) => (
                 <span key={i}>• {s}</span>
               ))}
             </div>
           </div>
           <div className="p-4 sm:p-6">
-            <button onClick={()=>submitHandelar(selectedJob)} className="w-full sm:w-auto bg-[#039BE6] text-white px-5.5 py-3   rounded-lg shadow flex items-center justify-center gap-4 text-[20px] cursor-pointer">
+            <button onClick={()=>submitHandelar(selectedJob)} className="w-full sm:w-auto bg-[#039BE6] text-white px-5.5 py-3   rounded-lg shadow flex items-center justify-center gap-4 content cursor-pointer">
               Apply now
               <img src="/images/broserJobs/applyArrow.svg" className="w-[28px] h-[28px]" />
             </button>
