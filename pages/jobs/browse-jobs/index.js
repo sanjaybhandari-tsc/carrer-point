@@ -27,7 +27,7 @@ export default function BrowserJobsPage() {
           content="Find your next career opportunity from 500+ active jobs across top industries."
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://yourdomain.com/submit-your-cv" />
+        <link rel="canonical" href="https://yourdomain.com/browse-jobs" />
       </Head>
 
       <BrowserComponent />
