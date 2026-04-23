@@ -40,9 +40,7 @@ export default function HeroSection() {
                 aria-label="Job search form"
               >
 
-                <div className="flex flex-col lg:flex-row items-stretch gap-2 lg:gap-0
-                                backdrop-blur-md border-[0.5px] border-white bg-white/20
-                                sm:border-none sm:bg-none rounded-2xl lg:rounded-full">
+                <div className="flex flex-col lg:flex-row items-stretch gap-2 lg:gap-0 backdrop-blur-md border-[0.5px] border-white bg-white/20 sm:border-none sm:bg-none rounded-2xl lg:rounded-full">
 
                   {/* Job Title */}
                   <div className="flex-1 min-w-0 lg:h-16 flex items-center">
@@ -122,9 +120,7 @@ export default function HeroSection() {
         className="w-full flex justify-center relative -top-10 md:-top-15 lg:-top-25"
         aria-label="Job platform statistics"
       >
-        <div className="w-[92%] lg:w-[90%] lg:py-12 lg:px-20 py-6 px-4 rounded-3xl
-                        flex flex-wrap md:flex-nowrap justify-between items-center
-                        bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE] gap-4">
+        <div className="w-[92%] lg:w-[90%] lg:py-12 lg:px-20 py-6 px-4 rounded-3xl flex flex-wrap md:flex-nowrap justify-between items-center bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE] gap-4">
 
           {[
             { value: "500+", label: "Active Jobs" },

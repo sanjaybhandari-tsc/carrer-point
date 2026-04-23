@@ -18,8 +18,7 @@ export default function HeroSection() {
               </div>
 
               <div className="w-full max-w-5xl" role="search" aria-label="Job search form">
-                <div className="flex flex-col lg:flex-row items-stretch gap-2 lg:gap-0
-                                backdrop-blur-md border-[0.5px] border-white bg-white/20 sm:border-none sm:bg-none rounded-2xl lg:rounded-full">
+                <div className="flex flex-col lg:flex-row items-stretch gap-2 lg:gap-0 backdrop-blur-md border-[0.5px] border-white bg-white/20 sm:border-none sm:bg-none rounded-2xl lg:rounded-full">
 
                   <div className="flex flex-col sm:flex-row flex-1 min-w-0 lg:h-16 items-center justify-between gap-1">
                     <label htmlFor="jobTitle" className="sr-only">
@@ -56,8 +55,7 @@ export default function HeroSection() {
                   <button
                   type="submit"
                     aria-label="Search jobs"
-                  className="w-full lg:w-16 lg:h-12 flex items-center justify-center gap-4 py-1
-                                     lg:m-2 md:border-t md:border-white lg:border-none shrink-0">
+                  className="w-full lg:w-16 lg:h-12 flex items-center justify-center gap-4 py-1 lg:m-2 md:border-t md:border-white lg:border-none shrink-0">
                     <Image
                       src="/images/broserJobs/searchIcon.svg"
                       alt="search"

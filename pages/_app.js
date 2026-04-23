@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import Head from "next/head";
 import Layout from "@/components/Layout/Layout";
 
-import { Inter, Montserrat,Roboto   } from "next/font/google";
+import { Inter, Montserrat, Roboto } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,7 +24,6 @@ const roboto = Roboto({
   display: "swap", // optional but recommended
 });
 
-
 export default function App({ Component, pageProps }) {
   return (
     <>
@@ -42,13 +41,13 @@ export default function App({ Component, pageProps }) {
         <meta name="robots" content="index, follow" />
       </Head>
 
-      <div
-        className={`${inter.variable} ${montserrat.variable} ${roboto.variable}`}
-      >
-        <Layout>
+      <Layout>
+        <main
+          className={`${inter.variable} ${montserrat.variable} ${roboto.variable}`}
+        >
           <Component {...pageProps} />
-        </Layout>
-      </div>
+        </main>
+      </Layout>
     </>
   );
 }
