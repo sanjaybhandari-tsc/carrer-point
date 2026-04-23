@@ -32,7 +32,7 @@ export default function CandidateNetworkSection() {
     <section className="py-10 lg:px-10">
       <div className="max-w-6xl mx-auto text-center px-2 sm:px-4 lg:px-6 py-10 sm:py-12 lg:py-14">
         <h2
-          className="font-bold text-black leading-tight text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+          className="heading"
         >
           Our Talent{" "}
           <span className="text-[var(--color-primary)]">Sourcing Strategy</span>
@@ -60,9 +60,9 @@ export default function CandidateNetworkSection() {
             </div>
 
             <div className="p-5 flex flex-col gap-3">
-              <p className="text-3xl font-bold">{work.srNo}</p>
-              <h3 className="text-xl font-semibold">{work.heading}</h3>
-              <p className="text-sm text-gray-200">{work.desc}</p>
+              <p className="hero-heading">{work.srNo}</p>
+              <h3 className="heading">{work.heading}</h3>
+              <p className="subheading">{work.desc}</p>
               {/* <p className="text-3xl font-bold">{work.srNo}</p>
               <h3 className="text-xl font-semibold">{work.heading}</h3>
               <p className="text-sm text-gray-200">{work.desc}</p> */}
@@ -88,13 +88,18 @@ export default function CandidateNetworkSection() {
             )}
 
             <div className="w-full lg:w-1/2 p-5 md:p-8 lg:p-12 flex flex-col justify-center gap-4 lg:gap-8">
-              <p className="text-3xl md:text-5xl font-bold">{work.srNo}</p>
+              <p className="hero-heading">{work.srNo}</p>
+              {/* <p className="text-3xl md:text-5xl font-bold">{work.srNo}</p> */}
 
-              <h3 className="text-xl md:text-3xl font-semibold">
+              <h3 className="heading">
                 {work.heading}
               </h3>
+              {/* <h3 className="text-xl md:text-3xl font-semibold">
+                {work.heading}
+              </h3> */}
 
-              <p className="text-sm md:text-lg leading-relaxed">{work.desc}</p>
+              <p className="subheading">{work.desc}</p>
+              {/* <p className="text-sm md:text-lg leading-relaxed">{work.desc}</p> */}
             </div>
 
             {idx % 2 !== 0 && (
