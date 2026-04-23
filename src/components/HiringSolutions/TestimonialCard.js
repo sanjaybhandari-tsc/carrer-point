@@ -14,6 +14,7 @@ export default function TestimonialCard({ name, role, image, text }) {
     lg:w-[400px]
     xl:w-[420px]
     min-h-[420px]
+     max-h-[500px]
     border border-[#E1EBFF]
 shadow-[inset_0px_4px_4px_0px_#0000000A]
       "
