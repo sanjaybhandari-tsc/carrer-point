@@ -120,14 +120,14 @@ export default function SubmitcvForm() {
   };
 
   const inputStyle = (fieldName) =>
-    `w-full h-12 border rounded-lg px-3 text-[16px] outline-none focus:outline-none ${
+    `text-small w-full h-12 border rounded-lg px-3 outline-none focus:outline-none ${
       errors[fieldName]
         ? "border-2 border-red-500"
         : "border border-[#E9EAEB]"
     }`;
 
   const labelStyle =
-    "text-black font-medium text-sm sm:text-sm md:text-base lg:text-[16px] leading-tight tracking-normal";
+    "content text-black font-medium text-sm sm:text-sm md:text-base lg:text-[16px] leading-tight tracking-normal";
 
   return (
     <div className="px-4 sm:px-6 lg:px-[100px] py-10 lg:mb-25 font-montserra">
@@ -144,7 +144,7 @@ export default function SubmitcvForm() {
                 name="firstName"
                 placeholder="First Name"
                 value={formData.firstName}
-                className={inputStyle("firstName")}
+                className={`${inputStyle("firstName")}`}
                 onChange={handleChange}
                 onFocus={handleFocus}
               />

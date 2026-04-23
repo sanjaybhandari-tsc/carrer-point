@@ -46,11 +46,11 @@ export default function HeroSection() {
             {/* <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-8xl font-bold font-[Montserrat,sans-serif] text-white leading-none">
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1> */}
-            <h1 className="hero-heading  text-white leading-none">
+            <h1 className="hero-heading-extra text-white leading-none">
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1>
 
-            <p className="content max-w-[90%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%]  text-white">
+            <p className="heading max-w-[90%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%]  text-white">
               Connect with skilled professionals across industries and build
               high-performing teams faster.
             </p>
