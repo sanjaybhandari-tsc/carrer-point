@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import Head from "next/head";
 import Layout from "@/components/Layout/Layout";
 
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat,Roboto   } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,6 +16,12 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700"],
   display: "swap",
   variable: "--font-montserrat",
+});
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"], // choose what you a
+  variable: "--font-roboto",
+  display: "swap", // optional but recommended
 });
 
 
@@ -37,7 +43,7 @@ export default function App({ Component, pageProps }) {
       </Head>
 
       <div
-        className={`${inter.variable} ${montserrat.variable}`}
+        className={`${inter.variable} ${montserrat.variable} ${roboto.variable}`}
       >
         <Layout>
           <Component {...pageProps} />
