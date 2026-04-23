@@ -84,9 +84,12 @@ export default function FeaturesSection() {
   return (
     <section ref={ref} className="px-6 md:px-12 lg:px-20 py-16">
       <div className="max-w-7xl mx-auto">
-        <h2 className="font-montserrat font-bold text-2xl sm:text-3xl lg:text-[36px] text-center leading-tight tracking-tight md:text-3xl lg:text-4xl xl:text-5xl mb-8 sm:mb-10 lg:mb-12">
+        <h2 className="heading-bold text-center mb-8 sm:mb-10 lg:mb-12">
           Features
         </h2>
+        {/* <h2 className="font-montserrat font-bold text-2xl sm:text-3xl lg:text-[36px] text-center leading-tight tracking-tight md:text-3xl lg:text-4xl xl:text-5xl mb-8 sm:mb-10 lg:mb-12">
+          Features
+        </h2> */}
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-start">
           {features.map((item, index) => (
