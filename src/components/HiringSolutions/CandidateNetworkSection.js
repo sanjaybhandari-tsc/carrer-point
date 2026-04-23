@@ -37,6 +37,12 @@ export default function CandidateNetworkSection() {
           Our Talent{" "}
           <span className="text-[var(--color-primary)]">Sourcing Strategy</span>
         </h2>
+        {/* <h2
+          className="font-bold text-black leading-tight text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+        >
+          Our Talent{" "}
+          <span className="text-[var(--color-primary)]">Sourcing Strategy</span>
+        </h2> */}
       </div>
 
       <div className="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory lg:hidden px-4">
@@ -57,6 +63,9 @@ export default function CandidateNetworkSection() {
               <p className="text-3xl font-bold">{work.srNo}</p>
               <h3 className="text-xl font-semibold">{work.heading}</h3>
               <p className="text-sm text-gray-200">{work.desc}</p>
+              {/* <p className="text-3xl font-bold">{work.srNo}</p>
+              <h3 className="text-xl font-semibold">{work.heading}</h3>
+              <p className="text-sm text-gray-200">{work.desc}</p> */}
             </div>
           </div>
         ))}

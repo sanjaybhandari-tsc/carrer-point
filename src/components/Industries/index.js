@@ -1,32 +1,193 @@
 import HeroSection from "./HeroSection";
 import HeroText from "./HeroText";
-import PharmaceuticalSalesSection from "./PharmaceuticalSalesSection";
-import PharmaceuticalSalesCard from "./PharmaceuticalSalesCard";
-import PharmaceuticalManufacturingSection from "./PharmaceuticalManufacturingSection";
-import BuildingMaterialsIndustrySection from "./BuildingMaterialsIndustrySection";
-import BankingFinancialServicesInsurance from "./BankingFinancialServicesInsurance";
-import FastMovingConsumerGoods from "./FastMovingConsumerGoods";
-import PharmaceuticalManufacturingCard from "./PharmaceuticalManufacturingCard";
-import BuildingMaterialsIndustryCard from "./BuildingMaterialsIndustryCard";
-import BankingFinancialServicesInsuranceCard from "./BankingFinancialServicesInsuranceCard";
-import FastMovingConsumerGoodsCard from "./FastMovingConsumerGoodsCard";
+import IndustryCard from "@/components/Industries/IndustryCard"
+import IndustrySection from "@/components/Industries/IndustrySection"
 
 
 export default function Industries() {
+
+  const pharmaSalesData = {
+  title: "Pharmaceutical Sales",
+  description1:
+    "The pharmaceutical and healthcare sector plays a vital role in driving innovation, research, and public health advancement. With constant developments in medicine, technology, and regulatory standards, organizations require skilled professionals who understand this highly regulated and fast-evolving environment.",
+  description2:
+    "We provide pharmaceutical recruitment and staffing solutions, helping companies hire experienced professionals in sales, regulatory compliance, and healthcare operations. Our focus is on building strong teams that maintain quality standards, support innovation, and drive long-term growth across the healthcare ecosystem.",
+  imageSrc: "/images/industries/pharmaceuticalSales.png",
+  imageAlt: "Pharmaceutical recruitment and sales professionals",
+  imagePosition: "left",
+};
+
+const pharmaManufacturingData = {
+  title: "Pharma Manufacturing",
+  description1:
+    "The pharmaceutical manufacturing sector plays a critical role in industrial growth, requiring skilled professionals who understand production processes, quality control, and evolving manufacturing technologies. Organizations in this space depend on efficient teams to maintain productivity and meet strict regulatory standards.",
+  description2:
+    "We provide pharma manufacturing recruitment and staffing solutions, helping companies hire experienced professionals in production, operations, and industrial technology. Our focus is on strengthening manufacturing teams to ensure consistent quality, operational efficiency, and long-term business growth.",
+  imageSrc: "/images/industries/pharmaManufacturing.png",
+  imageAlt: "Pharma manufacturing recruitment",
+  imagePosition: "right",
+};
+
+const buildingMaterialsData = {
+  title: "Building Materials Industry",
+  description1:
+    "The building materials industry plays a key role in infrastructure development and construction growth. Companies in this sector require skilled professionals who understand production processes, supply chain networks, and evolving market demands in a competitive environment.",
+  description2:
+    "We provide recruitment and staffing solutions for the building materials industry, helping organizations hire experienced professionals in production management, supply chain, and distribution operations. Our focus is on building strong teams that support efficiency, quality, and long-term business growth.",
+  imageSrc: "/images/industries/buildingMaterialsIndustry.png",
+  imageAlt:
+    "Building materials recruitment and construction industry workforce",
+  imagePosition: "left",
+};
+
+const bfsiData = {
+  title: "The Banking, Financial Services & Insurance (BFSI)",
+  description1:
+    "The Banking, Financial Services, and Insurance (BFSI) sector plays a vital role in supporting economic growth and financial stability. Organizations in this industry require skilled professionals who understand financial systems, regulatory frameworks, and evolving customer expectations in a rapidly changing market.",
+  description2:
+    "We provide BFSI recruitment and staffing solutions, helping banks, financial institutions, and insurance companies hire experienced professionals in financial operations, risk management, compliance, and digital banking services. Our focus is on building strong teams that drive efficiency, governance, and long-term growth.",
+  imageSrc: "/images/industries/bfsi.webp",
+  imageAlt:
+    "BFSI recruitment banking financial services insurance professionals",
+  imagePosition: "right",
+};
+
+const fmcgData = {
+  title: "Fast Moving Consumer Goods (FMCG)",
+  description1:
+    "The Fast Moving Consumer Goods (FMCG) sector operates in a fast-paced and highly competitive environment where efficiency, strong distribution networks, and market understanding are critical. Companies in this industry require skilled professionals who can respond quickly to changing consumer demands and evolving retail trends.",
+  description2:
+    "We provide FMCG recruitment and staffing solutions, helping organizations hire experienced professionals in sales, supply chain management, and distribution operations. Our focus is on building high-performing teams that drive sales growth, optimize product movement, and improve overall business performance across competitive consumer markets.",
+  imageSrc: "/images/industries/fast-moving-consumer-goods.webp",
+  imageAlt:
+    "FMCG recruitment and consumer goods industry workforce distribution",
+  imagePosition: "left", // image first → left
+};
+  
+  const PharmaceuticalSalesCardData = [
+    {
+      title: "Regulatory Compliance",
+      description:
+        "Professionals experienced in pharmaceutical regulatory compliance, quality standards, and production processes.",
+      icon: "/icons/industries/regulatory-compliance.svg",
+    },
+    {
+      title: "Research & Innovation",
+      description:
+        "Talent supporting pharmaceutical research, product development, and healthcare innovation.",
+      icon: "/icons/industries/research-innovation.svg",
+    },
+    {
+      title: "Quality & Safety Standards",
+      description:
+        "Experts focused on pharmaceutical quality control, safety protocols, and regulatory guidelines.",
+      icon: "/icons/industries/quality-safety-standards.svg",
+    },
+  ];
+
+  const PharmaceuticalManufacturingCardData = [
+    {
+      title: "Production & Operations",
+      description:
+        "Professionals experienced in managing production workflows, manufacturing operations, and industrial efficiency.",
+      icon: "/icons/industries/production-operations.svg",
+    },
+    {
+      title: "Quality Management",
+      description:
+        "Ensuring consistent product quality through strict standards, inspections, and process control systems.",
+      icon: "/icons/industries/quality-management.svg",
+    },
+    {
+      title: "Industrial Technology",
+      description:
+        "Talent skilled in modern manufacturing technologies, automation systems, and industrial engineering tools.",
+      icon: "/icons/industries/industrial-technology.svg",
+    },
+  ];
+
+  const BuildingMaterialsIndustryCardData = [
+    {
+      title: "Production Management",
+      description:
+        "Professionals experienced in managing production activities, manufacturing workflows, and operational efficiency in the building materials industry.",
+      icon: "/icons/industries/production-management.svg",
+    },
+    {
+      title: "Supply Chain & Distribution",
+      description:
+        "Talent skilled in supply chain management, logistics operations, and distribution systems across building materials and construction markets.",
+      icon: "/icons/industries/supply-chain-distribution.svg",
+    },
+    {
+      title: "Quality & Process Standards",
+      description:
+        "Experts ensuring consistent product quality through structured processes, inspections, and operational standards in the construction materials sector.",
+      icon: "/icons/industries/quality-Process-standards.svg",
+    },
+  ];
+
+  const BankingFinancialServicesInsuranceCardData = [
+    {
+      title: "Financial Operations",
+      description:
+        "Professionals experienced in banking financial operations, transactions, and structured financial systems management.",
+      icon: "/icons/industries/financial-operations.svg",
+    },
+    {
+      title: "Risk & Compliance",
+      description:
+        "Experts in banking risk management, regulatory compliance, and financial governance frameworks.",
+      icon: "/icons/industries/risk-compliance.svg",
+    },
+    {
+      title: "Customer & Digital Services",
+      description:
+        "Talent supporting digital banking platforms, customer service operations, and fintech-driven financial services.",
+      icon: "/icons/industries/customer-digital-services.svg",
+    },
+  ];
+
+  const FastMovingConsumerGoodsCardData = [
+    {
+      title: "Sales & Market Operations",
+      description:
+        "Professionals experienced in FMCG sales operations, market expansion, and consumer-driven business growth.",
+      icon: "/icons/industries/sales-market-operations.svg",
+    },
+    {
+      title: "Supply Chain Management",
+      description:
+        "Talent skilled in FMCG supply chain management, product distribution, and logistics coordination across retail networks.",
+      icon: "/icons/industries/supply-chain-management.svg",
+    },
+    {
+      title: "Consumer Market Insights",
+      description:
+        "Experts analyzing FMCG consumer behavior, market trends, and product demand forecasting.",
+      icon: "/icons/industries/consumer-market-insights.svg",
+    },
+  ];
+
   return (
     <>
     <HeroSection />
     <HeroText />
-    <PharmaceuticalSalesSection />
-    <PharmaceuticalSalesCard />
-    <PharmaceuticalManufacturingSection />
-    <PharmaceuticalManufacturingCard />
-    <BuildingMaterialsIndustrySection />
-    <BuildingMaterialsIndustryCard />
-    <BankingFinancialServicesInsurance />
-    <BankingFinancialServicesInsuranceCard />
-    <FastMovingConsumerGoods />
-    <FastMovingConsumerGoodsCard />
+    
+    <IndustrySection data={pharmaSalesData}/>
+    <IndustryCard cards={PharmaceuticalSalesCardData} />
+
+    <IndustrySection data={pharmaManufacturingData}/>
+    <IndustryCard cards={PharmaceuticalManufacturingCardData} />
+
+    <IndustrySection data={buildingMaterialsData} />
+    <IndustryCard cards={BuildingMaterialsIndustryCardData} />
+
+    <IndustrySection data={bfsiData} />
+    <IndustryCard cards={BankingFinancialServicesInsuranceCardData} />
+
+    <IndustrySection data={fmcgData} />
+    <IndustryCard cards={FastMovingConsumerGoodsCardData} />
     </>
   )
 }

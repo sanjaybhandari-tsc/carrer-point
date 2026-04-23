@@ -11,6 +11,7 @@ import WeHelp from "./WeHelp";
 import WhyChooseUs from "./WhyChooseUs";
 
 export default function ContractHiring() {
+  
   const workData = [
     {
       srNo: "01",
