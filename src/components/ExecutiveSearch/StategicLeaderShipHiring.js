@@ -15,7 +15,7 @@ export default function StategicLeaderShipHiring() {
               alt="Executive search and strategic leadership hiring services"
               width={800}
               height={600}
-              priority={false}
+              priority
               className="w-full h-[240px] sm:h-[260px] md:h-[320px] xl:h-auto object-cover object-center"
             />
           </div>

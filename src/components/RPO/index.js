@@ -10,7 +10,7 @@ export default function RPO() {
   return (
     <>
     {/* <ExecutiveBanner /> */}
-    <HeroText headingText={'Executive Search'}/>
+    <HeroText headingText={'Recruitment Process Outsourcing'}/>
     <StategicLeaderShipHiring />
     <WhyChooseUsSection />
     <HowWeWork />
