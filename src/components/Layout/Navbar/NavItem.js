@@ -27,9 +27,12 @@ export default function NavItem({
           className="flex items-center justify-between py-3 px-2 cursor-pointer"
           onClick={onToggle}
         >
-          <span className="font-montserrat font-medium text-base text-gray-800">
+          <span className="content font-montserrat">
             {item.label}
           </span>
+          {/* <span className="font-montserrat font-medium text-base">
+            {item.label}
+          </span> */}
 
           <ChevronDown
             className={`w-4 h-4 transition-transform duration-300 ${
@@ -42,7 +45,8 @@ export default function NavItem({
         <Link
           href={item.href}
           onClick={closeAll}
-          className="block py-3 px-2 font-montserrat font-medium text-base text-gray-800"
+          // className="block py-3 px-2 font-montserrat font-medium text-base text-gray-800"
+          className="content block py-3 px-2"
         >
           {item.label}
         </Link>
@@ -60,7 +64,8 @@ export default function NavItem({
               key={child.label}
               href={child.href}
               onClick={closeAll}
-              className="block py-2 text-sm text-gray-700 hover:text-[var(--color-primary)]"
+              // className="block py-2 text-sm text-gray-700 hover:text-[var(--color-primary)]"
+              className="content block py-2  hover:text-[var(--color-primary)]"
             >
               {child.label}
             </Link>
@@ -79,13 +84,19 @@ export default function NavItem({
       onClick={() => hasDropdown && onToggle()}
     >
       {hasDropdown ? (
-        <span className="hover:text-[var(--color-primary)] transition-colors">
+        <span className="content hover:text-[var(--color-primary)] transition-colors">
           {item.label}
         </span>
+        // <span className="hover:text-[var(--color-primary)] transition-colors">
+        //   {item.label}
+        // </span>
       ) : (
-        <Link href={item.href} className="hover:text-[var(--color-primary)] transition-colors">
+        <Link href={item.href} className="content hover:text-[var(--color-primary)] transition-colors">
           {item.label}
         </Link>
+        // <Link href={item.href} className="hover:text-[var(--color-primary)] transition-colors">
+        //   {item.label}
+        // </Link>
       )}
 
       {hasDropdown && (
@@ -104,7 +115,8 @@ export default function NavItem({
             key={child.label}
             href={child.href}
             onClick={closeAll}
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
+            // className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
+            className="block px-4 py-2 hover:bg-gray-100 hover:text-[var(--color-primary)] content"
           >
             {child.label}
           </Link>
