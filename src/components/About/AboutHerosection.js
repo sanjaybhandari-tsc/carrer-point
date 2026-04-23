@@ -17,11 +17,11 @@ export default function AboutHeroSection() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/0 z-10 rounded-b-3xl" />
 
         <div className="relative z-20 w-full max-w-6xl px-6 md:px-20 text-white">
-          <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] leading-tight">
+          <h2 className="hero-heading leading-tight">
             About Us
           </h2>
 
-          <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-[22px] leading-relaxed text-gray-200 max-w-5xl">
+          <p className="mt-4 subheading leading-relaxed text-gray-200 max-w-5xl">
             Connecting organizations with the right talent through structured recruitment solutions and industry-focused expertise. We support businesses in building strong teams that drive long-term growth and success.
           </p>
           <button
@@ -35,7 +35,7 @@ export default function AboutHeroSection() {
             text-white group hover:border-0"
           >
             <span className="relative z-10 flex items-center gap-2.5">
-              <p className="text-xs sm:text-sm md:text-base">
+              <p className="getintoch_button">
                 Get in touch
               </p>
               <Image

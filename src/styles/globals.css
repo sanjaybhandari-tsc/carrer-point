@@ -96,6 +96,9 @@ body {
   .font-inter {
     font-family: var(--font-inter);
   }
+  .getintoch_button{
+    @apply text-xs sm:text-sm md:text-base
+  }
 }
 
 /* Heading : font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl */
