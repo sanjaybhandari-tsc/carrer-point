@@ -1,21 +1,81 @@
 import ExecutiveBanner from "./ExecutiveBanner";
 import StategicLeaderShipHiring from "./StategicLeaderShipHiring";
 import WhyChooseUsSection from "./WhyChooseUsSection";
-import  HowWeWork  from "./HowWeWork";
-import  CTASection  from "./CTASection";
+// import HowWeWork from "./HowWeWork";
+import CTASection from "./CTASection";
 import Lastmessage from "./Lastmessage";
 import HeroText from "../commons/HeroText";
+import HowWeWork from "../commons/HowWeWork";
+import WhyChoose from "../commons/WhyChoose";
+import ServicesSecondCompo from "../commons/ServicesSecondCompo";
 
 export default function ExecutiveSearch() {
+  const workData = [
+    {
+      srNo: "01",
+      heading: "Leadership Discussion",
+      desc: "We begin with detailed discussions to understand the leadership expectations, responsibilities, and strategic importance of the role.",
+    },
+    {
+      srNo: "02",
+      heading: "Market Mapping",
+      desc: "Potential senior professionals are identified through market research and industry talent mapping.",
+    },
+    {
+      srNo: "03",
+      heading: "Candidate Engagement",
+      desc: "Targeted candidates are approached confidentially and engaged for potential leadership opportunities.",
+    },
+    {
+      srNo: "04",
+      heading: "Screening & Assessment",
+      desc: "Candidates undergo detailed screening and background evaluation to assess leadership suitability.",
+    },
+    {
+      srNo: "05",
+      heading: "Client Discussions & Selection",
+      desc: "Shortlisted leaders are presented to the client, followed by discussions, negotiations, and final appointment.",
+    },
+  ];
+  const reasons = [
+    {
+      heading: "Leadership Talent Identification",
+      desc: "We specialize in identifying senior leaders, CXOs, and experienced professionals with strong leadership capabilities & industry expertise.",
+      img: "/icons/executivesearch/Leadership Talent Identification.svg",
+    },
+    {
+      heading: "Confidential Executive Search Approach",
+      desc: "Our executive search process ensures complete confidentiality and professionalism in senior-level recruitment and leadership hiring.",
+      img: "/icons/executivesearch/Confidential Search Approach.svg",
+    },
+    {
+      heading: "Strategic Talent Evaluation",
+      desc: "Candidates undergo structured screening, leadership assessment, and background evaluation to ensure the right executive fit for your organization.",
+      img: "/icons/executivesearch/Strategic Talent Evaluation.svg",
+    },
+  ];
+  const hiringData = [
+    {
+      title: " Project-Based Talent Hiring",
+      image: "/images/executivesearch/Strategic Leadership Hiring.png",
+      description: [
+        "      Executive search is a specialized recruitment process focused on identifying <strong> senior leaders, CXOs, and top management professionals</strong> for critical organizational roles. These positions demand strong industry experience strategic thinking, and proven leadership capability.",
+        "   Our executive search approach combines targeted research, market mapping, and structured evaluation to connect organizations with  <strong> high-impact leadership talent</strong> that drives long-term strategic growth.",
+      ],
+    },
+  ];
   return (
     <>
-    {/* <ExecutiveBanner /> */}
-    <HeroText headingText={'Executive Search'}/>
-    <StategicLeaderShipHiring />
-    <WhyChooseUsSection />
-    <HowWeWork />
-    <Lastmessage />
-    <CTASection />
+      {/* <ExecutiveBanner /> */}
+      <HeroText headingText={"Executive Search"} />
+      <ServicesSecondCompo hiringData={hiringData} />
+      {/* <StategicLeaderShipHiring /> */}
+      {/* <WhyChooseUsSection /> */}
+      <WhyChoose reasons={reasons} />
+      {/* <HowWeWork /> */}
+      <HowWeWork workData={workData} />
+      <Lastmessage />
+      <CTASection />
     </>
-  )
+  );
 }
