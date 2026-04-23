@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 :root {
   --color-primary: #039be6;
   --color-primary-hover: #0277bd;
@@ -34,14 +35,17 @@ body {
   color: var(--foreground);
   font-family: var(--font-main);
 }
+
 /* hide scrollbar */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -72,15 +76,29 @@ body {
     @apply font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
   }
 
+  .heading-extrabold {
+    font-family: var(--font-montserrat);
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black;
+  }
+  .heading-bold {
+    font-family: var(--font-montserrat);
+    @apply font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+  }
+
   .subheading {
     font-family: var(--font-montserrat);
     @apply font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
   }
+  .subheading-semibold{
+    font-family: var(--font-montserrat);
+    @apply font-semibold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
+  }
 
   .content {
-    font-family: var(--font-inter);
+    font-family: var(--font-roboto);
     @apply font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
   }
+
 
   .small-text {
     font-family: var(--font-inter);
@@ -90,11 +108,18 @@ body {
   .font-montserrat {
     font-family: var(--font-montserrat);
   }
+
   .font-roboto {
     font-family: var(--font-roboto);
   }
+
   .font-inter {
     font-family: var(--font-inter);
+  }
+
+  .getintoch_button {
+    font-family: var(--font-montserrat);
+    @apply text-xs sm:text-sm md:text-base
   }
 }
 
