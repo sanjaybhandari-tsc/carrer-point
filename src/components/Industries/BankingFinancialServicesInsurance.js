@@ -57,7 +57,7 @@ export default function BankingFinancialServicesInsurance() {
         >
           <div className="rounded-2xl overflow-hidden shadow-lg transition-transform duration-500 hover:scale-[1.02]">
             <Image
-              src="/images/industries/bfsi.png"
+              src="/images/industries/bfsi.webp"
               alt="BFSI recruitment banking financial services insurance professionals"
               width={600}
               height={400}

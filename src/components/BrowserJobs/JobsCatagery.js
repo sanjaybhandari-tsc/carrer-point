@@ -41,8 +41,7 @@ export default function JobsCategory() {
       className="bg-white py-12 sm:py-16 px-4 sm:px-8 lg:px-20 overflow-hidden"
     >
       <div
-        className={`text-center max-w-7xl mx-auto   transition-all duration-700 ${
-          visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
+        className={`text-center max-w-7xl mx-auto   transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
         }`}
       >
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold lg:mb-10">
@@ -92,11 +91,7 @@ function AnimatedCard({ cat, visible, delay }) {
       }`}
     >
       <div className="flex justify-center mb-3 sm:mb-4">
-        <img
-          src={cat.img}
-          alt={cat.title}
-          className="w-12 h-12 object-contain"
-        />
+        <img src={cat.img} alt={cat.title} className="w-12 h-12 object-contain"/>
       </div>
       <h3 className="text-lg sm:text-xl lg:text-[24px] font-semibold">
         {cat.title}
