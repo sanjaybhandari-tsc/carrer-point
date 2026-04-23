@@ -25,17 +25,14 @@ export default function PeopleCulture() {
     <div ref={ref} className="w-full px-6 md:px-10 lg:px-12 py-12 md:py-18 bg-white overflow-x-hidden">
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-        <div className={`flex  justify-between flex-col gap-5 transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}>
+        <div className={`flex  justify-between flex-col gap-3 transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}>
         
-          <h2 className="font-bold text-[#0277BD] 
-            text-[28px] sm:text-[30px] md:text-[32px] lg:text-[36px] 
-             tracking-normal mb-6">
+          <h2 className=" text-[#0277BD]  heading-bold tracking-normal mb-5 leading-[1.5] ">
             People & Culture
           </h2>
-          <div className="space-y-6 text-[#333333] 
-            text-[16px] md:text-[18px]   flex flex-col justify-between gap-6">
+          <div className="space-y-6   content  leading-[1.5] tracking-normal flex flex-col justify-between gap-6">
             
-            <p className=" text-[18px]  tracking-normal">
+            <p >
               At Career Point Placement Services, our culture is built on teamwork,
               integrity, and continuous learning. A supportive environment helps
               employees perform at their best while building strong relationships
