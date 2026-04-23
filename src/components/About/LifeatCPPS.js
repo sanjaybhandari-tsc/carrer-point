@@ -73,17 +73,13 @@ export default function LifeatCPPS() {
   return (
     <div className="bg-white min-h-screen py-10 px-4 md:px-12">
       <div
-        ref={topRef}
-        className={`flex items-center justify-center my-12 text-[36px] md:text-[40px] font-bold transition-all duration-700 ease-out
-        ${showTop ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-16"}`}
+        ref={topRef} className={`flex items-center justify-center my-12 heading-bold transition-all duration-700 ease-out ${showTop ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-16"}`}
       >
         <h2>Life at CPPS</h2>
       </div>
 
       <div
-        ref={bottomRef}
-        className={`max-w-7xl mx-auto transition-all duration-700 ease-out
-        ${showBottom ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}
+        ref={bottomRef} className={`max-w-7xl mx-auto transition-all duration-700 ease-out ${showBottom ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}
       >
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
 
@@ -109,7 +105,7 @@ export default function LifeatCPPS() {
         <div className="flex justify-center mt-10">
           <button
             onClick={() => setShowAll(true)}
-            className="bg-blue-500 text-white px-6 py-2 rounded-md transition"
+            className="bg-blue-500 text-white px-6 py-2 rounded-md small-text  transition"
           >
             View More
           </button>

@@ -43,11 +43,11 @@ function WorkProcess() {
   return (
     <div className="w-full flex flex-col items-center md:gap-10 lg:gap-10">
       <div className="text-center flex flex-col gap-3 lg:gap-5 max-w-[70%]">
-        <h3 className="text-3xl font-bold">
+        <h3 className="heading !font-bold">
           <span>Our Work </span>{" "}
           <span className="text-[#0277BD] "> Process</span>
         </h3>
-        <p className="text-md font-[500]">
+        <p className="content font-[500]">
           Delivering top talent to organizations across fast-growing industries,
           helping businesses build skilled teams that drive innovation and
           long-term growth.
@@ -71,14 +71,12 @@ function WorkProcess() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="w-full lg:w-1/2 py-2 px-5 lg:p-10 flex flex-col justify-center  lg:gap-10">
-                    <h1 className="text-2xl lg:text-6xl font-bold">
-                      {work.srNo}
-                    </h1>
-                    <h2 className=" text-2xl lg:text-4xl font-semibold lg:mt-4">
+                  <div className="w-full lg:w-1/2 py-2 px-5 lg:p-10 flex flex-col justify-center md:gap-5  lg:gap-10">
+                    <h2 className=" heading !font-bold">{work.srNo}</h2>
+                    <h2 className="  subheading font-semibold lg:mt-4">
                       {work.heading}
                     </h2>
-                    <p className="lg:text-lg">{work.desc}</p>
+                    <p className="content">{work.desc}</p>
                   </div>
                 </div>
               ) : (
@@ -94,14 +92,12 @@ function WorkProcess() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="w-full lg:w-1/2 py-2 px-5 lg:p-10 flex flex-col justify-center  lg:gap-10">
-                    <h1 className="text-2xl lg:text-6xl font-bold">
-                      {work.srNo}
-                    </h1>
-                    <h2 className=" text-2xl lg:text-4xl font-semibold lg:mt-4">
+                  <div className="w-full lg:w-1/2 py-2 px-5 lg:p-10 flex flex-col justify-center  md:gap-5 lg:gap-10">
+                    <h2 className="heading !font-bold">{work.srNo}</h2>
+                    <h2 className=" subheading font-semibold lg:mt-4">
                       {work.heading}
                     </h2>
-                    <p className="lg:text-lg">{work.desc}</p>
+                    <p className="content">{work.desc}</p>
                   </div>
                   <div className="relative hidden  lg:block w-full h-1/2 lg:h-full lg:w-1/2 ">
                     <Image

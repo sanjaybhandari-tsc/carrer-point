@@ -14,10 +14,7 @@ function WeHelp() {
             className="object-cover"
           />
         </div>
-        <h2
-          className="font-montserrat font-bold text-[#333333]
-            text-[20px] sm:text-[22px] md:text-[30px] lg:text-[50px]"
-        >
+        <h2 className="heading font-bold text-[#333333]">
           We help <span className="text-[#0277BD]">organizations</span> access
           skilled <span className="text-[#0277BD]">professionals </span>for
           project-based and short-term{" "}

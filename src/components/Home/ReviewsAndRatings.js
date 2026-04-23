@@ -99,10 +99,10 @@ function ReviewsAndRatings() {
   return (
     <div className="flex  flex-col items-center w-full justify-center text-center lg:mb-10 overflow-hidden">
       <div className="flex flex-col items-center max-w-[80%] justify-center text-center gap-5">
-        <h3 className="font-bold text-3xl">
+        <h3 className="heading !font-bold ">
           Employee <span className=" text-[#0277BD]">Reviews</span> & Ratings
         </h3>
-        <p className="font-medium text-[18px]">
+        <p className="content">
           Real ratings and feedback from professionals, sharing their
           experiences of the workplace, team culture, growth opportunities, and
           overall work environment.
@@ -159,12 +159,14 @@ function ReviewsAndRatings() {
                       />
                     ))}
                   </div>
-                  <h5 className="font-[500]">{review.desc}</h5>
+                  <h5 className="content font-[500]">{review.desc}</h5>
                   <div>
-                    <h2 className="font-[700] text-lg text-[#252B37]">
+                    <h2 className="content !font-bold text-[#252B37]">
                       {review.position}
                     </h2>
-                    <p className="text-[#535862]">{review.address}</p>
+                    <p className="small-text text-[#535862]">
+                      {review.address}
+                    </p>
                   </div>
                 </div>
               </>
