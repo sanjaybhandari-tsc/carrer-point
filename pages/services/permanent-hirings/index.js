@@ -23,7 +23,7 @@ export default function PermanentHiringsPage() {
 
         <link
           rel="canonical"
-          href="https://carrer-point.vercel.app/services/permanenthirings"
+          href="https://carrer-point.vercel.app/services/permanent-hirings"
         />
 
         {/* Open Graph */}

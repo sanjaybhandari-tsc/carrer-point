@@ -67,6 +67,8 @@ export default function ExecutiveSearchPage() {
           name="twitter:image"
           content="https://carrer-point.vercel.app/images/executiveSearch/executive-search-1200x630.png"
         />
+        
+        <link rel="canonical" href="https://yourdomain.com/executive-search" />
       </Head>
 
       <ExecutiveSearch />

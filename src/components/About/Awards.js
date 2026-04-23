@@ -41,17 +41,12 @@ export default function Awards() {
       <div className="mx-auto p-6 md:p-10 rounded-lg lg:px-30 lg:py-12">
 
         <h2
-          className={`text-center  font-bold text-[28px] md:text-[36px] leading-[1.5] text-white mb-20 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
-            }`}
+          className={`text-center heading-bold leading-[1.5] text-white mb-10 md:mb-20 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}`}
         >
           Awards And Recognition
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-strich mb-5">
-          <div
-            className={`flex gap-6 flex-col order-1 transition-all duration-700 lg:max-h-60  xl:max-h-100 overflow-y-auto pr-2 no-scrollbar ${visible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 -translate-x-16"
-              }`}
+          <div className={`flex gap-6 flex-col order-1 transition-all duration-700 lg:max-h-60  xl:max-h-110 overflow-y-auto pr-2 no-scrollbar ${visible  ? "opacity-100 translate-x-0": "opacity-0 -translate-x-16" }`}
           >
             {awardsData.map((item, index) => (
               <div key={index} className="flex items-center gap-3">
@@ -64,8 +59,8 @@ export default function Awards() {
                     className="mt-1 object-contain shrink-0"
                   />
                 </div>
-                <div className="flex items-start justify-center gap-2">
-                  <p className=" text-left text-[16px] md:text-[18px] leading-[1.5] text-white">
+                <div className="flex items-start justify-center">
+                  <p className=" text-left content leading-[1.5] text-white">
                     {item}
                   </p>
                 </div>
@@ -74,10 +69,7 @@ export default function Awards() {
           </div>
 
           <div
-            className={`w-full relative rounded-lg overflow-hidden order-2 transition-all duration-700 ${visible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-16"
-              }`}
+            className={`w-full relative rounded-lg overflow-hidden order-2 transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-16" }`}
           >
             <Image
               src="/images/about/awardsImage.webp"

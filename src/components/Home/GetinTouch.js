@@ -38,8 +38,8 @@ function GetinTouch() {
 
         <div className="relative z-10 h-full flex flex-col px-15">
           <div className="flex flex-col gap-4 justify-center h-1/2 max-w-[85%]">
-            <h3 className="font-bold text-5xl">Get In Touch</h3>
-            <p className="text-sm">
+            <h3 className="heading !font-bold ">Get In Touch</h3>
+            <p className="content">
               Lorem ipsum porta dictum maece sit amet.porta dictum sit
               amet.porta dictum masas ametamet.porta dictum masas sit amet.porta
               dictum ametamet.porta dictum masas sit amet.porta dictum
@@ -47,7 +47,7 @@ function GetinTouch() {
           </div>
 
           <div className="h-1/2 flex flex-col gap-2.5">
-            <div className="flex gap-3 items-start">
+            <div className="content flex gap-3 items-start">
               <Image
                 src="/images/homepage/telephone.svg"
                 alt="Phone icon"
@@ -57,7 +57,7 @@ function GetinTouch() {
               <p>+91 9225073111</p>
             </div>
 
-            <div className="flex gap-3 items-start">
+            <div className="content flex gap-3 items-start">
               <Image
                 src="/images/homepage/location.svg"
                 alt="Location icon"
@@ -71,7 +71,7 @@ function GetinTouch() {
               </div>
             </div>
 
-            <div className="flex gap-3 items-start">
+            <div className="content flex gap-3 items-start">
               <Image
                 src="/images/homepage/envelope.svg"
                 alt="Email icon"
@@ -84,7 +84,6 @@ function GetinTouch() {
         </div>
       </div>
 
-      {/* RIGHT */}
       <div
         ref={rightRef}
         className={`w-[100%] lg:w-[65%] h-full text-black flex flex-col gap-3 justify-between px-7 md:px:10 lg:px-10 py-15 ${
@@ -92,15 +91,14 @@ function GetinTouch() {
         }`}
       >
         <div className="text-center pb-4">
-          <h3 className="font-bold text-2xl">Looking to Hire?</h3>
-          <p className="text-lg">
+          <h3 className="heading !font-bold ">Looking to Hire?</h3>
+          <p className="content">
             Tell us your requirements and we’ll connect you with the right
             talent.
           </p>
         </div>
 
-        {/* ✅ FORM ADDED */}
-        <form className="flex flex-col gap-3">
+        <form className="content flex flex-col gap-3">
           <div className="flex lg:flex-row md:flex-row flex-col gap-3 md:gap-7 lg:gap-9">
             <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
               <label htmlFor="name">Full Name</label>

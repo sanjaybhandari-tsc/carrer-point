@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 :root {
   --color-primary: #039be6;
   --color-primary-hover: #0277bd;
@@ -34,14 +35,17 @@ body {
   color: var(--foreground);
   font-family: var(--font-main);
 }
+
 /* hide scrollbar */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -57,11 +61,15 @@ body {
   scrollbar-width: none;
 }
 
-
 /* =========================
    TYPOGRAPHY UTILITIES
 ========================= */
-@layer utilities {
+/* @layer utilities {
+  .hero-heading-extra {
+    font-family: var(--font-montserrat);
+    @apply font-extrabold tracking-tight leading-tight 
+         text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl;
+  }
   .hero-heading {
     font-family: var(--font-montserrat);
     @apply font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
@@ -72,14 +80,44 @@ body {
     @apply font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
   }
 
+  .heading-extrabold {
+    font-family: var(--font-montserrat);
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black;
+  }
+  .heading-bold {
+    font-family: var(--font-montserrat);
+    @apply font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+  }
+
   .subheading {
     font-family: var(--font-montserrat);
     @apply font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
   }
+  .subheading-semibold {
+    font-family: var(--font-montserrat);
+    @apply font-semibold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
+  }
+
+  .subheading-smaller {
+    font-family: var(--font-montserrat);
+    @apply font-semibold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl;
+  }
+  .subheading-bold {
+    font-family: var(--font-montserrat);
+    @apply font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
+  }
 
   .content {
-    font-family: var(--font-inter);
+    font-family: var(--font-roboto);
     @apply font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
+  }
+  .content-semibold-roboto {
+    font-family: var(--font-roboto);
+    @apply font-semibold text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
+  }
+  .content-semibold {
+    font-family: var(--font-montserrat);
+    @apply font-semibold text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
   }
 
   .small-text {
@@ -90,14 +128,122 @@ body {
   .font-montserrat {
     font-family: var(--font-montserrat);
   }
+
   .font-roboto {
     font-family: var(--font-roboto);
   }
+
   .font-inter {
     font-family: var(--font-inter);
   }
-  .getintoch_button{
-    @apply text-xs sm:text-sm md:text-base
+
+  .getintoch_button {
+    font-family: var(--font-montserrat);
+    @apply text-xs sm:text-sm md:text-base;
+  }
+  .message {
+    @apply font-bold text-[18px] sm:text-[20px] md:text-[23px] lg:text-[45px] xl:text-[50px];
+  }
+} */
+ @layer utilities {
+  .hero-heading-extra {
+    font-family: var(--font-montserrat);
+    @apply font-extrabold tracking-tight leading-tight 
+         text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+  }
+
+  .hero-heading {
+    font-family: var(--font-montserrat);
+    @apply font-bold 
+         text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+  }
+
+  .heading {
+    font-family: var(--font-montserrat);
+    @apply font-semibold 
+         text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
+  }
+
+  .heading-extrabold {
+    font-family: var(--font-montserrat);
+    @apply font-black 
+         text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+  }
+
+  .heading-bold {
+    font-family: var(--font-montserrat);
+    @apply font-bold 
+         text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
+  }
+
+  .subheading {
+    font-family: var(--font-montserrat);
+    @apply font-normal 
+         text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl;
+  }
+
+  .subheading-semibold {
+    font-family: var(--font-montserrat);
+    @apply font-semibold 
+         text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl;
+  }
+
+  .subheading-smaller {
+    font-family: var(--font-montserrat);
+    @apply font-semibold 
+         text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl;
+  }
+
+  .subheading-bold {
+    font-family: var(--font-montserrat);
+    @apply font-bold 
+         text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl;
+  }
+
+  .content {
+    font-family: var(--font-roboto);
+    @apply font-normal 
+         text-xs sm:text-sm md:text-base lg:text-base xl:text-lg;
+  }
+
+  .content-semibold-roboto {
+    font-family: var(--font-roboto);
+    @apply font-semibold 
+         text-xs sm:text-sm md:text-base lg:text-base xl:text-lg;
+  }
+
+  .content-semibold {
+    font-family: var(--font-montserrat);
+    @apply font-semibold 
+         text-xs sm:text-sm md:text-base lg:text-base xl:text-lg;
+  }
+
+  .small-text {
+    font-family: var(--font-inter);
+    @apply font-light 
+         text-xs sm:text-xs md:text-sm lg:text-sm xl:text-base;
+  }
+
+  .message {
+    @apply font-bold 
+         text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
+  }
+
+  .getintoch_button {
+    font-family: var(--font-montserrat);
+    @apply text-xs sm:text-sm md:text-sm;
+  }
+
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+
+  .font-roboto {
+    font-family: var(--font-roboto);
+  }
+
+  .font-inter {
+    font-family: var(--font-inter);
   }
 }
 

@@ -26,7 +26,7 @@ export default function Submitpage() {
           content="Upload your resume and apply for the latest job opportunities across multiple industries."
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://yourdomain.com/browseJobs" />
+        <link rel="canonical" href="https://yourdomain.com/submit-your-cv" />
       </Head>
 
       <SubmitCV />

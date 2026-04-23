@@ -2,13 +2,12 @@ import dynamic from "next/dynamic";
 import AboutHerosection from "./AboutHerosection";
 import BuildingCarrers from "./BuildingCarrers";
 
-// Above-the-fold: keep static (important for LCP)
 const Ourjourney = dynamic(() => import("./Ourjourney"));
 const Ourmission = dynamic(() => import("./Ourmission"));
 const PeopleCulture = dynamic(() => import("./PeopleCulture"));
 const Awards = dynamic(() => import("./Awards"));
 const LifeatCPPS = dynamic(() => import("./LifeatCPPS"));
-const Common = dynamic(() => import("../Home/Common"));
+const Common = dynamic(() => import("../commons/CTASection"));
 const Lastmessage = dynamic(() => import("./Lastmessage"));
 
 export default function AboutView() {
@@ -16,7 +15,6 @@ export default function AboutView() {
     <>
       <AboutHerosection />
       <BuildingCarrers />
-
       <Ourjourney />
       <Ourmission />
       <PeopleCulture />

@@ -14,6 +14,7 @@ export default function TestimonialCard({ name, role, image, text }) {
     lg:w-[400px]
     xl:w-[420px]
     min-h-[420px]
+     max-h-[500px]
     border border-[#E1EBFF]
 shadow-[inset_0px_4px_4px_0px_#0000000A]
       "
@@ -35,9 +36,11 @@ shadow-[inset_0px_4px_4px_0px_#0000000A]
         />
       </div>
 
-      <h3 className="font-roboto font-medium text-base sm:text-lg">{name}</h3>
+      <h3 className="subheading-smaller font-roboto">{name}</h3>
+      {/* <h3 className="font-roboto font-medium text-base sm:text-lg">{name}</h3> */}
 
-      <p className="font-inter text-sm sm:text-base text-gray-600">{role}</p>
+      <p className="content font-inter">{role}</p>
+      {/* <p className="font-inter text-sm sm:text-base text-gray-600">{role}</p> */}
 
       <div className="flex flex-col items-center justify-between flex-1 mt-4">
         <img
@@ -46,9 +49,12 @@ shadow-[inset_0px_4px_4px_0px_#0000000A]
           className="w-8 h-8 sm:w-10 sm:h-10 mb-3"
         />
 
-        <p className=" mt-auto font-inter font-weight: 600 text-base leading-[150%] tracking-normal text-center">
+        <p className="content mt-auto font-inter text-center">
           {text}
         </p>
+        {/* <p className=" mt-auto font-inter font-weight: 600 text-base leading-[150%] tracking-normal text-center">
+          {text}
+        </p> */}
       </div>
     </div>
   );

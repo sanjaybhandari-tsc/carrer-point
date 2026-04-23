@@ -15,7 +15,7 @@ export default function AboutPage() {
           content="recruitment agency India, placement services, hiring solutions, job consultancy, career point placement services"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://carrer-point.vercel.app/about" />
+        <link rel="canonical" href="https://carrer-point.vercel.app/about-us" />
       </Head>
       <AboutView />
     </>

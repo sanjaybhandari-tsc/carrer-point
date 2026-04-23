@@ -28,12 +28,7 @@ export default function Ourmission() {
       className="w-full bg-white px-4 py-12 sm:px-6 md:px-16 lg:px-24 overflow-x-hidden"
     >
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-6">
-        <div
-          className={`bg-[#0B2239] text-white rounded-3xl shadow-3xl p-5 md:p-10
-          h-[240px] overflow-y-auto no-scrollbar
-          sm:h-auto sm:overflow-visible
-          transition-all duration-700 ease-out
-          ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
+        <div  className={`bg-[#0B2239] text-white rounded-3xl shadow-3xl p-5 md:p-10 h-[240px] overflow-y-auto no-scrollbar sm:h-auto sm:overflow-visible transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
         >
           <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
           <Image
@@ -41,14 +36,14 @@ export default function Ourmission() {
             alt="Vision Icon"
             width={64}
             height={64}
-            className="mb-4"
+            className="mb-4 h-10 w-10 md:h-15 md:w-15"
           />
 
-          <h2 className="font-bold text-[26px] sm:text-[30px] md:text-[36px] leading-[1.5] mb-4">
+          <h2 className="heading-bold leading-[1.5] mb-4">
             Our Vision
           </h2></div>
 
-          <p className="text-[15px] sm:text-[16px] md:text-[18px] leading-[1.6]">
+          <p className="content leading-[1.6]">
             To build a strong nationwide recruitment presence by 2030, supporting
             organizations with dependable talent solutions and industry expertise.
             The focus is on developing a 200+ skilled workforce, expanding presence
@@ -59,11 +54,7 @@ export default function Ourmission() {
           </p>
         </div>
         <div
-          className={`bg-[#e5e5e55e] text-black rounded-3xl shadow-md p-5 md:p-10 border border-gray-200
-          h-[240px] overflow-y-auto no-scrollbar
-          sm:h-auto sm:overflow-visible
-          transition-all duration-700 delay-200 ease-out
-          ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
+          className={`bg-[#e5e5e55e] text-black rounded-3xl shadow-md p-5 md:p-10 border border-gray-200 h-[240px] overflow-y-auto no-scrollbar sm:h-auto sm:overflow-visible  transition-all duration-700 delay-200 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
         >
           <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
           <Image
@@ -71,14 +62,14 @@ export default function Ourmission() {
             alt="Mission Icon"
             width={64}
             height={64}
-            className="mb-4"
+            className="mb-4 h-10 w-10 md:h-15 md:w-15"
           />
 
-          <h2 className="font-bold text-[26px] sm:text-[30px] md:text-[36px] leading-[1.5] mb-4">
+          <h2 className="heading-bold leading-[1.5] mb-4">
             Our Mission
           </h2></div>
 
-          <p className="text-[15px] sm:text-[16px] md:text-[18px] leading-[1.6]">
+          <p className="content leading-[1.6]">
             Deliver reliable recruitment solutions that connect organizations with
             the right talent while creating meaningful opportunities for
             professionals. Guided by integrity, transparency, and ethical practices,
