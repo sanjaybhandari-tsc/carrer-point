@@ -120,20 +120,20 @@ export default function SubmitcvForm() {
   };
 
   const inputStyle = (fieldName) =>
-    `text-small w-full h-12 border rounded-lg px-3 outline-none focus:outline-none ${
+    `small-text w-full h-12 border rounded-lg px-3 outline-none focus:outline-none ${
       errors[fieldName]
         ? "border-2 border-red-500"
         : "border border-[#E9EAEB]"
     }`;
 
   const labelStyle =
-    "content text-black font-medium text-sm sm:text-sm md:text-base lg:text-[16px] leading-tight tracking-normal";
+    "content   leading-tight tracking-normal";
 
   return (
     <div className="px-4 sm:px-6 lg:px-[100px] py-10 lg:mb-25 font-montserra">
       <form noValidate onSubmit={handleSubmit} className="max-w-[1312px] mx-auto space-y-10">
         <div className="space-y-6 mb-20">
-          <h2 className="subheading-bold font-bold">Personal Details</h2>
+          <h2 className="subheading-bold ">Personal Details</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-montserra">
 
@@ -250,7 +250,7 @@ export default function SubmitcvForm() {
         </div>
 
         <div className="space-y-6 mb-20">
-          <h2 className="subheading-bold font-bold">Professional Details</h2>
+          <h2 className="subheading-bold ">Professional Details</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-montserra">
 
