@@ -1,7 +1,7 @@
 import React from "react";
 function IndustryWeServe() {
   return (
-    <div className="lg:py-36 py-18 w-full flex flex-col items-center gap-10">
+    <div className="lg:py-36 py-18 w-full flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
       <div className="text-center flex flex-col gap-3 lg:gap-5 max-w-[80%]">
         <h3 className="heading !font-bold">
           <span className="text-[#0277BD] ">Industries </span>{" "}

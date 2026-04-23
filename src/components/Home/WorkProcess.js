@@ -41,7 +41,7 @@ function WorkProcess() {
     },
   ];
   return (
-    <div className="w-full flex flex-col items-center md:gap-10 lg:gap-10">
+    <div className="w-full flex flex-col items-center gap-3 md:gap-4 lg:gap-6">
       <div className="text-center flex flex-col gap-3 lg:gap-5 max-w-[70%]">
         <h3 className="heading !font-bold">
           <span>Our Work </span>{" "}
@@ -54,7 +54,7 @@ function WorkProcess() {
         </p>
       </div>
 
-      <div className=" min-h-[200vh] py-10 lg:px-10">
+      <div className=" min-h-[200vh] pb-10 lg:px-10">
         {works.map((work, idx) => {
           return (
             <>

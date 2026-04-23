@@ -46,11 +46,11 @@ export default function HeroSection() {
             {/* <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-8xl font-bold font-[Montserrat,sans-serif] text-white leading-none">
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1> */}
-            <h1 className="hero-heading-extra text-white leading-none">
+            <h1 className="hero-heading-extra-home text-white leading-none">
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1>
 
-            <p className="heading max-w-[90%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%]  text-white">
+            <p className="subheading leading-relaxed  font-roboto max-w-[90%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%]  text-white">
               Connect with skilled professionals across industries and build
               high-performing teams faster.
             </p>
@@ -76,7 +76,7 @@ export default function HeroSection() {
         <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
           {bannerItems.map(({ value, label }) => (
             <div key={label} className="text-center ">
-              <h2 className="heading  !font-semibold md:!font-[700] lg:!font-[900] font-montserrat text-[#0277BD] lg:mb-2.5 ">
+              <h2 className="hero-bottom   !font-semibold md:!font-[700] lg:!font-[900] font-montserrat text-[#0277BD] lg:mb-2.5 ">
                 {value}
               </h2>
               <p className="content font-mediumc md:font-bold lg:font-extrabold">
