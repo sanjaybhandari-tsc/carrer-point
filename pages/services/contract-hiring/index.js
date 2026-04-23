@@ -6,7 +6,8 @@ export default function ContractHiringPage() {
     <>
       <Head>
         <title>
-          Contract Staffing Services | Project-Based Hiring Solutions | Career Point
+          Contract Staffing Services | Project-Based Hiring Solutions | Career
+          Point
         </title>
 
         <meta
@@ -21,12 +22,8 @@ export default function ContractHiringPage() {
 
         <meta name="robots" content="index, follow" />
 
-        <link
-          rel="canonical"
-          href="https://carrer-point.vercel.app/services/contracthiring"
-        />
+        <link rel="canonical" href="https://yourdomain.com/contract-hiring" />
 
-       
         <meta
           property="og:title"
           content="Contract Staffing Services | Project-Based Hiring Solutions"
@@ -35,19 +32,15 @@ export default function ContractHiringPage() {
           property="og:description"
           content="Flexible contract staffing solutions to hire skilled professionals for project-based, temporary, and short-term business needs."
         />
-        <meta
-          property="og:type"
-          content="website"
-        />
+        <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://carrer-point.vercel.app/services/contracthiring"
+          content="https://carrer-point.vercel.app/services/contract-hiring"
         />
         {/* <meta
           property="og:image"
           content="https://carrer-point.vercel.app/og-images/contract-staffing.jpg"
         /> */}
-
 
         {/* <meta name="twitter:card" content="summary_large_image" /> */}
         <meta
