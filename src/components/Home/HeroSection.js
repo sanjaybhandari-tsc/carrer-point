@@ -48,7 +48,7 @@ export default function HeroSection() {
             {/* <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-8xl font-bold font-[Montserrat,sans-serif] text-white leading-none">
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1> */}
-            <h1 className="hero-heading text-white leading-none">
+            <h1 className="hero-heading  text-white leading-none">
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1>
 
