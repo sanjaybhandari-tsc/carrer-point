@@ -7,7 +7,7 @@ const Ourmission = dynamic(() => import("./Ourmission"));
 const PeopleCulture = dynamic(() => import("./PeopleCulture"));
 const Awards = dynamic(() => import("./Awards"));
 const LifeatCPPS = dynamic(() => import("./LifeatCPPS"));
-const Common = dynamic(() => import("../Home/Common"));
+const Common = dynamic(() => import("../commons/CTASection"));
 const Lastmessage = dynamic(() => import("./Lastmessage"));
 
 export default function AboutView() {
