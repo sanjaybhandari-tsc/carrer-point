@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <section className="relative w-full min-h-dvh md:min-h-screen flex items-center rounded-b-3xl overflow-hidden">
       <Image
-        src="/images/industries/heroSectionOne.png"
+        src="/images/industries/heroSectionOne.webp"
         alt="Industries we serve recruitment and staffing solutions"
         fill
         priority

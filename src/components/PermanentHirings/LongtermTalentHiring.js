@@ -7,7 +7,7 @@ function LongtermTalentHiring() {
         <img
           className=""
           alt="long term talent hiring image"
-          src="/images/permanentHiring/LongTermHiring.svg"
+          src="/images/permanentHiring/long-term-hiring.webp"
         />
       </div>
       <div className="w-full lg:w-[60%] text-[18px] font-[500] text-[#333333] flex flex-col gap-7">
