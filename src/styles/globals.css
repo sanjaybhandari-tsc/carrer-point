@@ -98,6 +98,10 @@ body {
     font-family: var(--font-roboto);
     @apply font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
   }
+  .content-semibold {
+    font-family: var(--font-roboto);
+    @apply font-semibold text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
+  }
 
 
   .small-text {
@@ -120,6 +124,9 @@ body {
   .getintoch_button {
     font-family: var(--font-montserrat);
     @apply text-xs sm:text-sm md:text-base
+  }
+  .message {
+  @apply font-bold text-[18px] sm:text-[20px] md:text-[23px] lg:text-[45px] xl:text-[50px];
   }
 }
 

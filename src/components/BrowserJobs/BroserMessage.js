@@ -14,7 +14,7 @@ export default function BroserMessage() {
                         className="object-cover"
                     />
                 </div>
-                <h2 className="font-bold text-[#333333] text-[20px] sm:text-[22px] md:text-[30px] lg:text-[50px]">
+                <h2 className=" text-[#333333] message ">
                     Explore<span className="text-[#0277BD]"> opportunities </span>that match your skills and take the next step in
                     <span className="text-[#0277BD]"> building</span> a rewarding<span className="text-[#0277BD]"> career</span>.
                 </h2>
