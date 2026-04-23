@@ -17,8 +17,8 @@ export default function HeroSection() {
                 </p>
               </div>
 
-              <div className="w-full max-w-5xl"  role="search" aria-label="Job search form" className="overflow-hidden">
-                <div className="flex flex-col lg:flex-row items-stretch gap-2 lg:gap-0 backdrop-blur-md border-[0.5px]  border-white bg-white/20 sm:border-none sm:bg-none rounded-2xl lg:rounded-full">
+              <div className="w-full max-w-7xl"  role="search" aria-label="Job search form overflow-hidden">
+                <div className="flex flex-col lg:flex-row items-stretch gap-2 lg:gap-0 backdrop-blur-md border-[0.5px]   border-white bg-white/20 sm:border-none sm:bg-none rounded-2xl lg:rounded-full">
 
                   <div className="flex flex-col sm:flex-row flex-1 min-w-0 lg:h-16 items-center justify-between subheading gap-1">
                     <label htmlFor="jobTitle" className="sr-only">
@@ -34,7 +34,7 @@ export default function HeroSection() {
                     <label htmlFor="experience" className="sr-only">
                       Experience Level
                     </label>
-                    <select  id="experience" name="experience" className="w-full sm:flex-[1.5] lg:flex-[1.5] lg:min-w-[200px] content px-4 py-3 lg:py-4 bg-transparent text-white outline-none border-b sm:border-b-0 sm:border-r border-white ">
+                    <select  id="experience" name="experience" className="w-full sm:flex-[1.5] lg:flex-[1.5] lg:min-w-[200px]  content px-4 py-3 lg:py-4 bg-transparent text-white outline-none border-b sm:border-b-0 sm:border-r border-white ">
                       <option className="text-black"  value="">Experience level</option>
                       <option className="text-black" value="fresher">Fresher</option>
                       <option className="text-black" value="1-3">1-3 Years</option>

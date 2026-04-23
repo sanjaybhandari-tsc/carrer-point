@@ -14,7 +14,7 @@ export default function Lastmessage() {
             className="object-cover"
           />
         </div>
-        <h2 className=" text-[#333333] message">
+        <h2 className=" text-[#333333] message-About">
           Our journey is driven by<span className="text-[#0277BD]"> trust</span>, experience, and a
           <span className="text-[#0277BD]"> commitment</span> to connecting
           organizations with the<span className="text-[#0277BD]"> right talent</span>.
