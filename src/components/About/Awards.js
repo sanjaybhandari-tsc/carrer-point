@@ -41,7 +41,7 @@ export default function Awards() {
       <div className="mx-auto p-6 md:p-10 rounded-lg lg:px-30 lg:py-12">
 
         <h2
-          className={`text-center heading-bold leading-[1.5] text-white mb-20 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}`}
+          className={`text-center heading-bold leading-[1.5] text-white mb-10 md:mb-20 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}`}
         >
           Awards And Recognition
         </h2>
