@@ -274,10 +274,7 @@ export default function Jobscart() {
   return (
     <div className="p-4 sm:p-6 md:p-8 bg-white lg:px-25 min-h-screen">
       
-      <div  ref={headingRef} className={`p-4 sm:p-6 text-center  transition-all duration-700 transform ${
-          showHeading
-            ? "translate-y-0 opacity-100"
-            : "-translate-y-10 opacity-0"
+      <div  ref={headingRef} className={`p-4 sm:p-6 text-center  transition-all duration-700 transform ${showHeading ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
         }` }>
         <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold mb-5">
           Featured <span className="text-[#0277BD]">Jobs</span>
@@ -287,10 +284,7 @@ export default function Jobscart() {
         </p>
       </div>
 
-      <div ref={containerRef} className={`mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6 py-6 transition-all duration-700 transform ${
-          showContent
-            ? "translate-y-0 opacity-100"
-            : "translate-y-10 opacity-0"
+      <div ref={containerRef} className={`mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6 py-6 transition-all duration-700 transform ${showContent ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}>
         
   
@@ -301,10 +295,7 @@ export default function Jobscart() {
               <div
                 key={job.id}
                 onClick={() => setSelectedJob(job)}
-                className={`p-4 sm:p-5 rounded-2xl border cursor-pointer transition ${
-                  selectedJob.id === job.id
-                    ? "border-[#039BE6] border-2"
-                    : "border-2 border-[#ECECEC] hover:shadow-sm"
+                className={`p-4 sm:p-5 rounded-2xl border cursor-pointer transition ${ selectedJob.id === job.id ? "border-[#039BE6] border-2" : "border-2 border-[#ECECEC] hover:shadow-sm"
                 }`}
               >
                 <div className="flex justify-between items-start gap-2">
@@ -360,10 +351,7 @@ export default function Jobscart() {
                 <button
                   key={page}
                   onClick={() => setCurrentPage(page)}
-                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full text-sm sm:text-[16px] cursor-pointer ${
-                    currentPage === page
-                      ? "bg-gray-200 font-semibold"
-                      : "text-black"
+                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full text-sm sm:text-[16px] cursor-pointer ${ currentPage === page ? "bg-gray-200 font-semibold" : "text-black"
                   }`}
                 >
                   {page}
