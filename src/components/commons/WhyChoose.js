@@ -15,11 +15,9 @@ function WhyChoose({ reasons }) {
               key={idx}
             >
               <img src={reasons.img} alt={reasons.heading} />
-              <h4 className="subheading  md:!semi-bold ">{reasons.heading}</h4>
+              <h4 className="content  md:!semi-bold ">{reasons.heading}</h4>
 
-              <p className="content font-[500] text-[#333333]">
-                {reasons.desc}
-              </p>
+              <p className="small-text text-[#333333]">{reasons.desc}</p>
             </div>
           );
         })}
