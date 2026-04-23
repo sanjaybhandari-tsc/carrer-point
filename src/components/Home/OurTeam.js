@@ -28,19 +28,19 @@ function OurTeam() {
       desc: "25+ years of expertise in HR",
     },
     {
-      img: "/images/homepage/UmakantYelka.svg",
+      img: "/images/homepage/UmakantYelka.webp",
       name: "Umakant Yelka",
       department: "Business Partner - BFSI",
       desc: "17+ years in BFSI Recruitment ",
     },
     {
-      img: "/images/homepage/ParveenMulla.svg",
+      img: "/images/homepage/ParveenMulla.webp",
       name: "Parveen Mulla",
       department: "Business Partner - BFSI",
       desc: "15+ Years in BFSI Recruitment",
     },
     {
-      img: "/images/homepage/Abhishek.svg",
+      img: "/images/homepage/Abhishek.webp",
       name: "Abhishek Gangareddy",
       department: "Business Partner -Pharma Manufacturing",
       desc: "15+ Years in BFSI Recruitment",
@@ -52,7 +52,7 @@ function OurTeam() {
       desc: "9+ Years in Pharmaceutical Hiring ",
     },
     {
-      img: "/images/homepage/KausarMulla.svg",
+      img: "/images/homepage/KausarMulla.webp",
       name: "Kausar Mulla",
       department: "Business Partner -Pharma ",
       desc: "9+ Years in Pharma Recruitment",
@@ -79,7 +79,7 @@ function OurTeam() {
 
       <div
         ref={ref}
-        className={`w-full px-7 mt-5 lg:my-15 ${visible ? styles.slideright : "opacity-0"} `}
+        className={` w-full px-7 mt-5 lg:my-15 ${visible ? styles.slideright : "opacity-0"} `}
       >
         <div className=" flex flex-nowrap overflow-x-auto overflow-y-hidden pl-3 gap-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {teams.map((team, idx) => {

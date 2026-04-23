@@ -28,9 +28,7 @@ export default function SubmitCV() {
   return (
     <>
       <HeadingSubmitCV />
-
       {jobExists && <AboutThejob />}
-
       <SubmitcvForm />
     </>
   );

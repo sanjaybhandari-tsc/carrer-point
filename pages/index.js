@@ -8,7 +8,7 @@ export default function Home() {
         <title>Recruitment & Placement Services in India | Career Point</title>
         <meta
           name="description"
-          content="Recruitment agency in India with 17+ years experience. Career Point offers placement, staffing, and hiring solutions with 15,000+ successful placements."
+          content="Leading recruitment and placement agency in India with 17+ years of experience. Career Point delivers staffing, hiring, and talent solutions with 15,000+ successful placements across industries."
         />
         <meta
           name="keywords"

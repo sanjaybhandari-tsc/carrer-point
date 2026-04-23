@@ -29,6 +29,7 @@ function MessageFromManagingDirector() {
       >
         <img
           className=" w-full px-2"
+          alt="managing director"
           src="../../images/homepage/ManagingDirector.png"
         />
       </div>
@@ -40,6 +41,7 @@ function MessageFromManagingDirector() {
       >
         <img
           ref={ref}
+          alt="double inverted commas for text"
           className={`absolute lg:w-30 lg:h-30 w-12 h-12 -left-1 top-5  lg:-left-17 lg:-top-4 ${isVisible ? styles.slideDown : "opacity-0"}`}
           src="../../images/homepage/DoubleEnvertedComma.svg"
         />

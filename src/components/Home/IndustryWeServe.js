@@ -17,7 +17,8 @@ function IndustryWeServe() {
         <div className="col-span-2 row-span-1 rounded-tl-[150px] overflow-hidden">
           <div className="relative group w-full h-full">
             <img
-              src="/images/homepage/Industry1.svg"
+              alt="manufacturing"
+              src="/images/homepage/Industry1.webp"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
@@ -32,6 +33,7 @@ function IndustryWeServe() {
           <div className="relative group w-full h-full">
             <img
               src="/images/homepage/Industry2.svg"
+              alt="Pharmaceutical"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
@@ -44,7 +46,8 @@ function IndustryWeServe() {
         <div className="col-span-1 row-span-2 overflow-hidden">
           <div className="relative group w-full h-full">
             <img
-              src="/images/homepage/Industry3.svg"
+              src="/images/homepage/Industry3.webp"
+              alt="BFSI"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
@@ -57,7 +60,8 @@ function IndustryWeServe() {
         <div className="col-span-1 row-span-1 overflow-hidden">
           <div className="relative group w-full h-full">
             <img
-              src="/images/homepage/Industry4.svg"
+              src="/images/homepage/Industry4.webp"
+              alt="Building Material"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
@@ -70,7 +74,8 @@ function IndustryWeServe() {
         <div className="col-span-2 row-span-1 rounded-br-[150px] overflow-hidden">
           <div className="relative group w-full h-full">
             <img
-              src="/images/homepage/Industry5.svg"
+              src="/images/homepage/Industry5.webp"
+              alt="FMCG"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">

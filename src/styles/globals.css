@@ -1,53 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import "tailwindcss";
-
-
 :root {
-  
-  /* PRIMARY COLORS */
   --color-primary: #039BE6;
   --color-primary-hover: #0277BD;
   --color-primary-light: #4FC3F7;
   --color-primary-tint: #E6F6FD;
 
-  /* ACCENT COLORS */
   --color-accent: #FF7A00;
   --color-accent-hover: #E66900;
   --color-accent-light: #FFF1E6;
 
-  /* TEXT COLORS */
   --color-heading: #1F2D3D;
   --color-body: #5A6A7A;
 
-  /*  BACKGROUNDS */
   --color-background-light: #F8FAFC;
   --color-white: #FFFFFF;
 
-  /*  BORDERS  */
   --color-border: #E5EAF0;
 
-  /*DARK SECTION COLORS */
   --color-dark-blue: #0B2239;
   --color-deep-blue: #001F33;
-}
 
-
-:root {
   --background: #FFFFFF;
   --foreground: #171717;
   --font-main: "Montserrat", sans-serif;
 }
 
-@theme {
-  --color-headingBlue: #0277BD;
-  --font-saira: "Saira Stencil", sans-serif;
-}
+
 html {
   color-scheme: light !important;
 }
@@ -78,3 +56,48 @@ html, body {
   -ms-overflow-style: none;  
   scrollbar-width: none;    
 }
+
+
+/* =========================
+   TYPOGRAPHY UTILITIES
+========================= */
+@layer utilities {
+  .heading {
+    @apply font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+  }
+
+  .subheading {
+    @apply font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
+  }
+
+  .content {
+    @apply font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
+  }
+
+  .hero-heading {
+    @apply font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+  }
+
+  .small-text {
+    @apply font-light text-xs sm:text-sm md:text-base lg:text-base xl:text-lg;
+  }
+  .getintoch_button{
+    @apply text-xs sm:text-sm md:text-base
+  }
+}
+
+/* Heading : font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl */
+/* SubHeading : font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl */
+/* Content : font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl */
+
+/* Hero Heading : font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl */
+ 
+/* Heading : font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl */
+ 
+/* SubHeading : font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl */
+ 
+/* Content : font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl */
+ 
+/* Small Text : font-light text-xs sm:text-sm md:text-base lg:text-base xl:text-lg */
+
+ 
