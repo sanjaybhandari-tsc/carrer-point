@@ -34,7 +34,7 @@ export default function FastMovingConsumerGoodsSection() {
         >
           <div className="rounded-2xl overflow-hidden shadow-lg transition-transform duration-500 hover:scale-[1.02]">
             <Image
-              src="/images/industries/Fast Moving Consumer Goods (FMCG).png"
+              src="/images/industries/fast-moving-consumer-goods.webp"
               alt="FMCG recruitment and consumer goods industry workforce distribution"
               width={600}
               height={400}

@@ -11,7 +11,7 @@ export default function HeroSection() {
 
           {/* Background (decorative, hidden from screen readers) */}
           <div
-            className="absolute inset-0 bg-[url('/images/broserJobs/jobsHero.svg')] bg-cover bg-center"
+            className="absolute inset-0 bg-[url('/images/broserJobs/jobsHero.webp')] bg-cover bg-center"
             role="img"
             aria-label="Job search background banner"
           >

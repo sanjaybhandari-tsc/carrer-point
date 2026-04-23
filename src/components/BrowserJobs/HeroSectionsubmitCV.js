@@ -5,7 +5,7 @@ export default function HeroSection() {
     <>
       <section className="relative w-full flex justify-center overflow-hidden" aria-labelledby="hero-title">
         <div className="relative w-full h-[70vh] sm:h-[80vh] lg:h-[909px] overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/images/broserJobs/jobsHero.svg')] bg-cover bg-center" role="img" aria-label="Job search background banner">
+          <div className="absolute inset-0 bg-[url('/images/broserJobs/jobsHero.webp')] bg-cover bg-center" role="img" aria-label="Job search background banner">
             <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 sm:px-6 md:px-10 text-center gap-8">
               <div className="max-w-4xl">
                 <h1 className="text-white font-bold text-[26px] sm:text-[34px] md:text-[42px] lg:text-[48px] leading-[1.2]">
