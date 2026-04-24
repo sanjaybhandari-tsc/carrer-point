@@ -38,6 +38,7 @@ function generateSiteMap(baseUrl) {
   `;
 }
 
+
 export async function getServerSideProps({ res }) {
   const baseUrl = "https://career-point.vercel.app";
 
