@@ -41,19 +41,19 @@ export default function BuildingCarrers() {
           className={`w-full lg:w-[60%] flex flex-col gap-4 sm:gap-5 md:gap-6 text-[#333333] transition-all duration-700 delay-200 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
         >
 
-          <h2 className="heading font-bold leading-[150%]">
+          <h2 className="heading-bold leading-[150%]">
             Building Careers
           </h2>
 
-          <p className=" content font-roboto leading-relaxed">
+          <p className=" content !font-roboto leading-relaxed">
             Career Point Placement Services is a trusted recruitment partner helping organizations connect with skilled professionals across industries. With more than 17 years of experience in the recruitment industry, we have successfully supported companies in building strong and capable teams.
           </p>
 
-          <p className=" content font-roboto leading-relaxed">
+          <p className=" content !font-roboto leading-relaxed">
             Over the years, we have placed more than 15,000 candidates across India, supporting hiring from junior to senior leadership roles with compensation ranging from 3 LPA to 2 CR.
           </p>
 
-          <p className=" content font-roboto leading-relaxed">
+          <p className=" content !font-roboto leading-relaxed">
             Our approach is built on ethical practices, industry expertise, and a strong commitment to helping organizations find the right talent for long-term growth.
           </p>
 
