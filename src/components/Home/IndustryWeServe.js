@@ -1,92 +1,77 @@
-import React from "react";
+import Image from "next/image";
+
 function IndustryWeServe() {
+  const industries = [
+    {
+      src: "/images/homepage/Industry1.webp",
+      alt: "Manufacturing",
+      label: "Manufacturing",
+      className:
+        "col-span-2 row-span-1 rounded-tl-[80px] md:rounded-tl-[150px]",
+    },
+    {
+      src: "/images/homepage/Industry2.svg",
+      alt: "Pharmaceutical",
+      label: "Pharmaceutical",
+      className: "col-span-1 row-span-2",
+    },
+    {
+      src: "/images/homepage/Industry3.webp",
+      alt: "BFSI",
+      label: "BFSI",
+      className: "col-span-1 row-span-2",
+    },
+    {
+      src: "/images/homepage/Industry4.webp",
+      alt: "Building Material",
+      label: "Building Material",
+      className: "col-span-1 row-span-1",
+    },
+    {
+      src: "/images/homepage/Industry5.webp",
+      alt: "FMCG",
+      label: "FMCG",
+      className:
+        "col-span-2 row-span-1 rounded-br-[80px] md:rounded-br-[150px]",
+    },
+  ];
+
   return (
-    <div className="lg:py-36 py-18 w-full flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
-      <div className="text-center flex flex-col gap-3 lg:gap-5 max-w-[80%]">
+    <div className="h-screen w-full flex flex-col items-center justify-center gap-2 md:gap-4 lg:gap-6 px-4 overflow-hidden py-4 md:py-9">
+      <div className="text-center flex flex-col gap-1 md:gap-2 lg:gap-3 max-w-[85%] shrink-0">
         <h3 className="heading !font-bold">
-          <span className="text-[#0277BD] ">Industries </span>{" "}
-          <span> We Serve</span>
+          <span className="text-[#0277BD]">Industries </span>
+          <span>We Serve</span>
         </h3>
-        <p className="content font-[500]">
+        <p className="content font-[500] text-sm md:text-base">
           Delivering top talent to organizations across fast-growing industries,
           helping businesses build skilled teams that drive innovation and
           long-term growth.
         </p>
       </div>
-      <div className="grid grid-cols-3 grid-rows-3 gap-2 lg:gap-4 w-full max-w-[90%] mx-auto">
-        <div className="col-span-2 row-span-1 rounded-tl-[150px] overflow-hidden">
-          <div className="relative group w-full h-full">
-            <img
-              alt="manufacturing"
-              src="/images/homepage/Industry1.webp"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
-              <p className="text-white heading md:!font-bold !font-semibold">
-                Manufacturing
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div className="col-span-1 row-span-2 overflow-hidden">
-          <div className="relative group w-full h-full">
-            <img
-              src="/images/homepage/Industry2.svg"
-              alt="Pharmaceutical"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
-              <p className="text-white heading md:!font-bold !font-semibold">
-                Pharmaceutical
-              </p>
+      <div className="grid grid-cols-3 grid-rows-3 gap-1.5 md:gap-2 lg:gap-4 w-full max-w-[95%] md:max-w-[90%] mx-auto flex-1 min-h-0">
+        {industries.map(({ src, alt, label, className }) => (
+          <div key={alt} className={`${className} overflow-hidden relative`}>
+            <div className="relative group w-full h-full">
+              <Image
+                src={src}
+                alt={alt}
+                fill
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 40vw, 33vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                <p className="text-white heading md:!font-bold !font-semibold text-center px-2">
+                  {label}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="col-span-1 row-span-2 overflow-hidden">
-          <div className="relative group w-full h-full">
-            <img
-              src="/images/homepage/Industry3.webp"
-              alt="BFSI"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
-              <p className="text-white  heading md:!font-bold !font-semibold">
-                BFSI
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-span-1 row-span-1 overflow-hidden">
-          <div className="relative group w-full h-full">
-            <img
-              src="/images/homepage/Industry4.webp"
-              alt="Building Material"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
-              <p className="text-white  heading md:!font-bold !font-semibold text-center">
-                Building Material
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-span-2 row-span-1 rounded-br-[150px] overflow-hidden">
-          <div className="relative group w-full h-full">
-            <img
-              src="/images/homepage/Industry5.webp"
-              alt="FMCG"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
-              <p className="text-white heading md:!font-bold !font-semibold">
-                FMCG
-              </p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 }
+
 export default IndustryWeServe;
