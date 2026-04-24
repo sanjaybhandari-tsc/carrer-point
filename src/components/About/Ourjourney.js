@@ -33,7 +33,7 @@ export default function Ourjourney() {
 
                 {/* TOP */}
                 <div className="journey-item opacity-0 -translate-y-10 transition-all duration-500 ease-out text-center mb-12">
-                    <h2 className="heading font-bold leading-none tracking-normal text-center">
+                    <h2 className="heading-bold  leading-none tracking-normal text-center">
                         Our <span className="text-blue-500">Journey</span>
                     </h2>
                     <p className="text-[#000000] mt-9 content leading-none tracking-normal">
