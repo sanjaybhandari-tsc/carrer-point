@@ -77,21 +77,21 @@ export default function HeroSection() {
       <div className="w-full flex justify-center relative -top-10 md:-top-15 lg:-top-25">
         <div className="w-[92%] lg:w-[90%] lg:py-12 lg:px-20 py-6 px-4 rounded-3xl flex flex-wrap md:flex-nowrap justify-between items-center bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE] gap-4">
           <div className="text-center md:w-auto">
-            <h1 className="heading-extrabold text-[#0277BD]">500+</h1>
+            <h2 className="heading-extrabold text-[#0277BD]">500+</h2>
             <p className="content text-[#333333] flex items-start">Active Jobs</p>
           </div>
           <div className="text-center md:w-auto">
-            <h1 className="heading-extrabold text-[#0277BD]">100+</h1>
+            <h2 className="heading-extrabold text-[#0277BD]">100+</h2>
             <p className="content text-[#333333] flex items-start">Companies</p>
           </div>
 
           <div className="text-center md:w-auto">
-            <h1 className="heading-extrabold text-[#0277BD]">15K+</h1>
+            <h2 className="heading-extrabold text-[#0277BD]">15K+</h2>
             <p className="content text-[#333333] flex items-start">Job Seekers</p>
           </div>
 
           <div className="text-center md:w-auto">
-            <h1 className="heading-extrabold text-[#0277BD]">98%</h1>
+            <h2 className="heading-extrabold text-[#0277BD]">98%</h2>
             <p className="content text-[#333333] font-[500] flex items-start">Success Rate</p>
           </div>
 
