@@ -58,7 +58,7 @@ export default function RPO() {
   const hiringData = [
     {
       title: "Managed Hiring Solutions",
-      image: "/images/rpa/Managed Hiring Solutions.png",
+      image: "/images/rpa/Managed Hiring Solutions.webp",
       description: [
         "   Recruitment Process Outsourcing (RPO) allows organizations to delegate part or the entire recruitment function to a dedicated recruitment partner. This approach helps companies streamline hiring activities while improving efficiency and consistency.",
         "     Our RPO solutions provide organizations with a structured recruitment process supported by a dedicated hiring team. From sourcing and screening candidates to managing interviews, offer rollouts, and reporting, we ensure a smooth and organized recruitment workflow.",

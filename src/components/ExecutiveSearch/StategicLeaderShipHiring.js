@@ -10,7 +10,7 @@ export default function StategicLeaderShipHiring() {
         <div className="w-full xl:w-1/2">
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/images/executivesearch/Strategic Leadership Hiring.png"
+              src="/images/executivesearch/Strategic Leadership Hiring.webp"
               alt="Executive search and strategic leadership hiring services"
               width={800}
               height={600}
