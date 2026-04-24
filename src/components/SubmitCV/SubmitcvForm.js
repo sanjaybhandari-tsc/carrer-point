@@ -51,7 +51,7 @@ export default function SubmitcvForm() {
       setErrors((prev) => ({ ...prev, resume: "" }));
       sessionStorage.setItem(
         "formData",
-        JSON.stringify({ ...formData, resume: file?.name || null })
+        JSON.stringify({ ...formData, resume: file?.name || null }),
       );
     } else {
       const updatedData = { ...formData, [name]: value };
@@ -59,7 +59,10 @@ export default function SubmitcvForm() {
       setErrors((prev) => ({ ...prev, [name]: "" }));
       sessionStorage.setItem(
         "formData",
-        JSON.stringify({ ...updatedData, resume: updatedData.resume?.name || null })
+        JSON.stringify({
+          ...updatedData,
+          resume: updatedData.resume?.name || null,
+        }),
       );
     }
   };
@@ -86,7 +89,7 @@ export default function SubmitcvForm() {
     } else {
       sessionStorage.setItem(
         "formData",
-        JSON.stringify({ ...formData, resume: formData.resume?.name || null })
+        JSON.stringify({ ...formData, resume: formData.resume?.name || null }),
       );
 
       console.log(formData);
@@ -121,47 +124,59 @@ export default function SubmitcvForm() {
 
   const inputStyle = (fieldName) =>
     `small-text w-full h-12 border rounded-lg px-3 outline-none focus:outline-none ${
-      errors[fieldName]
-        ? "border-2 border-red-500"
-        : "border border-[#E9EAEB]"
+      errors[fieldName] ? "border-2 border-red-500" : "border border-[#E9EAEB]"
     }`;
 
-  const labelStyle =
-    "content   leading-tight tracking-normal";
+  const labelStyle = "content   leading-tight tracking-normal";
 
   return (
     <div className="px-4 sm:px-6 lg:px-[100px] py-10 lg:mb-25 font-montserra">
-      <form noValidate onSubmit={handleSubmit} className="max-w-[1312px] mx-auto space-y-10">
+      <form
+        noValidate
+        onSubmit={handleSubmit}
+        className="max-w-[1312px] mx-auto space-y-10"
+      >
         <div className="space-y-6 mb-20">
           <h2 className="subheading-bold ">Personal Details</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-montserra">
-
             <div className="flex items-start flex-col gap-[2px]">
-              <label className={labelStyle}>First Name</label>
+              <label htmlFor="firstName" className={labelStyle}>
+                First Name
+              </label>
               <input
-                type="text"
+                id="firstName"
                 name="firstName"
-                placeholder="First Name"
+                type="text"
                 value={formData.firstName}
-                className={`${inputStyle("firstName")}`}
+                placeholder="First Name"
                 onChange={handleChange}
                 onFocus={handleFocus}
+                className={inputStyle("firstName")}
+                required
+                autoComplete="given-name"
+                aria-invalid={!!errors.firstName}
+                aria-describedby="firstName-error"
               />
               <p className="text-red-500 text-sm">{errors.firstName}</p>
             </div>
 
             <div className="flex items-start flex-col gap-[2px]">
-              <label className={labelStyle}>Last Name</label>
-              <input
-                type="text"
+              <label htmlFor="lastName" className={labelStyle}>Last Name</label>
+               <input
+                id="lastName"
                 name="lastName"
-                placeholder="Last Name"
+                type="text"
                 value={formData.lastName}
-                className={inputStyle("lastName")}
+                placeholder="Last Name"
                 onChange={handleChange}
                 onFocus={handleFocus}
-              />
+                className={inputStyle("lastName")}
+                required
+                autoComplete="family-name"
+                aria-invalid={!!errors.lastName}
+                aria-describedby="lastName-error"
+               />
               <p className="text-red-500 text-sm">{errors.lastName}</p>
             </div>
 
@@ -253,7 +268,6 @@ export default function SubmitcvForm() {
           <h2 className="subheading-bold ">Professional Details</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-montserra">
-
             <div className="flex items-start flex-col gap-[2px]">
               <label className={labelStyle}>Current Job Title</label>
               <input
@@ -319,7 +333,6 @@ export default function SubmitcvForm() {
               />
               <p className="text-red-500 text-sm">{errors.skills}</p>
             </div>
-
           </div>
         </div>
 
@@ -362,3 +375,270 @@ export default function SubmitcvForm() {
     </div>
   );
 }
+
+// import React, { useState, useEffect, useRef } from "react";
+
+// export default function SubmitcvForm() {
+//   const [fileKey, setFileKey] = useState(Date.now());
+//   const fileInputRef = useRef(null);
+
+//   const [formData, setFormData] = useState({
+//     firstName: "",
+//     lastName: "",
+//     gender: "",
+//     dob: "",
+//     email: "",
+//     contact: "",
+//     state: "",
+//     city: "",
+//     jobTitle: "",
+//     company: "",
+//     ctc: "",
+//     experience: "",
+//     skills: "",
+//     resume: null,
+//   });
+
+//   const [errors, setErrors] = useState({});
+//   const [success, setSuccess] = useState("");
+
+//   useEffect(() => {
+//     const savedData = sessionStorage.getItem("formData");
+//     if (savedData) {
+//       const parsedData = JSON.parse(savedData);
+//       setFormData((prev) => ({
+//         ...prev,
+//         ...parsedData,
+//         resume: null,
+//       }));
+//     }
+//   }, []);
+
+//   const handleFocus = (e) => {
+//     const { name } = e.target;
+//     setErrors((prev) => ({ ...prev, [name]: "" }));
+//   };
+
+//   const handleChange = (e) => {
+//     const { name, value, files } = e.target;
+
+//     if (name === "resume") {
+//       const file = files[0];
+//       setFormData({ ...formData, resume: file });
+//       setErrors((prev) => ({ ...prev, resume: "" }));
+//     } else {
+//       const updatedData = { ...formData, [name]: value };
+//       setFormData(updatedData);
+//       setErrors((prev) => ({ ...prev, [name]: "" }));
+//     }
+//   };
+
+//   const validate = () => {
+//     let newErrors = {};
+//     if (!formData.firstName.trim()) newErrors.firstName = "First name required";
+//     if (!formData.lastName.trim()) newErrors.lastName = "Last name required";
+//     if (!formData.email.match(/^\S+@\S+\.\S+$/))
+//       newErrors.email = "Valid email required";
+//     if (!formData.contact.match(/^[0-9]{10}$/))
+//       newErrors.contact = "Valid 10-digit number required";
+//     if (!formData.resume) newErrors.resume = "Resume is required";
+//     if (!formData.skills.trim()) newErrors.skills = "Please fill the data";
+//     return newErrors;
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     const validationErrors = validate();
+
+//     if (Object.keys(validationErrors).length > 0) {
+//       setErrors(validationErrors);
+//       setSuccess("");
+//     } else {
+//       console.log(formData);
+//       setSuccess("Form submitted successfully!");
+
+//       setFormData({
+//         firstName: "",
+//         lastName: "",
+//         gender: "",
+//         dob: "",
+//         email: "",
+//         contact: "",
+//         state: "",
+//         city: "",
+//         jobTitle: "",
+//         company: "",
+//         ctc: "",
+//         experience: "",
+//         skills: "",
+//         resume: null,
+//       });
+
+//       setErrors({});
+//       setFileKey(Date.now());
+
+//       if (fileInputRef.current) {
+//         fileInputRef.current.value = "";
+//       }
+//     }
+//   };
+
+//   const inputStyle = (fieldName) =>
+//     `small-text w-full h-12 border rounded-lg px-3 outline-none focus:outline-none ${
+//       errors[fieldName]
+//         ? "border-2 border-red-500"
+//         : "border border-[#E9EAEB]"
+//     }`;
+
+//   const labelStyle = "content leading-tight tracking-normal";
+
+//   return (
+//     <div className="px-4 sm:px-6 lg:px-[100px] py-10 lg:mb-25 font-montserra">
+//       <form onSubmit={handleSubmit} noValidate className="max-w-[1312px] mx-auto space-y-10">
+
+//         <p role="status" aria-live="polite">{success}</p>
+
+//         <fieldset className="space-y-6 mb-20">
+//           <legend className="subheading-bold">Personal Details</legend>
+
+//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-montserra">
+
+//             <div className="flex flex-col gap-[2px]">
+//               <label htmlFor="firstName" className={labelStyle}>First Name</label>
+//               <input
+//                 id="firstName"
+//                 name="firstName"
+//                 type="text"
+//                 value={formData.firstName}
+//                 onChange={handleChange}
+//                 onFocus={handleFocus}
+//                 className={inputStyle("firstName")}
+//                 required
+//                 autoComplete="given-name"
+//                 aria-invalid={!!errors.firstName}
+//                 aria-describedby="firstName-error"
+//               />
+//               <p id="firstName-error" className="text-red-500 text-sm" aria-live="polite">
+//                 {errors.firstName}
+//               </p>
+//             </div>
+
+//             <div className="flex flex-col gap-[2px]">
+//               <label htmlFor="lastName" className={labelStyle}>Last Name</label>
+//               <input
+//                 id="lastName"
+//                 name="lastName"
+//                 type="text"
+//                 value={formData.lastName}
+//                 onChange={handleChange}
+//                 onFocus={handleFocus}
+//                 className={inputStyle("lastName")}
+//                 required
+//                 autoComplete="family-name"
+//                 aria-invalid={!!errors.lastName}
+//                 aria-describedby="lastName-error"
+//               />
+//               <p id="lastName-error" className="text-red-500 text-sm" aria-live="polite">
+//                 {errors.lastName}
+//               </p>
+//             </div>
+
+//             <div className="flex flex-col gap-[2px]">
+//               <label htmlFor="email" className={labelStyle}>Email Address</label>
+//               <input
+//                 id="email"
+//                 name="email"
+//                 type="email"
+//                 value={formData.email}
+//                 onChange={handleChange}
+//                 onFocus={handleFocus}
+//                 className={inputStyle("email")}
+//                 required
+//                 autoComplete="email"
+//                 aria-invalid={!!errors.email}
+//                 aria-describedby="email-error"
+//               />
+//               <p id="email-error" className="text-red-500 text-sm" aria-live="polite">
+//                 {errors.email}
+//               </p>
+//             </div>
+
+//             <div className="flex flex-col gap-[2px]">
+//               <label htmlFor="contact" className={labelStyle}>Contact No.</label>
+//               <input
+//                 id="contact"
+//                 name="contact"
+//                 type="tel"
+//                 value={formData.contact}
+//                 onChange={handleChange}
+//                 onFocus={handleFocus}
+//                 className={inputStyle("contact")}
+//                 required
+//                 autoComplete="tel"
+//                 inputMode="numeric"
+//                 aria-invalid={!!errors.contact}
+//                 aria-describedby="contact-error"
+//               />
+//               <p id="contact-error" className="text-red-500 text-sm" aria-live="polite">
+//                 {errors.contact}
+//               </p>
+//             </div>
+
+//           </div>
+//         </fieldset>
+
+//         <div className="flex justify-center gap-[2px] font-montserrat">
+//           <label
+//             htmlFor="resume"
+//             tabIndex="0"
+//             role="button"
+//             onKeyDown={(e) => {
+//               if (e.key === "Enter" || e.key === " ") {
+//                 fileInputRef.current.click();
+//               }
+//             }}
+//             className={`w-full max-w-[1130px] h-[200px] border-2 border-dashed rounded-3xl flex flex-col items-center justify-center text-center cursor-pointer ${
+//               errors.resume ? "border-red-500" : "border-blue-400"
+//             }`}
+//           >
+//             <input
+//               id="resume"
+//               type="file"
+//               name="resume"
+//               className="hidden"
+//               accept=".pdf,.doc,.docx"
+//               onChange={handleChange}
+//               ref={fileInputRef}
+//               key={fileKey}
+//               aria-describedby="resume-error"
+//             />
+
+//             <img src="/images/SubmitCv/uplodIcon.svg" alt="Upload resume icon" />
+//             <p className="text-lg font-medium">Upload Resume</p>
+
+//             {formData.resume && (
+//               <p className="text-green-600 text-sm">
+//                 Uploaded: {formData.resume.name}
+//               </p>
+//             )}
+
+//             <p id="resume-error" className="text-red-500 text-sm" aria-live="polite">
+//               {errors.resume}
+//             </p>
+//           </label>
+//         </div>
+
+//         <div className="flex justify-center">
+//           <button
+//             type="submit"
+//             aria-label="Submit CV form"
+//             className="w-[200px] h-12 bg-[#039BE6] text-white rounded-lg text-[16px] font-semibold text-center shadow-[0px_4px_8px_0px_#00000029] cursor-pointer font-montserrat"
+//           >
+//             Submit
+//           </button>
+//         </div>
+
+//       </form>
+//     </div>
+//   );
+// }

@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function StategicLeaderShipHiring() {
   const hiringData = [
     {
       title: "Managed Hiring Solutions",
-      image: "/images/rpa/Managed Hiring Solutions.png",
+      image: "/images/rpa/Managed Hiring Solutions.webp",
       description: [
         "   Recruitment Process Outsourcing (RPO) allows organizations to delegate part or the entire recruitment function to a dedicated recruitment partner. This approach helps companies streamline hiring activities while improving efficiency and consistency.",
         "     Our RPO solutions provide organizations with a structured recruitment process supported by a dedicated hiring team. From sourcing and screening candidates to managing interviews, offer rollouts, and reporting, we ensure a smooth and organized recruitment workflow.",
@@ -14,9 +16,12 @@ export default function StategicLeaderShipHiring() {
       <div className="max-w-6xl mx-auto flex flex-col xl:flex-row items-center gap-10 md:gap-12">
         <div className="w-full xl:w-1/2">
           <div className="rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src="/images/rpa/Managed Hiring Solutions.png"
+            <Image
+              src="/images/rpa/Managed Hiring Solutions.webp"
               alt="Managed Hiring Solutions"
+              width={800}
+              height={600}
+              priority
               className="w-full h-[240px] sm:h-[260px] md:h-[320px] xl:h-auto object-cover object-center"
             />
           </div>
