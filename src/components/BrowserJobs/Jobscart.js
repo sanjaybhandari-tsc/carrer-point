@@ -1,5 +1,5 @@
 import React, { useState, useEffect,useRef } from "react";
-import { useRouter } from "next/router"; // Pages Router
+import { useRouter } from "next/router"; 
 const jobsData = [
   {
     id: 1,
@@ -315,18 +315,18 @@ export default function Jobscart() {
 
                 <div className="flex flex-wrap gap-3 mt-4 small-text !font-roboto">
                   <div className="flex items-center gap-1">
-                    <img src="/images/broserJobs/experienceIcon.svg" alt="" className="h-4 w-4 sm:h-5 sm:w-5" />
+                    <img src="/images/broserJobs/experienceIcon.svg" alt="icon" className="h-4 w-4 sm:h-5 sm:w-5" />
                     <span>{job.experience}</span>
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <img src="/images/broserJobs/locationIcon.svg" alt="" className="h-4 w-4 sm:h-5 sm:w-5" />
+                    <img src="/images/broserJobs/locationIcon.svg" alt="icon" className="h-4 w-4 sm:h-5 sm:w-5" />
                     <span>{job.location}</span>
                   </div>
 
                   {job.Building && job.Buildingimage && (
                     <div className="flex items-center gap-1">
-                      <img src={job.Buildingimage} alt="" className="h-4 w-4 sm:h-5 sm:w-5" />
+                      <img src={job.Buildingimage} alt="icon" className="h-4 w-4 sm:h-5 sm:w-5" />
                       <span>{job.Building}</span>
                     </div>
                   )}
@@ -384,17 +384,17 @@ export default function Jobscart() {
 
               <div className="flex flex-wrap gap-3 mt-2 content">
                 <div className="flex items-center gap-1">
-                  <img src="/images/broserJobs/experienceIcon.svg" className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <img src="/images/broserJobs/experienceIcon.svg" alt="icon" className="h-4 w-4 sm:h-5 sm:w-5" />
                   <span>{selectedJob.experience}</span>
                 </div>
 
                 <div className="flex items-center gap-1">
-                  <img src="/images/broserJobs/locationIcon.svg" className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <img src="/images/broserJobs/locationIcon.svg" alt="icon" className="h-4 w-4 sm:h-5 sm:w-5" />
                   <span>{selectedJob.location}</span>
                 </div>
 
                 <div className="flex items-center gap-1">
-                  <img src="/images/broserJobs/clockone.svg" className="h-3.5 w-3.5" />
+                  <img src="/images/broserJobs/clockone.svg" alt="icon" className="h-3.5 w-3.5" />
                   <span className="text-[10px] sm:text-[12px] font-roboto">
                     {selectedJob.time}
                   </span>
@@ -404,7 +404,7 @@ export default function Jobscart() {
 
             <button onClick={()=>submitHandelar(selectedJob)} className="bg-[#039BE6] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg shadow w-full sm:w-auto text-sm sm:text-base flex items-center justify-center gap-3 cursor-pointer font-montserrat">
               Apply now
-              <img src="/images/broserJobs/applyArrow.svg" className="w-[14px] h-[18px]" />
+              <img src="/images/broserJobs/applyArrow.svg" alt="icon" className="w-[14px] h-[18px]" />
             </button>
           </div>
 
@@ -449,7 +449,7 @@ export default function Jobscart() {
           <div className="p-4 sm:p-6">
             <button onClick={()=>submitHandelar(selectedJob)} className="w-full sm:w-auto bg-[#039BE6] text-white px-5.5 py-3   rounded-lg shadow flex items-center justify-center gap-4 content cursor-pointer">
               Apply now
-              <img src="/images/broserJobs/applyArrow.svg" className="w-[28px] h-[28px]" />
+              <img src="/images/broserJobs/applyArrow.svg" alt="icon" className="w-[28px] h-[28px]" />
             </button>
           </div>
         </div>

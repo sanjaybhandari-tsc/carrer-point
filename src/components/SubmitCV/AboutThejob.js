@@ -41,7 +41,7 @@ export default function AboutTheJob() {
 
                 <div className="flex items-center gap-3 flex-wrap">
                   <div className="flex items-center gap-1 whitespace-nowrap">
-                    <img src="/images/broserJobs/clockone.svg" className="h-6 w-6" />
+                    <img src="/images/broserJobs/clockone.svg" alt="icon-of-time" className="h-6 w-6" />
                     <span className="text-[14px] text-black font-roboto">
                       {job.time}
                     </span>
@@ -61,18 +61,18 @@ export default function AboutTheJob() {
 
               <div className="flex flex-wrap gap-6 mt-2 small-text !font-roboto">
                 <div className="flex items-center gap-1">
-                  <img src="/images/broserJobs/experienceIcon.svg" className="h-5 w-5" />
+                  <img src="/images/broserJobs/experienceIcon.svg" alt="icon" className="h-5 w-5" />
                   <span>{job.experience}</span>
                 </div>
 
                 <div className="flex items-center gap-1">
-                  <img src="/images/broserJobs/locationIcon.svg" className="h-5 w-5" />
+                  <img src="/images/broserJobs/locationIcon.svg"  alt="icon" className="h-5 w-5" />
                   <span>{job.location}</span>
                 </div>
 
                 {job.Building && (
                   <div className="flex items-center gap-1">
-                    <img src={job.Buildingimage} className="h-5 w-5" />
+                    <img src={job.Buildingimage} alt="icon" className="h-5 w-5" />
                     <span>{job.Building}</span>
                   </div>
                 )}
