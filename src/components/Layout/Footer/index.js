@@ -13,10 +13,12 @@ export default function Footer() {
             <Image
               src="/images/footer/footerLogo.svg"
               alt="My-Image"
+              title="Career Point Logo"
               width={184}
               height={90}
               className="object-contain object-center"
             />
+            <span className="sr-only">Logo of the company</span>
           </div>
 
           <div className="flex items-center justify-center text-center lg:text-left font-inter">
@@ -94,21 +96,25 @@ export default function Footer() {
         <div className="flex justify-center md:justify-start w-full">
           <div className="flex items-center justify-start gap-5 flex-wrap cursor-pointer">
             <div>
-            <a href="https://in.linkedin.com/" target="_blank">
+            <a href="https://in.linkedin.com/" target="_blank" rel="noopener noreferrer">
               <Image src="/images/footer/linkedin.svg" alt="LinkedIn icon" width={36} height={36}  className="object-cover object-center "/>
+              <span className="sr-only">LinkedIn</span>
             </a>
             </div>
             <div>
-            <a href="https://x.com/" target="_blank">
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
               <Image src="/images/footer/twitter.svg" alt="Twitter icon" width={30} height={30}  className="object-cover object-center "/>
+               <span className="sr-only">Twitter</span>
             </a></div>
 
-            <div><a href="https://www.instagram.com/" target="_blank">
+            <div><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
               <Image src="/images/footer/instagram.svg" alt="instagram icon" width={36} height={36}  className="object-cover object-center "/>
+               <span className="sr-only">Instagram</span>
             </a></div>
 
-            <div><a href="https://www.facebook.com/" target="_blank">
+            <div><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
               <Image src="/images/footer/facebook.svg" alt="Facebook icon" width={36} height={36}  className="object-cover object-center "/>
+               <span className="sr-only">Facebook</span>
             </a></div>
 
           </div>

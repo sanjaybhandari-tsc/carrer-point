@@ -91,6 +91,7 @@ export default function LifeatCPPS() {
               <Image
                 src={img.src}
                 alt={`gallery-${index}`}
+                title="Meet our team"
                 width={500}
                 height={500}
                 className="w-full h-auto object-contain transition-transform duration-300 "
