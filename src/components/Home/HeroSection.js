@@ -55,7 +55,7 @@ export default function HeroSection() {
               high-performing teams faster.
             </p>
 
-            <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px] border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors">
+            <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px]  border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors">
               <span className="relative z-10 flex items-center gap-2.5">
                 <p className="getintoch-button">Get in touch</p>
                 <Image
