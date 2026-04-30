@@ -39,7 +39,7 @@ export default function AboutHeroSection() {
               />
             </span>
 
-            <span className="hidden lg:block absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-5 h-5  bg-blue-500 rounded-full scale-0 group-hover:scale-[15] transition-transform duration-1500 origin-center"></span>
+            <span className="hidden lg:block absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-5 h-5  bg-[var(--color-primary-hover)] rounded-full scale-0 group-hover:scale-[15] transition-transform duration-1500 origin-center"></span>
           </button>
 
         </div>
