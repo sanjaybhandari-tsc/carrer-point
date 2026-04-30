@@ -272,7 +272,7 @@ export default function Jobscart() {
   }, []);
 
   return (
-    <div className="px-4 py-6  md:p-8 bg-white lg:px-25 min-h-screen">
+    <div className="px-4 pt-6  md:p-8 bg-white lg:px-25 min-h-screen">
       
       <div  ref={headingRef} className={`p-4 sm:p-6 text-center  transition-all duration-700 transform ${showHeading ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"}` }>
         <h2 className="heading-bold mb-5">
