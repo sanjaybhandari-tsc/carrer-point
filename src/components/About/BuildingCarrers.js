@@ -23,7 +23,7 @@ export default function BuildingCarrers() {
   return (
     <div
       ref={ref}
-      className="w-full px-6 sm:px-10 md:px-16 lg:px-20 xl:px-25 py-10 pt-6 pb-5  md:py-20 lg:py-24 xl:py-30 m-auto bg-white overflow-hidden"
+      className="w-full px-4  sm:px-10 md:px-16 lg:px-20 xl:px-25 py-6 pt-6 pb-5  md:py-20 lg:py-24 xl:py-30 m-auto bg-white overflow-hidden"
     >
        <h2 className=" lg:hidden text-center heading-bold leading-[150%] pb-5">
             Building Careers
