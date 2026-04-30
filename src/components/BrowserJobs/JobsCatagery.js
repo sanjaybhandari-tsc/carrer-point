@@ -38,7 +38,7 @@ export default function JobsCategory() {
   return (
     <section
       ref={sectionRef}
-      className="bg-white py-12 sm:py-16 px-4 sm:px-8 lg:px-20 overflow-hidden"
+      className="bg-white pt-1 pb-6  px-4 sm:px-8 lg:px-20 overflow-hidden"
     >
       <div
         className={`text-center max-w-7xl mx-auto   transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
