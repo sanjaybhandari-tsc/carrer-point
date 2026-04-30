@@ -36,27 +36,27 @@ export default function Awards() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#0B2239] py-10 md:py-16 px-4 overflow-hidden"
+      className="bg-[#0B2239] py-6 md:py-16 px-2 overflow-hidden"
     >
-      <div className="mx-auto p-6 md:p-10 rounded-lg lg:px-30 lg:py-12">
+      <div className="mx-auto p-6 md:p-6 rounded-lg lg:px-30 lg:py-12">
 
         <h2
-          className={`text-center heading-bold leading-[1.5] text-white mb-10 md:mb-20 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}`}
+          className={`text-center heading-bold leading-[1.5] text-white mb-6 md:mb-20 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}`}
         >
           Awards And Recognition
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-strich mb-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-strich mb-6">
           <div className={`flex gap-6 flex-col  transition-all duration-700 lg:max-h-60  xl:max-h-110 overflow-y-auto pr-2 no-scrollbar ${visible  ? "opacity-100 translate-x-0": "opacity-0 -translate-x-16" } order-2 lg:order-1`}
           >
             {awardsData.map((item, index) => (
               <div key={index} className="flex items-center gap-3">
-                <div className="flex items-start sm:gap-3 justify-center flex-col xl:w-auto lg:w-16 shrink-0 ">
+                <div className="flex items-start sm:gap-3 justify-center flex-col xl:w-auto lg:w-16  shrink-0 ">
                   <Image
                     src="/images/about/awardsIcon.svg"
                     alt="icon"
                     width={24}
                     height={24}
-                    className="mt-1 object-contain shrink-0"
+                    className="mt-1 object-contain  shrink-0"
                   />
                 </div>
                 <div className="flex items-start justify-center">
