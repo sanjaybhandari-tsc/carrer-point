@@ -28,7 +28,7 @@ export default function Ourmission() {
       className="w-full bg-white px-4 py-12 sm:px-6 md:px-16 lg:px-24 overflow-x-hidden"
     >
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-6">
-        <div  className={`bg-[#0B2239] text-white rounded-3xl shadow-3xl p-5 md:p-10 h-[240px] overflow-y-auto no-scrollbar sm:h-auto sm:overflow-visible transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
+        <div  className={`bg-[#0B2239] text-white rounded-3xl shadow-3xl p-5 md:p-10    transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
         >
           <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
           <Image
@@ -54,7 +54,7 @@ export default function Ourmission() {
           </p>
         </div>
         <div
-          className={`bg-[#e5e5e55e] text-black rounded-3xl shadow-md p-5 md:p-10 border border-gray-200 h-[240px] overflow-y-auto no-scrollbar sm:h-auto sm:overflow-visible  transition-all duration-700 delay-200 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
+          className={`bg-[#e5e5e55e] text-black rounded-3xl shadow-md p-5 md:p-10 border border-gray-200   transition-all duration-700 delay-200 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
         >
           <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
           <Image

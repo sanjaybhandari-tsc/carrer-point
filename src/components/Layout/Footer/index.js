@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="flex items-center justify-center flex-col px-4 md:px-10 lg:px-20 py-6 gap-2 md:gap-5">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12 w-full">
           
-          <div className="flex items-center w-full h-full justify-center lg:justify-start">
+          <div className="flex items-center w-[40%] sm:w-[30%]  md:w-full md:h-full justify-center lg:justify-start">
             <Image
               src="/images/footer/footerLogo.svg"
               alt="My-Image"
@@ -32,6 +32,32 @@ export default function Footer() {
 
         <div className="flex items-center w-full py-5">
           <hr className="border border-[#fafafaf7] w-full" />
+        </div>
+        <div className="flex md:hidden justify-center md:justify-start w-full ">
+          <div className="flex items-center justify-start gap-5 flex-wrap cursor-pointer">
+            <div className="w-7 h-7">
+            <a href="https://in.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/footer/linkedin.svg" alt="LinkedIn icon" width={36} height={36}  className="object-cover object-center "/>
+              <span className="sr-only">LinkedIn</span>
+            </a>
+            </div>
+            <div className="w-6 h-6">
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/footer/twitter.svg" alt="Twitter icon" width={30} height={30}  className="object-cover object-center "/>
+               <span className="sr-only">Twitter</span>
+            </a></div>
+
+            <div className="w-7 h-7" ><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/footer/instagram.svg" alt="instagram icon" width={36} height={36}  className="object-cover object-center "/>
+               <span className="sr-only">Instagram</span>
+            </a></div>
+
+            <div className="w-7 h-7"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/footer/facebook.svg" alt="Facebook icon" width={36} height={36}  className="object-cover object-center "/>
+               <span className="sr-only">Facebook</span>
+            </a></div>
+
+          </div>
         </div>
 
         <div className="text-white px-0 md:px-10 lg:px-20 py-5 w-full">
@@ -64,7 +90,7 @@ export default function Footer() {
                 </h3>
               </div>
 
-              <div className="flex flex-col ">
+              <div className="flex flex-col items-center md:items-start ">
                 <div className="flex items-center gap-3 content tracking-normal">
                   <div >
                   <Image
@@ -77,23 +103,23 @@ export default function Footer() {
                   <p className="font-inter content">+91 9225073111</p>
                 </div>
 
-                <div className="flex items-center gap-3  content  tracking-normal">
-                  <div>
+                <div className="flex items-center gap-3  tracking-normal">
+                  <div className="w-5 h-5">
                   <Image
                     src="/images/footer/email.svg"
                     alt="email"
                     width={20}
                     height={20}
-                    className="object-cover object-center "
+                    className="object-cover object-center  "
                   /></div>
-                  <a href="mailto:mailto:ramesh.w@cppsjobs.com hover:underline"><p className="font-inter text-base">ramesh.w@cppsjobs.com</p></a>
+                  <a href="mailto:mailto:ramesh.w@cppsjobs.com hover:underline"><p className="font-inter content">ramesh.w@cppsjobs.com</p></a>
                 </div>
               </div>
             </div>
 
           </div>
         </div>
-        <div className="flex justify-center md:justify-start w-full">
+        <div className="hidden md:flex justify-center md:justify-start w-full ">
           <div className="flex items-center justify-start gap-5 flex-wrap cursor-pointer">
             <div>
             <a href="https://in.linkedin.com/" target="_blank" rel="noopener noreferrer">
