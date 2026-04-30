@@ -29,7 +29,7 @@ export default function Ourjourney() {
 
     return (
         <div className='bg-[linear-gradient(180deg,rgba(250,250,250,0.25)_0%,rgba(3,155,230,0.15)_50%,rgba(250,250,250,0.25)_100%)] overflow-hidden'>
-            <div className="w-full px-4 sm:px-6 md:px-16 lg:px-30 lg:py-20 py-16">
+            <div className="w-full px-4 sm:px-6 md:px-16 lg:px-30 lg:py-20 pt-1 pb-6">
 
                 {/* TOP */}
                 <div className="journey-item opacity-0 -translate-y-10 transition-all duration-500 ease-out text-center mb-12">

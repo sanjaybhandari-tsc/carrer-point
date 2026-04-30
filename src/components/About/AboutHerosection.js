@@ -4,7 +4,7 @@ import styles from "@/styles/hiring/Hiring.module.css";
 
 export default function AboutHeroSection() {
   return (
-    <section className="relative w-full h-[100svh] md:min-h-screen flex items-center rounded-b-3xl overflow-hidden">
+    <section className="relative w-full h-[80svh] lg:min-h-screen flex items-center rounded-b-3xl overflow-hidden">
       <Image
         src="/images/about/aboutHero.webp"
         alt="About Us"

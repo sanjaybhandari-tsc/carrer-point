@@ -103,7 +103,7 @@ export default function LifeatCPPS() {
       </div>
 
       {!showAll && (
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-6">
           <button
             onClick={() => setShowAll(true)}
             className="bg-blue-500 text-white px-6 py-2 rounded-md small-text  transition cursor-pointer"
