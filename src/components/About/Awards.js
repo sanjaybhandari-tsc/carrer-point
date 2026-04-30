@@ -46,7 +46,7 @@ export default function Awards() {
           Awards And Recognition
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-strich mb-5">
-          <div className={`flex gap-6 flex-col order-1 transition-all duration-700 lg:max-h-60  xl:max-h-110 overflow-y-auto pr-2 no-scrollbar ${visible  ? "opacity-100 translate-x-0": "opacity-0 -translate-x-16" }`}
+          <div className={`flex gap-6 flex-col  transition-all duration-700 lg:max-h-60  xl:max-h-110 overflow-y-auto pr-2 no-scrollbar ${visible  ? "opacity-100 translate-x-0": "opacity-0 -translate-x-16" } order-2 lg:order-1`}
           >
             {awardsData.map((item, index) => (
               <div key={index} className="flex items-center gap-3">
@@ -69,7 +69,7 @@ export default function Awards() {
           </div>
 
           <div
-            className={`w-full relative rounded-lg overflow-hidden order-2 transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-16" }`}
+            className={`w-full relative rounded-lg overflow-hidden  transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-16" } order-1 lg:order-2`}
           >
             <Image
               src="/images/about/awardsImage.webp"
