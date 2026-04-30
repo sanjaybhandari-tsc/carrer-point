@@ -60,7 +60,7 @@ export default function Awards() {
                   />
                 </div>
                 <div className="flex items-start justify-center">
-                  <p className=" text-left content leading-[1.5] text-white">
+                  <p className=" text-left content leading-[1.5] text-white w-full">
                     {item}
                   </p>
                 </div>
