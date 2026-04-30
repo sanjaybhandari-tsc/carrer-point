@@ -25,7 +25,7 @@ export default function Ourmission() {
   return (
     <div
       ref={ref}
-      className="w-full bg-white px-6 py-6  md:py-12 md:px-16 lg:px-24 overflow-x-hidden"
+      className="w-full bg-white px-4 py-6  md:py-12 md:px-16 lg:px-24 overflow-x-hidden"
     >
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-6">
         <div  className={`bg-[#0B2239] text-white rounded-3xl shadow-3xl p-5 md:p-10    transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
