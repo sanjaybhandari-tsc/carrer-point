@@ -106,7 +106,7 @@ export default function LifeatCPPS() {
         <div className="flex justify-center mt-6">
           <button
             onClick={() => setShowAll(true)}
-            className="bg-blue-500 text-white px-6 py-2 rounded-md small-text  transition cursor-pointer"
+            className=" bg-[var(--color-primary-hover)] text-white px-6 py-2 rounded-md small-text  transition cursor-pointer"
           >
             View More
           </button>
