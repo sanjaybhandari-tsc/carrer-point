@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "../../styles/Home/Home.module.css";
+import Image from "next/image";
 
 function MessageFromManagingDirector() {
   const ref = useRef(null);
@@ -23,19 +24,21 @@ function MessageFromManagingDirector() {
     <div className="dark:text-white text-white bg-[#0B2239] w-full flex flex-col lg:flex-row pt-5 overflow-hidden">
       <div
         ref={ref}
-        className={`w-full flex lg:w-1/2 ${
+        className={`w-full flex  md:w-1/3 lg:w-1/2  ${
           isVisible ? styles.slideup : "opacity-0"
         }`}
       >
-        <img
-          className=" w-full px-2"
+        <Image
+          width={100}
+          height={100}
+          className="w-full object-fill "
           alt="managing director"
-          src="../../images/homepage/ManagingDirector.png"
+          src="/images/homepage/ManagingDirector.png"
         />
       </div>
       <div
         ref={ref}
-        className={`relative w-full lg:w-1/2 px-10 py-15 flex flex-col gap-10 mt-5 ${
+        className={`relative w-full  md:w-2/3 lg:w-1/2 px-10 py-15 flex flex-col gap-10 mt-5 ${
           isVisible ? styles.slideup : "opacity-0"
         }`}
       >
