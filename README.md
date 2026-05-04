@@ -92,7 +92,7 @@ npm start
 
 * [Nirmal Singh](https://github.com/nirmalsingh16)
 
-* [Harshit Bontai](https://github.com/HarshithSai-tsc)
+* [Harshit Bontha](https://github.com/HarshithSai-tsc)
 
 ---
 
