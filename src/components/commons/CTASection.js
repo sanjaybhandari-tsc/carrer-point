@@ -36,7 +36,7 @@ export default function Common() {
         <div className=" flex sm:flex-row gap-5 md:gap-8 w-full justify-center items-center">
           <Link
             href="/jobs/browse-jobs"
-            className="w-full bg-[var(--color-primary)] lg:bg-transparent sm:w-auto sm:min-w-[220px] lg:min-w-[250px] flex flex-col justify-center items-center rounded-2xl lg:border-2 lg:border-white py-3 md:py-8 gap-1 text-base md:text-lg lg:text-xl lg:hover:bg-[var(--color-primary)] hover:border-transparent transition cursor-pointer"
+            className="w-full bg-[var(--color-primary-hover)] lg:bg-transparent sm:w-auto sm:min-w-[220px] lg:min-w-[250px] flex flex-col justify-center items-center rounded-2xl lg:border-2 lg:border-white py-3 md:py-8 gap-1 text-base md:text-lg lg:text-xl lg:hover:bg-[var(--color-primary-hover)] hover:border-transparent transition cursor-pointer"
           >
             <img
               src="/images/homepage/chair.svg"
@@ -47,7 +47,7 @@ export default function Common() {
           </Link>
           <Link
             href="/hiring-solutions"
-            className="w-full bg-[var(--color-primary)] lg:bg-transparent sm:w-auto sm:min-w-[220px] lg:min-w-[250px] flex flex-col justify-center items-center rounded-2xl lg:border-2 lg:border-white py-3 md:py-8 gap-1 text-base md:text-lg lg:text-xl lg:hover:bg-[var(--color-primary)] hover:border-transparent transition cursor-pointer"
+            className="w-full bg-[var(--color-primary-hover)] lg:bg-transparent sm:w-auto sm:min-w-[220px] lg:min-w-[250px] flex flex-col justify-center items-center rounded-2xl lg:border-2 lg:border-white py-3 md:py-8 gap-1 text-base md:text-lg lg:text-xl lg:bg-[var(--color-primary-hover)] hover:border-transparent transition cursor-pointer"
           >
             <img
               src="/images/homepage/students.svg"

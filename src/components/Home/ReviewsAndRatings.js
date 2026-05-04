@@ -97,8 +97,8 @@ function ReviewsAndRatings() {
     },
   ];
   return (
-    <div className="flex  flex-col items-center w-full justify-center text-center lg:mb-10 mt-3 overflow-hidden">
-      <div className="flex flex-col items-center max-w-[80%] justify-center text-center gap-5">
+    <div className="py-6 px-4 flex  flex-col items-center w-full justify-center text-center lg:mb-10 md:mt-3 overflow-hidden">
+      <div className="flex flex-col items-center max-w-[80%] justify-center text-center gap-2">
         <h3 className="heading !font-bold ">
           Employee <span className=" text-[#0277BD]">Reviews</span> & Ratings
         </h3>
@@ -111,7 +111,7 @@ function ReviewsAndRatings() {
 
       <div
         ref={ref}
-        className={`w-full px-7 my-7 md:my-9 ${isVisible ? styles.slideleft : " opacity-0"}`}
+        className={`w-full md:my-9 ${isVisible ? styles.slideleft : " opacity-0"}`}
       >
         <div className=" flex flex-nowrap w-full overflow-x-auto overflow-y-hidden gap-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:pl-5">
           {Reviews.map((review, idx) => {

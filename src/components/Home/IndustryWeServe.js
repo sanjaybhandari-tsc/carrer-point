@@ -37,7 +37,7 @@ function IndustryWeServe() {
   ];
 
   return (
-    <div className="h-screen w-full flex flex-col items-center justify-center gap-2 md:gap-4 lg:gap-6 px-4 overflow-hidden py-4 md:py-9">
+    <div className="h-[70vh]  md:h-[95vh] w-full flex flex-col items-center justify-center gap-2 md:gap-4 lg:gap-6 overflow-hidden py-6 px-4  md:py-9">
       <div className="text-center flex flex-col gap-1 md:gap-2 lg:gap-3 max-w-[85%] shrink-0">
         <h3 className="heading !font-bold">
           <span className="text-[#0277BD]">Industries </span>
@@ -50,7 +50,7 @@ function IndustryWeServe() {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 grid-rows-3 gap-1.5 md:gap-2 lg:gap-4 w-full max-w-[95%] md:max-w-[90%] mx-auto flex-1 min-h-0">
+      <div className="grid grid-cols-3 grid-rows-3 gap-1.5 md:gap-2 lg:gap-4 w-full max-w-[95%] md:max-w-[90%] mx-auto flex-1">
         {industries.map(({ src, alt, label, className }) => (
           <div key={alt} className={`${className} overflow-hidden relative`}>
             <div className="relative group w-full h-full">
@@ -61,8 +61,8 @@ function IndustryWeServe() {
                 sizes="(max-width: 768px) 50vw, (max-width: 1024px) 40vw, 33vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
-                <p className="text-white heading md:!font-bold !font-semibold text-center px-2">
+              <div className="absolute inset-0 bg-gradient-to-b from-[#039BE685] to-[#1E40AF85] flex items-center justify-center lg:opacity-0 group-hover:opacity-100 transition duration-500">
+                <p className="text-white subheading-smaller  md:heading md:!font-bold !font-semibold text-center px-2">
                   {label}
                 </p>
               </div>

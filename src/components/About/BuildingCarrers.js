@@ -23,11 +23,14 @@ export default function BuildingCarrers() {
   return (
     <div
       ref={ref}
-      className="w-full px-6 sm:px-10 md:px-16 lg:px-20 xl:px-25 py-10 sm:py-14 md:py-20 lg:py-24 xl:py-30 m-auto bg-white overflow-hidden"
+      className="w-full px-4  sm:px-10 md:px-16 lg:px-20 xl:px-25 py-6 pt-6 pb-5  md:py-20 lg:py-24 xl:py-30 m-auto bg-white overflow-hidden"
     >
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-15">
+       <h2 className=" lg:hidden text-center heading-bold leading-[150%] pb-5">
+            Building Careers
+          </h2>
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-15">
         <div
-          className={`w-full lg:w-[40%] transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
+          className={`w-[70%] md:w-[40%] transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
         >
           <Image
             src="/images/about/buildingCarrers.svg"
@@ -41,7 +44,7 @@ export default function BuildingCarrers() {
           className={`w-full lg:w-[60%] flex flex-col gap-4 sm:gap-5 md:gap-6 text-[#333333] transition-all duration-700 delay-200 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
         >
 
-          <h2 className="heading-bold leading-[150%]">
+          <h2 className="hidden lg:block heading-bold leading-[150%]">
             Building Careers
           </h2>
 

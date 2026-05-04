@@ -27,7 +27,7 @@ function GetinTouch() {
   }, []);
 
   return (
-    <div className="flex mb-25 lg:mb-20 text-white overflow-hidden">
+    <div className="flex md:mb-18 lg:mb-20 text-white overflow-hidden">
       <div
         ref={leftRef}
         className={`hidden lg:block w-[35%] relative bg-cover flex flex-col items-center bg-center rounded-tr-4xl rounded-br-4xl overflow-hidden bg-[url('/images/homepage/getTouch.svg')] ${
@@ -187,7 +187,7 @@ function GetinTouch() {
           <div className="flex justify-center items-center mt-3">
             <button
               type="submit"
-              className="hover:cursor-pointer bg-[var(--color-primary)] text-white py-3 px-5 rounded-lg"
+              className="hover:cursor-pointer bg-[var(--color-primary-hover)] text-white py-3 px-5 rounded-lg"
             >
               Request hiring support
             </button>

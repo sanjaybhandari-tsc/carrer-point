@@ -65,7 +65,7 @@ function OurTeam() {
     },
   ];
   return (
-    <div className="pt-8 mb-8 flex flex-col items-center overflow-hidden">
+    <div className="py-6 px-4 flex flex-col items-center overflow-hidden">
       <div className="flex flex-col justify-center items-center text-center max-w-[80%] gap-4">
         <h2 className="heading !font-bold">
           Meet Our <span className="text-[#000080]">Team</span>
@@ -79,14 +79,14 @@ function OurTeam() {
 
       <div
         ref={ref}
-        className={` w-full px-7 mt-5 lg:my-15 ${visible ? styles.slideright : "opacity-0"} `}
+        className={` w-full mt-5 lg:my-15 ${visible ? styles.slideright : "opacity-0"} `}
       >
-        <div className=" flex flex-nowrap overflow-x-auto overflow-y-hidden pl-3 gap-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className=" flex flex-nowrap overflow-x-auto overflow-y-hidden pl-4 gap-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {teams.map((team, idx) => {
             return (
               <div
                 key={idx}
-                className="flex flex-col group items-center h-fit py-1 gap-3 lg:min-w-[350px] font-medium"
+                className="flex flex-col group items-center h-fit py-1 gap-3 w-full md:1/2 lg:w-1/3 font-medium"
               >
                 <div className="relative rounded-full w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] overflow-hidden">
                   <Image

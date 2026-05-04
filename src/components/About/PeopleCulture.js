@@ -22,15 +22,18 @@ export default function PeopleCulture() {
         }, []);
   
   return (
-    <div ref={ref} className="w-full px-6 md:px-10 lg:px-12 py-12 md:py-18 bg-white overflow-x-hidden">
-      
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-        <div className={`flex  justify-between flex-col gap-3 transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}>
-        
-          <h2 className=" text-[#0277BD]  heading-bold tracking-normal mb-5 leading-[1.5] ">
+    <div ref={ref} className="w-full py-6  md:px-10 lg:px-12 px-4 md:py-18 bg-white overflow-x-hidden">
+        <h2 className=" text-[#0277BD] text-center lg:hidden  heading-bold tracking-normal md:mb-5 mb-3 leading-[1.5] ">
             People & Culture
           </h2>
-          <div className="space-y-6   content  leading-[1.5] tracking-normal flex flex-col justify-between gap-6">
+      
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-10 gap-5 items-center">
+        <div className={`flex  justify-between flex-col gap-3 transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"} order-2 lg:order-1`}>
+        
+          <h2 className=" text-[#0277BD]  hidden lg:block heading-bold tracking-normal mb-5 leading-[1.5] ">
+            People & Culture
+          </h2>
+          <div className="space-y-2 lg:space-y-6   content  leading-[1.5] tracking-normal flex flex-col justify-between gap-1 md:gap-4">
             
             <p >
               At Career Point Placement Services, our culture is built on teamwork,
@@ -54,13 +57,13 @@ export default function PeopleCulture() {
           </div>
         </div>
 
-        <div className={`w-full transition-all duration-700 delay-200 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}>
+        <div className={`w-full transition-all duration-700 delay-200 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"} order-1 lg:order-2`}>
           <Image
             src="/images/about/peopleculture.webp" 
             alt="People and Culture"
             width={700}
             height={450}
-            className="object-cover w-full h-full"
+            className="object-cover lg:w-full lg:h-full  md:h-[50%]"
           />
         </div>
 
