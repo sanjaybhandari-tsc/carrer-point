@@ -55,7 +55,7 @@ export default function Ourjourney() {
                             <h3 className="hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 The Foundation
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 lg:static ">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 Career Point Placement Services was established with a 150 sq. ft office and a team of 3 recruiters, serving its first insurance client. In the very first year, the company generated{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     ₹2.5 lakh
@@ -77,7 +77,7 @@ export default function Ourjourney() {
                             <h3 className="hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 Momentum Begins
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 lg:static ">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 The company expanded to a 350 sq. ft office with a growing team of 10 recruiters. Client partnerships increased to 7 insurance clients, and annual revenue{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     reached ₹11 lakh
@@ -100,7 +100,7 @@ export default function Ourjourney() {
                             <h3 className="hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 Scaling Forward
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 lg:static ">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 Operations expanded to a 750 sq. ft office with 20 recruiters supporting hiring needs. Career Point began serving 15 clients across insurance, banking, and pharmaceutical sectors, reaching{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     ₹25 lakh
