@@ -55,7 +55,7 @@ export default function HeroSection() {
               high-performing teams faster.
             </p>
 
-            <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px]  border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors">
+            <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px]  border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors cursor-pointer">
               <span className="relative z-10 flex items-center gap-2.5">
                 <p className="getintoch-button">Get in touch</p>
                 <Image
@@ -66,7 +66,7 @@ export default function HeroSection() {
                   className="w-4 h-4 sm:w-5 sm:h-5"
                 />
               </span>
-              <span className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full scale-0 group-hover:scale-[15] transition-transform duration-1000" />
+              <span className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 bg-[var(--color-primary-hover)] rounded-full scale-0 group-hover:scale-[15] transition-transform duration-1000" />
             </button>
           </div>
         </div>
