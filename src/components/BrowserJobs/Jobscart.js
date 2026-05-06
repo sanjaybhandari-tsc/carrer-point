@@ -272,7 +272,7 @@ export default function Jobscart() {
   }, []);
 
   return (
-    <div className="p-4 sm:p-6 md:p-8 bg-white lg:px-25 min-h-screen">
+    <div className="px-4 pt-6  md:p-8 bg-white lg:px-25 min-h-screen">
       
       <div  ref={headingRef} className={`p-4 sm:p-6 text-center  transition-all duration-700 transform ${showHeading ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"}` }>
         <h2 className="heading-bold mb-5">
@@ -332,9 +332,9 @@ export default function Jobscart() {
                   )}
                 </div>
 
-                <div className="mt-4 content !font-roboto">
+                <div className="mt-4 content">
                   {job.skills.map((s, i) => (
-                    <span key={i} className=" text-lg me-2 "><span className="me-1">•</span>{s} </span>
+                    <span key={i} className="  me-2 "><span className="me-1">•</span>{s} </span>
                   ))}
                 </div>
               </div>

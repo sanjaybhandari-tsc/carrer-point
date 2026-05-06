@@ -41,18 +41,18 @@ function MessageFromManagingDirector() {
       {/* Content div */}
       <div
         ref={ref}
-        className={`relative w-full md:w-1/2 px-10 py-5 md:pt-5 flex flex-col gap-3 md:gap-5 lg:gap-10 mt-5 md:mt-0 ${
+        className={` w-full md:w-1/2 px-10 py-5 md:pt-5 flex flex-col justify-end gap-3 md:gap-5 lg:gap-10 mt-5 md:mt-0 ${
           isVisible ? styles.slideup : "opacity-0"
         }`}
       >
-        <img
-          alt="double inverted commas for text"
-          className={`absolute md:w-22 md:h-20 w-12 h-12 left-1  top-9 md:top-4 md:-left-16   ${
-            isVisible ? styles.slideDown : "opacity-0"
-          }`}
-          src="../../images/homepage/DoubleEnvertedComma.svg"
-        />
-        <div>
+        <div className="relative">
+          <img
+            alt="double inverted commas for text"
+            className={`absolute md:w-22 md:h-20 w-12 h-12 -left-10 -top-4  md:-top-5 md:-left-20   ${
+              isVisible ? styles.slideDown : "opacity-0"
+            }`}
+            src="../../images/homepage/DoubleEnvertedComma.svg"
+          />
           <h3 className="heading font-bold lg:mb-3">
             A Message from Our Managing Director
           </h3>

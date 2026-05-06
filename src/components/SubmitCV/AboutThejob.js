@@ -33,16 +33,16 @@ export default function AboutTheJob() {
 
             <div className="flex flex-col gap-6">
 
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+              <div className="flex flex-row md:flex-row md:items-center justify-between gap-3">
 
-                <h2 className="content-semibold text-[#333333]">
+                <h2 className="content-semibold text-[#333333] flex items-center md:block">
                   {job.title}
                 </h2>
 
-                <div className="flex items-center gap-3 flex-wrap">
-                  <div className="flex items-center gap-1 whitespace-nowrap">
-                    <img src="/images/broserJobs/clockone.svg" alt="icon-of-time" className="h-6 w-6" />
-                    <span className="text-[14px] text-black font-roboto">
+                <div className="flex items-center  gap-3 ">
+                  <div className="hidden md:flex items-center gap-1 whitespace-nowrap">
+                    <img src="/images/broserJobs/clockone.svg" alt="icon-of-time" className="md:h-6 md:w-6 h-3 w-3" />
+                    <span className="md:text-[14px]  text-black font-roboto">
                       {job.time}
                     </span>
                   </div>
@@ -51,15 +51,21 @@ export default function AboutTheJob() {
                     <button
                       onClick={() => setShowDetails(true)}
                       aria-expanded={showDetails}
-                      className="bg-[#039BE6] text-white px-5 py-3 rounded-lg text-sm  shadow-[0_4px_8px_#00000029] font-montserrat cursor-pointer"
+                      className="bg-[#039BE6] text-white px-2 py-2 md:px-5 md:py-3 rounded-lg content-semibold  shadow-[0_4px_8px_#00000029] font-montserrat cursor-pointer"
                     >
                       View Details
                     </button>
                   )}
                 </div>
               </div>
+               <div className=" flex md:hidden items-center gap-1 whitespace-nowrap">
+                    <img src="/images/broserJobs/clockone.svg" alt="icon-of-time" className="md:h-6 md:w-6 h-3 w-3" />
+                    <span className="md:text-[14px] text-[11px]  text-black font-roboto">
+                      {job.time}
+                    </span>
+                </div>
 
-              <div className="flex flex-wrap gap-6 mt-2 small-text !font-roboto">
+              <div className="flex flex-wrap gap-3  md:gap-6 mt-2 small-text !font-roboto">
                 <div className="flex items-center gap-1">
                   <img src="/images/broserJobs/experienceIcon.svg" alt="icon" className="h-5 w-5" />
                   <span>{job.experience}</span>
@@ -88,6 +94,8 @@ export default function AboutTheJob() {
               ))}
             </div>
           </div>
+
+
         </div>
       </div>
 

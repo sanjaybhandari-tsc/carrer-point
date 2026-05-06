@@ -50,7 +50,7 @@ function IndustryWeServe() {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 grid-rows-3 gap-1.5 md:gap-2 lg:gap-4 w-full max-w-[95%] md:max-w-[90%] mx-auto flex-1">
+      <div className="grid grid-cols-3 grid-rows-3 gap-1.5 md:gap-2 lg:gap-3 w-full max-w-[95%] md:max-w-[90%] mx-auto flex-1">
         {industries.map(({ src, alt, label, className }) => (
           <div key={alt} className={`${className} overflow-hidden relative`}>
             <div className="relative group w-full h-full">
