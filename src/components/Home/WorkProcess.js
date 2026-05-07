@@ -41,7 +41,7 @@ function WorkProcess() {
     },
   ];
   return (
-    <div className="w-full flex flex-col items-center gap-3 md:gap-4 lg:gap-6">
+    <div className="w-full flex flex-col items-center gap-3 md:gap-4 lg:gap-6 py-6 px-4">
       <div className="text-center flex flex-col gap-3 lg:gap-5 max-w-[70%]">
         <h3 className="heading !font-bold">
           <span>Our Work </span>{" "}
@@ -54,14 +54,14 @@ function WorkProcess() {
         </p>
       </div>
 
-      <div className=" min-h-[200vh] pb-10 lg:px-10">
+      <div className=" min-h-[200vh] md:pb-10 lg:px-10">
         {works.map((work, idx) => {
           return (
             <>
               {idx % 2 == 0 ? (
                 <div
                   key={idx}
-                  className="sticky top-0 z-10 h-[90vh] lg:h-[95vh] mx-5 md:mx-13 lg:mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
+                  className="sticky top-0 z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
                 >
                   <div className="relative w-full h-1/2 lg:h-full lg:w-1/2  ">
                     <Image
@@ -82,7 +82,7 @@ function WorkProcess() {
               ) : (
                 <div
                   key={idx}
-                  className="sticky top-0 z-10 h-[90vh] lg:h-[95vh] mx-5 md:mx-13 lg:mx-15  rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
+                  className="sticky top-0 z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:mx-15  rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
                 >
                   <div className="relative block lg:hidden w-full h-1/2 lg:h-full lg:w-1/2 ">
                     <Image

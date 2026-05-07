@@ -21,47 +21,48 @@ function MessageFromManagingDirector() {
     return () => observer.disconnect();
   }, []);
   return (
-    <div className="dark:text-white text-white bg-[#0B2239] w-full flex flex-col lg:flex-row pt-5 overflow-hidden">
+    <div className="dark:text-white  pt-6 text-white bg-[#0B2239] w-full flex flex-col md:flex-row md:pt-2 overflow-hidden">
+      {/* Image div */}
       <div
         ref={ref}
-        className={`w-full flex  md:w-1/3 lg:w-1/2  ${
+        className={`w-full flex items-end md:w-1/2  ${
           isVisible ? styles.slideup : "opacity-0"
         }`}
       >
         <Image
           width={100}
           height={100}
-          className="w-full object-fill "
+          className="w-full md:w-[100%] md:h-[90%] object-fill"
           alt="managing director"
           src="/images/homepage/ManagingDirector.png"
         />
       </div>
+
+      {/* Content div */}
       <div
         ref={ref}
-        className={`relative w-full  md:w-2/3 lg:w-1/2 px-10 py-15 flex flex-col gap-10 mt-5 ${
+        className={` w-full md:w-1/2 px-10 py-5 md:pt-5 flex flex-col justify-end gap-3 md:gap-5 lg:gap-10 mt-5 md:mt-0 ${
           isVisible ? styles.slideup : "opacity-0"
         }`}
       >
-        <img
-          ref={ref}
-          alt="double inverted commas for text"
-          className={`absolute lg:w-30 lg:h-30 w-12 h-12 -left-1 top-5  lg:-left-17 lg:-top-4 ${isVisible ? styles.slideDown : "opacity-0"}`}
-          src="../../images/homepage/DoubleEnvertedComma.svg"
-        />
-        <div>
-          <h3 className="heading font-bold  mb-3 ">
-            {" "}
+        <div className="relative">
+          <img
+            alt="double inverted commas for text"
+            className={`absolute md:w-22 md:h-20 w-12 h-12 -left-10 -top-4  md:-top-5 md:-left-20   ${
+              isVisible ? styles.slideDown : "opacity-0"
+            }`}
+            src="../../images/homepage/DoubleEnvertedComma.svg"
+          />
+          <h3 className="heading font-bold lg:mb-3">
             A Message from Our Managing Director
           </h3>
           <hr
-            ref={ref}
-            className={`border-1 mt-6 ${isVisible ? styles.slideright : "opacity-0"}`}
+            className={`border-1 md:mt-4 lg:mt-6 ${isVisible ? styles.slideright : "opacity-0"}`}
           />
         </div>
 
         <div>
           <p className="subheading text-justify font-[500] leading-relaxed">
-            {" "}
             At Career Point Placement Services, we believe the right talent
             drives the success of every organization. For over 17 years, we have
             helped companies across India connect with skilled professionals who
@@ -72,8 +73,8 @@ function MessageFromManagingDirector() {
           </p>
         </div>
 
-        <div className="content py-5">
-          <p>— Ramesh Waychal </p>
+        <div className="content md:pt-3 lg:pt-5">
+          <p>— Ramesh Waychal</p>
           <p>Managing Director</p>
         </div>
       </div>

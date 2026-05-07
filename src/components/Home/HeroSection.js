@@ -24,7 +24,7 @@ export default function HeroSection() {
           className={`absolute inset-0 w-[120%] h-[120%] -left-[10%] -top-[50%] sm:-top-[38%] md:-top-[45%] lg:w-[120%] lg:h-[130%] lg:-top-[60%] lg:-left-[10%] rounded-[50%] bg-gradient-to-t from-[#080F249C] to-[#039BE69C] ${styles.slideDown} flex flex-col justify-end items-end`}
         >
           <div
-            className={`absolute inset-0  min-w-[95%] md:min-w-[70%] lg:min-w-[60%] flex flex-col gap-1.5 sm:gap-2.5 md:gap-3 lg:gap-3 items-center justify-end text-center px-4 pb-10 sm:pb-16 md:pb-20 lg:pb-25 pt-4 ${styles.slideup}`}
+            className={`absolute inset-0  min-w-[95%] md:min-w-[70%] lg:min-w-[60%] flex flex-col gap-1.5 sm:gap-2.5 md:gap-3 lg:gap-9 items-center justify-end text-center px-4 pb-10 sm:pb-16 md:pb-20 lg:pb-25 pt-4 ${styles.slideup}`}
           >
             <div className="px-3 py-1 lg:px-4 border border-white rounded-full backdrop-blur-md text-sm flex justify-center items-center gap-2 lg:gap-4 bg-transparent">
               <Image
@@ -34,30 +34,32 @@ export default function HeroSection() {
                 height={24}
                 className="w-5 h-5 lg:w-6 lg:h-6"
               />
-              <div className="small-text">
+              <div className="text-[10px] md:text-[12px]">
                 <p className=" text-start tracking-wider">
                   <span className=" text-white">4.8 </span>
                   <span className="text-amber-300">★★★★★</span>
                 </p>
-                <p className="text-[#FFFFFF] ">based on Glassdoor reviews</p>
+                <p className=" text-[#FFFFFF] ">based on Glassdoor reviews</p>
               </div>
             </div>
 
-            {/* <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-8xl font-bold font-[Montserrat,sans-serif] text-white leading-none">
+            <div className="max-w-[90%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%] flex flex-col justify-center items-center gap-2.5">
+              {/* <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-8xl font-bold font-[Montserrat,sans-serif] text-white leading-none">
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1> */}
-            <h1 className="hero-heading-extra-home text-white leading-none">
-              Hire Exceptional <span className="lg:block">Talent</span>
-            </h1>
+              <h1 className="hero-heading-extra-home text-white ">
+                Hire Exceptional <span className="lg:block">Talent</span>
+              </h1>
 
-            <p className="subheading leading-relaxed  font-roboto max-w-[90%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%]  text-white">
-              Connect with skilled professionals across industries and build
-              high-performing teams faster.
-            </p>
+              <p className=" content  font-roboto  text-white">
+                Connect with skilled professionals across industries and build
+                high-performing teams faster.
+              </p>
+            </div>
 
             <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px]  border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors cursor-pointer">
               <span className="relative z-10 flex items-center gap-2.5">
-                <p className="getintoch-button">Get in touch</p>
+                <p className="small-text">Get in touch</p>
                 <Image
                   src="/images/homepage/HeroSendIcon.png"
                   alt="Send"
@@ -72,11 +74,11 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center relative -top-8 sm:-top-12 md:-top-16 lg:-top-25">
+      <div className="w-full flex justify-center relative -top-8 sm:-top-12 md:-top-16 lg:-top-25 ">
         <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
           {bannerItems.map(({ value, label }) => (
             <div key={label} className="text-center ">
-              <h2 className="hero-bottom   !font-semibold md:!font-[700] lg:!font-[900] font-montserrat text-[#0277BD] lg:mb-2.5 ">
+              <h2 className="hero-bottom  !font-[700] md:!font-[800] lg:!font-[900] font-montserrat text-[#0277BD] lg:mb-2.5 ">
                 {value}
               </h2>
               <p className="content font-mediumc md:font-bold lg:font-extrabold">
