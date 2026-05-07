@@ -36,7 +36,7 @@ function HeaderPart() {
         height={70}
       />
 
-      <h1 className="heading sm:!font-semibold md:!font-bold lg:!font-extrabold text-white">
+      <h1 className="heading  sm:!font-semibold md:!font-bold lg:!font-extrabold text-white">
         Contract Staffing
       </h1>
     </div>

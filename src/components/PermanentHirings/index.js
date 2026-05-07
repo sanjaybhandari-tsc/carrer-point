@@ -7,6 +7,7 @@ import HeaderPart from "./HeaderPart";
 import LongtermTalentHiring from "./LongtermTalentHiring";
 import WeConnect from "./WeConnect";
 import WhychooseUs from "./WhychooseUs";
+import HeroText from "../commons/HeroText";
 
 export default function PermanentHirings() {
   const workData = [
@@ -66,7 +67,8 @@ export default function PermanentHirings() {
   ];
   return (
     <>
-      <HeaderPart />
+      <HeroText headingText={"Permanent Hiring"} />
+
       <ServicesSecondCompo hiringData={hiringData} />
       {/* <LongtermTalentHiring /> */}
       {/* <WhychooseUs /> */}
