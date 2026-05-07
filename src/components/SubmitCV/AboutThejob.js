@@ -100,22 +100,22 @@ export default function AboutTheJob() {
       </div>
 
       {showDetails && (
-        <div className="max-w-[1312px] mx-auto px-[15px] md:px-6 pb-10  ">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-6 pb-10  ">
 
-          <div className="bg-white border border-[#E9EAEB] rounded-xl p-6 shadow-[0_4px_8px_#00000014] relative">
+          <div className="bg-white border border-[#E9EAEB] rounded-xl  shadow-[0_4px_8px_#00000014] relative">
+            <div className="m-2">
             <button
               onClick={() => setShowDetails(false)}
-              className="absolute top-4 right-4 text-[#B3B3B3]  hover:text-black cursor-pointer "
+              className="absolute top-4 right-4 text-[#B3B3B3] md:p-6 hover:text-black cursor-pointer "
             >
-              <img src="/images/SubmitCv/cross.svg " alt=" icon" className="h-[32px] w-[32px]" />
+              <img src="/images/SubmitCv/cross.svg " alt=" icon" className="h-4 w-4 md:h-8 md:w-8" />
             </button>
-            <div className="py-[52px] px-[20px] sm:px-[30px] md:px-[38px] xl:w-[1075px]">
-
-              <div className="mb-6">
+            </div>
+            <div className=" py-6 md:py-[52px] px-4 md:px-[30px] xl:w-[1075px]">
+              <div className=" md:mb-6">
                 <h3 className="content-semibold leading-[100%] text-black mb-3 !font-montserrat ">
                   Overview
                 </h3>
-
                 <p className=" small-text leading-[165%] text-black lg:ps-2 !font-inter">
                   {job.description}
                 </p>
@@ -129,7 +129,7 @@ export default function AboutTheJob() {
                   {job.responsibilities.map((item, index) => (
                     <div key={index} className="flex items-start gap-2">
                       <p className=" inline-block md:w-1.5 md:h-1.5 w-0.5 h-0.5 bg-black rounded-full mt-2 flex-shrink-0"></p>
-                      <p className=" small-text leading-[165%] text-black ">
+                      <p className=" small-text text-black ">
                         {item}
                       </p>
                     </div>
@@ -156,7 +156,7 @@ export default function AboutTheJob() {
                   Skills
                 </h3>
 
-                <div className="flex flex-wrap gap-3  lg:ps-2 lg:pb-30">
+                <div className="flex flex-wrap gap-3  lg:ps-2 lg:pb-10">
                   {job.skills.map((skill, index) => (
                     <span
                       key={index}

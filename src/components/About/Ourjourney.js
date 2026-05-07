@@ -41,10 +41,10 @@ export default function Ourjourney() {
                     </p>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-1 md:space-y-2">
 
                     {/* 2009 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 pe-10 ">
+                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6  ">
                         <div className="journey-item  md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2009</p>
                              <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -55,7 +55,7 @@ export default function Ourjourney() {
                             <h3 className="hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 The Foundation
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal ">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 Career Point Placement Services was established with a 150 sq. ft office and a team of 3 recruiters, serving its first insurance client. In the very first year, the company generated{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     ₹2.5 lakh
@@ -66,7 +66,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2011 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 pe-10">
+                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2011</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -77,7 +77,7 @@ export default function Ourjourney() {
                             <h3 className="hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 Momentum Begins
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 The company expanded to a 350 sq. ft office with a growing team of 10 recruiters. Client partnerships increased to 7 insurance clients, and annual revenue{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     reached ₹11 lakh
@@ -89,7 +89,7 @@ export default function Ourjourney() {
 
 
                     {/* 2013 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 pe-10">
+                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2013</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -100,7 +100,7 @@ export default function Ourjourney() {
                             <h3 className="hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 Scaling Forward
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 Operations expanded to a 750 sq. ft office with 20 recruiters supporting hiring needs. Career Point began serving 15 clients across insurance, banking, and pharmaceutical sectors, reaching{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     ₹25 lakh
@@ -111,7 +111,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2015 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 pe-10">
+                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2015</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -122,7 +122,7 @@ export default function Ourjourney() {
                             <h3 className="hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 Expanding Horizons
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 The company{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     launched Excel Financial Solution
@@ -133,7 +133,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2017 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 pe-10">
+                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4 ">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2017</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -144,14 +144,14 @@ export default function Ourjourney() {
                             <h3 className="hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 Empowering Careers
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 Career Point formed Excel Career Management, focused on professional career consulting and training for candidates and job seekers, further strengthening its ecosystem around recruitment and career development.
                             </p>
                         </div>
                     </div>
 
                     {/* 2019 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 pe-10">
+                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2019</p>
                              <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -162,7 +162,7 @@ export default function Ourjourney() {
                             <h3 className=" hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 Strengthening Operations
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 The company moved into its own 1500 sq. ft office and expanded its workforce to 30 recruiters, 5 freelancers, and 7 loan collection executives. With{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     40 clients
@@ -173,7 +173,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2021 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 pe-10">
+                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2021</p>
                              <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -184,7 +184,7 @@ export default function Ourjourney() {
                             <h3 className="hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 Strategic Expansion
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 Career Point expanded its services by launching{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     Laxmi Financial Solution
@@ -195,7 +195,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2023 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 pe-10">
+                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2023</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -206,7 +206,7 @@ export default function Ourjourney() {
                             <h3 className="hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 Growth Milestone
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 With a strong workforce of 30 recruiters, 10 freelancers, and 15 loan collection executives, the company continued serving 40+ industry clients and achieved a major milestone by{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     reaching ₹1 crore
@@ -217,7 +217,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2024 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 pe-10">
+                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2024</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -228,7 +228,7 @@ export default function Ourjourney() {
                             <h3 className="hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 Quality Recognition
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 Career Point received the{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     ISO 9001:2015 certification
@@ -239,18 +239,18 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2025 */}
-                    <div className="flex flex-col md:flex-row items-start gap-4 lg:gap-6 pe-10 ">
+                    <div className="flex flex-col lg:flex-row items-start gap-4 md:gap-6">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2025</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
                                Raising Standards
                             </h3>
                         </div>
-                        <div className="journey-item text-left  w-full lg:w-[80%] flex flex-col opacity-0 translate-x-10 transition-all duration-500 ease-out">
+                        <div className="journey-item w-full md:w-[80%] flex flex-col opacity-0 translate-x-10 transition-all duration-500 ease-out">
                             <h3 className=" hidden lg:block heading-bold leading-[150%] tracking-normal">
                                 Raising Standards
                             </h3>
-                            <p className="text-[#000000] content leading-[150%] tracking-normal">
+                            <p className="text-[#000000] content leading-[150%] tracking-normal relative right-9 md:static ">
                                 The company further strengthened its credibility by achieving{" "}
                                 <span className='subheading-semibold leading-[150%] tracking-normal text-[#0277BD]'>
                                     ISO 1002:2018 certification

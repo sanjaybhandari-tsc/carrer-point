@@ -57,7 +57,7 @@ export default function HeroSection() {
               </p>
             </div>
 
-            <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg  bg-[var(--color-primary-hover)]  lg:bg-transparent lg:border-[1.5px]  border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors">
+            <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px]  border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors cursor-pointer">
               <span className="relative z-10 flex items-center gap-2.5">
                 <p className="small-text">Get in touch</p>
                 <Image
