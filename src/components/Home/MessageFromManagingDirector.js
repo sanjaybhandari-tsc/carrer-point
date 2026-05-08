@@ -21,7 +21,7 @@ function MessageFromManagingDirector() {
     return () => observer.disconnect();
   }, []);
   return (
-    <div className="dark:text-white  pt-6 text-white bg-[#0B2239] w-full flex flex-col md:flex-row md:pt-2 overflow-hidden">
+    <div className="dark:text-white  pt-6 text-white bg-[#0B2239] md:h-[80%] w-full flex flex-col min-[500px]:flex-row sm:flex-row md:pt-2 overflow-hidden">
       {/* Image div */}
       <div
         ref={ref}
@@ -32,7 +32,7 @@ function MessageFromManagingDirector() {
         <Image
           width={100}
           height={100}
-          className="w-full md:w-[100%] md:h-[90%] object-fill"
+          className="w-full md:w-[100%]  object-fit"
           alt="managing director"
           src="/images/homepage/ManagingDirector.png"
         />
@@ -41,7 +41,7 @@ function MessageFromManagingDirector() {
       {/* Content div */}
       <div
         ref={ref}
-        className={` w-full md:w-1/2 px-10 py-5 md:pt-5 flex flex-col justify-end gap-3 md:gap-5 lg:gap-10 mt-5 md:mt-0 ${
+        className={` w-full md:w-1/2 px-10 py-5 md:pt-5 flex flex-col justify-center gap-3 md:gap-5 lg:gap-10 mt-5 md:mt-0 ${
           isVisible ? styles.slideup : "opacity-0"
         }`}
       >
@@ -62,7 +62,7 @@ function MessageFromManagingDirector() {
         </div>
 
         <div>
-          <p className="subheading text-justify font-[500] leading-relaxed">
+          <p className="subheading min-[500px]:line-clamp-4 sm:line-clamp-6 md:line-clamp-8   lg:line-clamp-none text-justify font-[500] leading-relaxed">
             At Career Point Placement Services, we believe the right talent
             drives the success of every organization. For over 17 years, we have
             helped companies across India connect with skilled professionals who

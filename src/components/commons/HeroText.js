@@ -29,7 +29,7 @@ function HeaderPart({ headingText }) {
     //     {headingText}
     //   </h1>
     // </div>
-    <div className="relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-12 lg:py-22 rounded-b-2xl overflow-hidden">
+    <div className="relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-10 md:py-14 lg:py-16 rounded-b-2xl overflow-hidden">
       <Image
         className="absolute -top-13 lg:-top-10 -left-5"
         alt="header permanent hiring decoration"
@@ -62,7 +62,7 @@ function HeaderPart({ headingText }) {
         height={70}
       />
 
-      <h1 className="heading sm:!font-semibold md:!font-bold lg:!font-extrabold text-white">
+      <h1 className="heading-extrabold sm:!font-semibold md:!font-bold lg:!font-extrabold text-white">
         {headingText}
       </h1>
     </div>

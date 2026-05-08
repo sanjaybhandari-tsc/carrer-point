@@ -9,9 +9,9 @@ import HeaderPart from "./HeaderPart";
 import ProjectBasedTalentHiring from "./ProjectBasedTalentHiring";
 import WeHelp from "./WeHelp";
 import WhyChooseUs from "./WhyChooseUs";
+import HeroText from "../commons/HeroText";
 
 export default function ContractHiring() {
-  
   const workData = [
     {
       srNo: "01",
@@ -68,7 +68,7 @@ export default function ContractHiring() {
   ];
   return (
     <>
-      <HeaderPart />
+      <HeroText headingText={"Contract Staffing"} />
       <ServicesSecondCompo hiringData={hiringData} />
       {/* <ProjectBasedTalentHiring /> */}
       {/* <WhyChooseUs /> */}
