@@ -22,7 +22,7 @@ export default function PeopleCulture() {
         }, []);
   
   return (
-    <div ref={ref} className="w-full py-6  md:px-10 lg:px-12 px-4 md:py-18 bg-white overflow-x-hidden">
+    <div ref={ref} className="w-full py-6  md:px-10 lg:px-12 px-4 md:py-25 bg-white overflow-x-hidden">
         <h2 className=" text-[#0277BD] text-center lg:hidden  heading-bold tracking-normal md:mb-5 mb-3 leading-[1.5] ">
             People & Culture
           </h2>
