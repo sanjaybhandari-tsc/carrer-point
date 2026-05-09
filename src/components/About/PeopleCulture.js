@@ -30,10 +30,10 @@ export default function PeopleCulture() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-10 gap-5 items-center">
         <div className={`flex  justify-between flex-col gap-3 transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"} order-2 lg:order-1`}>
         
-          <h2 className=" text-[#0277BD]  hidden lg:block heading-bold tracking-normal mb-5 leading-[1.5] ">
+          <h2 className=" text-[#0277BD]  hidden lg:block heading-bold tracking-normal mb-8 leading-[1.5] ">
             People & Culture
           </h2>
-          <div className="space-y-2 lg:space-y-6   content  leading-[1.5] tracking-normal flex flex-col justify-between gap-1 md:gap-4">
+          <div className="space-y-2   content  leading-[1.5] tracking-normal flex flex-col justify-between gap-1 md:gap-2">
             
             <p >
               At Career Point Placement Services, our culture is built on teamwork,

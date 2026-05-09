@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import Select from "react-select";
 
 export default function SubmitcvForm() {
   const [fileKey, setFileKey] = useState(Date.now());
@@ -34,6 +35,12 @@ export default function SubmitcvForm() {
     }
   }, []);
 
+
+  const genderOptions = [
+    { value: "Male", label: "Male" },
+    { value: "Female", label: "Female" },
+    { value: "Others", label: "Others" },
+  ];
   const handleFocus = (e) => {
     const { name } = e.target;
     setErrors((prev) => ({
@@ -123,8 +130,7 @@ export default function SubmitcvForm() {
   };
 
   const inputStyle = (fieldName) =>
-    `small-text w-full h-12 border rounded-lg px-3 outline-none focus:outline-none ${
-      errors[fieldName] ? "border-2 border-red-500" : "border border-[#E9EAEB]"
+    `small-text w-full h-12 border rounded-lg px-3 outline-none focus:outline-none ${errors[fieldName] ? "border-2 border-red-500" : "border border-[#E9EAEB]"
     }`;
 
   const labelStyle = "content   leading-tight tracking-normal";
@@ -163,7 +169,7 @@ export default function SubmitcvForm() {
 
             <div className="flex items-start flex-col gap-[2px]">
               <label htmlFor="lastName" className={labelStyle}>Last Name</label>
-               <input
+              <input
                 id="lastName"
                 name="lastName"
                 type="text"
@@ -176,35 +182,61 @@ export default function SubmitcvForm() {
                 autoComplete="family-name"
                 aria-invalid={!!errors.lastName}
                 aria-describedby="lastName-error"
-               />
+              />
               <p className="text-red-500 text-sm">{errors.lastName}</p>
             </div>
 
             <div className="flex items-start flex-col gap-[2px]">
               <label className={labelStyle}>Gender</label>
-              <select
+              {/* <select
                 name="gender"
                 className={inputStyle("gender")}
                 onChange={handleChange}
                 value={formData.gender}
                 onFocus={handleFocus}
               >
-                <option value="">Gender</option>
-                <option>Male</option>
-                <option>Female</option>
-                <option>Others</option>
-              </select>
+                <option value="" disabled >
+                  Gender
+                </option>
+
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+              </select> */}
+              <Select
+                options={genderOptions}
+                placeholder="Select Gender"
+                value={genderOptions.find(
+                  (option) => option.value === formData.gender
+                )}
+                onChange={(selectedOption) =>
+                  setFormData({
+                    ...formData,
+                    gender: selectedOption?.value || "",
+                  })
+                }
+                className={inputStyle("gender")}
+                classNamePrefix="react-select"
+              />
+
+
             </div>
 
             <div className="flex items-start flex-col gap-[2px]">
               <label className={labelStyle}>DOB</label>
               <input
-                type="date"
+                type={formData.dob ? "date" : "text"}
+                placeholder="Date of Birth"
                 name="dob"
                 className={inputStyle("dob")}
                 value={formData.dob}
                 onChange={handleChange}
-                onFocus={handleFocus}
+                onFocus={(e) => (e.target.type = "date")}
+                onBlur={(e) => {
+                  if (!formData.dob) {
+                    e.target.type = "text";
+                  }
+                }}
               />
             </div>
 
@@ -338,9 +370,8 @@ export default function SubmitcvForm() {
 
         <div className="flex justify-center gap-[2px] font-montserrat">
           <label
-            className={`w-[60%] md:w-full max-w-[1130px] md:h-[200px] h-[100px] border-2 border-dashed rounded-3xl flex flex-col items-center justify-center text-center cursor-pointer ${
-              errors.resume ? "border-red-500" : "border-blue-400"
-            }`}
+            className={`w-[80%] md:w-full max-w-[1130px] md:h-[200px] h-[100px] border-2 border-dashed rounded-3xl flex flex-col items-center justify-center text-center cursor-pointer ${errors.resume ? "border-red-500" : "border-blue-400"
+              }`}
           >
             <input
               type="file"
@@ -352,7 +383,7 @@ export default function SubmitcvForm() {
               key={fileKey}
               onFocus={handleFocus}
             />
-            <img src="/images/SubmitCv/uplodIcon.svg" alt="uplodeimage" />
+            <img src="/images/SubmitCv/uplodIcon.svg" alt="uplodeimage" className="h-5 w-5 md:w-auto md:h-auto" />
             <p className="content cursor-pointer">Upload Resume</p>
             {formData.resume && (
               <p className="text-green-600 text-sm">
@@ -366,7 +397,7 @@ export default function SubmitcvForm() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="w-[200px] h-12 bg-[#039BE6] text-white rounded-lg text-[16px] font-semibold text-center shadow-[0px_4px_8px_0px_#00000029] cursor-pointer font-montserrat"
+            className="md:w-[200px] w-[100px] md:h-12 h-10 bg-[#039BE6] text-white rounded-lg small-text text-center shadow-[0px_4px_8px_0px_#00000029] cursor-pointer "
           >
             Submit
           </button>

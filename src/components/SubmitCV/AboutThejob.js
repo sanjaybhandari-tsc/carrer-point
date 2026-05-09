@@ -1,4 +1,4 @@
-"use client";
+
 import React, { useState,useEffect } from "react";
 
 export default function AboutTheJob() {
@@ -22,14 +22,14 @@ export default function AboutTheJob() {
   if (!job) return null;
   return (
     <section  aria-label="Job details section ">
-      <div className="p-5 md:p-10 bg-white !font-roboto">
+      <div className="pb-4 md:p-10 bg-white !font-roboto">
         <div className="max-w-[1312px] mx-auto pt-16 px-[15px] md:px-6">
 
           <p className="text-[#0277BD] text-[18px] font-semibold leading-[165%] font-roboto mb-4">
             You are applying for
           </p>
 
-          <div className="bg-white rounded-xl p-5 md:p-6 border border-[#E9EAEB] shadow-[0px_4px_8px_0px_#00000014]">
+          <div className="bg-white rounded-xl p-4 md:p-6 border border-[#E9EAEB] shadow-[0px_4px_8px_0px_#00000014]">
 
             <div className="flex flex-col gap-6">
 
@@ -51,7 +51,7 @@ export default function AboutTheJob() {
                     <button
                       onClick={() => setShowDetails(true)}
                       aria-expanded={showDetails}
-                      className="bg-[#039BE6] text-white px-2 py-2 md:px-5 md:py-3 rounded-lg content-semibold  shadow-[0_4px_8px_#00000029] font-montserrat cursor-pointer"
+                      className="bg-[#039BE6] text-white px-5 py-3 rounded-lg text-sm  shadow-[0_4px_8px_#00000029] font-montserrat cursor-pointer"
                     >
                       View Details
                     </button>

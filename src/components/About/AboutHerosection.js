@@ -22,7 +22,7 @@ export default function AboutHeroSection() {
             About Us
           </h1>
 
-          <p className="mt-4 subheading leading-relaxed text-gray-200 max-w-5xl font-roboto">
+          <p className="mt-4 subheading leading-relaxed text-gray-200 max-w-5xl !font-roboto">
             Connecting organizations with the right talent through structured recruitment solutions and industry-focused expertise. We support businesses in building strong teams that drive long-term growth and success.
           </p>
           <button className="mt-6 relative overflow-hidden bg-[var(--color-primary-hover)] lg:bg-transparent border-0  lg:border-white w-40 sm:w-44 md:w-48 lg:w-50 h-10 sm:h-11 md:h-12 flex items-end justify-center gap-2.5 rounded-lg lg:border-[1.5px] px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 text-white group hover:border-0  cursor-pointer"

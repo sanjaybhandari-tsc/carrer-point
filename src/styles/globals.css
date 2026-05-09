@@ -262,3 +262,21 @@ body {
 /* Content : font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl */
 
 /* Small Text : font-light text-xs sm:text-sm md:text-base lg:text-base xl:text-lg */
+
+.react-select__control {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  min-height: 100% !important;
+}
+
+/* Remove blue focus border */
+.react-select__control--is-focused {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove separator line */
+.react-select__indicator-separator {
+  display: none !important;
+}
