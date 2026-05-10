@@ -37,7 +37,7 @@ function IndustryWeServe() {
   ];
 
   return (
-    <div className="h-[70vh]  md:h-[95vh] w-full flex flex-col items-center justify-center gap-2 md:gap-4 lg:gap-6 overflow-hidden py-6 px-4  md:py-9">
+    <div className="h-[70vh]  md:h-[105vh] w-full flex flex-col items-center justify-center gap-2 md:gap-4 lg:gap-6 overflow-hidden py-6 px-4  md:py-9">
       <div className="text-center flex flex-col gap-1 md:gap-2 lg:gap-3 max-w-[85%] shrink-0">
         <h3 className="heading !font-bold">
           <span className="text-[#0277BD]">Industries </span>

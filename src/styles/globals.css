@@ -188,7 +188,7 @@ body {
 
   .subheading-bold {
     font-family: var(--font-montserrat);
-    @apply font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl;
+    @apply font-bold text-sm sm:text-base md:text-lg xl:text-2xl;
   }
 
   .content {
