@@ -65,8 +65,86 @@ function OurTeam() {
     },
   ];
   return (
-    <div className="py-6 px-4 flex flex-col items-center overflow-hidden">
-      <div className="flex flex-col justify-center items-center text-center max-w-[80%] gap-4">
+    //     <div className="py-6 px-4 flex flex-col items-center overflow-hidden">
+    //   <div className="flex flex-col justify-center items-center text-center max-w-[80%] gap-4">
+    //     <h2 className="heading !font-bold">
+    //       Meet Our <span className="text-[#000080]">Team</span>
+    //     </h2>
+    //     <p className="content">
+    //       A team of experienced professionals delivering strong hiring solutions
+    //       with deep expertise, strategic thinking, and a people-first approach
+    //       to building high-performing teams.
+    //     </p>
+    //   </div>
+
+    //   <div
+    //     ref={ref}
+    //     className={` w-full mt-5 lg:my-15 ${visible ? styles.slideright : "opacity-0"} `}
+    //   >
+    //     <div className=" flex flex-nowrap overflow-x-auto overflow-y-hidden pl-4 gap-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+    //       {teams.map((team, idx) => {
+    //         return (
+    //           <div
+    //             key={idx}
+    //             className="flex flex-col group items-center h-fit py-1 gap-3 w-full md:1/2 lg:w-1/3 font-medium"
+    //           >
+    //             <div className="relative rounded-full w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] overflow-hidden">
+    //               <Image
+    //                 src={team.img}
+    //                 alt={team.name}
+    //                 fill
+    //                 className="object-cover"
+    //               />
+
+    //               <div
+    //                 className={`absolute -left-[8%] w-[116%] h-[116%] rounded-full bg-[#039BE6]/90 flex justify-center top-40 py-5 gap-4 lg:top-[100%] lg:py-13 lg:gap-13 transition-all duration-700 lg:group-hover:top-60 lg:group-hover:py-8 lg:group-hover:gap-4 ${styles.slideup}`}
+    //               >
+    //                 <a href="https://linkedin.com/in/username">
+    //                   <Image
+    //                     src="/images/homepage/brand-linkedin.svg"
+    //                     alt="LinkedIn"
+    //                     width={36}
+    //                     height={36}
+    //                     className="w-9 h-9"
+    //                   />
+    //                 </a>
+    //                 <a
+    //                   href="https://twitter.com/username"
+    //                   className="relative -top-2.5"
+    //                 >
+    //                   <Image
+    //                     src="/images/homepage/brand-x.svg"
+    //                     alt="Twitter / X"
+    //                     width={36}
+    //                     height={36}
+    //                     className="w-9 h-9"
+    //                   />
+    //                 </a>
+    //                 <a href="https://facebook.com/username">
+    //                   <Image
+    //                     src="/images/homepage/brand-facebook.svg"
+    //                     alt="Facebook"
+    //                     width={36}
+    //                     height={36}
+    //                     className="w-9 h-9"
+    //                   />
+    //                 </a>
+    //               </div>
+    //             </div>
+
+    //             <div className="text-center">
+    //               <p className="content">{team.name}</p>
+    //               <h3 className="content !font-semibold">{team.department}</h3>
+    //             </div>
+    //             <p className="small-text">{team.desc}</p>
+    //           </div>
+    //         );
+    //       })}
+    //     </div>
+    //   </div>
+    // </div>
+    <div className="py-14 md:py-20 lg:py-30 px-4 flex flex-col  gap-6 md:gap-12 lg:gap-15 items-center overflow-hidden">
+      <div className="flex flex-col justify-center items-center text-center max-w-[80%] gap-2 md:gap-3 lg:gap-4">
         <h2 className="heading !font-bold">
           Meet Our <span className="text-[#000080]">Team</span>
         </h2>
@@ -79,7 +157,7 @@ function OurTeam() {
 
       <div
         ref={ref}
-        className={` w-full mt-5 lg:my-15 ${visible ? styles.slideright : "opacity-0"} `}
+        className={` w-full   ${visible ? styles.slideright : "opacity-0"} `}
       >
         <div className=" flex flex-nowrap overflow-x-auto overflow-y-hidden pl-4 gap-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {teams.map((team, idx) => {

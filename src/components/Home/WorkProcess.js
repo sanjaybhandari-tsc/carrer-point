@@ -41,8 +41,20 @@ function WorkProcess() {
     },
   ];
   return (
-    <div className="w-full flex flex-col items-center gap-3 md:gap-4 lg:gap-6 py-6 px-4">
-      <div className="text-center flex flex-col gap-3 lg:gap-5 max-w-[70%]">
+    //  className="w-full flex flex-col items-center gap-3 md:gap-4 lg:gap-6 py-6 px-4"
+    <div className="w-full flex flex-col items-center gap-6 md:gap-12 lg:gap-15 px-4">
+      {/* <div className="text-center flex flex-col gap-3 lg:gap-5 max-w-[70%]">
+        <h3 className="heading !font-bold">
+          <span>Our Work </span>{" "}
+          <span className="text-[#0277BD] "> Process</span>
+        </h3>
+        <p className="content font-[500]">
+          Delivering top talent to organizations across fast-growing industries,
+          helping businesses build skilled teams that drive innovation and
+          long-term growth.
+        </p>
+      </div> */}
+      <div className="text-center flex flex-col gap-2 md:gap-3 lg:gap-4 max-w-[70%]">
         <h3 className="heading !font-bold">
           <span>Our Work </span>{" "}
           <span className="text-[#0277BD] "> Process</span>
