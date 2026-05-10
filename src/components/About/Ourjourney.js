@@ -28,15 +28,15 @@ export default function Ourjourney() {
     }, []);
 
     return (
-        <div className='bg-[linear-gradient(180deg,rgba(250,250,250,0.25)_0%,rgba(3,155,230,0.15)_50%,rgba(250,250,250,0.25)_100%)] overflow-hidden'>
+        <div className='bg-[linear-gradient(180deg,rgba(250,250,250,0.25)_0%,rgba(3,155,230,0.12)_50%,rgba(250,250,250,0.25)_100%)] overflow-hidden'>
             <div className="w-full px-4 sm:px-6 md:px-16 lg:px-30 lg:py-20 py-6">
 
                 {/* TOP */}
-                <div className="journey-item opacity-0 -translate-y-10 transition-all duration-500 ease-out text-center mb-12">
+                <div className="journey-item opacity-0 -translate-y-10 transition-all duration-500 ease-out text-center pb-12 lg:pb-20">
                     <h2 className="heading-bold  leading-none tracking-normal text-center">
                         Our <span className="text-blue-500">Journey</span>
                     </h2>
-                    <p className="text-[#000000] mt-9 content leading-none tracking-normal">
+                    <p className="text-[#000000] pt-2 md:pt-6 content leading-none tracking-normal">
                         A journey of growth, partnerships, and milestones in building successful recruitment solutions
                     </p>
                 </div>
@@ -66,7 +66,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2011 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
+                    <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2011</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -89,7 +89,7 @@ export default function Ourjourney() {
 
 
                     {/* 2013 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
+                    <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2013</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -111,7 +111,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2015 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
+                    <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2015</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -133,7 +133,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2017 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
+                    <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4 ">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2017</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -151,7 +151,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2019 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
+                    <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2019</p>
                              <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -173,7 +173,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2021 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
+                    <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2021</p>
                              <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -195,7 +195,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2023 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
+                    <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2023</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -217,7 +217,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2024 */}
-                    <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
+                    <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2024</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
@@ -239,7 +239,7 @@ export default function Ourjourney() {
                     </div>
 
                     {/* 2025 */}
-                    <div className="flex flex-col lg:flex-row items-start gap-4 md:gap-6">
+                    <div className="flex flex-col lg:flex-row items-start gap-4 pt-8 md:gap-6">
                         <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
                             <p className='heading-extrabold text-black leading-none tracking-normal'>2025</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">

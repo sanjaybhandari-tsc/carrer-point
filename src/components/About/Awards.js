@@ -35,7 +35,7 @@ export default function Awards() {
 
   return (
    
-      <div ref={sectionRef} className="mx-auto py-6 px-4  rounded-lg lg:px-20 lg:py-6 overflow-hidden bg-[#0B2239] ">
+      <div ref={sectionRef} className="mx-auto py-6 px-4  rounded-none lg:rounded-lg lg:px-20 lg:py-6 overflow-hidden bg-[#0B2239] ">
 
         <h2
           className={`text-center heading-bold leading-[1.5] text-white mb-6 md:mb-20 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}`}
