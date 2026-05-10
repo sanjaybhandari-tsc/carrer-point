@@ -44,11 +44,11 @@ export default function JobsCategory() {
         className={`text-center max-w-7xl mx-auto   transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
         }`}
       >
-        <h2 className="heading-bold lg:mb-10">
+        <h2 className="heading-bold pb-2 lg:pb-6">
           Browse Jobs by <span className="text-blue-500">Category</span>
         </h2>
 
-        <p className="mt-3 sm:mt-4 content  text-black lg:mb-20  ">
+        <p className="mt-3 sm:mt-4 content  text-black pb-24 lg:pb-20  ">
           Explore opportunities across different roles and industries, and find
           positions that align with your skills, interests, and career goals.
         </p>
