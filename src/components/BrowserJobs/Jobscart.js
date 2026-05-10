@@ -1,5 +1,6 @@
-import React, { useState, useEffect,useRef } from "react";
-import { useRouter } from "next/router"; 
+import React, { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/router";
+
 const jobsData = [
   {
     id: 1,
@@ -70,7 +71,7 @@ const jobsData = [
     employmentType: "Full Time",
     skills: ["Figma", "UI/UX"],
   },
-    {
+  {
     id: 5,
     title: "Project manager",
     experience: "2-3 yrs",
@@ -139,7 +140,7 @@ const jobsData = [
     employmentType: "Full Time",
     skills: ["Figma", "UI/UX"],
   },
-    {
+  {
     id: 9,
     title: "Project manager",
     experience: "2-3 yrs",
@@ -237,10 +238,12 @@ export default function Jobscart() {
   const indexOfFirstJob = indexOfLastJob - jobsPerPage;
   const currentJobs = jobsData.slice(indexOfFirstJob, indexOfLastJob);
   const totalPages = Math.ceil(jobsData.length / jobsPerPage);
+  const detailsRef = useRef(null);
 
-  const submitHandelar=(data)=>{
-    
-    localStorage.setItem("job",JSON.stringify(data));
+
+  const submitHandelar = (data) => {
+
+    localStorage.setItem("job", JSON.stringify(data));
     router.push("/jobs/submit-your-cv");
   }
 
@@ -248,7 +251,7 @@ export default function Jobscart() {
     setSelectedJob(currentJobs[0]);
   }, [currentPage]);
 
-   useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       const triggerBottom = window.innerHeight * 0.85;
       if (headingRef.current) {
@@ -273,8 +276,8 @@ export default function Jobscart() {
 
   return (
     <div className="px-4 pt-6  md:p-8 bg-white lg:px-25 min-h-screen">
-      
-      <div  ref={headingRef} className={`p-4 sm:p-6 text-center  transition-all duration-700 transform ${showHeading ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"}` }>
+
+      <div ref={headingRef} className={`p-4 sm:p-6 text-center  transition-all duration-700 transform ${showHeading ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"}`}>
         <h2 className="heading-bold mb-5">
           Featured <span className="text-[#0277BD]">Jobs</span>
         </h2>
@@ -287,16 +290,27 @@ export default function Jobscart() {
 
       <div ref={containerRef} className={`mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6 py-6 transition-all duration-700 transform ${showContent ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}>
-        
-  
+
+
         <div className="w-full">
-     
+
           <div className="space-y-4 sm:space-y-5">
             {currentJobs.map((job) => (
               <div
                 key={job.id}
-                onClick={() => setSelectedJob(job)}
-                className={`p-4 sm:p-5 rounded-2xl border cursor-pointer transition ${ selectedJob.id === job.id ? "border-[#039BE6] border-2" : "border-2 border-[#ECECEC] hover:shadow-sm"}`}
+                onClick={() => {
+                  setSelectedJob(job);
+
+                  if (window.innerWidth < 1024) {
+                    setTimeout(() => {
+                      detailsRef.current?.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                      });
+                    }, 100);
+                  }
+                }}
+                className={`p-4 sm:p-5 rounded-2xl border cursor-pointer transition ${selectedJob.id === job.id ? "border-[#039BE6] border-2" : "border-2 border-[#ECECEC] hover:shadow-sm"}`}
               >
                 <div className="flex justify-between items-start gap-2">
                   <h3 className="content-semibold">
@@ -342,7 +356,7 @@ export default function Jobscart() {
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 mt-6">
-            
+
             <button
               onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))} className="cursor-pointer"
             >
@@ -354,8 +368,8 @@ export default function Jobscart() {
                 <button
                   key={page}
                   onClick={() => setCurrentPage(page)}
-                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full content-semibold cursor-pointer ${ currentPage === page ? "bg-gray-200 font-semibold" : "text-black"
-                  }`}
+                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full content-semibold cursor-pointer ${currentPage === page ? "bg-gray-200 font-semibold" : "text-black"
+                    }`}
                 >
                   {page}
                 </button>
@@ -372,11 +386,11 @@ export default function Jobscart() {
           </div>
         </div>
 
-        <div className="lg:col-span-2 border border-gray-200 rounded-xl w-full">
-          
-     
+        <div  ref={detailsRef} className="lg:col-span-2 border border-gray-200 rounded-xl w-full">
+
+
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 border border-[#ECECEC] rounded-t-xl p-4 sm:p-6">
-            
+
             <div>
               <h3 className="subheading-bold">
                 {selectedJob.title}
@@ -402,7 +416,7 @@ export default function Jobscart() {
               </div>
             </div>
 
-            <button onClick={()=>submitHandelar(selectedJob)} className="bg-[#039BE6] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg shadow w-full sm:w-auto text-sm sm:text-base flex items-center justify-center gap-3 cursor-pointer font-montserrat">
+            <button onClick={() => submitHandelar(selectedJob)} className="bg-[#039BE6] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg shadow w-full sm:w-auto text-sm sm:text-base flex items-center justify-center gap-3 cursor-pointer font-montserrat">
               Apply now
               <img src="/images/broserJobs/applyArrow.svg" alt="icon" className="w-[14px] h-[18px]" />
             </button>
@@ -447,7 +461,7 @@ export default function Jobscart() {
             </div>
           </div>
           <div className="p-4 sm:p-6">
-            <button onClick={()=>submitHandelar(selectedJob)} className="w-full sm:w-auto bg-[#039BE6] text-white px-5.5 py-3   rounded-lg shadow flex items-center justify-center gap-4 content cursor-pointer">
+            <button onClick={() => submitHandelar(selectedJob)} className="w-full sm:w-auto bg-[#039BE6] text-white px-5.5 py-3   rounded-lg shadow flex items-center justify-center gap-4 content cursor-pointer">
               Apply now
               <img src="/images/broserJobs/applyArrow.svg" alt="icon" className="w-[28px] h-[28px]" />
             </button>
