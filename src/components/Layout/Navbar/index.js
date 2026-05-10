@@ -1,6 +1,6 @@
 "use client";
 
-import { useState,useEffect  } from "react";
+import { useState, useEffect } from "react";
 import Logo from "./LogoComponent";
 import NavLinks from "./NavLinks";
 import NavActions from "./NavActions";
@@ -15,12 +15,10 @@ export default function Navbar() {
   const pathname = usePathname();
   const navRef = useRef(null);
 
-
-  
   useEffect(() => {
-  setOpenNavLink(prev => (prev === null ? prev : null));
-  setMenuOpen(prev => (prev ? false : prev));
-}, [pathname]);
+    setOpenNavLink((prev) => (prev === null ? prev : null));
+    setMenuOpen((prev) => (prev ? false : prev));
+  }, [pathname]);
 
   const closeMenu = () => {
     setMenuOpen(false);
@@ -28,21 +26,24 @@ export default function Navbar() {
     setOpenAction(null);
   };
   useEffect(() => {
-  const handleClickOutside = (e) => {
-    if (!navRef.current?.contains(e.target)) {
-      closeMenu();
-    }
-  };
+    const handleClickOutside = (e) => {
+      if (!navRef.current?.contains(e.target)) {
+        closeMenu();
+      }
+    };
 
-  document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
 
-  return () => {
-    document.removeEventListener("mousedown", handleClickOutside);
-  };
-}, []);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
-    <nav ref={navRef}  className="relative sticky top-0 z-50 h-16 md:h-20 flex items-center justify-between px-4 sm:px-6 md:px-20 border-b bg-white/40 backdrop-blur-[35px] border-white/20 shadow-[0_4px_8px_0_rgba(0,0,0,0.08)]">
+    <nav
+      ref={navRef}
+      className="relative sticky top-0 z-50 h-16 md:h-20 flex items-center justify-between px-4 sm:px-6 md:px-20 border-b bg-white/40 backdrop-blur-[35px] border-white/20 shadow-[0_4px_8px_0_rgba(0,0,0,0.08)]"
+    >
       <Logo />
 
       <div className="hidden lg:flex flex-1 justify-center">
@@ -51,7 +52,11 @@ export default function Navbar() {
 
       <div className="flex items-center gap-3 flex-shrink-0">
         <div className="hidden lg:flex">
-          <NavActions openAction={openAction} setOpenAction={setOpenAction} closeMenu={closeMenu} />
+          <NavActions
+            openAction={openAction}
+            setOpenAction={setOpenAction}
+            closeMenu={closeMenu}
+          />
         </div>
 
         <button

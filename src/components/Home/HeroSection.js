@@ -10,7 +10,7 @@ export default function HeroSection() {
   ];
   return (
     <>
-      <div className="relative flex justify-center items-center min-h-[60vh] sm:min-h-[75vh] lg:h-[130vh] w-full overflow-hidden rounded-b-4xl">
+      <div className="relative flex justify-center items-center min-h-[68vh] sm:min-h-[75vh] lg:h-[130vh] w-full overflow-hidden rounded-b-4xl">
         <Image
           src="/images/homepage/HeroImage.webp"
           alt="Hero image"
@@ -24,18 +24,18 @@ export default function HeroSection() {
           className={`absolute inset-0 w-[120%] h-[120%] -left-[10%] -top-[50%] sm:-top-[38%] md:-top-[45%] lg:w-[120%] lg:h-[130%] lg:-top-[60%] lg:-left-[10%] rounded-[50%] bg-gradient-to-t from-[#080F249C] to-[#039BE69C] ${styles.slideDown} flex flex-col justify-end items-end`}
         >
           <div
-            className={`absolute inset-0  min-w-[95%] md:min-w-[70%] lg:min-w-[60%] flex flex-col gap-1.5 sm:gap-2.5 md:gap-3 lg:gap-9 items-center justify-end text-center px-4 pb-10 sm:pb-16 md:pb-20 lg:pb-25 pt-4 ${styles.slideup}`}
+            className={`absolute inset-0  min-w-[95%] md:min-w-[70%] lg:min-w-[60%] flex flex-col gap-2.5 md:gap-3 lg:gap-10.5 items-center justify-end text-center px-4 pb-10 sm:pb-16 md:pb-20 lg:pb-25 pt-4 ${styles.slideup}`}
           >
-            <div className="px-3 py-1 lg:px-4 border border-white rounded-full backdrop-blur-md text-sm flex justify-center items-center gap-2 lg:gap-4 bg-transparent">
+            <div className=" px-3 py-1 lg:px-4 border border-white rounded-full backdrop-blur-md text-sm flex justify-center items-center gap-2 md:gap-5 bg-transparent">
               <Image
                 src="/images/homepage/HeroInnerImg.png"
                 alt="Glassdoor rating badge"
                 width={24}
                 height={24}
-                className="w-5 h-5 lg:w-6 lg:h-6"
+                className="w-4 h-4 lg:w-6 lg:h-6"
               />
               <div className="text-[10px] md:text-[12px]">
-                <p className=" text-start tracking-wider">
+                <p className=" text-start tracking-wider leading-tight">
                   <span className=" text-white">4.8 </span>
                   <span className="text-amber-300">★★★★★</span>
                 </p>
@@ -43,7 +43,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="max-w-[90%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%] flex flex-col justify-center items-center gap-2.5">
+            <div className="max-w-[85%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[45%] flex flex-col justify-center items-center">
               {/* <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-8xl font-bold font-[Montserrat,sans-serif] text-white leading-none">
               Hire Exceptional <span className="lg:block">Talent</span>
             </h1> */}
@@ -51,7 +51,7 @@ export default function HeroSection() {
                 Hire Exceptional <span className="lg:block">Talent</span>
               </h1>
 
-              <p className=" content  font-roboto  text-white">
+              <p className="text-sm md:text-lg lg:text-xl text-white">
                 Connect with skilled professionals across industries and build
                 high-performing teams faster.
               </p>

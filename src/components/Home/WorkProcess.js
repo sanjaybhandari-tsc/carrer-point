@@ -73,10 +73,12 @@ function WorkProcess() {
                   </div>
                   <div className="w-full lg:w-1/2 py-4 px-7 lg:p-10 flex flex-col justify-center gap-4 md:gap-5  lg:gap-10">
                     <h2 className=" hero-heading !font-bold">{work.srNo}</h2>
-                    <h2 className=" heading font-semibold lg:mt-4">
-                      {work.heading}
-                    </h2>
-                    <p className="small-text">{work.desc}</p>
+                    <div className="flex flex-col gap-2.5">
+                      <h2 className=" heading font-semibold lg:mt-4">
+                        {work.heading}
+                      </h2>
+                      <p className="small-text">{work.desc}</p>
+                    </div>
                   </div>
                 </div>
               ) : (
@@ -94,10 +96,12 @@ function WorkProcess() {
                   </div>
                   <div className="w-full lg:w-1/2 py-2 px-5  gap-4  lg:p-10 flex flex-col justify-center  md:gap-5 lg:gap-10">
                     <h2 className="hero-heading !font-bold">{work.srNo}</h2>
-                    <h2 className=" heading font-semibold lg:mt-4">
-                      {work.heading}
-                    </h2>
-                    <p className="small-text">{work.desc}</p>
+                    <div className="flex flex-col gap-2.5">
+                      <h2 className=" heading font-semibold lg:mt-4">
+                        {work.heading}
+                      </h2>
+                      <p className="small-text">{work.desc}</p>
+                    </div>
                   </div>
                   <div className="relative hidden  lg:block w-full h-1/2 lg:h-full lg:w-1/2 ">
                     <Image

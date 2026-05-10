@@ -62,7 +62,7 @@ function MessageFromManagingDirector() {
         </div>
 
         <div>
-          <p className="subheading min-[500px]:line-clamp-4 sm:line-clamp-6 md:line-clamp-8   lg:line-clamp-none text-justify font-[500] leading-relaxed">
+          <p className="subheading min-[500px]:line-clamp-4 sm:line-clamp-6 md:line-clamp-8   lg:line-clamp-none font-[500] leading-relaxed">
             At Career Point Placement Services, we believe the right talent
             drives the success of every organization. For over 17 years, we have
             helped companies across India connect with skilled professionals who
