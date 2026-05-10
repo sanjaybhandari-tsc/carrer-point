@@ -264,10 +264,20 @@ body {
 /* Small Text : font-light text-xs sm:text-sm md:text-base lg:text-base xl:text-lg */
 
 .react-select__control {
+  width: 100% !important;
   border: none !important;
   box-shadow: none !important;
   background: transparent !important;
   min-height: 100% !important;
+}
+
+.react-select__container {
+  width: 100% !important;
+}
+
+.react-select__value-container {
+  width: 100% !important;
+  padding: 0 !important;
 }
 
 /* Remove blue focus border */
