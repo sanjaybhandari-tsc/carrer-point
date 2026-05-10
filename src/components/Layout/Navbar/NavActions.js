@@ -35,13 +35,15 @@ export default function NavActions({
           </div>
         </div>
 
-        <button
+        <Link
+         href="/getIn-Touch"
           onClick={closeMenu}
           className="small-text mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer"
           // className="mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer"
         >
+          
           Get in touch
-        </button>
+        </Link>
       </div>
     );
   }
@@ -98,13 +100,14 @@ export default function NavActions({
         )}
       </div>
 
-      <button
+      <Link
+       href="/getIn-Touch"
         onClick={closeMenu}
         className="small-text px-4 py-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap cursor-pointer"
         // className="px-4 py-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap cursor-pointer"
       >
         Get in touch
-      </button>
+      </Link>
     </div>
   );
 }

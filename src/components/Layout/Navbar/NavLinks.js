@@ -4,6 +4,7 @@ const links = [
   { label: "Hiring Solution", href: "/hiring-solutions" },
   { label: "About", href: "/about-us" },
   { label: "Industries", href: "/industries" },
+  {lable:"Get in touch", href:"/getIn-Touch" },
   {
     label: "Services",
     dropdown: true,

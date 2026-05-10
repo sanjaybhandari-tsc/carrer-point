@@ -46,8 +46,8 @@ export default function Common() {
             <p className="md:content small-text">View Jobs</p>
           </Link>
           <Link
-            href="/hiring-solutions"
-            className="w-full bg-[var(--color-primary-hover)] lg:bg-transparent sm:w-auto sm:min-w-[220px] lg:min-w-[250px] flex flex-col justify-center items-center rounded-2xl lg:border-2 lg:border-white py-3 md:py-8 gap-1 text-base md:text-lg lg:text-xl lg:bg-[var(--color-primary-hover)] hover:border-transparent transition cursor-pointer"
+            href="/getIn-Touch"
+            className="w-full bg-[var(--color-primary-hover)] lg:bg-transparent sm:w-auto sm:min-w-[220px] lg:min-w-[250px] flex flex-col justify-center items-center rounded-2xl lg:border-2 lg:border-white py-3 md:py-8 gap-1 text-base md:text-lg lg:text-xl lg:hover:bg-[var(--color-primary-hover)] hover:border-transparent transition cursor-pointer"
           >
             <img
               src="/images/homepage/students.svg"
