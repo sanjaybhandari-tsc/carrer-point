@@ -290,3 +290,86 @@ body {
 .react-select__indicator-separator {
   display: none !important;
 }
+
+/* Banner Heading */
+.banner-heading {
+  @apply text-[24px] md:text-[36px] lg:text-[48px] font-bold;
+}
+
+/* Banner Content */
+.banner-content {
+  @apply text-[14px] md:text-[16px] lg:text-[18px] font-normal;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+/* Main Heading */
+.main-heading {
+  @apply text-[24px] md:text-[28px] lg:text-[32px] font-semibold;
+}
+
+/* Main Subheading */
+.main-subheading {
+  @apply text-[14px] md:text-[16px] lg:text-[16px] font-normal;
+}
+
+/* Main Content */
+.main-content {
+  @apply text-[14px] md:text-[16px] lg:text-[16px] font-normal;
+}
+
+/* =========================
+   SMALL CARDS
+========================= */
+
+/* Card Heading */
+.card-heading {
+  @apply text-[14px] md:text-[18px] lg:text-[18px] font-semibold;
+}
+
+/* Card Content */
+.card-content {
+  @apply text-[12px] md:text-[14px] lg:text-[14px] font-normal;
+}
+
+/* =========================
+   INDEPENDENT TEXT
+========================= */
+
+.independent-text {
+  @apply text-[18px] md:text-[24px] lg:text-[32px] font-semibold;
+}
+
+/* =========================
+   SPACING SYSTEM
+========================= */
+
+/* Section Spacing */
+.section-spacing {
+  @apply py-[56px] md:py-[80px] lg:py-[120px];
+}
+
+/* Side Spacing */
+.side-spacing {
+  @apply px-4 md:px-8 lg:px-16;
+}
+
+/* Heading -> Subheading Gap */
+.heading-subheading-gap {
+  @apply gap-[8px] md:gap-[12px] lg:gap-[16px];
+}
+
+/* Subheading -> Content Gap */
+.subheading-content-gap {
+  @apply gap-[24px] md:gap-[48px] lg:gap-[60px];
+}
+
+/* =========================
+   COMMON CONTAINER
+========================= */
+
+.website-container {
+  @apply max-w-7xl mx-auto px-4 md:px-8 lg:px-16;
+}

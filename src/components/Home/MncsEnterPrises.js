@@ -174,8 +174,8 @@ const logos = [
 
 function MncsEnterprises() {
   return (
-    <div className="text-center">
-      <p className="py-4 md:py-6 lg:py-12 text-2xl sm:text-[28px] lg:text-[32px] font-semibold  text-[#333333]">
+    <div className="text-center py-14 md:py-20 lg:py-30 ">
+      <p className="pb-6 md:pb-7 lg:pb-8 text-2xl sm:text-[28px] lg:text-[32px] font-semibold  text-[#333333]">
         Trusted by 50+ MNCs, Enterprises, Startups
       </p>
 
