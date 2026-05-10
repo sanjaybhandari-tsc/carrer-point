@@ -48,7 +48,7 @@ export default function JobsCategory() {
           Browse Jobs by <span className="text-blue-500">Category</span>
         </h2>
 
-        <p className="mt-3 sm:mt-4 content  text-black pb-24 lg:pb-20  ">
+        <p className="  content  text-black pb-2 lg:pb-20  ">
           Explore opportunities across different roles and industries, and find
           positions that align with your skills, interests, and career goals.
         </p>
