@@ -175,13 +175,11 @@ const logos = [
 function MncsEnterprises() {
   return (
     <div className="text-center">
-      <p className="heading  text-[#333333]">
+      <p className="py-4 md:py-6 lg:py-12 text-2xl sm:text-[28px] lg:text-[32px] font-semibold  text-[#333333]">
         Trusted by 50+ MNCs, Enterprises, Startups
       </p>
 
-      <div
-        className={`pt-2 md:pt-6  md:pt-12  pb-6 md:pb-10.5 lg:pb-15   ${styles.marqueeWrapper}`}
-      >
+      <div className={` ${styles.marqueeWrapper}`}>
         <div className={`${styles.marqueeTrack} h-5 sm:h-9 md:h-11`}>
           {[...Array(3)].map((_, i) =>
             logos.map((logo) => (
