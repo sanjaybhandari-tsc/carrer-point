@@ -132,7 +132,7 @@ export default function GetInTouchForm() {
     );
 
     return (
-        <div className="px-4 sm:px-6 lg:px-25 py-16 font-montserrat">
+        <div className="px-4 sm:px-6 lg:px-25 py-6 md:py-16 lg:py-25 font-montserrat">
             <form
                 noValidate
                 onSubmit={handleSubmit}
