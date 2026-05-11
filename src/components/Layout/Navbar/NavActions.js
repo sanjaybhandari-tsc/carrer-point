@@ -1,3 +1,4 @@
+"use client";
 import ChevronDown from "./ChevronDown";
 import Link from "next/link";
 
@@ -10,22 +11,28 @@ export default function NavActions({
   const isOpen = openAction === "jobs";
   if (mobile) {
     return (
-      <div className="flex flex-col w-full border-t border-gray-200 pt-3">
+      <div className="flex flex-col w-full border-t border-gray-200 pt-3 relative z-0">
         <div
-          className="flex items-center justify-between py-3 px-2 cursor-pointer text-blue-600"
-          onClick={() => setOpenAction(isOpen ? null : "jobs")}
+          className="flex items-center justify-between w-full py-3 px-2 cursor-pointer text-blue-600"
+          onClick={() => {
+            console.log("openAction:", openAction, "isOpen:", isOpen);
+            setOpenAction(isOpen ? null : "jobs");
+          }}
         >
-          <span className="content cursor-pointer">See Jobs</span>
-          <ChevronDown className={isOpen ? "rotate-180" : ""} />
+          {/* <span className="content cursor-pointer">See Jobs</span> */}
+          <span className="nav-item cursor-pointer pointer-events-none">See Jobs</span>
+          {/* <ChevronDown className={isOpen ? "rotate-180" : ""} /> */}
+          <ChevronDown className={`pointer-events-none ${isOpen ? "rotate-180" : ""}`} />
         </div>
 
         <div
-          className={`overflow-hidden transition-all duration-300 ${
+          className={`overflow-hidden transition-all duration-300 border-l-4 border-[var(--color-primary)] ${
             isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           {/* <div className="pl-4 flex flex-col gap-2"> */}
-          <div className="content pl-4 flex flex-col gap-2">
+          {/* <div className="content pl-4 flex flex-col gap-2"> */}
+          <div className="nav-item pl-4 flex flex-col gap-4">
             <Link href="/jobs/browse-jobs" onClick={closeMenu}>
               Browse Jobs
             </Link>
@@ -36,12 +43,11 @@ export default function NavActions({
         </div>
 
         <Link
-         href="/getIn-Touch"
+          href="/getIn-Touch"
           onClick={closeMenu}
           className="small-text mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer"
           // className="mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer"
         >
-          
           Get in touch
         </Link>
       </div>
@@ -49,10 +55,11 @@ export default function NavActions({
   }
 
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center gap-2 min-[1440px]:gap-15">
       <div className="relative">
         <div
-          className="content flex items-center gap-1 cursor-pointer font-medium text-[var(--color-primary)]"
+          // className="content flex items-center gap-1 cursor-pointer font-medium text-[var(--color-primary)]"
+          className="nav-item flex items-center gap-1 cursor-pointer font-medium text-[var(--color-primary)]"
           // className="flex items-center gap-1 cursor-pointer font-medium text-sm text-[var(--color-primary)]"
           onClick={(e) => {
             e.stopPropagation();
@@ -76,13 +83,14 @@ export default function NavActions({
 
         {isOpen && (
           <div
-            className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50 w-48 bg-white border border-gray-100 shadow-lg rounded-md overflow-hidden"
+            className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50 w-48 bg-white shadow-lg rounded-md overflow-hidden border-l-4 border-l-[var(--color-primary)]"
             onClick={(e) => e.stopPropagation()}
           >
             <Link
               href="/jobs/browse-jobs"
               onClick={closeMenu}
-              className="block px-4 py-2 content hover:bg-gray-100 hover:text-[var(--color-primary)]"
+              className="block px-4 py-2 nav-item hover:bg-gray-100 hover:text-[var(--color-primary)]"
+              // className="block px-4 py-2 content hover:bg-gray-100 hover:text-[var(--color-primary)]"
               // className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
             >
               Browse Jobs
@@ -91,7 +99,8 @@ export default function NavActions({
             <Link
               href="/jobs/submit-your-cv"
               onClick={closeMenu}
-              className="block px-4 py-2 content hover:bg-gray-100 hover:text-[var(--color-primary)]"
+              className="block px-4 py-2 nav-item hover:bg-gray-100 hover:text-[var(--color-primary)]"
+              // className="block px-4 py-2 content hover:bg-gray-100 hover:text-[var(--color-primary)]"
               // className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
             >
               Submit your CV
@@ -101,7 +110,7 @@ export default function NavActions({
       </div>
 
       <Link
-       href="/getIn-Touch"
+        href="/getIn-Touch"
         onClick={closeMenu}
         className="small-text px-4 py-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap cursor-pointer"
         // className="px-4 py-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap cursor-pointer"

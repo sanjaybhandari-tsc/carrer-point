@@ -19,7 +19,8 @@ export default function NavItem({ item, mobile, isOpen, onToggle, closeAll }) {
             className="flex items-center justify-between py-3 px-2 cursor-pointer"
             onClick={onToggle}
           >
-            <span className="content  font-montserrat">{item.label}</span>
+            {/* <span className="content  font-montserrat">{item.label}</span> */}
+            <span className="nav-item font-montserrat">{item.label}</span>
             {/* <span className="font-montserrat font-medium text-base">
             {item.label}
           </span> */}
@@ -35,15 +36,16 @@ export default function NavItem({ item, mobile, isOpen, onToggle, closeAll }) {
             href={item.href}
             onClick={closeAll}
             // className="block py-3 px-2 font-montserrat font-medium text-base text-gray-800"
-            className="content block py-3 px-2"
-          >
+            // className="content block py-3 px-2"
+            className="nav-item block py-3 px-2"
+            >
             {item.label}
           </Link>
         )}
 
         {hasDropdown && (
           <div
-            className={`pl-4 overflow-hidden transition-all duration-300 ${
+            className={`pl-4 overflow-hidden border-l-4 border-[var(--color-primary)]  transition-all duration-300 relative z-10  ${
               isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
             }`}
           >
@@ -53,7 +55,8 @@ export default function NavItem({ item, mobile, isOpen, onToggle, closeAll }) {
                 href={child.href}
                 onClick={closeAll}
                 // className="block py-2 text-sm text-gray-700 hover:text-[var(--color-primary)]"
-                className="content block py-2  hover:text-[var(--color-primary)]"
+                // className="content block py-2  hover:text-[var(--color-primary)]"
+                className="nav-item block py-2  hover:text-[var(--color-primary)]"
               >
                 {child.label}
               </Link>
@@ -72,7 +75,8 @@ export default function NavItem({ item, mobile, isOpen, onToggle, closeAll }) {
         onClick={() => hasDropdown && onToggle()}
       >
         {hasDropdown ? (
-          <span className="content hover:text-[var(--color-primary)] transition-colors">
+          // <span className="content hover:text-[var(--color-primary)] transition-colors">
+          <span className="nav-item hover:text-[var(--color-primary)] transition-colors">
             {item.label}
           </span>
         ) : (
@@ -81,7 +85,8 @@ export default function NavItem({ item, mobile, isOpen, onToggle, closeAll }) {
           // </span>
           <Link
             href={item.href}
-            className="content hover:text-[var(--color-primary)] transition-colors"
+            // className="content hover:text-[var(--color-primary)] transition-colors"
+            className="nav-item hover:text-[var(--color-primary)] transition-colors"
           >
             {item.label}
           </Link>
@@ -101,7 +106,7 @@ export default function NavItem({ item, mobile, isOpen, onToggle, closeAll }) {
 
       {hasDropdown && isOpen && (
         <div
-          className="absolute left-0 top-full mt-1 z-50 w-56 bg-white border border-gray-100 shadow-lg rounded-md overflow-hidden"
+          className="border-l-4 border-[var(--color-primary)] absolute left-0 top-full mt-1 z-50 w-56 bg-white shadow-lg rounded-md "
           onClick={(e) => e.stopPropagation()}
         >
           {item.children.map((child) => (
@@ -110,7 +115,8 @@ export default function NavItem({ item, mobile, isOpen, onToggle, closeAll }) {
               href={child.href}
               onClick={closeAll}
               // className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
-              className="block px-4 py-2 hover:bg-gray-100 hover:text-[var(--color-primary)] content"
+              // className="block px-4 py-2 hover:bg-gray-100 hover:text-[var(--color-primary)] content"
+              className="block px-4 py-2 hover:bg-gray-100 hover:text-[var(--color-primary)] nav-item"
             >
               {child.label}
             </Link>
