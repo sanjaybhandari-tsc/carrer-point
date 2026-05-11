@@ -71,9 +71,9 @@ export default function LifeatCPPS() {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen py-[28px]  md:py-[40px] lg:py-[60px] px-4 md:px-12">
+    <div className="bg-white min-h-screen py-10 px-4 md:px-12">
       <div
-        ref={topRef} className={`flex items-center justify-center py-[28px]   md:py-[40px] lg:py-[60px] main-heading transition-all duration-700 ease-out ${showTop ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-16"}`}
+        ref={topRef} className={`flex items-center justify-center my-12 heading-bold transition-all duration-700 ease-out ${showTop ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-16"}`}
       >
         <h2>Life at CPPS</h2>
       </div>
