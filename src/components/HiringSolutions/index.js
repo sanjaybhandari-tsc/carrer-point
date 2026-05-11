@@ -1,6 +1,7 @@
 import { FeatureCard } from "./FeatureCard";
 import HeroSection from "./HeroSection";
 import CandidateNetworkSection from "./CandidateNetworkSection";
+import Candidate from "./Candidate";
 import FeatureCardSection from "./FeatureCardSection";
 import TestimonialSection from "./TestimonialSection";
 import CTASection from "./CTASection";
@@ -8,13 +9,16 @@ import HeroText from "./HeroText.js";
 import HeroTextModular from "./HeroTextModular.js";
 import ModularCTAText from "./ModularCTAText.js";
 
+
 export default function HiringSolutions() {
   return (
     <>
       <HeroSection />
-      <CandidateNetworkSection />
+      <Candidate />
+      {/* <CandidateNetworkSection /> */}
       <FeatureCardSection />
       <TestimonialSection />
+
       <CTASection />
       <HeroText />
       {/* <ModularCTAText

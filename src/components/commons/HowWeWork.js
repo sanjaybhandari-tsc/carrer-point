@@ -45,9 +45,8 @@ function HowWeWork({ workData }) {
       setIndex(index - 1);
     }
   };
-
   return (
-    <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] py-20 overflow-hidden flex flex-col items-center justify-center">
+    <section className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px] h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] overflow-hidden flex flex-col items-center justify-center">
       <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
         How We Work
       </h2>
@@ -93,7 +92,7 @@ function HowWeWork({ workData }) {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

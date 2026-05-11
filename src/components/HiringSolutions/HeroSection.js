@@ -3,7 +3,7 @@ import Image from "next/image";
 import HeroWrapper from "@/components/HeroWrapper";
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-dvh md:min-h-screen flex items-center rounded-b-3xl overflow-hidden">
+    <section className=" pb-3 md:pb-6 lg:pb-[30px] relative w-full min-h-dvh md:min-h-screen flex items-center rounded-b-3xl overflow-hidden">
       <Image
         src="/images/hiringsolutions/heroSectionHiringSolutions.webp"
         alt="Hiring solutions and staffing services"

@@ -82,7 +82,7 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section ref={ref} className="px-6 md:px-12 lg:px-20 py-16">
+    <section ref={ref} className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px]">
       <div className="max-w-7xl mx-auto">
         <h2 className="heading-bold text-center mb-8 sm:mb-10 lg:mb-12">
           Features

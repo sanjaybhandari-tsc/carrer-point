@@ -2,7 +2,7 @@ import React from "react";
 
 function WhyChoose({ reasons }) {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <div className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px] w-full flex flex-col justify-center items-center">
       <h3 className="heading md:!font-bold text-center">
         Why <span className="text-[var(--color-primary-hover)]">Choose</span> Us
         ?

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroText() {
   return (
-    <section className="w-full px-2 md:px-16 bg-white py-16 md:py-24">
+    <section className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px] w-full bg-white">
       <div className="flex items-start justify-around">
         <div className="mb-6 w-20 sm:w-22 md:w-30 lg:w-40">
           <Image

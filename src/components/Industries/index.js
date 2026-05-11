@@ -2,12 +2,13 @@ import HeroSection from "./HeroSection";
 import HeroText from "./HeroText";
 import IndustryCard from "@/components/Industries/IndustryCard"
 import IndustrySection from "@/components/Industries/IndustrySection"
+import IndustryCombined from "@/components/Industries/IndustryCombined"
 
 
 export default function Industries() {
 
   const pharmaSalesData = {
-  title: "Pharmaceutical Sales",
+  title: "Pharmaceutical",
   description1:
     "The pharmaceutical and healthcare sector plays a vital role in driving innovation, research, and public health advancement. With constant developments in medicine, technology, and regulatory standards, organizations require skilled professionals who understand this highly regulated and fast-evolving environment.",
   description2:
@@ -174,20 +175,26 @@ const fmcgData = {
     <HeroSection />
     <HeroText />
     
-    <IndustrySection data={pharmaSalesData}/>
-    <IndustryCard cards={PharmaceuticalSalesCardData} />
 
-    <IndustrySection data={pharmaManufacturingData}/>
-    <IndustryCard cards={PharmaceuticalManufacturingCardData} />
+    <IndustryCombined data={pharmaSalesData} cards={PharmaceuticalSalesCardData}/>
+    {/* <IndustrySection data={pharmaSalesData}/> */}
+    {/* <IndustryCard cards={PharmaceuticalSalesCardData} /> */}
 
-    <IndustrySection data={buildingMaterialsData} />
-    <IndustryCard cards={BuildingMaterialsIndustryCardData} />
+    <IndustryCombined data={pharmaManufacturingData} cards={PharmaceuticalManufacturingCardData}/>
+    {/* <IndustrySection data={pharmaManufacturingData}/> */}
+    {/* <IndustryCard cards={PharmaceuticalManufacturingCardData} /> */}
 
-    <IndustrySection data={bfsiData} />
-    <IndustryCard cards={BankingFinancialServicesInsuranceCardData} />
+    <IndustryCombined data={buildingMaterialsData} cards={BuildingMaterialsIndustryCardData}/>
+    {/* <IndustrySection data={buildingMaterialsData} /> */}
+    {/* <IndustryCard cards={BuildingMaterialsIndustryCardData} /> */}
 
-    <IndustrySection data={fmcgData} />
-    <IndustryCard cards={FastMovingConsumerGoodsCardData} />
+    <IndustryCombined data={bfsiData} cards={BankingFinancialServicesInsuranceCardData}/>
+    {/* <IndustrySection data={bfsiData} /> */}
+    {/* <IndustryCard cards={BankingFinancialServicesInsuranceCardData} /> */}
+
+    <IndustryCombined data={fmcgData} cards={FastMovingConsumerGoodsCardData}/>
+    {/* <IndustrySection data={fmcgData} /> */}
+    {/* <IndustryCard cards={FastMovingConsumerGoodsCardData} /> */}
     </>
   )
 }
