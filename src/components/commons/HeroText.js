@@ -62,9 +62,7 @@ function HeaderPart({ headingText }) {
         height={70}
       />
 
-      <h1 className="heading-extrabold sm:!font-semibold md:!font-bold lg:!font-extrabold text-white">
-        {headingText}
-      </h1>
+      <h1 className="heading-bold tracking-normal text-white">{headingText}</h1>
     </div>
   );
 }

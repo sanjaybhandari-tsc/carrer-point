@@ -247,6 +247,10 @@ body {
     font-family: var(--font-montserrat);
     @apply font-semibold text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl;
   }
+  .nav-item {
+    font-family: var(--font-montserrat);
+    @apply text-sm lg:text-base;
+  }
 }
 
 /* Heading : font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl */
@@ -292,7 +296,6 @@ body {
 }
 /* =========================
    GLOBAL TYPOGRAPHY SYSTEM
-========================= */
 
 /* Banner */
 .banner-heading {
@@ -348,7 +351,6 @@ body {
 
 /* =========================
    SECTION SPACING
-========================= */
 
 .section-space {
   padding-top: 120px;
@@ -365,7 +367,6 @@ body {
 
 /* =========================
    TABLET
-========================= */
 
 @media (max-width: 1024px) {
   .banner-heading {
@@ -413,7 +414,6 @@ body {
 
 /* =========================
    MOBILE
-========================= */
 
 @media (max-width: 768px) {
   .banner-heading {
@@ -462,3 +462,134 @@ body {
   }
 }
  
+
+/* Banner Heading */
+.banner-heading {
+  @apply text-[24px] md:text-[36px] lg:text-[48px] font-bold;
+}
+
+/* Banner Content */
+.banner-content {
+  @apply text-[14px] md:text-[16px] lg:text-[18px] font-normal;
+}
+
+/* =========================
+   MAIN CONTENT
+
+/* Main Heading */
+.main-heading {
+  @apply text-[24px] md:text-[28px] lg:text-[32px] font-semibold;
+}
+
+/* Main Subheading */
+.main-subheading {
+  @apply text-[14px] md:text-[16px] lg:text-[16px] font-normal;
+}
+
+/* Main Content */
+.main-content {
+  @apply text-[14px] md:text-[16px] lg:text-[16px] font-normal;
+}
+
+/* =========================
+   SMALL CARDS
+
+/* Card Heading */
+.card-heading {
+  @apply text-[14px] md:text-[18px] lg:text-[18px] font-semibold;
+}
+
+/* Card Content */
+.card-content {
+  @apply text-[12px] md:text-[14px] lg:text-[14px] font-normal;
+}
+
+/* =========================
+   INDEPENDENT TEXT
+
+.independent-text {
+  @apply text-[18px] md:text-[24px] lg:text-[32px] font-semibold;
+}
+
+/* =========================
+   SPACING SYSTEM
+
+/* Section Spacing */
+.section-spacing {
+  @apply py-[56px] md:py-[80px] lg:py-[120px];
+}
+
+/* Side Spacing */
+.side-spacing {
+  @apply px-4 md:px-8 lg:px-16;
+}
+
+/* Heading -> Subheading Gap */
+.heading-subheading-gap {
+  @apply gap-[8px] md:gap-[12px] lg:gap-[16px];
+}
+
+/* Subheading -> Content Gap */
+.subheading-content-gap {
+  @apply gap-[24px] md:gap-[48px] lg:gap-[60px];
+}
+
+/* =========================
+   COMMON CONTAINER
+
+.website-container {
+  @apply max-w-7xl mx-auto px-4 md:px-8 lg:px-16;
+}
+
+
+@layer components {
+  .blue-glow-card {
+    @apply relative overflow-hidden rounded-2xl bg-white;
+
+    @apply shadow-[inset_0px_2px_16px_0px_#039BE614,_0px_4px_16px_0px_#00000014];
+
+    @apply transition-all duration-300 hover:-translate-y-1;
+
+    @apply hover:shadow-[inset_0px_2px_20px_0px_#039BE614,_0px_6px_20px_0px_#00000020];
+  }
+
+  @media (max-width: 1023px) {
+    .blue-glow-card {
+      @apply shadow-[inset_0px_2px_16px_0px_#039BE614,_0px_4px_16px_0px_#00000014];
+    }
+
+    .blue-glow-card:hover {
+      @apply shadow-[inset_0px_2px_20px_0px_#039BE614,_0px_6px_20px_0px_#00000020];
+    }
+  }   
+
+  .blue-glow-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(56, 189, 248, 0.1),
+      rgba(59, 130, 246, 0.05),
+      transparent
+    );
+    pointer-events: none;
+  }
+
+  .blue-glow-card::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 160px;
+    height: 160px;
+    border-radius: 9999px;
+    background: rgba(56, 189, 248, 0.12);
+    filter: blur(60px);
+    pointer-events: none;
+  }
+}
+
+/* This is a single-line comment */
+/* <div className="blue-glow-card p-6"> */
+/* <div className="blue-glow-card border border-[#B2B2B259] min-h-[240px]"> */

@@ -37,8 +37,20 @@ function IndustryWeServe() {
   ];
 
   return (
-    <div className="h-[70vh]  md:h-[105vh] w-full flex flex-col items-center justify-center gap-2 md:gap-4 lg:gap-6 overflow-hidden py-6 px-4  md:py-9">
-      <div className="text-center flex flex-col gap-1 md:gap-2 lg:gap-3 max-w-[85%] shrink-0">
+    // className="h-[90vh]  md:h-[105vh] w-full flex flex-col items-center justify-center gap-2 md:gap-4 lg:gap-6 overflow-hidden py-6 px-4  md:py-9"
+    <div className="h-[100vh]  md:h-[130vh] w-full flex flex-col items-center justify-center gap-6 md:gap-12 lg:gap-15 overflow-hidden px-4 py-14 md:py-20 lg:py-30">
+      {/* <div className="text-center flex flex-col gap-1 md:gap-2 lg:gap-3 max-w-[85%] shrink-0">
+        <h3 className="heading !font-bold">
+          <span className="text-[#0277BD]">Industries </span>
+          <span>We Serve</span>
+        </h3>
+        <p className="content font-[500] text-sm md:text-base">
+          Delivering top talent to organizations across fast-growing industries,
+          helping businesses build skilled teams that drive innovation and
+          long-term growth.
+        </p>
+      </div> */}
+      <div className="text-center flex flex-col gap-2 md:gap-3 lg:gap-4 max-w-[85%] shrink-0">
         <h3 className="heading !font-bold">
           <span className="text-[#0277BD]">Industries </span>
           <span>We Serve</span>
@@ -50,7 +62,7 @@ function IndustryWeServe() {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 grid-rows-3 gap-1.5 md:gap-2 lg:gap-3 w-full max-w-[95%] md:max-w-[90%] mx-auto flex-1">
+      <div className="grid grid-cols-3 grid-rows-3 gap-1.5 md:gap-2 lg:gap-3 w-full max-w-[95%] md:max-w-[90%] mx-auto flex-1 min-h-0">
         {industries.map(({ src, alt, label, className }) => (
           <div key={alt} className={`${className} overflow-hidden relative`}>
             <div className="relative group w-full h-full">

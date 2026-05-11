@@ -27,7 +27,8 @@ function GetinTouch() {
   }, []);
 
   return (
-    <div className="flex md:mb-18 lg:mb-20 text-white overflow-hidden">
+    // <div className="flex md:mb-18 lg:mb-20 text-white overflow-hidden"></div>
+    <div className="py-14 md:py-20 lg:py-30  flex text-white overflow-hidden">
       <div
         ref={leftRef}
         className={`hidden lg:block w-[35%] relative bg-cover flex flex-col items-center bg-center rounded-tr-4xl rounded-br-4xl overflow-hidden bg-[url('/images/homepage/getTouch.svg')] ${
@@ -40,9 +41,9 @@ function GetinTouch() {
           <div className="flex flex-col gap-4 justify-center h-1/2 max-w-[85%]">
             <h3 className="heading !font-bold ">Get In Touch</h3>
             <p className="content">
-              Lorem ipsum porta dictum maece sit amet.porta dictum sit
-              amet.porta dictum masas ametamet.porta dictum masas sit amet.porta
-              dictum ametamet.porta dictum masas sit amet.porta dictum
+              Helping businesses connect with the right talent through reliable
+              support and recruitment solutions designed for long-term growth
+              and stronger teams across every hiring stage.
             </p>
           </div>
 
@@ -51,8 +52,8 @@ function GetinTouch() {
               <Image
                 src="/images/homepage/telephone.svg"
                 alt="Phone icon"
-                width={40}
-                height={40}
+                width={30}
+                height={30}
               />
               <p>+91 9225073111</p>
             </div>
@@ -61,8 +62,8 @@ function GetinTouch() {
               <Image
                 src="/images/homepage/location.svg"
                 alt="Location icon"
-                width={40}
-                height={40}
+                width={30}
+                height={30}
               />
               <div>
                 <p>
@@ -75,10 +76,10 @@ function GetinTouch() {
               <Image
                 src="/images/homepage/envelope.svg"
                 alt="Email icon"
-                width={40}
-                height={40}
+                width={30}
+                height={30}
               />
-              <p>email@example.com</p>
+              <p>ramesh.w@cppsjobs.com</p>
             </div>
           </div>
         </div>
@@ -86,11 +87,11 @@ function GetinTouch() {
 
       <div
         ref={rightRef}
-        className={`w-[100%] lg:w-[65%] h-full text-black flex flex-col gap-3 justify-between px-7 md:px:10 lg:px-10 py-15 ${
+        className={`w-[100%] lg:w-[65%] h-full text-black flex flex-col gap-6 md:gap-12 lg:gap-15 justify-between px-7 md:px:10 lg:px-10 py-15 ${
           isVisible ? style.slideright : "opacity-0"
         }`}
       >
-        <div className="text-center pb-4">
+        <div className="text-center flex flex-col gap-2 sm:gap-3 lg:gap-4">
           <h3 className="heading !font-bold ">Looking to Hire?</h3>
           <p className="content">
             Tell us your requirements and we’ll connect you with the right
@@ -98,77 +99,107 @@ function GetinTouch() {
           </p>
         </div>
 
-        <form className="content flex flex-col gap-3">
+        <form className="content flex flex-col gap-4">
           <div className="flex lg:flex-row md:flex-row flex-col gap-3 md:gap-7 lg:gap-9">
             <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
-              <label htmlFor="name">Full Name</label>
+              <label
+                className="content leading-tight tracking-normal"
+                htmlFor="name"
+              >
+                Full Name
+              </label>
               <input
                 id="name"
                 name="name"
                 type="text"
                 placeholder="Enter your name"
                 required
-                className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
+                className="small-text w-full h-12  rounded-lg px-3 outline-none focus:outline-none border border-[#E9EAEB]"
               />
             </div>
 
             <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
-              <label htmlFor="company">Company Name</label>
+              <label
+                className="content leading-tight tracking-normal"
+                htmlFor="company"
+              >
+                Company Name
+              </label>
               <input
                 id="company"
                 name="company"
                 type="text"
                 placeholder="Enter your company name"
-                className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
+                className="small-text w-full h-12  rounded-lg px-3 outline-none focus:outline-none border border-[#E9EAEB]"
               />
             </div>
           </div>
 
           <div className="flex lg:flex-row md:flex-row flex-col gap-3 md:gap-7 lg:gap-9">
             <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
-              <label htmlFor="email">Work Email</label>
+              <label
+                className="content leading-tight tracking-normal"
+                htmlFor="email"
+              >
+                Work Email
+              </label>
               <input
                 id="email"
                 name="email"
                 type="email"
                 placeholder="Enter your work email"
                 required
-                className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
+                className="small-text w-full h-12  rounded-lg px-3 outline-none focus:outline-none border border-[#E9EAEB]"
               />
             </div>
 
             <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
-              <label htmlFor="phone">Phone no.</label>
+              <label
+                className="content leading-tight tracking-normal"
+                htmlFor="phone"
+              >
+                Phone no.
+              </label>
               <input
                 id="phone"
                 name="phone"
                 type="tel"
                 placeholder="Enter your Phone number"
-                className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
+                className="small-text w-full h-12  rounded-lg px-3 outline-none focus:outline-none border border-[#E9EAEB]"
               />
             </div>
           </div>
 
           <div className="flex lg:flex-row md:flex-row flex-col gap-3 md:gap-7 lg:gap-9">
             <div className="flex flex-col w-full md:w-/2 lg:w-1/2 ">
-              <label htmlFor="role">Role Hiring For</label>
+              <label
+                className="content leading-tight tracking-normal"
+                htmlFor="role"
+              >
+                Role Hiring For
+              </label>
               <input
                 id="role"
                 name="role"
                 type="text"
                 placeholder="Which role are you hiring for?"
-                className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
+                className="small-text w-full h-12  rounded-lg px-3 outline-none focus:outline-none border border-[#E9EAEB]"
               />
             </div>
 
             <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
-              <label htmlFor="positions">No. of positions</label>
+              <label
+                className="content leading-tight tracking-normal"
+                htmlFor="positions"
+              >
+                No. of positions
+              </label>
               <input
                 id="positions"
                 name="positions"
                 type="number"
                 placeholder="Enter number of vacant positions"
-                className="border outline-0 rounded-lg px-4 py-2 border-[#E9EAEB]"
+                className="small-text w-full h-12  rounded-lg px-3 outline-none focus:outline-none border border-[#E9EAEB]"
               />
             </div>
           </div>

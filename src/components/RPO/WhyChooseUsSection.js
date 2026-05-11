@@ -21,7 +21,8 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="w-full bg-white py-16 px-6 md:px-16 lg:px-24">
+    // <section className="w-full  bg-white py-16 px-6 md:px-16 lg:px-24">
+    <section className="w-full bg-[#F0F8FF] py-16 px-6 md:px-16 lg:px-24">
       <div className="max-w-6xl mx-auto">
         
        <h2 className="font-montserrat font-bold text-2xl sm:text-3xl lg:text-[36px] leading-[150%] text-center md:text-4xl text-gray-800 mb-18">
@@ -30,8 +31,16 @@ export default function WhyChooseUs() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           {features.map((item, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="w-14 h-14 flex items-center justify-center mb-5">
+            // <div key={index} className="flex flex-col items-center">
+            // <div key={index} className="flex flex-col items-center bg-white rounded-2xl p-8 shadow-[inset_0px_2px_16px_0px_#039BE614,_0px_4px_16px_0px_#00000014] border-t-4 border-blue-200 hover:shadow-[inset_0px_2px_20px_0px_#039BE620,_0px_6px_20px_0px_#00000020] transition-all duration-300 hover:-translate-y-1">
+            <div key={index} className="flex flex-col items-center bg-white rounded-2xl p-8 
+            shadow-[inset_0px_2px_16px_0px_#039BE614,_0px_4px_16px_0px_#00000014]
+            border-t-8 border-blue-200
+            hover:shadow-[inset_0px_2px_20px_0px_#039BE614,_0px_6px_20px_0px_#00000020]
+            transition-all duration-300 hover:-translate-y-1">
+            {/* <div className="w-14 h-14 flex items-center justify-center mb-5"> */}
+              {/* <div className="w-14 h-14 flex items-center justify-center mb-5 bg-blue-50 rounded-full ring-1 ring-blue-100"> */}
+              <div className="w-14 h-14 flex items-center justify-center mb-5 bg-blue-50 rounded-full border border-blue-100">
                 <img
                   src={item.icon}
                   alt={item.title}

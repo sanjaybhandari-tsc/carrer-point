@@ -4,6 +4,7 @@ const links = [
   { label: "Hiring Solution", href: "/hiring-solutions" },
   { label: "About", href: "/about-us" },
   { label: "Industries", href: "/industries" },
+  // {label:"Get in touch", href:"/getIn-Touch" },
   {
     label: "Services",
     dropdown: true,
@@ -25,7 +26,8 @@ export default function NavLinks({
   return (
     <div
       className={
-        mobile ? "flex flex-col w-full" : "hidden md:flex gap-3 lg:gap-6"
+        // mobile ? "flex flex-col w-full" : "hidden md:flex gap-2 lg:gap-4 xl:gap-6"
+        mobile ? "flex flex-col w-full" : "flex gap-2 lg:gap-4 xl:gap-6"
       }
     >
       {links.map((item, index) => (
