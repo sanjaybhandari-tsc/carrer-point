@@ -247,6 +247,10 @@ body {
     font-family: var(--font-montserrat);
     @apply font-semibold text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl;
   }
+  .nav-item {
+    font-family: var(--font-montserrat);
+    @apply text-sm lg:text-base;
+  }
 }
 
 /* Heading : font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl */
@@ -373,3 +377,56 @@ body {
 .website-container {
   @apply max-w-7xl mx-auto px-4 md:px-8 lg:px-16;
 }
+
+
+@layer components {
+  .blue-glow-card {
+    @apply relative overflow-hidden rounded-2xl bg-white;
+
+    @apply shadow-[inset_0px_2px_16px_0px_#039BE614,_0px_4px_16px_0px_#00000014];
+
+    @apply transition-all duration-300 hover:-translate-y-1;
+
+    @apply hover:shadow-[inset_0px_2px_20px_0px_#039BE614,_0px_6px_20px_0px_#00000020];
+  }
+
+  @media (max-width: 1023px) {
+    .blue-glow-card {
+      @apply shadow-[inset_0px_2px_16px_0px_#039BE614,_0px_4px_16px_0px_#00000014];
+    }
+
+    .blue-glow-card:hover {
+      @apply shadow-[inset_0px_2px_20px_0px_#039BE614,_0px_6px_20px_0px_#00000020];
+    }
+  }   
+
+  .blue-glow-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(56, 189, 248, 0.1),
+      rgba(59, 130, 246, 0.05),
+      transparent
+    );
+    pointer-events: none;
+  }
+
+  .blue-glow-card::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 160px;
+    height: 160px;
+    border-radius: 9999px;
+    background: rgba(56, 189, 248, 0.12);
+    filter: blur(60px);
+    pointer-events: none;
+  }
+}
+
+/* This is a single-line comment */
+/* <div className="blue-glow-card p-6"> */
+/* <div className="blue-glow-card border border-[#B2B2B259] min-h-[240px]"> */
