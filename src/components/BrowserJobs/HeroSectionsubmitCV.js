@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className=" md:pb-0">
+    <div className=" pb-[28px]   md:pb-[40px] lg:pb-[60px]">
       <section className="relative w-full flex justify-center overflow-hidden " aria-labelledby="hero-title">
         <div className="relative w-full h-[80vh]  lg:h-[800px] overflow-hidden">
           <div className="absolute inset-0 bg-[url('/images/broserJobs/jobsHero.webp')] bg-cover bg-center" role="img" aria-label="Job search background banner">
             <div className="relative z-10 flex flex-col items-center justify-center h-full  sm:px-6 md:px-10 text-center md:gap-0 gap-4 ">
               <div className="max-w-6xl">
-                <h1 className="text-white hero-heading  leading-[1.2]">
+                <h1 className="text-white banner-heading">
                   Step Into Something Bigger
                 </h1>
-                <p className="text-white  subheading leading-[1.6] lg:mb-20 px-4 md:px-0">
+                <p className="text-white  banner-content lg:mb-20 px-4 md:px-0">
                   Discover roles that align with your skills, ambition, and future goals,
                   and take the next step toward building a career that truly reflects your potential.
                 </p>

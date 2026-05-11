@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0B2239] text-white relative mt-5 !font-inter">
-      <div className="p-4 md:p-6 lg:p-8 w-auto">
+    <footer className="bg-[#0B2239] text-white relative py-[28px]   md:py-[40px] lg:py-[60px] !font-inter">
+      <div className="px-4 md:px-6 lg:px-8 w-auto">
         
       <div className="flex items-center justify-center flex-col px-4 md:px-10 lg:px-20 py-6 gap-2 md:gap-5">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12 w-full">
@@ -149,7 +149,7 @@ export default function Footer() {
         <div className="flex items-center w-full">
           <hr className="border border-[#fafafaf7] w-full" />
         </div>
-        <div className="w-full flex flex-col md:flex-col lg:flex-row content-semibold items-center justify-between gap-3 pb-5 lg:pb-18 text-[16px] md:text-[18px] text-center lg:text-left ">
+        <div className="w-full flex flex-col md:flex-col lg:flex-row content-semibold items-center justify-between gap-3  text-[16px] md:text-[18px] text-center lg:text-left ">
           <p> Copyright</p>
           <div className="flex items-center justify-between gap-2 flex-wrap">
             <p>Terms & conditions</p>
@@ -160,7 +160,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-        <div className="hidden lg:block absolute right-0 bottom-33 ">
+        <div className="hidden lg:block absolute right-0 bottom-22 ">
           <Image
             src="/images/footer/logoFrame.svg"
             alt="decor"
