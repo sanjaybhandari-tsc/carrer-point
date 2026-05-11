@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Lastmessage() {
   return (
-    <div className="w-full px-3 lg:px-2  md:px-16 lg:px-[80px]  md:py-[40px] lg:py-[60px] bg-white ">
+    <div className="w-full px-3 py-6 lg:px-2  md:px-16 lg:px-[80px]  md:py-[40px] lg:py-[60px] bg-white ">
       <div className=" flex items-start justify-around ">
         {/* <div className="mb-6 w-20 sm:w-22 md:w-30 lg:w-40 "> */}
           <div className="mb-6  h-4 w-10 md:h-7 md:w-7 lg:h-12 lg:w-10 xl:h-15 xl:w-20">

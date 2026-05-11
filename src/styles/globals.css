@@ -349,8 +349,6 @@ body {
   line-height: 1.4;
 }
 
-/* =========================
-   SECTION SPACING
 
 .section-space {
   padding-top: 120px;
@@ -364,9 +362,6 @@ body {
 .subheading-content-space {
   margin-top: 60px;
 }
-
-/* =========================
-   TABLET
 
 @media (max-width: 1024px) {
   .banner-heading {
@@ -412,8 +407,6 @@ body {
   }
 }
 
-/* =========================
-   MOBILE
 
 @media (max-width: 768px) {
   .banner-heading {
