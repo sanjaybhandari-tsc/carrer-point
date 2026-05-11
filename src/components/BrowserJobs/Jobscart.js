@@ -239,6 +239,12 @@ export default function Jobscart() {
   const currentJobs = jobsData.slice(indexOfFirstJob, indexOfLastJob);
   const totalPages = Math.ceil(jobsData.length / jobsPerPage);
   const detailsRef = useRef(null);
+const [animate, setAnimate] = useState(false);
+useEffect(() => {
+  setAnimate(false);
+  const t = setTimeout(() => setAnimate(true), 10);
+  return () => clearTimeout(t);
+}, [selectedJob]);
 
 
   const submitHandelar = (data) => {
@@ -386,7 +392,7 @@ export default function Jobscart() {
           </div>
         </div>
 
-        <div  ref={detailsRef} className="lg:col-span-2 border border-gray-200 rounded-xl w-full">
+        <div ref={detailsRef} key={selectedJob.id} className={`lg:col-span-2 border border-gray-200 rounded-xl w-full ${animate ? "animate-fadeIn" : "opacity-0"}`}>
 
 
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 border border-[#ECECEC] rounded-t-xl p-4 sm:p-6">
