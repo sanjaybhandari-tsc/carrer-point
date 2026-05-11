@@ -42,15 +42,17 @@ export default function NavActions({
           </div>
         </div>
 
+      <button
         <Link
-         href="/getIn-Touch"
+          href="/getIn-Touch"
           onClick={closeMenu}
-          className="small-text mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer"
+          className="small-text mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer "
           // className="mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer"
         >
           
+        <Link href="/getIn-Touch">
           Get in touch
-        </Link>
+        </Link></button>
       </div>
     );
   }
@@ -114,7 +116,7 @@ export default function NavActions({
       <Link
         href="/getIn-Touch"
         onClick={closeMenu}
-        className="small-text px-4 py-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap cursor-pointer"
+        className="small-text px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 md:py-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap cursor-pointer"
         // className="px-4 py-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap cursor-pointer"
       >
         Get in touch
