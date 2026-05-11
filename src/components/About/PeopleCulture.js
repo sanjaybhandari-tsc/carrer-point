@@ -22,18 +22,18 @@ export default function PeopleCulture() {
         }, []);
   
   return (
-    <div ref={ref} className="w-full py-6  md:px-10 lg:px-12 px-4 md:py-25 bg-white overflow-x-hidden">
-        <h2 className=" text-[#0277BD] text-center lg:hidden  heading-bold tracking-normal md:mb-5 mb-3 leading-[1.5] ">
+    <div ref={ref} className="w-full py-6  md:px-10 lg:px-12 px-4 py-[28px]   md:py-[40px] lg:py-[60px] bg-white overflow-x-hidden">
+        <h2 className=" text-[#0277BD] text-center lg:hidden  main-heading md:mb-5 mb-3 leading-[1.5] ">
             People & Culture
           </h2>
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-10 gap-5 items-center">
         <div className={`flex  justify-between flex-col gap-3 transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"} order-2 lg:order-1`}>
         
-          <h2 className=" text-[#0277BD]  hidden lg:block heading-bold tracking-normal mb-8 leading-[1.5] ">
+          <h2 className=" text-[#0277BD]  hidden lg:block main-heading mb-8  ">
             People & Culture
           </h2>
-          <div className="space-y-2   content  leading-[1.5] tracking-normal flex flex-col justify-between gap-1 md:gap-2">
+          <div className="space-y-2  main-content flex flex-col justify-between gap-1 md:gap-2">
             
             <p >
               At Career Point Placement Services, our culture is built on teamwork,
