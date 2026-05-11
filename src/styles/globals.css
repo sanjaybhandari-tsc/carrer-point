@@ -593,3 +593,18 @@ body {
 /* This is a single-line comment */
 /* <div className="blue-glow-card p-6"> */
 /* <div className="blue-glow-card border border-[#B2B2B259] min-h-[240px]"> */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-in-out;
+}
