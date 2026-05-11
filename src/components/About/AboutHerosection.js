@@ -29,7 +29,7 @@ export default function AboutHeroSection() {
           <button className="mt-6 relative subheading-content-space overflow-hidden bg-[var(--color-primary-hover)] lg:bg-transparent border-0  lg:border-white w-40 sm:w-44 md:w-48 lg:w-50 h-10 sm:h-11 md:h-12 flex items-end justify-center gap-2.5 rounded-lg lg:border-[1.5px] px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 text-white group hover:border-transparent transition-colors  cursor-pointer"
           >
             <Link
-              href="/getIn-Touch">
+              href="/get-in-touch">
               <span className="relative z-10 flex items-center gap-2.5">
                 <p className="banner-content">
                   Get in touch

@@ -44,7 +44,7 @@ export default function NavActions({
 
       <button>
         <Link
-          href="/getIn-Touch"
+          href="/getin-touch"
           onClick={closeMenu}
           className="small-text mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer "
           // className="mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer"
@@ -111,7 +111,7 @@ export default function NavActions({
       </div>
 
       <Link
-        href="/getIn-Touch"
+        href="/get-in-touch"
         onClick={closeMenu}
         className="small-text px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 md:py-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap cursor-pointer"
         // className="px-4 py-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md whitespace-nowrap cursor-pointer"
