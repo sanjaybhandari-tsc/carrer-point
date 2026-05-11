@@ -22,8 +22,8 @@ export default function AboutTheJob() {
   if (!job) return null;
   return (
     <section  aria-label="Job details section ">
-      <div className="pb-4 md:p-10 bg-white !font-roboto">
-        <div className="max-w-[1312px] mx-auto pt-16 px-[15px] md:px-6">
+      <div className="pb-4 md:p-4 bg-white !font-roboto">
+        <div className="max-w-[1460px]  pt-16 px-[15px] lg:px-20 xl:pe-30 xl:ps-20">
 
           <p className="text-[#0277BD] text-[18px] font-semibold leading-[165%] font-roboto mb-4">
             You are applying for
@@ -100,7 +100,7 @@ export default function AboutTheJob() {
       </div>
 
       {showDetails && (
-        <div className="max-w-[1300px] mx-auto px-4 md:px-6 pb-10  ">
+        <div className="max-w-[1460px]  pt-4 px-[15px] md:px-6 lg:px-25 ">
 
           <div className="bg-white border border-[#E9EAEB] rounded-xl  shadow-[0_4px_8px_#00000014] relative">
             <div className="m-2">

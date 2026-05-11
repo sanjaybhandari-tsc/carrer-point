@@ -1,5 +1,7 @@
 
 import React, { useState } from "react";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 export default function GetInTouchForm() {
     const [formData, setFormData] = useState({
@@ -53,7 +55,7 @@ export default function GetInTouchForm() {
 
         if (
             !formData.phoneNo.trim() ||
-            !/^[0-9]{10}$/.test(formData.phoneNo)
+            formData.phoneNo.length < 10
         ) {
             newErrors.phoneNo = "Valid 10-digit phone number is required";
         }
@@ -96,7 +98,7 @@ export default function GetInTouchForm() {
         setErrors({});
     };
 
-    const inputStyle = (fieldName) =>  `w-full h-12 border rounded-lg px-3 outline-none focus:outline-none small-text ${errors[fieldName]? "border-2 border-red-500": "border border-[#E9EAEB]"}`;
+    const inputStyle = (fieldName) => `w-full h-12 border rounded-lg px-3 outline-none focus:outline-none small-text ${errors[fieldName] ? "border-2 border-red-500" : "border border-[#E9EAEB]"}`;
     const labelStyle = "content leading-tight tracking-norma";
 
     const renderInput = ({
@@ -160,12 +162,45 @@ export default function GetInTouchForm() {
                         autoComplete: "email",
                     })}
 
-                    {renderInput({
+                    {/* {renderInput({
                         label: "Phone No.",
                         name: "phoneNo",
                         placeholder: "Enter your phone number",
                         autoComplete: "tel",
-                    })}
+                    })} */}
+                    <div className="flex flex-col gap-1">
+                        <label htmlFor="phoneNo" className={labelStyle}>
+                            Phone No.
+                        </label>
+
+                        <PhoneInput
+                            country={"in"}
+                            value={formData.phoneNo}
+                            onChange={(value) => {
+                                if (value.length <= 12) {
+                                    setFormData((prev) => ({
+                                        ...prev,
+                                        phoneNo: value,
+                                    }));
+
+                                    setErrors((prev) => ({
+                                        ...prev,
+                                        phoneNo: "",
+                                    }));
+                                }
+                            }}
+                            containerClass="w-full"
+                            inputClass={`!w-full !h-12 !pl-14 !rounded-lg small-text ${errors.phoneNo
+                                    ? "!border-2 !border-red-500"
+                                    : "!border !border-[#E9EAEB]"
+                                }`}
+                            buttonClass="!border !border-[#E9EAEB] !bg-transparent"
+                        />
+
+                        {errors.phoneNo && (
+                            <p className="text-red-500 text-xs">{errors.phoneNo}</p>
+                        )}
+                    </div>
 
                     {renderInput({
                         label: "Role Hiring For",
@@ -197,10 +232,18 @@ export default function GetInTouchForm() {
                         className="w-full border border-[#E9EAEB] rounded-lg px-3 py-3 outline-none focus:outline-none text-sm text-gray-700 placeholder-gray-400 resize-none"
                     />
                 </div>
-                <div className="flex justify-center pt-2">
+                {/* <div className="flex justify-center pt-2">
                     <button
                         type="submit"
                         className="md:w-[200px] w-[140px] md:h-12 h-10 bg-[#039BE6] text-white rounded-lg text-sm font-medium text-center shadow-[0px_4px_8px_0px_#00000029] cursor-pointer hover:bg-[#0288cc] transition-colors"
+                    >
+                        Submit
+                    </button>
+                </div> */}
+                <div className="flex justify-center">
+                    <button
+                        type="submit"
+                        className="md:w-[200px] w-[100px] md:h-12 h-10 bg-[#039BE6] text-white rounded-lg small-text text-center shadow-[0px_4px_8px_0px_#00000029] cursor-pointer "
                     >
                         Submit
                     </button>
