@@ -148,71 +148,71 @@ body {
 @layer utilities {
   .hero-heading-extra {
     font-family: var(--font-montserrat);
-    @apply font-extrabold tracking-tight leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl ;
+    @apply font-extrabold tracking-tight leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
   }
 
   .hero-heading {
     font-family: var(--font-montserrat);
-    @apply font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl ;
+    @apply font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
   }
 
   .heading {
     font-family: var(--font-montserrat);
-    @apply font-semibold text-base sm:text-lg md:text-xl lg:text-2xl ;
+    @apply font-semibold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
   }
 
   .heading-extrabold {
     font-family: var(--font-montserrat);
-    @apply font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl ;
+    @apply font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
   }
 
   .heading-bold {
     font-family: var(--font-montserrat);
-    @apply font-bold text-base sm:text-lg md:text-xl lg:text-2xl;
+    @apply font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
   }
 
   .subheading {
     font-family: var(--font-montserrat);
-    @apply font-normal text-sm sm:text-base md:text-lg lg:text-xl ;
+    @apply font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl;
   }
 
   .subheading-semibold {
     font-family: var(--font-montserrat);
-    @apply font-semibold text-sm sm:text-base md:text-lg lg:text-xl;
+    @apply font-semibold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl;
   }
 
   .subheading-smaller {
     font-family: var(--font-montserrat);
-    @apply font-semibold text-xs sm:text-sm md:text-base lg:text-lg;
+    @apply font-semibold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl;
   }
 
   .subheading-bold {
     font-family: var(--font-montserrat);
-    @apply font-bold text-sm sm:text-base md:text-lg;
+    @apply font-bold text-sm sm:text-base md:text-lg xl:text-2xl;
   }
 
   .content {
     font-family: var(--font-roboto);
-    @apply font-normal text-xs sm:text-sm md:text-base lg:text-base ;
+    @apply font-normal text-xs sm:text-sm md:text-base lg:text-base xl:text-lg;
   }
 
   .content-semibold-roboto {
     font-family: var(--font-roboto);
-    @apply font-semibold text-xs sm:text-sm md:text-base lg:text-base;
+    @apply font-semibold text-xs sm:text-sm md:text-base lg:text-base xl:text-lg;
   }
 
   .content-semibold {
     font-family: var(--font-montserrat);
-    @apply font-semibold text-xs sm:text-sm md:text-base lg:text-base;
+    @apply font-semibold text-xs sm:text-sm md:text-base lg:text-base xl:text-lg;
   }
 
   .small-text {
     font-family: var(--font-inter);
-    @apply font-light text-xs sm:text-xs md:text-sm lg:text-sm;
+    @apply font-light text-xs sm:text-xs md:text-sm lg:text-sm xl:text-base;
   }
 
   .message {
-    @apply font-bold text-base sm:text-lg md:text-xl lg:text-2xl;
+    @apply font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
   }
 
   .getintoch_button {

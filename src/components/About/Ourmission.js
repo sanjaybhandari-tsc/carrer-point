@@ -25,9 +25,9 @@ export default function Ourmission() {
   return (
     <div
       ref={ref}
-      className="w-full bg-white px-4 py-[28px]   md:py-[40px] lg:py-[60px] md:px-16 lg:px-24 overflow-x-hidden"
+      className="w-full bg-white px-4 py-6  md:py-12 md:px-16 lg:px-24 overflow-x-hidden"
     >
-      <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 lg:gap-[60px]">
+      <div className="grid grid-cols-1  lg:grid-cols-2 gap-6">
         <div  className={`bg-[#0B2239] text-white rounded-3xl shadow-3xl p-5 md:p-10    transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
         >
           <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
@@ -39,11 +39,11 @@ export default function Ourmission() {
             className="mb-4 h-10 w-10 md:h-15 md:w-15"
           />
 
-          <h2 className="main-heading mb-4">
+          <h2 className="heading-bold leading-[1.5] mb-4">
             Our Vision
           </h2></div>
 
-          <p className="main-content">
+          <p className="content leading-[1.6]">
             To build a strong nationwide recruitment presence by 2030, supporting
             organizations with dependable talent solutions and industry expertise.
             The focus is on developing a 200+ skilled workforce, expanding presence
@@ -65,11 +65,11 @@ export default function Ourmission() {
             className="mb-4 h-10 w-10 md:h-15 md:w-15"
           />
 
-          <h2 className="main-heading mb-4">
+          <h2 className="heading-bold leading-[1.5] mb-4">
             Our Mission
           </h2></div>
 
-          <p className="main-content">
+          <p className="content leading-[1.6]">
             Deliver reliable recruitment solutions that connect organizations with
             the right talent while creating meaningful opportunities for
             professionals. Guided by integrity, transparency, and ethical practices,
