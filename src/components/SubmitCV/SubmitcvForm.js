@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Select from "react-select";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 export default function SubmitcvForm() {
   const [fileKey, setFileKey] = useState(Date.now());
@@ -77,10 +79,14 @@ export default function SubmitcvForm() {
     let newErrors = {};
     if (!formData.firstName.trim()) newErrors.firstName = "First name required";
     if (!formData.lastName.trim()) newErrors.lastName = "Last name required";
-    if (!formData.email.trim() || !formData.email.match(/^\S+@\S+\.\S+$/))
+    if (!formData.contact || formData.contact.length < 10)
       newErrors.email = "Valid email required";
-    if (!formData.contact.trim() || !formData.contact.match(/^[0-9]{10}$/))
-      newErrors.contact = "Valid 10-digit number required";
+    if (
+      !formData.contact ||
+      formData.contact.replace(/\D/g, "").length < 10
+    ) {
+      newErrors.contact = "Valid contact number required";
+    }
     if (!formData.resume) newErrors.resume = "Resume is required";
     if (!formData.skills.trim()) newErrors.skills = "Please fill the data";
     return newErrors;
@@ -129,8 +135,7 @@ export default function SubmitcvForm() {
   };
 
   const inputStyle = (fieldName) =>
-    `small-text w-full h-12 border rounded-lg px-3 outline-none focus:outline-none ${
-      errors[fieldName] ? "border-2 border-red-500" : "border border-[#E9EAEB]"
+    `small-text w-full h-12 border rounded-lg px-3 outline-none focus:outline-none ${errors[fieldName] ? "border-2 border-red-500" : "border border-[#E9EAEB]"
     }`;
 
   const labelStyle = "content   leading-tight tracking-normal";
@@ -256,7 +261,7 @@ export default function SubmitcvForm() {
 
             <div className="flex items-start flex-col gap-[2px]">
               <label className={labelStyle}>Contact No.</label>
-              <input
+              {/* <input
                 type="text"
                 name="contact"
                 placeholder="Contact No."
@@ -264,6 +269,29 @@ export default function SubmitcvForm() {
                 value={formData.contact}
                 onChange={handleChange}
                 onFocus={handleFocus}
+              /> */}
+              <PhoneInput
+                country={"in"}
+                value={formData.contact}
+                onChange={(value) => {
+                  if (value.length <= 12) {
+                    setFormData((prev) => ({
+                      ...prev,
+                      contact: value,
+                    }));
+
+                    setErrors((prev) => ({
+                      ...prev,
+                      contact: "",
+                    }));
+                  }
+                }}
+                containerClass="w-full"
+                inputClass={`!w-full !h-12 !pl-14 !rounded-lg small-text ${errors.contact
+                  ? "!border-2 !border-red-500"
+                  : "!border !border-[#E9EAEB]"
+                  }`}
+                buttonClass="!border !border-[#E9EAEB] !bg-transparent"
               />
               <p className="text-red-500 text-sm">{errors.contact}</p>
             </div>
@@ -370,9 +398,8 @@ export default function SubmitcvForm() {
 
         <div className="flex justify-center gap-[2px] font-montserrat">
           <label
-            className={`w-[80%] md:w-full max-w-[1130px] md:h-[200px] h-[100px] border-2 border-dashed rounded-3xl flex flex-col items-center justify-center text-center cursor-pointer ${
-              errors.resume ? "border-red-500" : "border-blue-400"
-            }`}
+            className={`w-[80%] md:w-full max-w-[1130px] md:h-[200px] h-[100px] border-2 border-dashed rounded-3xl flex flex-col items-center justify-center text-center cursor-pointer ${errors.resume ? "border-red-500" : "border-blue-400"
+              }`}
           >
             <input
               type="file"

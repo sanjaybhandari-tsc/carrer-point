@@ -28,25 +28,25 @@ export default function Ourjourney() {
     }, []);
 
     return (
-        <div className='bg-[linear-gradient(180deg,rgba(250,250,250,0.25)_0%,rgba(3,155,230,0.12)_50%,rgba(250,250,250,0.25)_100%)] overflow-hidden'>
-            <div className="w-full px-4 sm:px-6 md:px-16 lg:px-30 lg:py-20 py-6">
+        <div className='bg-[linear-gradient(180deg,rgba(250,250,250,0.25)_0%,rgba(3,155,230,0.12)_50%,rgba(250,250,250,0.25)_100%)] overflow-hidden w-full px-4 sm:px-6 md:px-16 lg:px-30 py-[28px]   md:py-[40px] lg:py-[60px]'>
+            
 
                 {/* TOP */}
-                <div className="journey-item opacity-0 -translate-y-10 transition-all duration-500 ease-out text-center pb-12 lg:pb-20">
-                    <h2 className="heading-bold  leading-none tracking-normal text-center">
+                <div className="journey-item opacity-0 -translate-y-10 transition-all duration-500 ease-out text-center pb-12 md:pb-20 lg:pb-20">
+                    <h2 className="main-heading text-center">
                         Our <span className="text-blue-500">Journey</span>
                     </h2>
-                    <p className="text-[#000000] pt-2 md:pt-6 content leading-none tracking-normal">
+                    <p className="text-[#000000] pt-2 md:pt-3 lg:pt-4 main-content ">
                         A journey of growth, partnerships, and milestones in building successful recruitment solutions
                     </p>
                 </div>
 
-                <div className="space-y-1 md:space-y-2">
+                <div className="space-y-1 lg:space-y-2">
 
                     {/* 2009 */}
                     <div className="border-b border-gray-300 pb-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6  ">
-                        <div className="journey-item  md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
-                            <p className='heading-extrabold text-black leading-none tracking-normal'>2009</p>
+                        <div className="journey-item  md:[w-70%] xl:w-[10%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
+                            <p className='heading-extrabold text-black leading-none tracking-normal pe-4'>2009</p>
                              <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
                                 The Foundation
                             </h3>
@@ -67,8 +67,8 @@ export default function Ourjourney() {
 
                     {/* 2011 */}
                     <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
-                        <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
-                            <p className='heading-extrabold text-black leading-none tracking-normal'>2011</p>
+                        <div className="journey-item md:[w-70%] xl:w-[10%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
+                            <p className='heading-extrabold text-black leading-none tracking-normal pe-4'>2011</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
                                 Momentum Begins
                             </h3>
@@ -90,8 +90,8 @@ export default function Ourjourney() {
 
                     {/* 2013 */}
                     <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
-                        <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
-                            <p className='heading-extrabold text-black leading-none tracking-normal'>2013</p>
+                        <div className="journey-item md:[w-70%] xl:w-[10%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
+                            <p className='heading-extrabold text-black leading-none tracking-normal pe-4'>2013</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
                                 Scaling Forward
                             </h3>
@@ -112,8 +112,8 @@ export default function Ourjourney() {
 
                     {/* 2015 */}
                     <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
-                        <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
-                            <p className='heading-extrabold text-black leading-none tracking-normal'>2015</p>
+                        <div className="journey-item md:[w-70%] xl:w-[10%] lg:w-[20%]opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
+                            <p className='heading-extrabold text-black leading-none tracking-normal pe-4'>2015</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
                                  Expanding Horizons
                             </h3>
@@ -134,8 +134,8 @@ export default function Ourjourney() {
 
                     {/* 2017 */}
                     <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
-                        <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4 ">
-                            <p className='heading-extrabold text-black leading-none tracking-normal'>2017</p>
+                        <div className="journey-item md:[w-70%] xl:w-[10%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4 ">
+                            <p className='heading-extrabold text-black leading-none tracking-normal pe-4'>2017</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
                                 Empowering Careers
                             </h3>
@@ -152,8 +152,8 @@ export default function Ourjourney() {
 
                     {/* 2019 */}
                     <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
-                        <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
-                            <p className='heading-extrabold text-black leading-none tracking-normal'>2019</p>
+                        <div className="journey-item md:[w-70%] xl:w-[10%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
+                            <p className='heading-extrabold text-black leading-none tracking-normal pe-4'>2019</p>
                              <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
                                Strengthening Operations
                             </h3>
@@ -174,8 +174,8 @@ export default function Ourjourney() {
 
                     {/* 2021 */}
                     <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
-                        <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
-                            <p className='heading-extrabold text-black leading-none tracking-normal'>2021</p>
+                        <div className="journey-item md:[w-70%] xl:w-[10%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
+                            <p className='heading-extrabold text-black leading-none tracking-normal pe-4'>2021</p>
                              <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
                                 Strategic Expansion
                             </h3>
@@ -196,8 +196,8 @@ export default function Ourjourney() {
 
                     {/* 2023 */}
                     <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6 ">
-                        <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
-                            <p className='heading-extrabold text-black leading-none tracking-normal'>2023</p>
+                        <div className="journey-item md:[w-70%] xl:w-[10%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
+                            <p className='heading-extrabold text-black leading-none tracking-normal pe-4'>2023</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
                                 Growth Milestone
                             </h3>
@@ -218,8 +218,8 @@ export default function Ourjourney() {
 
                     {/* 2024 */}
                     <div className="border-b border-gray-300 py-8 flex flex-col lg:flex-row items-start gap-4 md:gap-6">
-                        <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
-                            <p className='heading-extrabold text-black leading-none tracking-normal'>2024</p>
+                        <div className="journey-item md:[w-70%] xl:w-[10%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
+                            <p className='heading-extrabold text-black leading-none tracking-normal pe-4'>2024</p>
                             <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
                                 Quality Recognition
                             </h3>
@@ -240,9 +240,9 @@ export default function Ourjourney() {
 
                     {/* 2025 */}
                     <div className="flex flex-col lg:flex-row items-start gap-4 pt-8 md:gap-6">
-                        <div className="journey-item md:[w-50%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
-                            <p className='heading-extrabold text-black leading-none tracking-normal'>2025</p>
-                            <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal">
+                        <div className="journey-item md:[w-70%] xl:w-[10%] lg:w-[20%] opacity-0 -translate-x-10 transition-all duration-500 ease-out flex items-center  justify-between gap-4">
+                            <p className='heading-extrabold text-black leading-none tracking-normal pe-4'>2025</p>
+                            <h3 className="lg:hidden heading-bold leading-[150%] tracking-normal ">
                                Raising Standards
                             </h3>
                         </div>
@@ -262,6 +262,6 @@ export default function Ourjourney() {
 
                 </div>
             </div>
-        </div>
+
     )
 }
