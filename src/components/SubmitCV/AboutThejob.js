@@ -25,7 +25,7 @@ export default function AboutTheJob() {
       <div className="pb-4 md:p-4 bg-white !font-roboto">
         <div className="max-w-[1460px]  pt-16 px-[15px] lg:px-20 xl:pe-30 xl:ps-20">
 
-          <p className="text-[#0277BD] text-[18px] font-semibold leading-[165%] font-roboto mb-4">
+          <p className="text-[#0277BD] main-subheading font-roboto mb-4">
             You are applying for
           </p>
 

@@ -349,8 +349,6 @@ body {
   line-height: 1.4;
 }
 
-/* =========================
-   SECTION SPACING
 
 .section-space {
   padding-top: 120px;
@@ -364,9 +362,6 @@ body {
 .subheading-content-space {
   margin-top: 60px;
 }
-
-/* =========================
-   TABLET
 
 @media (max-width: 1024px) {
   .banner-heading {
@@ -412,8 +407,6 @@ body {
   }
 }
 
-/* =========================
-   MOBILE
 
 @media (max-width: 768px) {
   .banner-heading {
@@ -449,7 +442,7 @@ body {
   }
 
   .section-space {
-    padding-top: 56px;  q
+    padding-top: 56px;
     padding-bottom: 56px;
   }
 
@@ -596,7 +589,21 @@ body {
 /* This is a single-line comment */
 /* <div className="blue-glow-card p-6"> */
 /* <div className="blue-glow-card border border-[#B2B2B259] min-h-[240px]"> */
-/* globals.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-in-out;
+}/* globals.css */
 
 .section-spacing {
   @apply py-14 md:py-20 lg:py-[120px];
