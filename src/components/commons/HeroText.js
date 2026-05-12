@@ -70,7 +70,7 @@ function HeaderPart({ headingText }) {
         />
 
         {/* Main Heading */}
-        <h1 className="heading-bold tracking-normal text-white">
+        <h1 className="main-heading  tracking-normal text-white">
           {headingText}
         </h1>
 

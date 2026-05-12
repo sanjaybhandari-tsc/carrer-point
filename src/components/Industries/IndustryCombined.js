@@ -46,9 +46,9 @@ export default function IndustryCombined({ data, cards }) {
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
               ${isLeft ? "order-2 xl:order-2" : "order-2 xl:order-1"}`}
           >
-            <h2 className="heading-bold mb-5 md:mb-6">{title}</h2>
-            <p className="content mb-4">{description1}</p>
-            <p className="content">{description2}</p>
+            <h2 className="main-heading mb-5 md:mb-6">{title}</h2>
+            <p className="main-content mb-4">{description1}</p>
+            <p className="main-content">{description2}</p>
           </div>
 
           {/* Image */}

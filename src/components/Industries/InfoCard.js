@@ -31,7 +31,8 @@ export default function InfoCard({ icon, title, description }) {
         <div className="flex justify-center mb-4">
           <img src={icon} alt={title} className="w-6 h-6" />
         </div>
-        <h3 className="subheading text-center">
+        {/* <h3 className="subheading text-center"> */}
+        <h3 className="card-heading text-center">
           {title}
         </h3>
         {/* <h3 className="font-montserrat font-bold text-base sm:text-lg leading-relaxed text-center">
@@ -40,7 +41,8 @@ export default function InfoCard({ icon, title, description }) {
         {/* <p className="font-roboto font-normal text-xs sm:text-sm leading-relaxed text-center mt-2">
           {description}
         </p> */}
-        <p className="small-text text-center mt-2">
+        {/* <p className="small-text text-center mt-2">X */}
+        <p className="card-content text-center mt-2">X
           {description}
         </p>
       </div>

@@ -28,19 +28,6 @@ export default function Navbar() {
     // setOpenAction(null);
     setOpenDropdown(null);
   };
-  // useEffect(() => {
-  //   const handleClickOutside = (e) => {
-  //     if (!navRef.current?.contains(e.target)) {
-  //       closeMenu();
-  //     }
-  //   };
-
-  //   document.addEventListener("mousedown", handleClickOutside);
-
-  //   return () => {
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   };
-  // }, []);
 
   useEffect(() => {
   const handleClickOutside = (e) => {
