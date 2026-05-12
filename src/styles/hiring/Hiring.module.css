@@ -20,15 +20,6 @@
   animation: slideLayer 0.8s ease-out forwards;
 }
 
-.contactfield{
-  :global(.flag-dropdown){
-    border-radius:5px 0px 0px 5px;
-  }
-
-  :global(.selected-flag){
-    border-radius:5px 0px 0px 5px;
-  }
-}
 
 @keyframes slideLayer {
   from {

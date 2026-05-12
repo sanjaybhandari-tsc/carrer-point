@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Select from "react-select";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import styles from "../../styles/hiring/Hiring.module.css"  
+import styles from "../../styles/seeJobs/Seejobs.module.css"  
 
 export default function SubmitcvForm() {
   const [fileKey, setFileKey] = useState(Date.now());
