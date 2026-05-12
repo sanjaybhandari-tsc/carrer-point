@@ -109,7 +109,7 @@ function ReviewsAndRatings() {
           overall work environment.
         </p>
       </div> */}
-      <div className="flex flex-col items-center max-w-[80%] justify-center text-center gap-2 md:gap-3 lg:gap-4">
+      <div className="flex flex-col items-center max-w-[95%] md:w-[70%] justify-center text-center gap-2 md:gap-3 lg:gap-4">
         <h3 className="heading !font-bold ">
           Employee <span className=" text-[#0277BD]">Reviews</span> & Ratings
         </h3>

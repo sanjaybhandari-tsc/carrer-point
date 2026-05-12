@@ -54,7 +54,7 @@ function WorkProcess() {
           long-term growth.
         </p>
       </div> */}
-      <div className="text-center flex flex-col gap-2 md:gap-3 lg:gap-4 max-w-[70%]">
+      <div className="text-center flex flex-col gap-2 md:gap-3 lg:gap-4  max-w-[90%] md:w-[70%]">
         <h3 className="heading !font-bold">
           <span>Our Work </span>{" "}
           <span className="text-[#0277BD] "> Process</span>
@@ -77,7 +77,7 @@ function WorkProcess() {
 md:top-[60px] md:min-h-[calc(100vh-60px)]
 lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
                 >
-                  <div className="relative w-full h-1/2 lg:h-full lg:w-1/2  ">
+                  <div className="relative w-full h-1/2 md:h-full md:w-1/2  ">
                     <Image
                       src={work.img}
                       alt={work.heading}
@@ -85,7 +85,7 @@ lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:
                       className="object-cover"
                     />
                   </div>
-                  <div className="w-full lg:w-1/2 py-4 px-7 lg:p-10 flex flex-col justify-center gap-4 md:gap-5  lg:gap-10">
+                  <div className="w-full md:w-1/2 py-4 px-7 md:p-10 flex flex-col justify-center gap-4 md:gap-5  lg:gap-10">
                     <h2 className=" hero-heading !font-bold">{work.srNo}</h2>
                     <div className="flex flex-col gap-2.5">
                       <h2 className=" heading font-semibold lg:mt-4">
@@ -102,7 +102,7 @@ lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:
 md:top-[60px] md:min-h-[calc(100vh-60px)]
 lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:mx-15  rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
                 >
-                  <div className="relative block lg:hidden w-full h-1/2 lg:h-full lg:w-1/2 ">
+                  <div className="relative block lg:hidden w-full h-1/2 md:h-full md:w-1/2 ">
                     <Image
                       src={work.img}
                       alt={work.heading}
@@ -110,7 +110,7 @@ lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:
                       className="object-cover"
                     />
                   </div>
-                  <div className="w-full lg:w-1/2 py-2 px-5  gap-4  lg:p-10 flex flex-col justify-center  md:gap-5 lg:gap-10">
+                  <div className="w-full md:w-1/2 py-2 px-5  gap-4  md:p-10 flex flex-col justify-center  md:gap-5 md:gap-10">
                     <h2 className="hero-heading !font-bold">{work.srNo}</h2>
                     <div className="flex flex-col gap-2.5">
                       <h2 className=" heading font-semibold lg:mt-4">

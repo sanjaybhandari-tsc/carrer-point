@@ -29,7 +29,7 @@ function WhyChoose({ reasons }) {
         {reasons.map((reasons, idx) => {
           return (
             <div
-              className="lg:w-[25%] w-full flex flex-col justify-center items-center  text-center gap-5"
+              className="sm:w-[60%] md:w-[25%] w-full flex flex-col md:flex-row justify-center items-center  text-center gap-2.5 md:gap-4.5 "
               key={idx}
             >
               <img src={reasons.img} alt={reasons.heading} />

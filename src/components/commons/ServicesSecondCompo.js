@@ -6,7 +6,7 @@ function ServicesSecondCompo({ hiringData }) {
       {hiringData.map((item, index) => (
         <div
           key={index}
-          className="max-w-6xl h-full mx-auto flex flex-col xl:flex-row items-center gap-10 md:gap-12 mb-12"
+          className="max-w-6xl h-full mx-auto flex flex-col xl:flex-row items-center gap-6 md:gap-12 lg:gap-15 "
         >
           {/* Image */}
           <div className="w-full h-full xl:w-1/2">
