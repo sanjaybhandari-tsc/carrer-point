@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import styles from "../../styles/hiring/Hiring.module.css";
 
 export default function GetInTouchForm() {
     const [formData, setFormData] = useState({
@@ -140,7 +141,7 @@ export default function GetInTouchForm() {
                 onSubmit={handleSubmit}
                 className="max-w-[1312px] mx-auto space-y-6"
             >
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
                     {renderInput({
                         label: "Full Name",
                         name: "firstName",
@@ -190,6 +191,7 @@ export default function GetInTouchForm() {
                                 }
                             }}
                             containerClass="w-full !rounded-lg"
+                            className={styles.contactfield}
                             inputClass={`!w-full !h-12 !pl-14 small-text ${errors.phoneNo
                                     ? "!border-2 !border-red-500"
                                     : "!border !border-[#E9EAEB]"
