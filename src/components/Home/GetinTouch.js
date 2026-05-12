@@ -172,9 +172,9 @@ function GetinTouch() {
                     setPhone(value);
                   }
                 }}
-                containerClass="w-full"
-                inputClass="!w-full !h-12 !pl-14 !rounded-lg !border !border-[#E9EAEB] small-text"
-                buttonClass="!border-1  !border-[#E9EAEB] !bg-transparent"
+                containerClass="w-full  "
+                inputClass="!w-full !h-12 !pl-14 !border !border-[#E9EAEB] !rounded-lg  small-text"
+                buttonClass="!h-12  !border-r !border-[#E9EAEB] !bg-transparent !rounded-l-lg"
               />
             </div>
           </div>
