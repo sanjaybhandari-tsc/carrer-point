@@ -141,7 +141,7 @@ export default function SubmitcvForm() {
   const labelStyle = "content   leading-tight tracking-normal";
 
   return (
-    <div className="px-4 sm:px-6 lg:px-[100px] py-10 lg:mb-25 font-montserra">
+    <div className="px-4 sm:px-6 lg:px-[100px] py-[28px]   md:py-[40px] lg:py-[60px] font-montserra">
       <form
         noValidate
         onSubmit={handleSubmit}
@@ -286,10 +286,10 @@ export default function SubmitcvForm() {
                     }));
                   }
                 }}
-                containerClass="w-full"
-                inputClass={`!w-full !h-12 !pl-14 !rounded-lg small-text ${errors.contact
+                containerClass="w-full  !rounded-lg"
+                inputClass={`!w-full !h-12 !pl-14 small-text ${errors.contact
                   ? "!border-2 !border-red-500"
-                  : "!border !border-[#E9EAEB]"
+                  : "!border-r !border-[#E9EAEB]"
                   }`}
                 buttonClass="!border !border-[#E9EAEB] !bg-transparent"
               />
