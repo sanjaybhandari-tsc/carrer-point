@@ -45,9 +45,6 @@ export default function HeroSection() {
             </div>
 
             <div className="max-w-[85%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[45%] flex flex-col justify-center items-center">
-              {/* <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-8xl font-bold font-[Montserrat,sans-serif] text-white leading-none">
-              Hire Exceptional <span className="lg:block">Talent</span>
-            </h1> */}
               <h1 className="hero-heading-extra-home text-white ">
                 Hire Exceptional <span className="lg:block">Talent</span>
               </h1>
@@ -60,7 +57,7 @@ export default function HeroSection() {
 
             <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px]  border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors cursor-pointer">
               <span className="relative z-10 flex items-center gap-2.5">
-                <Link href="//get-in-touch">
+                <Link href="/get-in-touch">
                   <p className="small-text">Get in touch</p>
                 </Link>
                 <Image
@@ -76,8 +73,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
-      {/* className="w-full flex justify-center relative -top-8 sm:-top-12 md:-top-16 lg:-top-25 " */}
 
       <div className="w-full relative  flex justify-center -mt-16 sm:-mt-11  md:-mt-16 lg:-mt-24  z-10">
         <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex flex-wrap sm:flex-nowrap justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
