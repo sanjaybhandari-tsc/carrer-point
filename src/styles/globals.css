@@ -440,3 +440,34 @@ body {
 .animate-fadeIn {
   animation: fadeIn 0.25s ease-in-out;
 }
+.react-tel-input {
+  .flag-dropdown {
+    &:hover,
+    &.open {
+      background: transparent !important;
+
+      .selected-flag {
+        background: transparent !important;
+        border-radius: 8px 0 0 8px !important;
+
+        &:hover,
+        &:focus {
+          background: transparent !important;
+          border-radius: 8px 0 0 8px !important;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .flag-dropdown {
+      border-color: #e9eaeb !important;
+      border-radius: 8px 0 0 8px !important;
+      background: transparent !important;
+    }
+
+    .form-control {
+      border-left-color: transparent !important;
+    }
+  }
+}
