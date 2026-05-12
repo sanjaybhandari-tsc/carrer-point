@@ -19,9 +19,9 @@ export default function Lastmessage() {
   const screenWidth = useScreenSize();
 
   const iconSize = useMemo(() => {
-    if (screenWidth < 768) return 18;
-    if (screenWidth < 1024) return 24;
-    return 32;
+    if (screenWidth < 768) return 24;   // Mobile  — matches 18px font visually
+    if (screenWidth < 1024) return 28;  // Tablet  — slightly larger than 24px font
+    return 52;                          // Desktop — matches 48px font
   }, [screenWidth]);
 
   return (

@@ -30,7 +30,7 @@ function HeaderPart({ headingText }) {
     //   </h1>
     // </div>
      <header>
-      <section className="relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-10 md:py-14 lg:py-16 rounded-b-2xl overflow-hidden">
+      <section className="relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-10 md:py-14 lg:py-16 mb-10 md:mb-14 lg:mb-16 rounded-b-2xl overflow-hidden">
         
         {/* Decorative Elements */}
         <Image

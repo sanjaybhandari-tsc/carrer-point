@@ -504,7 +504,7 @@ body {
 /* Independed Text */
 
 .independent-text {
-  @apply text-[18px] md:text-[24px] lg:text-[32px] font-semibold;
+  @apply text-[18px] md:text-[24px] lg:text-[48px] font-semibold;
 }
 
 /* =========================
