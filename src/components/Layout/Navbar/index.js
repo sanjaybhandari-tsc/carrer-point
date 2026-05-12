@@ -63,7 +63,7 @@ export default function Navbar() {
       </div>
 
       <div className="flex items-center gap-3 flex-shrink-0">
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex relative w-fit">
           {/* <NavActions
             openAction={openAction}
             setOpenAction={setOpenAction}

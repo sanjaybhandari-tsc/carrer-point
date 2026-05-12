@@ -57,10 +57,11 @@
 //     </div>
 //   );
 // }
+
 import Link from "next/link";
 export default function Common() {
   return (
-    <section className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px]">
+    <section className="px-4 md:px-14 lg:px-[100px] pt-[70px] pb-6 md:pb-[30px] lg:pb-[60px] -mt-[10px] relative z-10">
       <div className="relative overflow-hidden bg-[var(--color-deep-blue)] text-white rounded-[2rem] flex flex-col items-center justify-center gap-8 md:gap-10 lg:gap-14 py-12 md:py-16 px-6 w-full">
         
         <img
