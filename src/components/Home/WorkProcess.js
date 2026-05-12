@@ -73,9 +73,7 @@ function WorkProcess() {
               {idx % 2 == 0 ? (
                 <div
                   key={idx}
-                  className="sticky top-[48px] min-h-[calc(100vh-48px)]
-md:top-[60px] md:min-h-[calc(100vh-60px)]
-lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
+                  className="sticky top-[48px] min-h-[calc(100vh-48px) md:top-[60px] md:min-h-[calc(100vh-60px)] lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex md:flex-row flex-col"
                 >
                   <div className="relative w-full h-1/2 md:h-full md:w-1/2  ">
                     <Image
@@ -98,11 +96,9 @@ lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:
               ) : (
                 <div
                   key={idx}
-                  className="sticky top-[48px] min-h-[calc(100vh-48px)]
-md:top-[60px] md:min-h-[calc(100vh-60px)]
-lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:mx-15  rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex lg:flex-row flex-col"
+                  className="sticky top-[48px] min-h-[calc(100vh-48px)] md:top-[60px] md:min-h-[calc(100vh-60px)] lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:mx-15  rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex md:flex-row flex-col"
                 >
-                  <div className="relative block lg:hidden w-full h-1/2 md:h-full md:w-1/2 ">
+                  <div className="relative block md:hidden lg:hidden w-full h-1/2 md:h-full md:w-1/2 ">
                     <Image
                       src={work.img}
                       alt={work.heading}
@@ -119,7 +115,7 @@ lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 h-[90vh] lg:h-[95vh] md:mx-13 lg:
                       <p className="small-text">{work.desc}</p>
                     </div>
                   </div>
-                  <div className="relative hidden  lg:block w-full h-1/2 lg:h-full lg:w-1/2 ">
+                  <div className="relative hidden  md:block w-full h-1/2 md:h-full md:w-1/2 ">
                     <Image
                       src={work.img}
                       alt={work.heading}

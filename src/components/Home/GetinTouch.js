@@ -305,7 +305,7 @@ function GetinTouch() {
               placeholder="Write your message here..."
               value={formData.message}
               onChange={handleChange}
-              className="w-full h-20 sm:h-24 md:h-28 border border-[#E9EAEB] rounded-lg px-3 py-3 outline-none focus:outline-none text-sm text-gray-700 placeholder-gray-400 resize-none"
+              className="w-full small-text h-20 sm:h-24 md:h-28 border border-[#E9EAEB] rounded-lg px-3 py-3 outline-none focus:outline-none text-sm text-gray-700 placeholder-gray-400 resize-none"
             />
           </div>
 
