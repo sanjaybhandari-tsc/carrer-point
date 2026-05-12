@@ -1,28 +1,38 @@
 export default function ExecutiveBanner() {
   return (
-    <div className="relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-22 rounded-b-2xl overflow-hidden">
+    <section className="pb-7 md:pb-10 lg:pb-[60px] relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-22 rounded-b-2xl overflow-hidden">
       <img
-        className="absolute  lg:top-0 lg:left-0  md:top-0 md:left-0 -top-10 -left-5 "
+        className="absolute lg:top-0 lg:left-0 md:top-0 md:left-0 -top-10 -left-5"
         src="/images/permanentHiring/permanentTop1.svg"
+        alt=""
+        aria-hidden="true"
       />
       <img
-        className="absolute  lg:top-0 lg:left-0  md:top-0 md:left-0 -top-10 -left-5 "
+        className="absolute lg:top-0 lg:left-0 md:top-0 md:left-0 -top-10 -left-5"
         src="/images/permanentHiring/permanentTop2.svg"
+        alt=""
+        aria-hidden="true"
       />
-
       <img
-        className="absolute lg:top-0 lg:right-0 md:top-0 md:right-0  -top-10 -right-5"
+        className="absolute lg:top-0 lg:right-0 md:top-0 md:right-0 -top-10 -right-5"
         src="/images/permanentHiring/permanentTop3.svg"
+        alt=""
+        aria-hidden="true"
       />
       <img
-        className="absolute lg:top-0 lg:right-0 md:top-0 md:right-0  -top-10 -right-5"
+        className="absolute lg:top-0 lg:right-0 md:top-0 md:right-0 -top-10 -right-5"
         src="/images/permanentHiring/permanentTop4.svg"
+        alt=""
+        aria-hidden="true"
       />
-      <h2 className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-none lg:text-5xl text-white">
+      <h1 className="banner-heading font-montserrat text-white">
         Executive Search
-      </h2>
-    </div>
+      </h1>
+    </section>
   );
 }
 
- 
+
+{/* <h2 className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-none lg:text-5xl text-white">
+  Executive Search
+</h2> */}

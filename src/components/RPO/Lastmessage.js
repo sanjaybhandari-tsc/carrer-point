@@ -1,33 +1,50 @@
-import React from "react";
+import React, { useMemo,useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
+
 export default function Lastmessage() {
+ function useScreenSize() {
+  const [screenWidth, setScreenWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 1024
+  );
+
+  useEffect(() => {
+    const handler = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handler);
+    return () => window.removeEventListener("resize", handler);
+  }, []);
+
+  return screenWidth;
+}
+
+  const screenWidth = useScreenSize();
+
+  const iconSize = useMemo(() => {
+    if (screenWidth < 768) return 24;   // Mobile  — matches 18px font visually
+    if (screenWidth < 1024) return 28;  // Tablet  — slightly larger than 24px font
+    return 52;                          // Desktop — matches 48px font
+  }, [screenWidth]);
+
+
   return (
-    <div className="w-full px-2 md:px-16 bg-white py-16 md:py-24">
-      <div className=" flex items-start justify-around">
-        <div className="mb-6 w-20 sm:w-22 md:w-30 lg:w-40 ">
-          <Image
-            src="/images/about/quote.svg"
-            alt="quote"
-            width={84}
-            height={84}
-            className="object-cover"
-          />
-        </div>
-        <h2 className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[150%] text-[#333333] text-[20px] sm:text-[22px] md:text-[30px]">
-          We
-          <span className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[150%] text-[#0277BD]">
-            {" "}
-            support
-          </span>
-          , organizations streamline hiring while building
-          <span className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[150%] text-[#0277BD]">
-            {" "}
-            strong
-          </span>{" "}
-          and capable team.
+    <section className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px] bg-white">
+      <div className="flex items-start ">
+        <Image
+          src="/images/about/quote.svg"
+          alt="quote"
+          width={iconSize}
+          height={iconSize}
+          className="object-cover flex-shrink-0 -mt-1"
+        />
+        <h2 className="independent-text">
+          We help
+          <span className="text-[#0277BD]"> organizations </span>, identify
+          experienced
+          <span className="text-[#0277BD]"> leaders</span> who bring strong
+          vision and industry
+          <span className="text-[#0277BD]"> expertise </span>.
         </h2>
       </div>
-    </div>
+    </section>
   );
 }

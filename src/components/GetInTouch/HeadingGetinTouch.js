@@ -3,7 +3,7 @@ import React from 'react'
 export default function HeadingGetinTouch() {
     return (
 
-        <header className="relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] md:py-12 py-10 rounded-b-2xl overflow-hidden" aria-label="Submit CV header">
+        <header className="h-[56px] md:h-[80px] lg:h-[120px] relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] md:py-12 py-10 mb-[28px]   md:mb-[40px] lg:mb-[60px] rounded-b-2xl overflow-hidden" aria-label="Submit CV header">
             <img
                 className="absolute  lg:top-0 lg:left-0  md:top-0 md:left-0 -top-10 -left-5 "
                 src="/images/permanentHiring/permanentTop1.svg"
