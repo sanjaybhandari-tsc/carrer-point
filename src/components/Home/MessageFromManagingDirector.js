@@ -41,7 +41,7 @@ function MessageFromManagingDirector() {
       {/* Content div */}
       <div
         ref={ref}
-        className={` w-full md:w-1/2 px-10 py-5 md:pt-5 flex flex-col justify-center gap-3 md:gap-5 lg:gap-10 mt-5 md:mt-0 ${
+        className={` w-full mt-6 md:mt-12 lg:mt-15 md:w-1/2 px-10 py-5 md:pt-5 flex flex-col justify-center gap-3 md:gap-5 lg:gap-10  ${
           isVisible ? styles.slideup : "opacity-0"
         }`}
       >

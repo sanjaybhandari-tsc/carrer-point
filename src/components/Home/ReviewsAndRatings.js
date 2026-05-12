@@ -13,7 +13,7 @@ function ReviewsAndRatings() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }, // 20% visible hone par trigger
+      { threshold: 0.2 },
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -97,18 +97,7 @@ function ReviewsAndRatings() {
     },
   ];
   return (
-    //  <div className="py-6 px-4 flex  flex-col items-center w-full justify-center text-center lg:mb-10 md:mt-3 overflow-hidden"></div>
     <div className="  px-4 flex  flex-col gap-6 md:gap-12 lg:gap-15 items-center w-full justify-center text-center overflow-hidden  py-7 md:py-10 lg:py-15">
-      {/* <div className="flex flex-col items-center max-w-[80%] justify-center text-center gap-2">
-        <h3 className="heading !font-bold ">
-          Employee <span className=" text-[#0277BD]">Reviews</span> & Ratings
-        </h3>
-        <p className="content">
-          Real ratings and feedback from professionals, sharing their
-          experiences of the workplace, team culture, growth opportunities, and
-          overall work environment.
-        </p>
-      </div> */}
       <div className="flex flex-col items-center max-w-[95%] md:w-[70%] justify-center text-center gap-2 md:gap-3 lg:gap-4">
         <h3 className="heading !font-bold ">
           Employee <span className=" text-[#0277BD]">Reviews</span> & Ratings
@@ -120,71 +109,6 @@ function ReviewsAndRatings() {
         </p>
       </div>
 
-      {/* <div
-        ref={ref}
-        className={`w-full md:my-9 ${isVisible ? styles.slideleft : " opacity-0"}`}
-      >
-        <div className=" flex flex-nowrap w-full overflow-x-auto overflow-y-hidden gap-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:pl-5">
-          {Reviews.map((review, idx) => {
-            return (
-              <>
-                <div
-                  key={idx}
-                  className="relative border rounded-4xl border-[#E1EBFF] shadow px-4 py-10 text-left flex flex-col gap-3 lg:gap-7 lg:min-w-[500px] md:min-w-1/2 min-w-full overflow-hidden"
-                >
-                  <Image
-                    src="/images/homepage/Commas.svg"
-                    alt="Quotation mark decoration"
-                    width={80}
-                    height={80}
-                    className="absolute top-[45%] left-[45%] pointer-events-none"
-                  />
-                  <div className="flex gap-1">
-                    {[...Array(review.full)].map((_, i) => (
-                      <Image
-                        key={`full-${i}`}
-                        src="/images/homepage/fullStar.svg"
-                        alt="Full star rating"
-                        width={20}
-                        height={20}
-                      />
-                    ))}
-
-                    {[...Array(review.half)].map((_, i) => (
-                      <Image
-                        key={`half-${i}`}
-                        src="/images/homepage/halfStar.svg"
-                        alt="Half star"
-                        width={20}
-                        height={20}
-                      />
-                    ))}
-
-                    {[...Array(review.empty)].map((_, i) => (
-                      <Image
-                        key={`empty-${i}`}
-                        src="/images/homepage/emptyStar.svg"
-                        alt="Empty star"
-                        width={20}
-                        height={20}
-                      />
-                    ))}
-                  </div>
-                  <h5 className="content font-[500]">{review.desc}</h5>
-                  <div>
-                    <h2 className="content !font-bold text-[#252B37]">
-                      {review.position}
-                    </h2>
-                    <p className="small-text text-[#535862]">
-                      {review.address}
-                    </p>
-                  </div>
-                </div>
-              </>
-            );
-          })}
-        </div>
-      </div> */}
       <div
         ref={ref}
         className={`w-full ${isVisible ? styles.slideright : " opacity-0"}`}

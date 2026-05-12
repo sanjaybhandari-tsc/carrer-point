@@ -186,7 +186,7 @@ function MncsEnterprises() {
           {[...Array(3)].map((_, i) =>
             logos.map((logo) => (
               <Image
-                key={`${i}-${logo.alt}`}
+                key={i}
                 width={120}
                 height={120}
                 src={logo.src}

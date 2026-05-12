@@ -312,7 +312,7 @@ function GetinTouch() {
           <div className="flex justify-center items-center mt-3">
             <button
               type="submit"
-              className="hover:cursor-pointer bg-[var(--color-primary-hover)] text-white py-3 px-5 rounded-lg"
+              className="hover:cursor-pointer bg-[var(--color-primary)] text-white py-3 px-5 rounded-lg"
             >
               Request hiring support
             </button>
