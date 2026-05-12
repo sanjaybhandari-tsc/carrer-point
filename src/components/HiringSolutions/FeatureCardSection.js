@@ -82,9 +82,9 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section ref={ref} className="px-6 md:px-12 lg:px-20 py-16">
+    <section ref={ref} className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px]">
       <div className="max-w-7xl mx-auto">
-        <h2 className="heading-bold text-center mb-8 sm:mb-10 lg:mb-12">
+        <h2 className="main-heading text-center mb-6 md:mb-12 lg:mb-[60px]">
           Features
         </h2>
         {/* <h2 className="font-montserrat font-bold text-2xl sm:text-3xl lg:text-[36px] text-center leading-tight tracking-tight md:text-3xl lg:text-4xl xl:text-5xl mb-8 sm:mb-10 lg:mb-12">
@@ -95,7 +95,7 @@ export default function FeaturesSection() {
           {features.map((item, index) => (
             <div
               key={index}
-              className={`transform transition-all duration-700 ease-out
+              className={`card-content transform transition-all duration-700 ease-out 
     ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >

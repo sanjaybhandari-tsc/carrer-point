@@ -29,8 +29,8 @@ export default function CandidateNetworkSection() {
   ];
 
   return (
-    <section className="py-10 lg:px-10">
-      <div className="max-w-6xl mx-auto text-center px-2 sm:px-4 lg:px-6 py-10 sm:py-12 lg:py-14">
+    <section className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px]">
+      <div className="max-w-6xl mx-auto text-center px-2 sm:px-4 lg:px-6 pb-10 sm:pb-12 lg:pb-14">
         <h2
           className="heading"
         >
@@ -75,7 +75,7 @@ export default function CandidateNetworkSection() {
         {works.map((work, idx) => (
           <div
             key={idx}
-            className="lg:sticky lg:top-0 z-10 min-h-[90vh] mx-5 md:mx-13 lg:mx-15 rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex flex-col lg:flex-row items-stretch"
+            className="lg:sticky lg:top-[80px] lg:min-h-[calc(100vh-80px)] z-10 min-h-[90vh] rounded-[40px] overflow-hidden bg-[#0B2239] text-white flex flex-col lg:flex-row items-stretch"
           >
             {idx % 2 === 0 && (
               <div className="w-full lg:w-1/2 self-stretch">

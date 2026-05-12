@@ -6,14 +6,16 @@ export default function FeatureCard({ icon, title, description }) {
         <div className="text-sky-500">{icon}</div>
       </div>
 
-      <h3 className="subheading-smaller text-center mb-3">
+      {/* <h3 className="subheading-smaller text-center mb-3"> */}
+      <h3 className="card-heading text-center mb-3 ">
         {title}
       </h3>
       {/* <h3 className="font-montserrat font-semibold text-base sm:text-lg leading-relaxed text-center mb-3">
         {title}
       </h3> */}
 
-      <p className="small-text text-center ">
+      {/* <p className="small-text text-center "> */}
+      <p className="card-content text-center ">
         {description}
       </p>
       {/* <p className="font-roboto font-normal text-xs sm:text-sm leading-relaxed text-center ">
