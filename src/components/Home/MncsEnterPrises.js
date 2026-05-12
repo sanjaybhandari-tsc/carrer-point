@@ -180,7 +180,9 @@ function MncsEnterprises() {
       </p>
 
       <div className={`${styles.marqueeWrapper}`}>
-        <div className={`${styles.marqueeTrack} h-7 sm:h-8 md:h-9 lg:h-10`}>
+        <div
+          className={`${styles.marqueeTrack} flex md:gap-10 h-7 sm:h-8 md:h-9 lg:h-10`}
+        >
           {[...Array(3)].map((_, i) =>
             logos.map((logo) => (
               <Image

@@ -21,18 +21,18 @@ function MessageFromManagingDirector() {
     return () => observer.disconnect();
   }, []);
   return (
-    <div className="my-7 md:my-10 lg:my-15  dark:text-white pt-6 text-white bg-[#0B2239] md:h-[90vh] w-full flex flex-col md:gap-10 lg:gap-15  min-[500px]:flex-row sm:flex-row  md:pt-2 overflow-hidden">
+    <div className="dark:text-white my-7 md:my-10 md:my-15   text-white bg-[#0B2239] md:h-[80%] w-full flex flex-col min-[500px]:flex-row sm:flex-row  overflow-hidden ">
       {/* Image div */}
       <div
         ref={ref}
-        className={`w-full flex md:h-full items-end md:w-[40%]  ${
+        className={`w-full flex items-end md:w-1/2  ${
           isVisible ? styles.slideup : "opacity-0"
         }`}
       >
         <Image
           width={100}
           height={100}
-          className="w-full h-full md:w-[100%]  object-fit"
+          className="w-full md:w-[100%]  object-fit"
           alt="managing director"
           src="/images/homepage/Manager.png"
         />
@@ -41,7 +41,7 @@ function MessageFromManagingDirector() {
       {/* Content div */}
       <div
         ref={ref}
-        className={` w-full md:w-[56%] px-10 py-5 md:pt-5 flex flex-col justify-center gap-3 md:gap-5 lg:gap-10 mt-5 md:mt-0 ${
+        className={` w-full md:w-1/2 px-10 py-5 md:pt-5 flex flex-col justify-center gap-3 md:gap-5 lg:gap-10 mt-5 md:mt-0 ${
           isVisible ? styles.slideup : "opacity-0"
         }`}
       >
@@ -62,8 +62,7 @@ function MessageFromManagingDirector() {
         </div>
 
         <div>
-          {/* min-[500px]:line-clamp-4 sm:line-clamp-6 md:line-clamp-8   lg:line-clamp-none */}
-          <p className="banner-content  font-[500] leading-relaxed">
+          <p className="subheading min-[500px]:line-clamp-4 sm:line-clamp-6 md:line-clamp-8   lg:line-clamp-none font-[500] leading-relaxed">
             At Career Point Placement Services, we believe the right talent
             drives the success of every organization. For over 17 years, we have
             helped companies across India connect with skilled professionals who

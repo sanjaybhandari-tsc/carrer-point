@@ -171,7 +171,7 @@ function OurTeam() {
     <div className="py-7 md:py-10 lg:py-15 px-4 flex flex-col  gap-6 md:gap-12 lg:gap-15 items-center overflow-hidden">
       <div className="flex flex-col justify-center items-center text-center max-w-[90%] md:w-[70%] gap-2 md:gap-3 lg:gap-4">
         <h2 className="heading !font-bold">
-          Meet Our <span className="text-[#000080]">Team</span>
+          Meet Our <span className=" text-[#0277BD]">Team</span>
         </h2>
         <p className="content">
           A team of experienced professionals delivering strong hiring solutions
