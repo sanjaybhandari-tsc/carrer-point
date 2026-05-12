@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import styles from "../../styles/hiring/Hiring.module.css";
+import styles from "../../styles/getinTouch/GetinTouch.module.css";
 
 export default function GetInTouchForm() {
     const [formData, setFormData] = useState({

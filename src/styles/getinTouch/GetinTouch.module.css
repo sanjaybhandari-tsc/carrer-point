@@ -1,0 +1,19 @@
+/* .contactfield{
+  :global(.flag-dropdown){
+    border-radius:5px 0px 0px 5px;
+  }
+
+  :global(.selected-flag){
+    border-radius:5px 0px 0px 5px;
+  }
+} */
+.contactfield {
+  :global(.react-tel-input .selected-flag) {
+    border-radius: 5px 0 0 5px !important;
+  }
+
+  :global(:is(.react-tel-input .flag-dropdown:hover, .react-tel-input .flag-dropdown.open) .selected-flag:hover),
+  :global(:is(.react-tel-input .flag-dropdown:hover, .react-tel-input .flag-dropdown.open) .selected-flag:focus) {
+    border-radius: 5px 0 0 5px !important;
+  }
+}

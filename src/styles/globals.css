@@ -61,90 +61,6 @@ body {
   scrollbar-width: none;
 }
 
-/* =========================
-   TYPOGRAPHY UTILITIES
-========================= */
-/* @layer utilities {
-  .hero-heading-extra {
-    font-family: var(--font-montserrat);
-    @apply font-extrabold tracking-tight leading-tight 
-         text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl;
-  }
-  .hero-heading {
-    font-family: var(--font-montserrat);
-    @apply font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
-  }
-
-  .heading {
-    font-family: var(--font-montserrat);
-    @apply font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
-  }
-
-  .heading-extrabold {
-    font-family: var(--font-montserrat);
-    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black;
-  }
-  .heading-bold {
-    font-family: var(--font-montserrat);
-    @apply font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
-  }
-
-  .subheading {
-    font-family: var(--font-montserrat);
-    @apply font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
-  }
-  .subheading-semibold {
-    font-family: var(--font-montserrat);
-    @apply font-semibold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
-  }
-
-  .subheading-smaller {
-    font-family: var(--font-montserrat);
-    @apply font-semibold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl;
-  }
-  .subheading-bold {
-    font-family: var(--font-montserrat);
-    @apply font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
-  }
-
-  .content {
-    font-family: var(--font-roboto);
-    @apply font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
-  }
-  .content-semibold-roboto {
-    font-family: var(--font-roboto);
-    @apply font-semibold text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
-  }
-  .content-semibold {
-    font-family: var(--font-montserrat);
-    @apply font-semibold text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl;
-  }
-
-  .small-text {
-    font-family: var(--font-inter);
-    @apply font-light text-xs sm:text-sm md:text-base lg:text-base xl:text-lg;
-  }
-
-  .font-montserrat {
-    font-family: var(--font-montserrat);
-  }
-
-  .font-roboto {
-    font-family: var(--font-roboto);
-  }
-
-  .font-inter {
-    font-family: var(--font-inter);
-  }
-
-  .getintoch_button {
-    font-family: var(--font-montserrat);
-    @apply text-xs sm:text-sm md:text-base;
-  }
-  .message {
-    @apply font-bold text-[18px] sm:text-[20px] md:text-[23px] lg:text-[45px] xl:text-[50px];
-  }
-} */
 @layer utilities {
   .hero-heading-extra {
     font-family: var(--font-montserrat);
@@ -235,9 +151,6 @@ body {
   .message-About {
     @apply font-bold text-[18px] sm:text-[20px] md:text-[23px] lg:text-[45px] xl:text-[50px];
   }
-
-  /* for home page */
-
   .hero-heading-extra-home {
     font-family: var(--font-montserrat);
     @apply font-bold tracking-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
@@ -252,20 +165,6 @@ body {
     @apply text-sm lg:text-base;
   }
 }
-
-/* Heading : font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl */
-/* SubHeading : font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl */
-/* Content : font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl */
-
-/* Hero Heading : font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl */
-
-/* Heading : font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl */
-
-/* SubHeading : font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl */
-
-/* Content : font-normal text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl */
-
-/* Small Text : font-light text-xs sm:text-sm md:text-base lg:text-base xl:text-lg */
 
 .react-select__control {
   width: 100% !important;
@@ -294,6 +193,7 @@ body {
 .react-select__indicator-separator {
   display: none !important;
 }
+
 
 /* Banner Heading */
 .banner-heading {
@@ -344,89 +244,6 @@ body {
 .independent-text {
   @apply text-[18px] md:text-[24px] lg:text-[48px] font-semibold;
 }
-
-/* =========================
-   SPACING SYSTEM
-
-/* Section Spacing 
-.section-spacing {
-  @apply py-[56px] md:py-[80px] lg:py-[120px];
-}
-
-/* Side Spacing 
-.side-spacing {
-  @apply px-4 md:px-8 lg:px-16;
-}
-
-/* Heading -> Subheading Gap 
-.heading-subheading-gap {
-  @apply gap-[8px] md:gap-[12px] lg:gap-[16px];
-}
-
-/* Subheading -> Content Gap 
-.subheading-content-gap {
-  @apply gap-[24px] md:gap-[48px] lg:gap-[60px];
-}
-*/
-/* =========================
-   COMMON CONTAINER
-
-.website-container {
-  @apply max-w-7xl mx-auto px-4 md:px-8 lg:px-16;
-}
-
-
-@layer components {
-  .blue-glow-card {
-    @apply relative overflow-hidden rounded-2xl bg-white;
-
-    @apply shadow-[inset_0px_2px_16px_0px_#039BE614,_0px_4px_16px_0px_#00000014];
-
-    @apply transition-all duration-300 hover:-translate-y-1;
-
-    @apply hover:shadow-[inset_0px_2px_20px_0px_#039BE614,_0px_6px_20px_0px_#00000020];
-  }
-
-  @media (max-width: 1023px) {
-    .blue-glow-card {
-      @apply shadow-[inset_0px_2px_16px_0px_#039BE614,_0px_4px_16px_0px_#00000014];
-    }
-
-    .blue-glow-card:hover {
-      @apply shadow-[inset_0px_2px_20px_0px_#039BE614,_0px_6px_20px_0px_#00000020];
-    }
-  }   
-
-  .blue-glow-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(56, 189, 248, 0.1),
-      rgba(59, 130, 246, 0.05),
-      transparent
-    );
-    pointer-events: none;
-  }
-
-  .blue-glow-card::after {
-    content: "";
-    position: absolute;
-    top: -60px;
-    right: -60px;
-    width: 160px;
-    height: 160px;
-    border-radius: 9999px;
-    background: rgba(56, 189, 248, 0.12);
-    filter: blur(60px);
-    pointer-events: none;
-  }
-}
-
-/* This is a single-line comment */
-/* <div className="blue-glow-card p-6"> */
-/* <div className="blue-glow-card border border-[#B2B2B259] min-h-[240px]"> */
 
 @keyframes fadeIn {
   from {
