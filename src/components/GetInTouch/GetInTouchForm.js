@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import styles from "../../styles/hiring/Hiring.module.css";
 
 export default function GetInTouchForm() {
     const [formData, setFormData] = useState({
@@ -190,6 +191,7 @@ export default function GetInTouchForm() {
                                 }
                             }}
                             containerClass="w-full !rounded-lg"
+                            className={styles.contactfield}
                             inputClass={`!w-full !h-12 !pl-14 small-text ${errors.phoneNo
                                     ? "!border-2 !border-red-500"
                                     : "!border !border-[#E9EAEB]"
