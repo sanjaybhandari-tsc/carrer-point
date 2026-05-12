@@ -34,7 +34,7 @@ function MessageFromManagingDirector() {
           height={100}
           className="w-full md:w-[100%]  object-fit"
           alt="managing director"
-          src="/images/homepage/ManagingDirector.png"
+          src="/images/homepage/Manager.png"
         />
       </div>
 

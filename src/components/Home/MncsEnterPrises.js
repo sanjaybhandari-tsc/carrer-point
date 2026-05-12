@@ -6,7 +6,7 @@ const logos = [
     src: "/images/homepage/AbbottLogo.svg",
     alt: "AbbottLogo",
     weidth: 103.80330657958984,
-    height: 36,
+    height: 25,
     smW: 70,
   },
   {
@@ -27,16 +27,16 @@ const logos = [
     src: "/images/homepage/cilpaLogo.svg",
     alt: "cilpaLogo",
     weidth: 114,
-    height: 36,
+    height: 26,
     smW: 67,
   },
-  {
-    src: "/images/homepage/emcureLogo.svg",
-    alt: "emcureLogo",
-    weidth: "254",
-    height: "36",
-    smW: 157,
-  },
+  // {
+  //   src: "/images/homepage/emcureLogo.svg",
+  //   alt: "emcureLogo",
+  //   weidth: "254",
+  //   height: "10",
+  //   smW: 157,
+  // },
   {
     src: "/images/homepage/ZuventusLogo.svg",
     alt: "ZuventusLogo",
@@ -66,13 +66,6 @@ const logos = [
     smW: 157,
   },
   {
-    src: "/images/homepage/bhartiAyaLogo.svg",
-    alt: "bhartiAyaLogo",
-    weidth: "254",
-    height: "36",
-    smW: 157,
-  },
-  {
     src: "/images/homepage/hdfc_lifeLogo.svg",
     alt: "hdfc_lifeLogo",
     weidth: "254",
@@ -94,15 +87,15 @@ const logos = [
     smW: 157,
   },
   {
-    src: "/images/homepage/bhartiAyaLogo.svg",
-    alt: "bhartiAyaLogo",
+    src: "/images/homepage/bhartiAyalLogo.svg",
+    alt: "bhartiAyalLogo",
     weidth: "254",
     height: "36",
     smW: 157,
   },
   {
-    src: "/images/homepage/zorviaLogo.svg",
-    alt: "zorviaLogo",
+    src: "/images/homepage/zorvialLogo.svg",
+    alt: "zorvialLogo",
     weidth: "254",
     height: "36",
     smW: 157,
@@ -125,7 +118,7 @@ const logos = [
     src: "/images/homepage/EnduringValueLogo.svg",
     alt: "EnduringValueLogo",
     weidth: "254",
-    height: "40",
+    height: "60",
     smW: 157,
   },
   {
@@ -170,33 +163,34 @@ const logos = [
     height: "36",
     smW: 157,
   },
+  {
+    src: "/images/homepage/adityaBirlaCapital.svg",
+    alt: "adityaBirlaCapital",
+    weidth: "254",
+    height: "36",
+    smW: 157,
+  },
 ];
 
 function MncsEnterprises() {
   return (
-    <div className="text-center py-14 md:py-20 lg:py-30 ">
-      <p className="pb-6 md:pb-7 lg:pb-8 text-2xl sm:text-[28px] lg:text-[32px] font-semibold  text-[#333333]">
+    <div className="text-center py-14 md:py-20 lg:py-30  ">
+      <p className="pb-6 md:pb-7 lg:pb-15 text-sm md:text-[16px] lg:text-lg  text-[#333333]">
         Trusted by 50+ MNCs, Enterprises, Startups
       </p>
 
-      <div className={` ${styles.marqueeWrapper}`}>
-        <div className={`${styles.marqueeTrack} h-5 sm:h-9 md:h-11`}>
+      <div className={`${styles.marqueeWrapper}`}>
+        <div className={`${styles.marqueeTrack} h-7 sm:h-8 md:h-9 lg:h-10`}>
           {[...Array(3)].map((_, i) =>
             logos.map((logo) => (
-              // <img
-              //   key={`${i}-${logo.alt}`}
-              //   src={logo.src}
-              //   alt={logo.alt}
-              //   className="mx-5"
-              // />
               <Image
                 key={`${i}-${logo.alt}`}
-                width={100}
-                height={100}
+                width={120}
+                height={120}
                 src={logo.src}
                 alt={logo.alt}
-                // style={{ width: logo.smW }}
-                className={`mx-1 sm:mx-4 md:mx-9 lg:w-full lg:h-full `}
+                className={`mx-4 object-contain flex-shrink-0`}
+                style={{ width: "auto", height: logo.height }}
               />
             )),
           )}

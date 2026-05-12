@@ -96,7 +96,8 @@
 .marqueeTrack {
   display: flex;
   width: max-content;
-  animation: marquee 22s linear infinite;
+  align-items: center;
+  animation: marquee 20s linear infinite;
 }
 
 .marqueeTrack:hover {

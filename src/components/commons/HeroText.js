@@ -29,7 +29,7 @@ function HeaderPart({ headingText }) {
     //     {headingText}
     //   </h1>
     // </div>
-    <div className="relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-10 md:py-14 lg:py-16 rounded-b-2xl overflow-hidden">
+    <div className="relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-10 md:py-14 lg:py-16 rounded-b-2xl overflow-hidden mb-7 md:mb-10 lg:mb-15">
       <Image
         className="absolute -top-13 lg:-top-10 -left-5"
         alt="header permanent hiring decoration"

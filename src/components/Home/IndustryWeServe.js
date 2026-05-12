@@ -50,12 +50,12 @@ function IndustryWeServe() {
           long-term growth.
         </p>
       </div> */}
-      <div className="text-center flex flex-col gap-2 md:gap-3 lg:gap-4 max-w-[85%] shrink-0">
+      <div className="text-center  max-w-[90%] md:w-[70%] flex flex-col gap-2 md:gap-3 lg:gap-4  shrink-0">
         <h3 className="heading !font-bold">
           <span className="text-[#0277BD]">Industries </span>
           <span>We Serve</span>
         </h3>
-        <p className="content font-[500] text-sm md:text-base">
+        <p className="content font-[500] w-full text-sm md:text-base">
           Delivering top talent to organizations across fast-growing industries,
           helping businesses build skilled teams that drive innovation and
           long-term growth.

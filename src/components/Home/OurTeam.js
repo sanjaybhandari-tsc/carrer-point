@@ -144,7 +144,7 @@ function OurTeam() {
     //   </div>
     // </div>
     <div className="py-14 md:py-20 lg:py-30 px-4 flex flex-col  gap-6 md:gap-12 lg:gap-15 items-center overflow-hidden">
-      <div className="flex flex-col justify-center items-center text-center max-w-[80%] gap-2 md:gap-3 lg:gap-4">
+      <div className="flex flex-col justify-center items-center text-center max-w-[90%] md:w-[70%] gap-2 md:gap-3 lg:gap-4">
         <h2 className="heading !font-bold">
           Meet Our <span className="text-[#000080]">Team</span>
         </h2>
