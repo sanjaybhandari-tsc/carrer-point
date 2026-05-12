@@ -134,7 +134,7 @@ export default function GetInTouchForm() {
     );
 
     return (
-        <div className="px-4 sm:px-6 lg:px-25 py-6 md:py-16 lg:py-25 font-montserrat">
+        <div className="px-4 sm:px-6 lg:px-25 py-[28px]   md:py-[40px] lg:py-[60px] font-montserrat">
             <form
                 noValidate
                 onSubmit={handleSubmit}
@@ -189,8 +189,8 @@ export default function GetInTouchForm() {
                                     }));
                                 }
                             }}
-                            containerClass="w-full"
-                            inputClass={`!w-full !h-12 !pl-14 !rounded-lg small-text ${errors.phoneNo
+                            containerClass="w-full !rounded-lg"
+                            inputClass={`!w-full !h-12 !pl-14 small-text ${errors.phoneNo
                                     ? "!border-2 !border-red-500"
                                     : "!border !border-[#E9EAEB]"
                                 }`}
