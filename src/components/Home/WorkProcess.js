@@ -42,7 +42,7 @@ function WorkProcess() {
   ];
   return (
     //  className="w-full flex flex-col items-center gap-3 md:gap-4 lg:gap-6 py-6 px-4"
-    <div className="w-full flex flex-col items-center gap-6 md:gap-12 lg:gap-15 px-4">
+    <div className="w-full flex flex-col items-center gap-6 md:gap-12 lg:gap-15 px-4 py-7 md:py-10 md:py-15">
       {/* <div className="text-center flex flex-col gap-3 lg:gap-5 max-w-[70%]">
         <h3 className="heading !font-bold">
           <span>Our Work </span>{" "}
