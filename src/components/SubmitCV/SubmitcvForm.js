@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Select from "react-select";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import styles from "../../styles/hiring/Hiring.module.css"  
 
 export default function SubmitcvForm() {
   const [fileKey, setFileKey] = useState(Date.now());
@@ -286,6 +287,7 @@ export default function SubmitcvForm() {
                     }));
                   }
                 }}
+                className={styles.contactfield}
                 containerClass="w-full  !rounded-lg"
                 inputClass={`!w-full !h-12 !pl-14 small-text ${errors.contact
                   ? "!border-2 !border-red-500"
