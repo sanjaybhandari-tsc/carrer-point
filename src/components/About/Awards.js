@@ -43,8 +43,6 @@ export default function Awards() {
         Awards And Recognition
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-strich mb-6">
-        {/* <div className={`flex lg:gap-6 gap-2 flex-col  transition-all duration-700 lg:max-h-60  xl:max-h-110 overflow-y-auto pr-2 no-scrollbar ${visible  ? "opacity-100 translate-x-0": "opacity-0 -translate-x-16" } order-2 lg:order-1`}
-          > */}
         <div className={`flex lg:gap-6 gap-3 flex-col h-full transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-16"
           } order-2 lg:order-1`}>
           {awardsData.map((item, index) => (

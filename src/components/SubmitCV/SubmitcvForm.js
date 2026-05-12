@@ -140,6 +140,25 @@ export default function SubmitcvForm() {
     }`;
 
   const labelStyle = "content   leading-tight tracking-normal";
+  
+  const handleGenderChange = (selectedOption) => {
+    setFormData({ ...formData, gender: selectedOption?.value || "" });
+  };
+
+  const handleDobFocus = (e) => {
+    e.target.type = "date";
+  };
+  const handleDobBlur = (e) => {
+    if (!formData.dob) {
+      e.target.type = "text";
+    }
+  };
+  const handleContactChange = (value) => {
+    if (value.length <= 12) {
+      setFormData((prev) => ({ ...prev, contact: value }));
+      setErrors((prev) => ({ ...prev, contact: "" }));
+    }
+  };
 
   return (
     <div className="px-4 sm:px-6 lg:px-[100px] py-[28px]   md:py-[40px] lg:py-[60px] font-montserra">
@@ -196,33 +215,13 @@ export default function SubmitcvForm() {
 
             <div className="flex items-start flex-col gap-[2px]">
               <label className={labelStyle}>Gender</label>
-              {/* <select
-                name="gender"
-                className={inputStyle("gender")}
-                onChange={handleChange}
-                value={formData.gender}
-                onFocus={handleFocus}
-              >
-                <option value="" disabled >
-                  Gender
-                </option>
-
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Others">Others</option>
-              </select> */}
               <Select
                 options={genderOptions}
                 placeholder="Select Gender"
                 value={genderOptions.find(
                   (option) => option.value === formData.gender,
                 )}
-                onChange={(selectedOption) =>
-                  setFormData({
-                    ...formData,
-                    gender: selectedOption?.value || "",
-                  })
-                }
+                onChange={handleGenderChange}
                 className={inputStyle("gender")}
                 classNamePrefix="react-select"
               />
@@ -237,12 +236,8 @@ export default function SubmitcvForm() {
                 className={inputStyle("dob")}
                 value={formData.dob}
                 onChange={handleChange}
-                onFocus={(e) => (e.target.type = "date")}
-                onBlur={(e) => {
-                  if (!formData.dob) {
-                    e.target.type = "text";
-                  }
-                }}
+                onFocus={handleDobFocus}
+                onBlur={handleDobBlur}
               />
             </div>
 
@@ -262,31 +257,10 @@ export default function SubmitcvForm() {
 
             <div className="flex items-start flex-col gap-[2px]">
               <label className={labelStyle}>Contact No.</label>
-              {/* <input
-                type="text"
-                name="contact"
-                placeholder="Contact No."
-                className={inputStyle("contact")}
-                value={formData.contact}
-                onChange={handleChange}
-                onFocus={handleFocus}
-              /> */}
               <PhoneInput
                 country={"in"}
                 value={formData.contact}
-                onChange={(value) => {
-                  if (value.length <= 12) {
-                    setFormData((prev) => ({
-                      ...prev,
-                      contact: value,
-                    }));
-
-                    setErrors((prev) => ({
-                      ...prev,
-                      contact: "",
-                    }));
-                  }
-                }}
+                onChange={handleContactChange}
                 className={styles.contactfield}
                 containerClass="w-full  !rounded-lg"
                 inputClass={`!w-full !h-12 !pl-14 small-text ${errors.contact
