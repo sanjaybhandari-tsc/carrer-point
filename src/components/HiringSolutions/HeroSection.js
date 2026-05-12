@@ -19,13 +19,13 @@ export default function HeroSection() {
         />
 
         <div className="w-full h-auto gap-6 relative max-w-6xl mx-0 z-20 px-6 md:px-20 text-white z-20">
-          <h1 className="banner-heading">
+          <h1 className="banner-heading ">
             Smart hiring Solutions     
           </h1>
           {/* <h1 className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-[48px] md:text-5xl lg:text-6xl leading-tight">
             Smart hiring Solutions
           </h1> */}
-          <p className="banner-content font-roboto mt-4 max-w-4xl">
+          <p className="banner-content mt-4 max-w-4xlt  leading-relaxed text-gray-200 !font-roboto">
             Connecting organizations with skilled professionals through reliable
             and efficient recruitment support, helping businesses build stronger
             teams and achieve long-term growth.

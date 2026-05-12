@@ -136,7 +136,7 @@ const testimonialsOld = [
     name: "Uday Joshi",
     role: "Divisional Manager @ Kotak Mahindra Life Insurance Co Ltd",
     image: "/images/testimonials/Sachin Pandey.png",
-    text: "Career Point guided me to the right opportunity after 10+ years of experience. Their job consultancy support was very helpful.",
+    text: "Career,Point guided me to the right opportunity after 10+ years of experience. Their job consultancy support was very helpful.",
   },
 ];
 
@@ -163,14 +163,14 @@ export default function TestimonialSection() {
   return (
     <section
       ref={sectionRef}
-      className="py-6 md:py-[30px] lg:py-[60px] bg-gray-50 overflow-hidden relative"
+      className="py-6 md:py-[30px] lg:py-[60px] relative"
     >
       <div
-    className="hidden lg:block absolute bottom-[1%] left-1/2 -translate-x-1/2 w-full h-[150px] rounded-[50%] z-0 pointer-events-none"
+    className="hidden lg:block absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-full h-[150px] rounded-[50%] z-10 pointer-events-none"
     style={{
       background: "radial-gradient(ellipse at center, #039BE6 7%, #ffffff 100%)",
       filter: "blur(18px) saturate(100%)",
-      opacity: 0.15,
+      opacity: 0.12,
     }}
   />
 
@@ -202,7 +202,7 @@ export default function TestimonialSection() {
 
       <div
         className={`
-       overflow-hidden mx-auto transform transition-all duration-700 ease-out
+       overflow-x-hidden mx-auto transform transition-all duration-700 ease-out relative z-30
       ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}
     `}
       >

@@ -42,22 +42,22 @@ export default function NavActions({
           </div>
         </div>
 
-      <button>
+     
         <Link
           href="/getin-touch"
           onClick={closeMenu}
-          className="small-text mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer "
+          className="nav-items mt-4 px-4 py-2 w-fit bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer"
           // className="mt-4 px-4 py-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white rounded-md cursor-pointer"
         >
           Get in touch
-        </Link></button>
+        </Link>
       </div>
     );
   }
 
   return (
-    <div className="flex items-center gap-2 min-[1440px]:gap-15">
-      <div className="relative">
+    <div className="flex items-center gap-2 md:gap-3 lg:gap-4 xl:gap-5 relative">
+      <div className="relative flex items-center">
         <div
           // className="content flex items-center gap-1 cursor-pointer font-medium text-[var(--color-primary)]"
           className="nav-item flex items-center gap-1 cursor-pointer font-medium text-[var(--color-primary)]"
@@ -84,13 +84,13 @@ export default function NavActions({
 
         {isOpen && (
           <div
-            className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50 w-48 bg-white shadow-lg rounded-md overflow-hidden border-l-4 border-l-[var(--color-primary)]"
+            className="absolute left-0 top-full mt-2 z-50 w-48 bg-white shadow-lg rounded-md overflow-hidden border-l-4 border-l-[var(--color-primary)]"
             onClick={(e) => e.stopPropagation()}
           >
             <Link
               href="/jobs/browse-jobs"
               onClick={closeMenu}
-              className="block px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 small-text  hover:bg-gray-100 hover:text-[var(--color-primary)]"
+              className="nav-item block px-4 py-2 sm:py-2.5 md:py-3 hover:bg-gray-100 hover:text-[var(--color-primary)]"
               // className="block px-4 py-2 content hover:bg-gray-100 hover:text-[var(--color-primary)]"
               // className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
             >
@@ -100,7 +100,7 @@ export default function NavActions({
             <Link
               href="/jobs/submit-your-cv"
               onClick={closeMenu}
-              className="block px-4 py-2 nav-item hover:bg-gray-100 hover:text-[var(--color-primary)]"
+              className="nav-item block px-4 py-2 nav-item hover:bg-gray-100 hover:text-[var(--color-primary)]"
               // className="block px-4 py-2 content hover:bg-gray-100 hover:text-[var(--color-primary)]"
               // className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]"
             >

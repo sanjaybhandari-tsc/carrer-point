@@ -85,7 +85,7 @@ function HowWeWork({ workData }) {
             <button
               onClick={prevSlide}
               aria-label="Previous"
-              className={`border-2 rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold transition-colors duration-200 ${
+              className={`border-2 rounded-full w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 flex items-center justify-center text-base sm:text-lg md:text-xl font-bold transition-colors duration-200 ${
                 index > 0
                   ? "border-white text-white hover:bg-white/20"
                   : "border-white/30 text-white/30 cursor-not-allowed"
@@ -97,7 +97,7 @@ function HowWeWork({ workData }) {
             <button
               onClick={nextSlide}
               aria-label="Next"
-              className={`border-2 rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold transition-colors duration-200 ${
+              className={`border-2 rounded-full w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 flex items-center justify-center text-base sm:text-lg md:text-xl font-bold transition-colors duration-200 ${
                 index < maxIndex
                   ? "border-white text-white hover:bg-white/20"
                   : "border-white/30 text-white/30 cursor-not-allowed"

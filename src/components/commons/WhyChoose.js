@@ -21,10 +21,10 @@ function WhyChoose({ reasons }) {
                 className="w-full h-full object-contain"
               />
             </div>
-            <p className="text-[11px] md:text-[13px] font-semibold text-gray-800 leading-tight break-words w-full">
+            <p className="card-heading text-gray-800 leading-tight break-words w-full">
               {reason.heading}
             </p>
-            <p className="text-[10px] md:text-[12px] text-gray-500 leading-snug break-words w-full">
+            <p className="card-content break-words w-full">
               {reason.desc}
             </p>
           </div>
