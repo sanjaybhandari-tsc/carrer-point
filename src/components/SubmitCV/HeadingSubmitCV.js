@@ -29,7 +29,6 @@ export default function HeadingSubmitCV() {
                 Submit Your CV 
             </h2>
         </header>
-
     )
 }
 

@@ -80,7 +80,7 @@ export default function IndustryCombined({ data, cards }) {
                 background:
                   "radial-gradient(ellipse at center, #039BE6 7%, #ffffff 100%)",
                 filter: "blur(18px) saturate(100%)",
-                opacity: 0.15,
+                opacity: 0.12,
               }}
             />
 
