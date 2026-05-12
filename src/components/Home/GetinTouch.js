@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import style from "../../styles/Home/Home.module.css";
 import Image from "next/image";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 function GetinTouch() {
   const leftRef = useRef(null);
   const rightRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [phone, setPhone] = useState("");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -67,7 +70,8 @@ function GetinTouch() {
               />
               <div>
                 <p>
-                  111,abcd enclave , Xyz colony , Sector-14 , New Delhi - 123456
+                  85/A Railway Lines, Samrudhi one 4th floor,, Near commissioner
+                  Bangalow. Solapur 413001
                 </p>
               </div>
             </div>
@@ -87,13 +91,13 @@ function GetinTouch() {
 
       <div
         ref={rightRef}
-        className={`w-[100%] lg:w-[65%] h-full text-black flex flex-col gap-6 md:gap-12 lg:gap-15 justify-between px-7 md:px:10 lg:px-10 py-15 ${
+        className={`w-[100%] lg:w-[65%] h-full text-black flex flex-col gap-6 md:gap-12 lg:gap-15 justify-between px-7 md:px:10 lg:px-10 md:py-15 ${
           isVisible ? style.slideright : "opacity-0"
         }`}
       >
         <div className="text-center flex flex-col gap-2 sm:gap-3 lg:gap-4">
           <h3 className="heading !font-bold ">Looking to Hire?</h3>
-          <p className="content">
+          <p className="content !font-[300]">
             Tell us your requirements and we’ll connect you with the right
             talent.
           </p>
@@ -103,7 +107,7 @@ function GetinTouch() {
           <div className="flex lg:flex-row md:flex-row flex-col gap-3 md:gap-7 lg:gap-9">
             <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
               <label
-                className="content leading-tight tracking-normal"
+                className="content leading-tight tracking-normal text-[#000000] "
                 htmlFor="name"
               >
                 Full Name
@@ -120,7 +124,7 @@ function GetinTouch() {
 
             <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
               <label
-                className="content leading-tight tracking-normal"
+                className="content leading-tight tracking-normal text-[#000000] "
                 htmlFor="company"
               >
                 Company Name
@@ -136,9 +140,9 @@ function GetinTouch() {
           </div>
 
           <div className="flex lg:flex-row md:flex-row flex-col gap-3 md:gap-7 lg:gap-9">
-            <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
+            <div className="flex flex-col w-full md:w-1/2 lg:w-1/2">
               <label
-                className="content leading-tight tracking-normal"
+                className="content leading-tight tracking-normal text-[#000000] "
                 htmlFor="email"
               >
                 Work Email
@@ -153,27 +157,31 @@ function GetinTouch() {
               />
             </div>
 
-            <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
+            <div className="flex flex-col w-full md:w-1/2 lg:w-1/2">
               <label
                 className="content leading-tight tracking-normal"
                 htmlFor="phone"
               >
                 Phone no.
               </label>
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                placeholder="Enter your Phone number"
-                className="small-text w-full h-12  rounded-lg px-3 outline-none focus:outline-none border border-[#E9EAEB]"
+              <PhoneInput
+                country={"in"}
+                value={phone}
+                onChange={(value) => {
+                  if (value.length <= 12) {
+                    setPhone(value);
+                  }
+                }}
+                containerClass="w-full"
+                inputClass="!w-full !h-12 !pl-14 !rounded-lg !border !border-[#E9EAEB] small-text"
+                buttonClass="!border-1  !border-[#E9EAEB] !bg-transparent"
               />
             </div>
           </div>
-
           <div className="flex lg:flex-row md:flex-row flex-col gap-3 md:gap-7 lg:gap-9">
             <div className="flex flex-col w-full md:w-/2 lg:w-1/2 ">
               <label
-                className="content leading-tight tracking-normal"
+                className="content leading-tight tracking-normal text-[#000000] "
                 htmlFor="role"
               >
                 Role Hiring For
@@ -189,7 +197,7 @@ function GetinTouch() {
 
             <div className="flex flex-col w-full md:w-/2 lg:w-1/2">
               <label
-                className="content leading-tight tracking-normal"
+                className="content leading-tight tracking-normal text-[#000000] "
                 htmlFor="positions"
               >
                 No. of positions
@@ -205,7 +213,7 @@ function GetinTouch() {
           </div>
 
           <div className="flex flex-col gap-1">
-            <label htmlFor="message" className="text-lg font-[500]">
+            <label htmlFor="message" className="content font-[400]">
               Any Message for us?
             </label>
             <textarea

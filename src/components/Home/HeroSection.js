@@ -60,7 +60,7 @@ export default function HeroSection() {
 
             <button className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-lg border-[1.5px]  border-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base whitespace-nowrap text-white group hover:border-transparent transition-colors cursor-pointer">
               <span className="relative z-10 flex items-center gap-2.5">
-                <Link href="/getIn-Touch">
+                <Link href="//get-in-touch">
                   <p className="small-text">Get in touch</p>
                 </Link>
                 <Image
@@ -79,10 +79,10 @@ export default function HeroSection() {
 
       {/* className="w-full flex justify-center relative -top-8 sm:-top-12 md:-top-16 lg:-top-25 " */}
 
-      <div className="w-full relative  flex justify-center -mt-8 sm:-mt-12 md:-mt-16 lg:-mt-24  z-10">
-        <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
+      <div className="w-full relative  flex justify-center -mt-16 sm:-mt-11  md:-mt-16 lg:-mt-24  z-10">
+        <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex flex-wrap sm:flex-nowrap justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
           {bannerItems.map(({ value, label }) => (
-            <div key={label} className="text-center ">
+            <div key={label} className="text-center w-1/2  sm:w-full">
               <h2 className="hero-bottom  !font-[700] md:!font-[800] lg:!font-[900] font-montserrat text-[#0277BD] lg:mb-2.5 ">
                 {value}
               </h2>

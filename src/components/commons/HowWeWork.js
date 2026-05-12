@@ -47,7 +47,7 @@ function HowWeWork({ workData }) {
   };
 
   return (
-    <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] py-20 overflow-hidden flex flex-col items-center justify-center">
+    <div className="h-[100vh] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] py-20 overflow-hidden flex flex-col items-center justify-center my-7 md:my-10 lg:my-15">
       <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-16">
         How We Work
       </h2>

@@ -2,11 +2,11 @@ import React from "react";
 
 function ServicesSecondCompo({ hiringData }) {
   return (
-    <section className="w-full bg-white py-16 md:py-20 px-6 md:px-16 lg:px-24">
+    <section className="w-full bg-white py-7 md:py-10 lg:py-15 px-6 md:px-16 lg:px-24">
       {hiringData.map((item, index) => (
         <div
           key={index}
-          className="max-w-6xl h-full mx-auto flex flex-col xl:flex-row items-center gap-10 md:gap-12 mb-12"
+          className="max-w-6xl h-full mx-auto flex flex-col xl:flex-row items-center gap-6 md:gap-12 lg:gap-15 "
         >
           {/* Image */}
           <div className="w-full h-full xl:w-1/2">
@@ -25,7 +25,7 @@ function ServicesSecondCompo({ hiringData }) {
 
             {/* Flexible paragraphs */}
             {item.description.map((para, i) => (
-              <p key={i} className="content mb-4">
+              <p key={i} className="content mb-3 md:mb-3.5">
                 {para}
               </p>
             ))}
