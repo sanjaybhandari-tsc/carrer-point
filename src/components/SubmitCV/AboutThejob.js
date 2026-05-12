@@ -22,8 +22,8 @@ export default function AboutTheJob() {
   if (!job) return null;
   return (
     <section  aria-label="Job details section ">
-      <div className="pb-4 md:p-4 bg-white !font-roboto">
-        <div className="max-w-[1460px]  pt-16 px-[15px] lg:px-20 xl:pe-30 xl:ps-20">
+      <div className=" lg:p-4 xl:p-0 bg-white !font-roboto">
+        <div className="w-full  pt-16 px-[15px] lg:px-25 xl:pe-30 xl:ps-25">
 
           <p className="text-[#0277BD] main-subheading font-roboto mb-4">
             You are applying for
@@ -100,7 +100,7 @@ export default function AboutTheJob() {
       </div>
 
       {showDetails && (
-        <div className="max-w-[1460px]  pt-4 px-[15px] md:px-6 lg:px-25 ">
+        <div className="w-full  pt-4 px-2 md:px-6 lg:px-25 ">
 
           <div className="bg-white border border-[#E9EAEB] rounded-xl  shadow-[0_4px_8px_#00000014] relative">
             <div className="m-2">
@@ -111,7 +111,7 @@ export default function AboutTheJob() {
               <img src="/images/SubmitCv/cross.svg " alt=" icon" className="h-4 w-4 md:h-8 md:w-8" />
             </button>
             </div>
-            <div className=" py-6 md:py-[52px] px-4 md:px-[30px] xl:w-[1075px]">
+            <div className=" py-6 md:py-[52px] px-4 md:px-[30px] ">
               <div className=" md:mb-6">
                 <h3 className="content-semibold leading-[100%] text-black mb-3 !font-montserrat ">
                   Overview
