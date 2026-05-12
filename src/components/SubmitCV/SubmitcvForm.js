@@ -150,7 +150,7 @@ export default function SubmitcvForm() {
         <div className="space-y-6 mb-20">
           <h2 className="subheading-bold ">Personal Details</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-montserra">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6 font-montserra">
             <div className="flex items-start flex-col gap-[2px]">
               <label htmlFor="firstName" className={labelStyle}>
                 First Name

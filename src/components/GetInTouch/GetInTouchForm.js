@@ -140,7 +140,7 @@ export default function GetInTouchForm() {
                 onSubmit={handleSubmit}
                 className="max-w-[1312px] mx-auto space-y-6"
             >
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
                     {renderInput({
                         label: "Full Name",
                         name: "firstName",

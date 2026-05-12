@@ -22,7 +22,7 @@ export default function AboutTheJob() {
   if (!job) return null;
   return (
     <section  aria-label="Job details section ">
-      <div className=" lg:p-4 xl:p-0 bg-white !font-roboto">
+      <div className="bg-white !font-roboto">
         <div className="w-full  pt-16 px-[15px] lg:px-25 xl:pe-30 xl:ps-25">
 
           <p className="text-[#0277BD] main-subheading font-roboto mb-4">
