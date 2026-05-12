@@ -5,7 +5,6 @@ export default function BroserMessage() {
 
         <div className="w-full px-3 py-6 md:px-16 lg:px-[80px] md:py-[40px] lg:py-[60px] bg-white">
             <div className=" flex items-start">
-                {/* <div className="mb-6 w-20 sm:w-22 md:w-30 lg:w-40 "> */}
                     <Image
                         src="/images/about/quote.svg"
                         alt="quote"

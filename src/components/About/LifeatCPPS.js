@@ -86,8 +86,7 @@ export default function LifeatCPPS() {
           {visibleImages.map((img, index) => (
             <div
               key={index}
-              className="mb-6 break-inside-avoid overflow-hidden rounded-2xl"
-            >
+              className="mb-6 break-inside-avoid overflow-hidden rounded-2xl">
               <Image
                 src={img.src}
                 alt={`gallery-${index}`}
@@ -106,8 +105,7 @@ export default function LifeatCPPS() {
         <div className="flex justify-center mt-6">
           <button
             onClick={() => setShowAll(true)}
-            className=" bg-[var(--color-primary-hover)] text-white px-6 py-2 rounded-md small-text  transition cursor-pointer"
-          >
+            className=" bg-[var(--color-primary-hover)] text-white px-6 py-2 rounded-md small-text  transition cursor-pointer">
             View More
           </button>
         </div>
