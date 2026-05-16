@@ -30,7 +30,7 @@ export default function Ourmission() {
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 lg:gap-[60px]">
         <div  className={`bg-[#0B2239] text-white rounded-3xl shadow-4xl p-5 md:p-10    transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
         >
-          <div className="flex flex-row items-center gap-2lg:gap-0  md:flex-col md:items-start">
+          <div className="flex flex-row items-center gap-2 lg:gap-0  md:flex-col md:items-start">
            <div className="flex  items-center mb-3">
             <div className="rounded-full bg-white p-2 shadow-[0px_4px_8px_0px_#FAFAFA52]  md:p-3">
               <Image
