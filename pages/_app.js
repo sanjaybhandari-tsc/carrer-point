@@ -54,7 +54,6 @@
 //   );
 // }
 
-
 import "@/styles/globals.css";
 import Head from "next/head";
 import Layout from "@/components/Layout/Layout";
@@ -111,7 +110,10 @@ export default function App({ Component, pageProps }) {
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
         <meta property="og:image" content={image} />
-        <meta property="og:site_name" content="Career Point Placement Services" />
+        <meta
+          property="og:site_name"
+          content="Career Point Placement Services"
+        />
 
         <meta name="theme-color" content="#0f172a" />
       </Head>
