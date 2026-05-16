@@ -1,10 +1,12 @@
 import React from "react";
+import style from "../../styles/commons/common.module.css";
 
 function WhyChoose({ reasons }) {
   return (
-    <div className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px] w-full flex flex-col justify-center items-center">
+    <div className="px-4 md:px-14 lg:px-[100px] py-6.5 md:py-10 lg:py-15 w-full flex flex-col justify-center items-center">
       <h3 className="main-heading text-center">
-        Why <span className="text-[var(--color-primary-hover)]">Choose</span> Us?
+        Why <span className="text-[var(--color-primary-hover)]">Choose</span>{" "}
+        Us?
       </h3>
 
       {/* Mobile & Tablet grid (hidden on lg+) */}
@@ -14,19 +16,17 @@ function WhyChoose({ reasons }) {
             key={idx}
             className="flex flex-col items-center text-center gap-2 p-3 md:p-4"
           >
-            <div className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0">
+            <div className={`${style.iconCard} w-10 h-10 flex-shrink-0`}>
               <img
                 src={reason.img}
                 alt={reason.heading}
-                className="w-full h-full object-contain"
+                className="w-full h-full py-2 object-contain"
               />
             </div>
             <p className="card-heading text-gray-800 leading-tight break-words w-full">
               {reason.heading}
             </p>
-            <p className="card-content break-words w-full">
-              {reason.desc}
-            </p>
+            <p className="card-content break-words w-full">{reason.desc}</p>
           </div>
         ))}
       </div>
@@ -38,11 +38,11 @@ function WhyChoose({ reasons }) {
             key={idx}
             className="sm:w-[60%] md:w-[25%] w-full flex flex-col items-center text-center gap-2 md:gap-4"
           >
-            <div className="w-10 h-10 flex-shrink-0">
+            <div className={`${style.iconCard} w-16 h-16  flex-shrink-0`}>
               <img
                 src={reason.img}
                 alt={reason.heading}
-                className="w-full h-full object-contain"
+                className="w-full h-full p-2.5 object-contain"
               />
             </div>
             <h4 className="card-heading md:font-semibold">{reason.heading}</h4>

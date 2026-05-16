@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React,{useRef,useEffect  } from "react";
+import React, { useRef, useEffect } from "react";
 
 function HeaderPart({ headingText }) {
   return (
@@ -31,7 +31,7 @@ function HeaderPart({ headingText }) {
     // </div>
     //  <header>
     //   <section className="relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] py-10 md:py-14 lg:py-16 mb-10 md:mb-14 lg:mb-16 rounded-b-2xl overflow-hidden">
-        
+
     //     {/* Decorative Elements */}
     //     <Image
     //       className="absolute -top-13 lg:-top-10 -left-5"
@@ -76,32 +76,33 @@ function HeaderPart({ headingText }) {
 
     //   </section>
     // </header>
-    <header className="h-[56px] md:h-[80px] lg:h-[120px] relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] md:py-12 py-10 rounded-b-2xl overflow-hidden" aria-label="Submit CV header">
-            <img
-                className="absolute  lg:top-0 lg:left-0  md:top-0 md:left-0 -top-10 -left-5 "
-                src="/images/permanentHiring/permanentTop1.svg"
-                aria-hidden="true"
-            />
-            <img
-                className="absolute  lg:top-0 lg:left-0  md:top-0 md:left-0 -top-10 -left-5 "
-                src="/images/permanentHiring/permanentTop2.svg"
-                aria-hidden="true"
-            />
+    <header
+      className="mb-6.5 md:mb-10 lg:mb-15 h-[56px] md:h-[80px] lg:h-[120px] relative flex justify-center items-center bg-gradient-to-b from-[#0277BD] to-[#0E6497] rounded-b-2xl overflow-hidden"
+      aria-label="Submit CV header"
+    >
+      <img
+        className="absolute  lg:top-0 lg:left-0  md:top-0 md:left-0 -top-10 -left-5 "
+        src="/images/permanentHiring/permanentTop1.svg"
+        aria-hidden="true"
+      />
+      <img
+        className="absolute  lg:top-0 lg:left-0  md:top-0 md:left-0 -top-10 -left-5 "
+        src="/images/permanentHiring/permanentTop2.svg"
+        aria-hidden="true"
+      />
 
-            <img
-                className="absolute lg:top-0 lg:right-0 md:top-0 md:right-0  -top-10 -right-5"
-                src="/images/permanentHiring/permanentTop3.svg"
-                aria-hidden="true"
-            />
-            <img
-                className="absolute lg:top-0 lg:right-0 md:top-0 md:right-0  -top-10 -right-5"
-                src="/images/permanentHiring/permanentTop4.svg"
-                aria-hidden="true"
-            />
-            <h2 className="heading-bold text-white">
-                 {headingText}
-            </h2>
-        </header>
+      <img
+        className="absolute lg:top-0 lg:right-0 md:top-0 md:right-0  -top-10 -right-5"
+        src="/images/permanentHiring/permanentTop3.svg"
+        aria-hidden="true"
+      />
+      <img
+        className="absolute lg:top-0 lg:right-0 md:top-0 md:right-0  -top-10 -right-5"
+        src="/images/permanentHiring/permanentTop4.svg"
+        aria-hidden="true"
+      />
+      <h2 className="heading-bold text-white">{headingText}</h2>
+    </header>
   );
 }
 

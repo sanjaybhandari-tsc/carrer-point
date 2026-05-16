@@ -34,9 +34,9 @@ function HowWeWork({ workData }) {
   }, []);
 
   // Reset index when cardsPerView changes to avoid out-of-bounds
-  useEffect(() => {
-    setIndex(0);
-  }, [cardsPerView]);
+  // useEffect(() => {
+  //   setIndex(0);
+  // }, [cardsPerView]);
 
   const maxIndex = Math.max(0, workData.length - cardsPerView);
 
@@ -51,7 +51,7 @@ function HowWeWork({ workData }) {
   const cardWidthPercent = 100 / cardsPerView;
 
   return (
-    <section className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] overflow-hidden flex flex-col items-center justify-center">
+    <section className="px-4 md:px-14 lg:px-[100px] my-6.5 md:my-10 lg:my-15 py-6.5 md:py-10 lg:py-15 bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] overflow-hidden flex flex-col items-center justify-center">
       <h2 className="main-heading text-center text-white">How We Work</h2>
 
       <div
