@@ -32,13 +32,13 @@ export default function Ourmission() {
         >
           <div className="flex flex-row items-center gap-2 lg:gap-0  md:flex-col md:items-start">
            <div className="flex  items-center mb-3">
-            <div className="rounded-full bg-white p-2 shadow-[0px_4px_8px_0px_#FAFAFA52]  md:p-3">
+            <div className="rounded-full bg-white p-2 shadow-[0px_4px_8px_0px_#FAFAFA52]  md:p-3 w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 ">
               <Image
                 src="/images/about/visionIcon.svg"
                 alt="Vision Icon"
                 width={64}
                 height={64}
-                className="h-10 w-10 md:h-14 md:w-14 "
+                className="w-8 h-8 md:w-9 md:h-9 lg:w-[42px] lg:h-[42px]"
               />
             </div>
           </div>
@@ -61,13 +61,13 @@ export default function Ourmission() {
         >
           <div className="flex flex-row items-center gap-2 lg:gap-0 md:flex-col md:items-start">
          <div className="flex items-center mb-3">
-            <div className="rounded-full bg-[#0B2239] p-2 shadow-[0px_8px_16px_0px_#00000030]  md:p-3 ">
+            <div className="rounded-full bg-[#0B2239] p-2 shadow-[0px_8px_16px_0px_#00000030]  md:p-3 w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 ">
               <Image
                 src="/images/about/targeticon.svg"
                 alt="Mission Icon"
                 width={64}
                 height={64}
-                className="h-10 w-10 md:h-14 md:w-14 brightness-0 invert "
+                className="w-8 h-8 md:w-9 md:h-9 lg:w-[42px] lg:h-[42px] brightness-0 invert "
               />
             </div>
           </div>

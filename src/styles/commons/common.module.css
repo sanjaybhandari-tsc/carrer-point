@@ -1,0 +1,8 @@
+.iconCard {
+  box-shadow: 0px 4px 8px 0px #00000029;
+  background: #f1f9fe;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
