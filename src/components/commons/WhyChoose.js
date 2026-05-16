@@ -16,7 +16,7 @@ function WhyChoose({ reasons }) {
             key={idx}
             className="flex flex-col items-center text-center gap-2 p-3 md:p-4"
           >
-            <div className={`${style.iconCard} w-10 h-10 flex-shrink-0`}>
+            <div className={`${style.iconCard} w-12 h-12 flex-shrink-0`}>
               <img
                 src={reason.img}
                 alt={reason.heading}
@@ -38,7 +38,9 @@ function WhyChoose({ reasons }) {
             key={idx}
             className="sm:w-[60%] md:w-[25%] w-full flex flex-col items-center text-center gap-2 md:gap-4"
           >
-            <div className={`${style.iconCard} w-16 h-16  flex-shrink-0`}>
+            <div
+              className={`${style.iconCard} md:w-14 md:h-14  lg:w-16 lg:h-16  flex-shrink-0`}
+            >
               <img
                 src={reason.img}
                 alt={reason.heading}
