@@ -28,17 +28,20 @@ export default function Ourmission() {
       className="w-full bg-white px-4 py-[28px]   md:py-[40px] lg:py-[60px] md:px-16 lg:px-24 overflow-x-hidden"
     >
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 lg:gap-[60px]">
-        <div  className={`bg-[#0B2239] text-white rounded-3xl shadow-3xl p-5 md:p-10    transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
+        <div  className={`bg-[#0B2239] text-white rounded-3xl shadow-4xl p-5 md:p-10    transition-all duration-700 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
         >
           <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
-          <Image
-            src="/images/about/visionIcon.svg"
-            alt="Vision Icon"
-            width={64}
-            height={64}
-            className="mb-4 h-10 w-10 md:h-15 md:w-15"
-          />
-
+           <div className="flex  items-center mb-6">
+            <div className="rounded-full bg-white p-2 shadow-[0px_4px_8px_0px_#FAFAFA52] lg:p-4 md:p-3">
+              <Image
+                src="/images/about/visionIcon.svg"
+                alt="Vision Icon"
+                width={64}
+                height={64}
+                className="h-10 w-10 md:h-14 md:w-14 "
+              />
+            </div>
+          </div>
           <h2 className="main-heading mb-4">
             Our Vision
           </h2></div>
@@ -54,16 +57,20 @@ export default function Ourmission() {
           </p>
         </div>
         <div
-          className={`bg-[#e5e5e55e] text-black rounded-3xl shadow-md p-5 md:p-10 border border-gray-200   transition-all duration-700 delay-200 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
+          className={`bg-[#faf8f87a] zztext-black rounded-4xl shadow-md p-5 md:p-10 border border-gray-200   transition-all duration-700 delay-200 ease-out ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
         >
           <div className="flex flex-row items-center gap-3 md:flex-col md:items-start">
-          <Image
-            src="/images/about/targeticon.svg"
-            alt="Mission Icon"
-            width={64}
-            height={64}
-            className="mb-4 h-10 w-10 md:h-15 md:w-15"
-          />
+         <div className="flex items-center mb-6">
+            <div className="rounded-full bg-[#0B2239] p-2 shadow-[0px_8px_16px_0px_#00000030] lg:p-4 md:p-3 ">
+              <Image
+                src="/images/about/targeticon.svg"
+                alt="Mission Icon"
+                width={64}
+                height={64}
+                className="h-10 w-10 md:h-14 md:w-14 brightness-0 invert "
+              />
+            </div>
+          </div>
 
           <h2 className="main-heading mb-4">
             Our Mission
