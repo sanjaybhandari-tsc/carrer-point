@@ -119,7 +119,7 @@ function ReviewsAndRatings() {
               <>
                 <div
                   key={idx}
-                  className="relative border rounded-4xl border-[#E1EBFF] shadow px-4 py-10 text-left flex flex-col gap-3 lg:gap-7 lg:min-w-[500px] md:min-w-1/2 min-w-full overflow-hidden"
+                  className={`relative rounded-4xl shadow px-4 py-10 text-left flex flex-col gap-3 lg:gap-7 lg:min-w-[500px] md:min-w-1/2 min-w-full overflow-hidden ${styles.ratingSBorder}`}
                 >
                   <Image
                     src="/images/homepage/Commas.svg"

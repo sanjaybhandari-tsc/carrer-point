@@ -48,9 +48,7 @@ function HowWeWork({ workData }) {
   return (
     <section className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px] bg-[linear-gradient(180deg,_#0277BD_0%,_#0E6497_100%)] overflow-hidden flex flex-col items-center justify-center">
       {/* <h2 className=" text-center text-4xl md:text-5xl font-semibold text-white mb-16"> */}
-      <h2 className="main-heading text-center text-white">
-        How We Work
-      </h2>
+      <h2 className="main-heading text-center text-white">How We Work</h2>
 
       <div
         ref={ref}

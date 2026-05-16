@@ -74,8 +74,12 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="w-full relative  flex justify-center -mt-16 sm:-mt-11  md:-mt-16 lg:-mt-24  z-10">
-        <div className="w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex flex-wrap sm:flex-nowrap justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE]">
+      <div
+        className={`w-full relative  flex justify-center -mt-16 sm:-mt-11  md:-mt-16 lg:-mt-24  z-10 `}
+      >
+        <div
+          className={`w-[90%] py-3 px-3 sm:py-4 sm:px-6 lg:py-12 lg:px-20 rounded-4xl dark:text-[#333333] flex flex-wrap sm:flex-nowrap justify-between gap-y-3 bg-gradient-to-r from-[#E6F6FD] to-[#FEFFFE] ${styles.statsShadow}`}
+        >
           {bannerItems.map(({ value, label }) => (
             <div key={label} className="text-center w-1/2  sm:w-full">
               <h2 className="hero-bottom  !font-[700] md:!font-[800] lg:!font-[900] font-montserrat text-[#0277BD] lg:mb-2.5 ">

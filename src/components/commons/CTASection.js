@@ -1,9 +1,8 @@
 import Link from "next/link";
 export default function Common() {
   return (
-    <section className="px-4 md:px-14 lg:px-[100px] py-6 md:py-[30px] lg:py-[60px]">
+    <section className="px-4 md:px-14 lg:px-[100px] py-6.5 md:py-10 lg:py-15">
       <div className="relative overflow-hidden bg-[var(--color-deep-blue)] text-white rounded-[2rem] flex flex-col items-center justify-center gap-8 md:gap-10 lg:gap-14 py-12 md:py-16 px-6 w-full">
-        
         <img
           className="hidden lg:block absolute top-0 left-0"
           alt="top-right-arc"
@@ -71,7 +70,6 @@ export default function Common() {
             <p className="md:content small-text">Hire Talent</p>
           </Link>
         </nav>
-
       </div>
     </section>
   );

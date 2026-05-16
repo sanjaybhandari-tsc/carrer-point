@@ -121,7 +121,15 @@ function OurTeam() {
                   />
 
                   <div
-                    className={`absolute -left-[8%] w-[116%] h-[116%] rounded-full bg-[#039BE6]/90 flex justify-center top-40 py-5 gap-4 lg:top-[100%] lg:py-13 lg:gap-13 transition-all duration-700 lg:group-hover:top-60 lg:group-hover:py-8 lg:group-hover:gap-4 ${styles.slideup}`}
+                    className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                    style={{
+                      background:
+                        "linear-gradient(180deg, rgba(81, 81, 81, 0.37) 0%, rgba(19, 19, 19, 0.37) 100%)",
+                    }}
+                  />
+
+                  <div
+                    className={`absolute -left-[8%] w-[116%] h-[116%] rounded-full bg-[#039BE6]/90 flex justify-center top-40 py-5 gap-4 lg:top-[100%] lg:py-13 lg:gap-13 transition-all duration-500 lg:group-hover:top-60 lg:group-hover:py-8 lg:group-hover:gap-4 ${styles.slideup}`}
                   >
                     <a href={team.LinkedIn}>
                       <Image

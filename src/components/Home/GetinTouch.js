@@ -236,14 +236,31 @@ function GetinTouch() {
               >
                 Phone no. <span className="text-red-500">*</span>
               </label>
-              <PhoneInput
+              {/* <PhoneInput
                 country={"in"}
                 value={phone}
                 onChange={handlePhoneChange}
-                containerClass="w-full"
-                inputClass={`!w-full !h-12 !pl-14 !border ${errors.phone ? "!border-red-500" : "!border-[#E9EAEB]"} !rounded-lg small-text`}
-                buttonClass="!h-12 !border-r !border-[#E9EAEB] !bg-transparent !rounded-l-lg"
+                containerClass="w-full "
+                inputClass={`!w-full !h-12 !pl-14 !border  ${errors.phone ? "!border-red-500" : "!border-[#E9EAEB]"} !rounded-lg small-text`}
+                buttonClass="!h-12  !border-r !border-[#E9EAEB] !bg-transparent !rounded-l-lg"
               />
+              {errors.phone && (
+                <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
+              )} */}
+              <div
+                className={`flex w-full border rounded-lg overflow-hidden ${
+                  errors.phone ? "border-red-500" : "border-[#E9EAEB]"
+                }`}
+              >
+                <PhoneInput
+                  country={"in"}
+                  value={phone}
+                  onChange={handlePhoneChange}
+                  containerClass="!w-full"
+                  inputClass="!w-full !h-12 !pl-14 !border-none !rounded-none small-text"
+                  buttonClass="!h-12  border-r-2 !bg-transparent !rounded-none"
+                />
+              </div>
               {errors.phone && (
                 <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
               )}
