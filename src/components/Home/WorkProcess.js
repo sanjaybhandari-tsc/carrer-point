@@ -5,36 +5,42 @@ function WorkProcess() {
   const works = [
     {
       img: "/images/homepage/workprocess1.webp",
+      objectPosition: "center center",
       srNo: "01",
-      heading: " Requirement Understanding",
-      desc: " We begin by deeply understanding your hiring needs, businessgoals, role expectations, and company culture to ensure alignmentand define the ideal candidate profile from the very start.",
+      heading: "Requirement Understanding",
+      desc: "We begin by deeply understanding your hiring needs, business goals, role expectations, and company culture to ensure alignment and define the ideal candidate profile from the very start.",
     },
     {
       img: "/images/homepage/workprocess2.webp",
+      objectPosition: "center center",
       srNo: "02",
       heading: "Talent Sourcing",
-      desc: " Using multiple channels like databases, job portals, and networks, we identify and attract the most suitable candidates across levels, ensuring quality talent aligned with your requirements.",
+      desc: "Using multiple channels like databases, job portals, and networks, we identify and attract the most suitable candidates across levels, ensuring quality talent aligned with your requirements.",
     },
     {
       img: "/images/homepage/workprocess3.webp",
+      objectPosition: "center center",
       srNo: "03",
       heading: "Screening & Evaluation",
       desc: "Candidates go through detailed screening including profile checks, skill evaluation, and initial discussions to ensure they meet technical, professional, and cultural fit criteria before moving forward.",
     },
     {
       img: "/images/homepage/workprocess4.webp",
+      objectPosition: "50% 10%",
       srNo: "04",
       heading: "Shortlisting & Presentation",
       desc: "We share carefully shortlisted candidates with you, providing relevant insights and profiles to help you quickly identify the best-fit talent for your organization.",
     },
     {
-      img: "/images/homepage/workprocess5.webp",
+      img: "/images/homepage/Interview Coordination.png",
+      objectPosition: "50% 50%",
       srNo: "05",
       heading: "Interview Coordination",
-      desc: " We manage end-to-end interview scheduling, communication, and feedback between you and candidates, ensuring a smooth, efficient, and timely hiring process",
+      desc: "We manage end-to-end interview scheduling, communication, and feedback between you and candidates, ensuring a smooth, efficient, and timely hiring process.",
     },
     {
       img: "/images/homepage/workprocess6.webp",
+      objectPosition: "center center",
       srNo: "06",
       heading: "Offer & Onboarding Support",
       desc: "From salary negotiation to final onboarding, we assist throughout the process, ensuring seamless joining, documentation, and continuous support for both client and candidate.",
@@ -69,6 +75,7 @@ function WorkProcess() {
                       alt={work.heading}
                       fill
                       className="object-cover"
+                      style={{ objectPosition: work.objectPosition }}
                     />
                   </div>
                   <div className="w-full md:w-1/2 py-4 px-7 md:p-10 flex flex-col justify-center gap-4 md:gap-5  lg:gap-10">
@@ -92,6 +99,7 @@ function WorkProcess() {
                       alt={work.heading}
                       fill
                       className="object-cover"
+                      style={{ objectPosition: work.objectPosition }}
                     />
                   </div>
                   <div className="w-full md:w-1/2 py-2 px-5  gap-4  md:p-10 flex flex-col justify-center  md:gap-5 md:gap-10">
@@ -109,6 +117,7 @@ function WorkProcess() {
                       alt={work.heading}
                       fill
                       className="object-cover"
+                      style={{ objectPosition: work.objectPosition }}
                     />
                   </div>
                 </div>

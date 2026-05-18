@@ -1,78 +1,9 @@
-// export default function TestimonialCard({ name, role, image, text }) {
-//   return (
-//     <div
-//       className="
-//         relative
-//     bg-white
-//     rounded-2xl
-//     pt-20 pb-8 px-8 mt-20
-//     text-center
-//     flex-shrink-0
-//     w-[300px]
-//     sm:w-[340px]
-//     md:w-[380px]
-//     lg:w-[400px]
-//     xl:w-[420px]
-// //min-h-[340px]
-// //sm:min-h-[350px]
-// min-h-[340px]
-// sm:min-h-[350px]
-// md:min-h-[350px]
-// lg:min-h-[400px]
-// xl:min-h-[400px]
-//     border border-[#E1EBFF]
-// shadow-[inset_0px_4px_4px_0px_#0000000A]
-//       "
-//     >
-//       <div
-//         className=" absolute -top-14 left-1/2 -translate-x-1/2
-//           bg-[#039BE6]
-//           p-0.5
-//           rounded-full flex flex-col"
-//       >
-//         <img
-//           src={image}
-//           alt={name}
-//           className="w-28 h-28
-//   rounded-full
-//   object-cover
-//   border-[1.5px] border-[#FBFDFF]
-//   shadow-[0px_-2px_8px_0px_#00000014]"
-//         />
-//       </div>
-
-//       <h3 className="card-heading font-roboto">{name}</h3>
-//       {/* <h3 className="main-subheading font-roboto">{name}</h3> */}
-//       {/* <h3 className="font-roboto font-medium text-base sm:text-lg">{name}</h3> */}
-
-//       <p className="font-inter text-muted">{role}</p>
-//       {/* <p className="font-inter text-sm sm:text-base text-gray-600">{role}</p> */}
-
-//       <div className="flex flex-col items-center justify-between flex-1 mt-4">
-//         <img
-//           src="/icons/comma.svg"
-//           alt="quote"
-//           className="w-8 h-8 sm:w-10 sm:h-10 mb-3"
-//         />
-
-//         <p className="card-content mt-auto text-center">
-//         {/* <p className="content mt-auto font-inter text-center"> */}
-//           {text}
-//         </p>
-//         {/* <p className=" mt-auto font-inter font-weight: 600 text-base leading-[150%] tracking-normal text-center">
-//           {text}
-//         </p> */}
-//       </div>
-//     </div>
-//   );
-// }
-
 export default function TestimonialCard({ name, role, image, text }) {
   return (
     <div
       className="
         relative
-        bg-white
+        bg-white/10
         rounded-2xl
         pt-16 pb-10 px-8 mt-16
         text-center
@@ -93,36 +24,24 @@ export default function TestimonialCard({ name, role, image, text }) {
     >
       {/* Avatar */}
       <div className="absolute -top-10 sm:-top-12 md:-top-14 lg:-top-16 left-1/2 -translate-x-1/2 bg-[#039BE6] p-0.5 rounded-full">
-  <img
-    src={image}
-    alt={name}
-    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full object-cover border-[1.5px] border-[#FBFDFF] shadow-[0px_-2px_8px_0px_#00000014]"
-  />
-</div>
-      {/* <div className="absolute -top-16 left-1/2 -translate-x-1/2 bg-[#039BE6] p-0.5 rounded-full">
         <img
           src={image}
           alt={name}
-          className="w-28 h-28 rounded-full object-cover border-[1.5px] border-[#FBFDFF] shadow-[0px_-2px_8px_0px_#00000014]"
+          className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full object-cover border-[1.5px] border-[#FBFDFF] shadow-[0px_-2px_8px_0px_#00000014]"
         />
-      </div> */}
+      </div>
 
       {/* Name & Role */}
       <h3 className="card-heading font-roboto mt-4">{name}</h3>
       <p className="font-inter text-muted">{role}</p>
-      
+
       {/* Quote + Text */}
       <div className="flex flex-col items-center mt-6">
         <img
-           src="/icons/comma.svg"
-           alt="quote"
-          className="w-8 h-8 sm:w-10 sm:h-10 mb-3"
-         />
-        {/* <img
           src="/icons/comma.svg"
           alt="quote"
-          className="w-6 h-6 sm:w-7 sm:h-7 mb-4 opacity-30"
-        /> */}
+          className="w-8 h-8 sm:w-10 sm:h-10 mb-3"
+        />
         <p className="card-content text-center">{text}</p>
       </div>
     </div>
