@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import InfoCard from "@/components/Industries/InfoCard";
+import { CogIcon  } from "@/components/icons/CogIcon";
+import { PulseIcon  } from "@/components/icons/PulseIcon";
 
 export default function IndustryCombined({ data, cards }) {
   const {
@@ -57,7 +59,7 @@ export default function IndustryCombined({ data, cards }) {
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
               ${isLeft ? "order-1 xl:order-1" : "order-1 xl:order-2"}`}
           >
-            <div className="rounded-2xl overflow-hidden shadow-lg transition-transform duration-500 hover:scale-[1.02]">
+            <div className="rounded-2xl overflow-hidden shadow-lg transition-transform duration-500">
               <Image
                 src={imageSrc}
                 alt={imageAlt}

@@ -59,7 +59,8 @@ export default function ContractHiring() {
   const hiringData = [
     {
       title: " Project-Based Talent Hiring",
-      image: "/images/contractHiring/contract-hiring.webp",
+      image: "/images/contractHiring/Project-Based Talent Hiring.png",
+      objectPosition: "center top",
       description: [
         "  Contract staffing enables organizations to hire skilled professionals for specific projects, temporary assignments, or short-term business needs without expanding their permanent workforce. It offers flexibility while ensuring that the right expertise is available when required.",
         "   Our contract staffing solutions help companies quickly access qualified professionals who can contribute to ongoing operations or specialized projects. From sourcing and screening candidates to managing employment documentation and administrative responsibilities, we ensure a smooth and reliable staffing process.",

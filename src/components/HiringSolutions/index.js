@@ -25,10 +25,6 @@ export default function HiringSolutions() {
         text="Our focus is on building capable teams with the right professionals for every industry."
         highlights={["building", "right"]}
       /> */}
-      {/* <ModularCTAText
-        text="Our focus is on building capable teams with the right professionals for every industry."
-        highlights={["building", "right"]}
-      /> */}
     </>
   );
 }

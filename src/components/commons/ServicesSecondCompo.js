@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function ServicesSecondCompo({ hiringData }) {
   return (
@@ -6,24 +7,25 @@ function ServicesSecondCompo({ hiringData }) {
       {hiringData.map((item, index) => (
         <div
           key={index}
-          className="w-full lg:h-[50vh] mx-auto flex flex-col lg:flex-row items-center gap-6 md:gap-12 lg:gap-15 "
+          className="w-full mx-auto flex flex-col xl:flex-row items-center gap-6 md:gap-12 lg:gap-15"
         >
           {/* Image */}
-          <div className="w-full h-fit  lg::h-full lg:w-1/2 rounded-lg overflow-hidden">
-            <img
+          <div className={`w-full xl:w-1/2 rounded-lg overflow-hidden ${index % 2 !== 0 ? "xl:order-2" : "xl:order-1"}`}>
+            <Image
               src={item.image}
               alt={item.title}
-              className="h-full w-full object-cover "
+              width={1200}
+              height={450}
+              className="w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover object-center"
+               style={{ objectPosition: item.objectPosition }}
             />
           </div>
 
           {/* Content */}
-          <div className="w-full  lg:h-full  lg:w-1/2 flex flex-col justify-center ">
-            <h2 className="main-heading  mb-5 md:mb-6">{item.title}</h2>
-
-            {/* Flexible paragraphs */}
+          <div className={`w-full xl:w-1/2 flex flex-col justify-center ${index % 2 !== 0 ? "xl:order-1" : "xl:order-2"}`}>
+            <h2 className="main-heading mb-5 md:mb-6">{item.title}</h2>
             {item.description.map((para, i) => (
-              <p key={i} className="main-content  mb-4">
+              <p key={i} className="main-content mb-4">
                 {para}
               </p>
             ))}

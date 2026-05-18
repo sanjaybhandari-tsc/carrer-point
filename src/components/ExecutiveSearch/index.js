@@ -57,11 +57,12 @@ export default function ExecutiveSearch() {
   ];
   const hiringData = [
     {
-      title: " Project-Based Talent Hiring",
-      image: "/images/executivesearch/Strategic Leadership Hiring.webp",
+      title: " Strategic Leadership Hiring",
+      image: "/images/executivesearch/Strategic Leadership Hiring.png",
+      objectPosition: "center top",
       description: [
-        "      Executive search is a specialized recruitment process focused on identifying senior leaders, CXOs, and top management professionals for critical organizational roles. These positions demand strong industry experience strategic thinking, and proven leadership capability.",
-        "   Our executive search approach combines targeted research, market mapping, and structured evaluation to connect organizations with high-impact leadership talent that drives long-term strategic growth.",
+        "Executive search focuses on identifying senior professionals and leadership talent for critical organizational roles. These positions require strong industry experience, strategic thinking, and the ability to guide organizations through complex business challenges.",
+        "Our executive search approach is designed to carefully identify and engage experienced professionals who possess the leadership capabilities required for high-impact roles. Through targeted research, market mapping, and structured evaluation, we help organizations connect with leaders who can contribute to long-term strategic growth.",
       ],
     },
   ];
